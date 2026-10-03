@@ -1,0 +1,37 @@
+text,label
+"I will need some of this money next year",D12_SHORT
+"I expect to need part of it within one year",D12_SHORT
+"The earliest I might need it is two years from now",D12_SHORT
+"I will need the money in about eighteen months",D12_SHORT
+"I could realistically need some of it in three years",D12_SHORT
+"The earliest need is exactly three years away",D12_SHORT
+"I need part of this pot for rent next year",D12_SHORT
+"I may need this money for a deposit in two years",D12_SHORT
+"I cannot leave all of it untouched beyond three years",D12_SHORT
+"Some of this money may be needed in six months",D12_SHORT
+"The first realistic need is around two and a half years away",D12_SHORT
+"I expect to use part of it next year",D12_SHORT
+"The earliest I will need any of it is four years from now",D12_MEDIUM
+"I expect the first need in about five years",D12_MEDIUM
+"I may need some of this money six years from now",D12_MEDIUM
+"The earliest realistic need is seven years away",D12_MEDIUM
+"I will not need it before eight years",D12_MEDIUM
+"I expect to need part of the pot in nine years",D12_MEDIUM
+"The earliest need is exactly ten years from now",D12_MEDIUM
+"I may first need this money in five years",D12_MEDIUM
+"I know I will need it around six years from now",D12_MEDIUM
+"The first realistic use of this money is in four years",D12_MEDIUM
+"I can leave the whole pot untouched for about eight years",D12_MEDIUM
+"I expect to need it between five and six years from now",D12_MEDIUM
+"I will not need any of this money for more than ten years",D12_LONG
+"The earliest I might need it is twelve years away",D12_LONG
+"I can leave this pot untouched for fifteen years",D12_LONG
+"I will not need the money until retirement in twenty years",D12_LONG
+"The first realistic need is eleven years from now",D12_LONG
+"I expect to keep all of it untouched for eighteen years",D12_LONG
+"I know I will not need any of this money for at least twelve years",D12_LONG
+"The earliest need for any included part is fifteen years away",D12_LONG
+"I could leave the entire amount alone for twenty years",D12_LONG
+"I do not expect any need for this money until fourteen years from now",D12_LONG
+"The first time I could realistically need it is thirteen years away",D12_LONG
+"I will not need access to any of this pot for more than a decade",D12_LONG

@@ -1,0 +1,4 @@
+text,label,control_type,action
+I would rather not answer when I might need the money,undecided,refusal,accept_control
+I prefer not to answer this question,undecided,refusal,accept_control
+I am not comfortable giving a timeframe,undecided,refusal,accept_control

@@ -24,3 +24,21 @@ data/raw/*
 *.log
 # Python packaging
 *.egg-info/
+
+# Virtual environments
+.venv/
+.venv-transformer/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environment files
+.env
+.env.*
+
+# macOS
+.DS_Store
