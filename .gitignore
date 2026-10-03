@@ -22,3 +22,5 @@ data/raw/*
 !data/raw/.gitkeep
 
 *.log
+# Python packaging
+*.egg-info/
