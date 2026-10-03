@@ -208,3 +208,257 @@ def test_under_18_customer_is_rejected():
         match="Customer must be at least 18 years old",
     ):
         assess_risk_capacity(profile)
+
+
+# ---------------------------------------------------------------------------
+# Consistency checking
+# ---------------------------------------------------------------------------
+
+from ai.consistency import ConsistencyStatus, check_consistency
+
+
+def test_matching_tolerance_and_capacity_are_consistent():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.MEDIUM,
+        investment_horizon_years=5,
+        liquidity_need=LiquidityNeed.MEDIUM,
+        emergency_fund=True,
+        loss_tolerance_percent=10,
+    )
+
+    capacity = assess_risk_capacity(profile)
+    result = check_consistency(profile, capacity)
+
+    assert capacity.level == RiskLevel.MEDIUM
+    assert result.status == ConsistencyStatus.CONSISTENT
+    assert result.conflicts == []
+
+
+def test_high_tolerance_with_low_capacity_is_conflict():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.HIGH,
+        investment_horizon_years=1,
+        liquidity_need=LiquidityNeed.HIGH,
+        emergency_fund=False,
+        financial_commitments_gbp=40_000,
+        loss_tolerance_percent=2,
+    )
+
+    capacity = assess_risk_capacity(profile)
+    result = check_consistency(profile, capacity)
+
+    assert capacity.level == RiskLevel.LOW
+    assert result.status == ConsistencyStatus.CONFLICT
+    assert len(result.conflicts) > 0
+
+
+def test_tolerance_one_level_above_capacity_requires_review():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.HIGH,
+        investment_horizon_years=5,
+        liquidity_need=LiquidityNeed.MEDIUM,
+        emergency_fund=True,
+        financial_commitments_gbp=10_000,
+        loss_tolerance_percent=10,
+    )
+
+    capacity = assess_risk_capacity(profile)
+    result = check_consistency(profile, capacity)
+
+    assert capacity.level == RiskLevel.MEDIUM
+    assert result.status == ConsistencyStatus.REVIEW_REQUIRED
+
+
+def test_capacity_above_tolerance_does_not_raise_customer_risk():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.LOW,
+        investment_horizon_years=15,
+        liquidity_need=LiquidityNeed.LOW,
+        emergency_fund=True,
+        financial_commitments_gbp=5_000,
+        loss_tolerance_percent=25,
+    )
+
+    capacity = assess_risk_capacity(profile)
+    result = check_consistency(profile, capacity)
+
+    assert capacity.level == RiskLevel.HIGH
+    assert result.status == ConsistencyStatus.CONSISTENT
+    assert any(
+        "lower stated tolerance should still be respected" in explanation
+        for explanation in result.explanations
+    )
+
+
+def test_high_risk_with_short_horizon_is_conflict():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.HIGH,
+        investment_horizon_years=2,
+    )
+
+    capacity = assess_risk_capacity(profile)
+    result = check_consistency(profile, capacity)
+
+    assert result.status == ConsistencyStatus.CONFLICT
+    assert any(
+        "short investment horizon" in conflict
+        for conflict in result.conflicts
+    )
+
+
+def test_high_risk_with_high_liquidity_need_is_conflict():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.HIGH,
+        liquidity_need=LiquidityNeed.HIGH,
+    )
+
+    capacity = assess_risk_capacity(profile)
+    result = check_consistency(profile, capacity)
+
+    assert result.status == ConsistencyStatus.CONFLICT
+    assert any(
+        "high liquidity needs" in conflict
+        for conflict in result.conflicts
+    )
+
+
+def test_high_risk_with_very_low_loss_tolerance_is_conflict():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.HIGH,
+        loss_tolerance_percent=2,
+    )
+
+    capacity = assess_risk_capacity(profile)
+    result = check_consistency(profile, capacity)
+
+    assert result.status == ConsistencyStatus.CONFLICT
+    assert any(
+        "very low reported loss tolerance" in conflict
+        for conflict in result.conflicts
+    )
+
+
+# ---------------------------------------------------------------------------
+# Suitability decision synthesis
+# ---------------------------------------------------------------------------
+
+from ai.suitability import SuitabilityDecision, assess_suitability
+
+
+def run_full_assessment(profile):
+    """Run the assessment pipeline used by suitability tests."""
+
+    capacity = assess_risk_capacity(profile)
+    consistency = check_consistency(profile, capacity)
+    suitability = assess_suitability(
+        profile,
+        capacity,
+        consistency,
+    )
+
+    return capacity, consistency, suitability
+
+
+def test_consistent_medium_profile_is_suitable():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.MEDIUM,
+        investment_horizon_years=5,
+        liquidity_need=LiquidityNeed.MEDIUM,
+        emergency_fund=True,
+        financial_commitments_gbp=10_000,
+        loss_tolerance_percent=10,
+    )
+
+    _, consistency, suitability = run_full_assessment(profile)
+
+    assert consistency.status == ConsistencyStatus.CONSISTENT
+    assert suitability.decision == SuitabilityDecision.SUITABLE
+    assert suitability.effective_risk_level == RiskLevel.MEDIUM
+    assert suitability.requires_human_review is False
+
+
+def test_material_conflict_requires_human_review():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.HIGH,
+        investment_horizon_years=1,
+        liquidity_need=LiquidityNeed.HIGH,
+        emergency_fund=False,
+        financial_commitments_gbp=40_000,
+        loss_tolerance_percent=2,
+    )
+
+    _, consistency, suitability = run_full_assessment(profile)
+
+    assert consistency.status == ConsistencyStatus.CONFLICT
+    assert suitability.decision == SuitabilityDecision.REVIEW_REQUIRED
+    assert suitability.effective_risk_level is None
+    assert suitability.requires_human_review is True
+
+
+def test_minor_risk_mismatch_requires_review():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.HIGH,
+        investment_horizon_years=5,
+        liquidity_need=LiquidityNeed.MEDIUM,
+        emergency_fund=True,
+        financial_commitments_gbp=10_000,
+        loss_tolerance_percent=10,
+    )
+
+    capacity, consistency, suitability = run_full_assessment(profile)
+
+    assert capacity.level == RiskLevel.MEDIUM
+    assert consistency.status == ConsistencyStatus.REVIEW_REQUIRED
+    assert suitability.decision == SuitabilityDecision.REVIEW_REQUIRED
+    assert suitability.effective_risk_level == RiskLevel.MEDIUM
+    assert suitability.requires_human_review is True
+
+
+def test_high_capacity_does_not_override_low_customer_tolerance():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.LOW,
+        investment_horizon_years=15,
+        liquidity_need=LiquidityNeed.LOW,
+        emergency_fund=True,
+        financial_commitments_gbp=5_000,
+        loss_tolerance_percent=25,
+    )
+
+    capacity, consistency, suitability = run_full_assessment(profile)
+
+    assert capacity.level == RiskLevel.HIGH
+    assert consistency.status == ConsistencyStatus.CONSISTENT
+    assert suitability.decision == SuitabilityDecision.SUITABLE
+    assert suitability.effective_risk_level == RiskLevel.LOW
+
+
+def test_consistent_low_capacity_profile_stays_low_risk():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.LOW,
+        investment_horizon_years=2,
+        liquidity_need=LiquidityNeed.HIGH,
+        emergency_fund=False,
+        financial_commitments_gbp=35_000,
+        loss_tolerance_percent=2,
+    )
+
+    capacity, consistency, suitability = run_full_assessment(profile)
+
+    assert capacity.level == RiskLevel.LOW
+    assert consistency.status == ConsistencyStatus.CONSISTENT
+    assert suitability.decision == SuitabilityDecision.SUITABLE
+    assert suitability.effective_risk_level == RiskLevel.LOW
+
+
+def test_conflict_does_not_produce_effective_risk_level():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.HIGH,
+        investment_horizon_years=1,
+        liquidity_need=LiquidityNeed.HIGH,
+        loss_tolerance_percent=2,
+    )
+
+    _, _, suitability = run_full_assessment(profile)
+
+    assert suitability.decision == SuitabilityDecision.REVIEW_REQUIRED
+    assert suitability.effective_risk_level is None
