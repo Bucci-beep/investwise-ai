@@ -462,3 +462,127 @@ def test_conflict_does_not_produce_effective_risk_level():
 
     assert suitability.decision == SuitabilityDecision.REVIEW_REQUIRED
     assert suitability.effective_risk_level is None
+
+
+# ---------------------------------------------------------------------------
+# Explanation layer
+# ---------------------------------------------------------------------------
+
+from ai.explanations import generate_explanation
+
+
+def test_consistent_assessment_generates_clear_explanation():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.MEDIUM,
+        investment_horizon_years=5,
+        liquidity_need=LiquidityNeed.MEDIUM,
+        emergency_fund=True,
+        financial_commitments_gbp=10_000,
+        loss_tolerance_percent=10,
+    )
+
+    capacity, consistency, suitability = run_full_assessment(profile)
+
+    explanation = generate_explanation(
+        profile,
+        capacity,
+        consistency,
+        suitability,
+    )
+
+    assert "can proceed" in explanation.summary
+    assert "medium" in explanation.summary
+    assert explanation.conflicts == []
+    assert explanation.next_action is not None
+
+
+def test_conflicting_assessment_explains_review_requirement():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.HIGH,
+        investment_horizon_years=1,
+        liquidity_need=LiquidityNeed.HIGH,
+        emergency_fund=False,
+        financial_commitments_gbp=40_000,
+        loss_tolerance_percent=2,
+    )
+
+    capacity, consistency, suitability = run_full_assessment(profile)
+
+    explanation = generate_explanation(
+        profile,
+        capacity,
+        consistency,
+        suitability,
+    )
+
+    assert "requires review" in explanation.summary
+    assert len(explanation.conflicts) > 0
+    assert explanation.next_action is not None
+
+
+def test_explanation_preserves_capacity_warnings():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.LOW,
+        investment_horizon_years=2,
+        liquidity_need=LiquidityNeed.HIGH,
+        emergency_fund=False,
+        loss_tolerance_percent=2,
+    )
+
+    capacity, consistency, suitability = run_full_assessment(profile)
+
+    explanation = generate_explanation(
+        profile,
+        capacity,
+        consistency,
+        suitability,
+    )
+
+    assert "Short investment horizon." in explanation.warnings
+    assert "High liquidity requirement." in explanation.warnings
+    assert "No emergency fund reported." in explanation.warnings
+
+
+def test_explanation_does_not_override_lower_customer_tolerance():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.LOW,
+        investment_horizon_years=15,
+        liquidity_need=LiquidityNeed.LOW,
+        emergency_fund=True,
+        financial_commitments_gbp=5_000,
+        loss_tolerance_percent=25,
+    )
+
+    capacity, consistency, suitability = run_full_assessment(profile)
+
+    explanation = generate_explanation(
+        profile,
+        capacity,
+        consistency,
+        suitability,
+    )
+
+    assert capacity.level == RiskLevel.HIGH
+    assert suitability.effective_risk_level == RiskLevel.LOW
+    assert "low" in explanation.summary
+
+
+def test_explanation_removes_duplicate_warnings():
+    profile = make_profile(
+        stated_risk_tolerance=RiskLevel.LOW,
+        investment_horizon_years=2,
+        liquidity_need=LiquidityNeed.HIGH,
+        emergency_fund=False,
+        loss_tolerance_percent=2,
+    )
+
+    capacity, consistency, suitability = run_full_assessment(profile)
+
+    explanation = generate_explanation(
+        profile,
+        capacity,
+        consistency,
+        suitability,
+    )
+
+    assert len(explanation.warnings) == len(set(explanation.warnings))
