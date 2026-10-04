@@ -28,6 +28,9 @@ class AnswerRecord:
     clarification_turns: int = 0
     independent_flags: set[str] = field(default_factory=set)
     confirmed_version: int | None = None
+    # Supported context is reviewed with the option; raw financial amounts are
+    # never copied into the saved profile. Missing context is not inferred.
+    context_details: dict[str, str] = field(default_factory=dict)
 
 
 @dataclass

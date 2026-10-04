@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from ai.conversation_factory import build_conversation_engine
+from ai.conversation_factory import build_legacy_comparison_engine as build_conversation_engine
 from ai.conversation_state import AnswerStatus
 from ai.d12_adapter import D12Resolution
 

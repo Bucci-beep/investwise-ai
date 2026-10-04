@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -63,12 +64,16 @@ class BusinessSpec:
         raise KeyError(f"{option_id} is not valid for {question_id}")
 
     def match_exact_choice(self, question_id: str, text: str) -> OptionDefinition | None:
-        normalised = " ".join(text.strip().lower().split())
+        def normalise(value: str) -> str:
+            value = value.lower().replace("’", "'")
+            value = re.sub(r"[–—−]", "-", value)
+            return " ".join(value.strip().rstrip(".! ").split())
+        normalised = normalise(text)
 
         for option in self.question(question_id).options:
             if normalised == option.id.lower():
                 return option
-            if normalised == " ".join(option.label.lower().split()):
+            if normalised == normalise(option.label):
                 return option
 
         return None

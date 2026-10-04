@@ -86,8 +86,17 @@ def build_d12_interpreter() -> BoundedQuestionInterpreter:
     )
 
 
-def build_conversation_engine() -> ConversationEngine:
+def build_conversation_engine(*, interpretation_mode: str = "ml") -> ConversationEngine:
     spec = BusinessSpec.load(BUSINESS_SPEC)
+
+    if interpretation_mode == "ml":
+        from ai.all_question_ml import build_all_question_ml_resolver
+        resolver = build_all_question_ml_resolver(spec, ROOT / "data/nlp/all_questions")
+        engine = ConversationEngine(business_spec=spec, question_resolver=resolver)
+        engine.interpretation_mode = "ml"
+        return engine
+    if interpretation_mode != "legacy":
+        raise ValueError("interpretation_mode must be ml or legacy")
 
     d12_interpreter = build_d12_interpreter()
 
@@ -95,10 +104,17 @@ def build_conversation_engine() -> ConversationEngine:
         d12_interpreter
     )
 
-    return ConversationEngine(
+    engine = ConversationEngine(
         business_spec=spec,
         d12_resolver=d12_resolver,
     )
+    engine.interpretation_mode = "legacy"
+    return engine
+
+
+def build_legacy_comparison_engine() -> ConversationEngine:
+    """Archived hybrid for policy regression/comparison; not the app default."""
+    return build_conversation_engine(interpretation_mode="legacy")
 
 
 if __name__ == "__main__":

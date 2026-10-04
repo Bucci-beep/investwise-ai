@@ -128,6 +128,28 @@ def test_d12_all_savings_keeps_resolver_answer_plus_dependency_flag():
     assert "same_money_dependency" in engine.state.active_holds
 
 
+def test_rejecting_d12_candidate_clears_its_dependency_hold():
+    resolver = FakeD12Resolver(
+        D12Resolution(candidate_option_id="D12_SHORT", ordinary_bucket="Clarity")
+    )
+    engine = ConversationEngine(build_minimal_spec(), d12_resolver=resolver)
+    advance_to(engine, "D12")
+
+    candidate = engine.submit_answer("This is all my savings and I may need it next year")
+    assert candidate["action"] == "confirm"
+    assert "same_money_dependency" in engine.state.active_holds
+
+    rejected = engine.confirm_current(False)
+    assert rejected["action"] == "reask"
+    assert "same_money_dependency" not in engine.state.active_holds
+    assert not engine.state.answers["D12"].independent_flags
+
+    replacement = engine.submit_answer("D12_MEDIUM")
+    assert replacement["action"] == "confirm"
+    engine.confirm_current(True)
+    assert "same_money_dependency" not in engine.state.active_holds
+
+
 def test_safety_runs_before_d12_ml():
     resolver = FakeD12Resolver(
         D12Resolution(candidate_option_id="D12_LONG", ordinary_bucket="Clarity")
@@ -140,6 +162,20 @@ def test_safety_runs_before_d12_ml():
     assert resolver.calls == 0
 
 
+def test_goodbye_world_safety_phrase_runs_before_d12_ml():
+    resolver = FakeD12Resolver(
+        D12Resolution(candidate_option_id="D12_LONG", ordinary_bucket="Clarity")
+    )
+    engine = ConversationEngine(build_minimal_spec(), d12_resolver=resolver)
+    advance_to(engine, "D12")
+
+    result = engine.submit_answer("I'm not going to make it, goodbye world")
+    assert result["action"] == "safety_stop"
+    assert result["simulated_handoff"] is True
+    assert resolver.calls == 0
+    assert engine.state.stopped_for_safety is True
+
+
 def test_user_undecided_never_defaults_to_middle():
     engine = ConversationEngine(build_minimal_spec())
     advance_to(engine, "D14")
@@ -148,6 +184,142 @@ def test_user_undecided_never_defaults_to_middle():
     assert result["action"] == "clarify"
     assert engine.state.answers["D14"].selected_option_id is None
     assert engine.state.answers["D14"].candidate_option_id is None
+
+
+@pytest.mark.parametrize(
+    "text",
+    [
+        "I am not sure when I will need any of it",
+        "I'm not sure which option fits",
+        "I do not know when I will need it",
+        "I cannot say when I will need the money",
+        "I understand but cannot answer yet",
+    ],
+)
+def test_explicit_natural_uncertainty_cannot_become_a_d12_candidate(text):
+    resolver = FakeD12Resolver(
+        D12Resolution(candidate_option_id="D12_LONG", ordinary_bucket="Clarity")
+    )
+    engine = ConversationEngine(build_minimal_spec(), d12_resolver=resolver)
+    advance_to(engine, "D12")
+
+    result = engine.submit_answer(text)
+    assert result["action"] == "clarify"
+    assert result["bucket"] == "Undecided"
+    assert resolver.calls == 0
+    assert engine.state.answers["D12"].candidate_option_id is None
+    assert engine.state.answers["D12"].selected_option_id is None
+
+
+@pytest.mark.parametrize("text", ["help", "I need help", "Can you help me?", "Explain this question", "What does this mean?"])
+def test_bare_help_does_not_consume_financial_clarification(text):
+    resolver = FakeD12Resolver(D12Resolution(model_uncertain=True))
+    engine = ConversationEngine(build_minimal_spec(), d12_resolver=resolver)
+    advance_to(engine, "D12")
+    engine.submit_answer("not sure")
+    record = engine.state.answers["D12"]
+    previous_version = engine.state.profile_version
+
+    result = engine.submit_answer(text)
+    assert result["action"] == "explain"
+    assert result["flag"] == "help_request"
+    assert result["clarification_turns"] == 1
+    assert record.raw_text == "not sure"
+    assert record.candidate_option_id is None
+    assert record.selected_option_id is None
+    assert resolver.calls == 0
+    assert engine.state.profile_version == previous_version
+
+
+def test_pause_resume_preserves_candidate_and_confirmed_progress():
+    engine = ConversationEngine(build_minimal_spec())
+    advance_to(engine, "D2")
+    engine.submit_answer("D2_A")
+    record = engine.state.answers["D2"]
+    version = engine.state.profile_version
+
+    assert engine.submit_answer("Please pause for now")["action"] == "pause"
+    assert engine.confirm_current(True)["action"] == "paused"
+    assert engine.submit_answer("D2_A")["action"] == "paused"
+    assert record.raw_text == "D2_A"
+    resumed = engine.submit_answer("I'm ready to continue")
+    assert resumed["action"] == "resume"
+    assert resumed["candidate_option_id"] == "D2_A"
+    assert engine.state.current_question_id == "D2"
+    assert engine.state.answers["D1"].selected_option_id == "D1_WEALTH"
+    assert engine.state.profile_version == version
+    assert engine.confirm_current(True)["action"] == "continue"
+
+
+def test_pause_resume_does_not_reset_clarification_budget():
+    engine = ConversationEngine(build_minimal_spec())
+    engine.submit_answer("not sure")
+    engine.submit_answer("not sure")
+    assert engine.submit_answer("can we pause?")["action"] == "pause"
+    assert engine.resume()["clarification_turns"] == 2
+    assert engine.submit_answer("not sure")["action"] == "finish_incomplete_or_pause"
+
+
+def test_stop_working_is_financial_context_not_a_pause_command():
+    resolver = FakeD12Resolver(
+        D12Resolution(candidate_option_id="D12_MEDIUM", ordinary_bucket="Clarity")
+    )
+    engine = ConversationEngine(build_minimal_spec(), d12_resolver=resolver)
+    advance_to(engine, "D12")
+    result = engine.submit_answer("I may need it in seven years when I stop working")
+    assert result["action"] == "confirm"
+    assert result["candidate_option_id"] == "D12_MEDIUM"
+    assert resolver.calls == 1
+    assert engine.state.paused is False
+
+
+def test_safety_stop_still_applies_during_pause_and_cannot_resume():
+    engine = ConversationEngine(build_minimal_spec())
+    engine.submit_answer("pause")
+    assert engine.submit_answer("goodbye world")["action"] == "safety_stop"
+    assert engine.resume()["action"] == "safety_stop"
+    assert engine.state.stopped_for_safety is True
+
+
+def test_final_review_pause_preserves_answers_and_blocks_save_until_resume():
+    engine = ConversationEngine(build_minimal_spec())
+    complete_with_first_options(engine)
+    engine.confirm_final_accuracy(True)
+    engine.give_save_consent(True)
+    previous_answers = engine.final_playback()["answers"]
+    version = engine.state.profile_version
+
+    assert engine.submit_answer("pause")["action"] == "pause"
+    assert engine.save()["saved"] is False
+    assert engine.final_playback()["answers"] == previous_answers
+    assert engine.resume()["action"] == "final_review"
+    assert engine.state.profile_version == version
+    assert engine.completion_report()["eligible_for_final_accuracy_confirmation"] is True
+
+
+def test_final_review_help_does_not_change_answers_or_consent():
+    engine = ConversationEngine(build_minimal_spec())
+    complete_with_first_options(engine)
+    engine.confirm_final_accuracy(True)
+    previous = engine.final_playback()
+
+    result = engine.submit_answer("I need help")
+    assert result["action"] == "explain"
+    assert result["question_id"] is None
+    assert engine.final_playback() == previous
+    assert engine.state.final_accuracy_version == engine.state.profile_version
+
+
+def test_final_review_safety_stop_blocks_consent_and_save():
+    engine = ConversationEngine(build_minimal_spec())
+    complete_with_first_options(engine)
+    engine.confirm_final_accuracy(True)
+    engine.give_save_consent(True)
+
+    assert engine.submit_answer("goodbye world")["action"] == "safety_stop"
+    assert engine.confirm_final_accuracy(True)["accepted"] is False
+    assert engine.save()["saved"] is False
+    assert engine.store.saved_profiles == []
 
 
 def test_three_clarification_limit():

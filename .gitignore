@@ -42,3 +42,7 @@ __pycache__/
 
 # macOS
 .DS_Store
+
+# Local conversation exports and browser screenshots are not publication data.
+/work/**/previous-disconnected-chat.*
+/work/**/*.png

@@ -79,25 +79,44 @@ def _extract_year_values(text: str) -> list[float]:
     values: list[float] = []
     consumed_spans: list[tuple[int, int]] = []
 
+    unit_divisors = {"year": 1.0, "month": 12.0, "week": 365.25 / 7.0, "day": 365.25}
+
+    def years(value: float, unit: str) -> float:
+        return value / unit_divisors[unit.rstrip("s")]
+
+    # A smaller-unit qualifier is part of the same duration, e.g. three
+    # years plus one day. Do not reduce it to exactly three years, or treat
+    # the day as a second competing horizon.
+    compound_pattern = re.compile(
+        rf"\b({number_token})\s*(years?|months?|weeks?)"
+        rf"\s*(?:plus|and|\+)\s*({number_token})\s*(months?|weeks?|days?)\b"
+    )
+    for match in compound_pattern.finditer(normalised):
+        first_unit, second_unit = match.group(2), match.group(4)
+        if unit_divisors[first_unit.rstrip("s")] >= unit_divisors[second_unit.rstrip("s")]:
+            continue
+        values.append(years(_parse_number(match.group(1)), first_unit) + years(_parse_number(match.group(3)), second_unit))
+        consumed_spans.append(match.span())
+
     pair_pattern = re.compile(
         rf"\b(?:between\s+)?"
         rf"({number_token})"
-        rf"\s+(?:and|or|to|through)\s+"
+        rf"(?:\s+(?:and|or|to|through)\s+|\s*[-–—]\s*)"
         rf"({number_token})"
-        rf"\s*(years?|months?)\b"
+        rf"\s*(years?|months?|weeks?|days?)\b"
     )
 
     for match in pair_pattern.finditer(normalised):
+        if any(match.start() >= start and match.end() <= end for start, end in consumed_spans):
+            continue
         first = _parse_number(match.group(1))
         second = _parse_number(match.group(2))
         unit = match.group(3)
 
-        divisor = 12.0 if unit.startswith("month") else 1.0
-
         values.extend(
             [
-                first / divisor,
-                second / divisor,
+                years(first, unit),
+                years(second, unit),
             ]
         )
 
@@ -114,7 +133,7 @@ def _extract_year_values(text: str) -> list[float]:
         )
 
     single_pattern = re.compile(
-        rf"\b({number_token})\s*(years?|months?)\b"
+        rf"\b({number_token})\s*(years?|months?|weeks?|days?)\b"
     )
 
     for match in single_pattern.finditer(normalised):
@@ -124,10 +143,7 @@ def _extract_year_values(text: str) -> list[float]:
         value = _parse_number(match.group(1))
         unit = match.group(2)
 
-        if unit.startswith("month"):
-            value /= 12.0
-
-        values.append(value)
+        values.append(years(value, unit))
 
     if re.search(r"\bnext year\b", normalised):
         values.append(1.0)
@@ -175,3 +191,53 @@ def map_explicit_horizon(
         durations_years=tuple(values),
         reason="explicit durations map to one D12 category",
     )
+
+
+def extract_supported_need_clause(text: str) -> str | None:
+    """Separate an explicit actual need from an ideal or superseded horizon.
+
+    This is premise separation, not a rule to choose the smallest number.
+    Two competing actual needs or a conditional/unknown need remain intact
+    for ordinary clarification. The caller retains the original full reply.
+    """
+    normalised = text.replace("’", "'")
+    need = re.compile(
+        r"\b(?:earliest(?: realistic)? need|first realistic need|"
+        r"i (?:(?:will|realistically|actually|now|may realistically) )?need|"
+        r"must (?:use|withdraw)|have to (?:use|withdraw))\b", re.I,
+    )
+    uncertainty = re.compile(
+        r"\b(?:if|unless|maybe|perhaps|possibly|not sure|don't know|do not know|"
+        r"cannot determine|can't determine|depends|depending|either|or after)\b", re.I,
+    )
+    goal = re.compile(r"\b(?:ideal\w*|want|would like|hope|wish|aim|goal|plan|intend)\b", re.I)
+    correction = re.search(r"\b(?:correction|actually|i meant|i mean|replace|instead of|rather than)\b", normalised, re.I)
+    clauses = [
+        part.strip(" ,;.") for part in re.split(
+            r"\b(?:but|however|although|even though|yet|while)\b|[.!?;]\s*", normalised, flags=re.I,
+        ) if part.strip(" ,;.")
+    ]
+    actual = [part for part in clauses if need.search(part)]
+    if len(actual) != 1:
+        return None
+    clause = actual[0]
+    if uncertainty.search(clause):
+        return None
+    excluded = [part for part in clauses if part != clause]
+    if correction:
+        # Remove only an expressly superseded duration after the supported
+        # need, rather than ignoring additional actual timing statements.
+        clause = re.split(r"\b(?:replace|instead of|rather than)\b", clause, maxsplit=1, flags=re.I)[0].strip(" ,;.")
+        excluded_is_superseded = all(
+            goal.search(part) or re.search(r"\b(?:replace|instead of|rather than)\b", part, re.I)
+            or not _extract_year_values(part)
+            for part in excluded
+        )
+        if not excluded_is_superseded:
+            return None
+    elif not excluded or not any(goal.search(part) and _extract_year_values(part) for part in excluded):
+        return None
+    # A need clause spanning financial boundaries is still unresolved.
+    if map_explicit_horizon(clause).status != HorizonMappingStatus.MAPPED:
+        return None
+    return clause

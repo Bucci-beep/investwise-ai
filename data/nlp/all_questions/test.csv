@@ -1,0 +1,205 @@
+id,question_id,text,bucket,option_id,source,group_id,split
+SYNTH-V1-D1-TEST-001,D1,"uh, just wealth really. THIS pot has no named thing I need to buy.",clarity,D1_WEALTH,fictional_authored_2026-10-04_v1,D1:test:D1_WEALTH:correction_boundary,test
+SYNTH-V1-D1-TEST-002,D1,Correction: this amount has no retirement or purchase purpose. I mean general wealth building.,clarity,D1_WEALTH,fictional_authored_2026-10-04_v1,D1:test:D1_WEALTH:correction_boundary,test
+SYNTH-V1-D1-TEST-003,D1,"house deposit, yep; this is the pot for buying somewhere to live.",clarity,D1_HOME,fictional_authored_2026-10-04_v1,D1:test:D1_HOME:correction_boundary,test
+SYNTH-V1-D1-TEST-004,D1,"I said car before, but I meant this money is for buying a home.",clarity,D1_HOME,fictional_authored_2026-10-04_v1,D1:test:D1_HOME:correction_boundary,test
+SYNTH-V1-D1-TEST-005,D1,new car money. That's what this whole pot is for.,clarity,D1_PURCHASE,fictional_authored_2026-10-04_v1,D1:test:D1_PURCHASE:correction_boundary,test
+SYNTH-V1-D1-TEST-006,D1,"To clarify, it's for paying a planned school-fees bill, not buying a home.",clarity,D1_PURCHASE,fictional_authored_2026-10-04_v1,D1:test:D1_PURCHASE:correction_boundary,test
+SYNTH-V1-D1-TEST-007,D1,"retirement pot, that's it. Growing wealth FOR retirement.",clarity,D1_RETIREMENT,fictional_authored_2026-10-04_v1,D1:test:D1_RETIREMENT:correction_boundary,test
+SYNTH-V1-D1-TEST-008,D1,I need to correct the purpose: this amount is reserved for retirement.,clarity,D1_RETIREMENT,fictional_authored_2026-10-04_v1,D1:test:D1_RETIREMENT:correction_boundary,test
+SYNTH-V1-D1-TEST-009,D1,"it's the bills pot: food, rent, electricity, the regular stuff.",clarity,D1_LIVING_COSTS,fictional_authored_2026-10-04_v1,D1:test:D1_LIVING_COSTS:correction_boundary,test
+SYNTH-V1-D1-TEST-010,D1,"Sorry, I meant ongoing living expenses for this money, not emergencies.",clarity,D1_LIVING_COSTS,fictional_authored_2026-10-04_v1,D1:test:D1_LIVING_COSTS:correction_boundary,test
+SYNTH-V1-D1-TEST-011,D1,rainy day fund... the whole pot is for unexpected costs.,clarity,D1_EMERGENCIES,fictional_authored_2026-10-04_v1,D1:test:D1_EMERGENCIES:correction_boundary,test
+SYNTH-V1-D1-TEST-012,D1,Please replace my previous answer with emergencies; that's the purpose of this amount.,clarity,D1_EMERGENCIES,fictional_authored_2026-10-04_v1,D1:test:D1_EMERGENCIES:correction_boundary,test
+SYNTH-V1-D1-TEST-013,D1,other: funding the neighbourhood food-bank project. That is this pot's purpose.,clarity,D1_OTHER,fictional_authored_2026-10-04_v1,D1:test:D1_OTHER:correction_boundary,test
+SYNTH-V1-D1-TEST-014,D1,I mean a named purpose here: starting my own repair business with this money.,clarity,D1_OTHER,fictional_authored_2026-10-04_v1,D1:test:D1_OTHER:correction_boundary,test
+SYNTH-V1-D1-TEST-015,D1,"two bits: house deposit in one, unexpected-cost reserve in the other. Both included.",clarity,D1_MULTIPLE,fictional_authored_2026-10-04_v1,D1:test:D1_MULTIPLE:correction_boundary,test
+SYNTH-V1-D1-TEST-016,D1,I wasn't choosing between goals: one included portion is for retirement; the other pays ongoing bills.,clarity,D1_MULTIPLE,fictional_authored_2026-10-04_v1,D1:test:D1_MULTIPLE:correction_boundary,test
+SYNTH-V1-D2-TEST-001,D2,"17 rn, not eighteen yet.",clarity,D2_UNDER18,fictional_authored_2026-10-04_v1,D2:test:D2_UNDER18:correction_boundary,test
+SYNTH-V1-D2-TEST-002,D2,"Correction, I'm sixteen today, not twenty-six.",clarity,D2_UNDER18,fictional_authored_2026-10-04_v1,D2:test:D2_UNDER18:correction_boundary,test
+SYNTH-V1-D2-TEST-003,D2,"34, yep still thirty-four today.",clarity,D2_AGE18_34,fictional_authored_2026-10-04_v1,D2:test:D2_AGE18_34:correction_boundary,test
+SYNTH-V1-D2-TEST-004,D2,"oops, 28 is MY age. Dad is sixty.",clarity,D2_AGE18_34,fictional_authored_2026-10-04_v1,D2:test:D2_AGE18_34:correction_boundary,test
+SYNTH-V1-D2-TEST-005,D2,35 today. The birthday just happened.,clarity,D2_AGE35_49,fictional_authored_2026-10-04_v1,D2:test:D2_AGE35_49:correction_boundary,test
+SYNTH-V1-D2-TEST-006,D2,"Correction to the number: I am 47, not 74.",clarity,D2_AGE35_49,fictional_authored_2026-10-04_v1,D2:test:D2_AGE35_49:correction_boundary,test
+SYNTH-V1-D2-TEST-007,D2,"50 exactly, that's my age now.",clarity,D2_AGE50_64,fictional_authored_2026-10-04_v1,D2:test:D2_AGE50_64:correction_boundary,test
+SYNTH-V1-D2-TEST-008,D2,Not 65 yet; I'm 63. Sorry for the typo.,clarity,D2_AGE50_64,fictional_authored_2026-10-04_v1,D2:test:D2_AGE50_64:correction_boundary,test
+SYNTH-V1-D2-TEST-009,D2,65 today. Exactly sixty-five.,clarity,D2_AGE65_PLUS,fictional_authored_2026-10-04_v1,D2:test:D2_AGE65_PLUS:correction_boundary,test
+SYNTH-V1-D2-TEST-010,D2,"I mistyped before; I'm 67, not 57.",clarity,D2_AGE65_PLUS,fictional_authored_2026-10-04_v1,D2:test:D2_AGE65_PLUS:correction_boundary,test
+SYNTH-V1-D3-TEST-001,D3,"zero currently. The 5k was what I WISH to save, not money I have.",clarity,D3_NO_EXISTING_POT,fictional_authored_2026-10-04_v1,D3:test:D3_NO_EXISTING_POT:correction_boundary,test
+SYNTH-V1-D3-TEST-002,D3,Correction: no existing money is identified for this conversation yet.,clarity,D3_NO_EXISTING_POT,fictional_authored_2026-10-04_v1,D3:test:D3_NO_EXISTING_POT:correction_boundary,test
+SYNTH-V1-D3-TEST-003,D3,"£999.99 already there, and that's the whole included amount.",clarity,D3_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D3:test:D3_POSITIVE_LT1000:correction_boundary,test
+SYNTH-V1-D3-TEST-004,D3,"not a target, current pot: EUR 640. that's what I mean.",clarity,D3_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D3:test:D3_POSITIVE_LT1000:correction_boundary,test
+SYNTH-V1-D3-TEST-005,D3,"£1,000 exactly in the agreed pot now.",clarity,D3_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D3:test:D3_FROM1000_LT5000:correction_boundary,test
+SYNTH-V1-D3-TEST-006,D3,"existing EUR 4999.50; this is current money, not an expected payment.",clarity,D3_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D3:test:D3_FROM1000_LT5000:correction_boundary,test
+SYNTH-V1-D3-TEST-007,D3,"currently £19,999.99 total for this pot.",clarity,D3_FROM5000_LT20000,fictional_authored_2026-10-04_v1,D3:test:D3_FROM5000_LT20000:correction_boundary,test
+SYNTH-V1-D3-TEST-008,D3,"£5,000 already saved. Sorry, I added an extra zero earlier.",clarity,D3_FROM5000_LT20000,fictional_authored_2026-10-04_v1,D3:test:D3_FROM5000_LT20000:correction_boundary,test
+SYNTH-V1-D3-TEST-009,D3,"£20,000 exactly, existing money, all included.",clarity,D3_FROM20000_LT50000,fictional_authored_2026-10-04_v1,D3:test:D3_FROM20000_LT50000:correction_boundary,test
+SYNTH-V1-D3-TEST-010,D3,"current pot is EUR 49,999.99. not fifty thousand yet.",clarity,D3_FROM20000_LT50000,fictional_authored_2026-10-04_v1,D3:test:D3_FROM20000_LT50000:correction_boundary,test
+SYNTH-V1-D3-TEST-011,D3,"£50,000, exactly, already mine and in this pot.",clarity,D3_FROM50000_PLUS,fictional_authored_2026-10-04_v1,D3:test:D3_FROM50000_PLUS:correction_boundary,test
+SYNTH-V1-D3-TEST-012,D3,"oops: present amount is GBP 150,000. The earlier 15,000 was a typo.",clarity,D3_FROM50000_PLUS,fictional_authored_2026-10-04_v1,D3:test:D3_FROM50000_PLUS:correction_boundary,test
+SYNTH-V1-D4-TEST-001,D4,"current account. All of THIS money, not my other savings.",clarity,D4_EASY_ACCESS,fictional_authored_2026-10-04_v1,D4:test:D4_EASY_ACCESS:correction_boundary,test
+SYNTH-V1-D4-TEST-002,D4,I meant instant-access savings for this pot's current location.,clarity,D4_EASY_ACCESS,fictional_authored_2026-10-04_v1,D4:test:D4_EASY_ACCESS:correction_boundary,test
+SYNTH-V1-D4-TEST-003,D4,"fixed deposit, still there. withdrawals restricted.",clarity,D4_FIXED_TERM,fictional_authored_2026-10-04_v1,D4:test:D4_FIXED_TERM:correction_boundary,test
+SYNTH-V1-D4-TEST-004,D4,Correction to the location: the included pot is in a term savings account.,clarity,D4_FIXED_TERM,fictional_authored_2026-10-04_v1,D4:test:D4_FIXED_TERM:correction_boundary,test
+SYNTH-V1-D4-TEST-005,D4,"ordinary share account, not inside a pension. That's the current location.",clarity,D4_INVESTMENTS,fictional_authored_2026-10-04_v1,D4:test:D4_INVESTMENTS:correction_boundary,test
+SYNTH-V1-D4-TEST-006,D4,I meant the included pot is in directly held funds; the pension is separate and excluded.,clarity,D4_INVESTMENTS,fictional_authored_2026-10-04_v1,D4:test:D4_INVESTMENTS:correction_boundary,test
+SYNTH-V1-D4-TEST-007,D4,pension pot; the ETF is INSIDE that same pension. only one holding location.,clarity,D4_PENSION_SAVINGS,fictional_authored_2026-10-04_v1,D4:test:D4_PENSION_SAVINGS:correction_boundary,test
+SYNTH-V1-D4-TEST-008,D4,"Correction: accumulated pension savings, not a monthly pension payment.",clarity,D4_PENSION_SAVINGS,fictional_authored_2026-10-04_v1,D4:test:D4_PENSION_SAVINGS:correction_boundary,test
+SYNTH-V1-D4-TEST-009,D4,"cash, as actual notes. That's where this amount is now.",clarity,D4_OTHER,fictional_authored_2026-10-04_v1,D4:test:D4_OTHER:correction_boundary,test
+SYNTH-V1-D4-TEST-010,D4,Other place: my named Revolut payment wallet balance. That's the included pot.,clarity,D4_OTHER,fictional_authored_2026-10-04_v1,D4:test:D4_OTHER:correction_boundary,test
+SYNTH-V1-D4-TEST-011,D4,two places: pension savings AND a separate cash box. both in scope.,clarity,D4_MIXED,fictional_authored_2026-10-04_v1,D4:test:D4_MIXED:correction_boundary,test
+SYNTH-V1-D4-TEST-012,D4,Not the pension's shares twice: pension money plus a separate non-pension share account are included.,clarity,D4_MIXED,fictional_authored_2026-10-04_v1,D4:test:D4_MIXED:correction_boundary,test
+SYNTH-V1-D5-TEST-001,D5,"wages pay the regular bills now, that's my source.",clarity,D5_SALARY,fictional_authored_2026-10-04_v1,D5:test:D5_SALARY:correction_boundary,test
+SYNTH-V1-D5-TEST-002,D5,Correction: salary funds my living costs; the savings are for something else.,clarity,D5_SALARY,fictional_authored_2026-10-04_v1,D5:test:D5_SALARY:correction_boundary,test
+SYNTH-V1-D5-TEST-003,D5,freelance work money pays my food and rent now.,clarity,D5_SELF_EMPLOYMENT,fictional_authored_2026-10-04_v1,D5:test:D5_SELF_EMPLOYMENT:correction_boundary,test
+SYNTH-V1-D5-TEST-004,D5,"I meant self-employed earnings fund the bills, not an employee salary.",clarity,D5_SELF_EMPLOYMENT,fictional_authored_2026-10-04_v1,D5:test:D5_SELF_EMPLOYMENT:correction_boundary,test
+SYNTH-V1-D5-TEST-005,D5,pension PAYMENT pays the bills. Not money still held in the pension.,clarity,D5_PENSION_PAYMENTS,fictional_authored_2026-10-04_v1,D5:test:D5_PENSION_PAYMENTS:correction_boundary,test
+SYNTH-V1-D5-TEST-006,D5,Correction: I live on my monthly pension receipts now.,clarity,D5_PENSION_PAYMENTS,fictional_authored_2026-10-04_v1,D5:test:D5_PENSION_PAYMENTS:correction_boundary,test
+SYNTH-V1-D5-TEST-007,D5,benefits plus regular family help pay my living costs. those two within the same source category.,clarity,D5_BENEFITS_SUPPORT,fictional_authored_2026-10-04_v1,D5:test:D5_BENEFITS_SUPPORT:correction_boundary,test
+SYNTH-V1-D5-TEST-008,D5,For the bills now: financial support from my aunt every month.,clarity,D5_BENEFITS_SUPPORT,fictional_authored_2026-10-04_v1,D5:test:D5_BENEFITS_SUPPORT:correction_boundary,test
+SYNTH-V1-D5-TEST-009,D5,drawing on savings for the bills now. that's the source I use.,clarity,D5_WITHDRAWALS,fictional_authored_2026-10-04_v1,D5:test:D5_WITHDRAWALS:correction_boundary,test
+SYNTH-V1-D5-TEST-010,D5,"Correction, current costs come from investment withdrawals, not from pension payments.",clarity,D5_WITHDRAWALS,fictional_authored_2026-10-04_v1,D5:test:D5_WITHDRAWALS:correction_boundary,test
+SYNTH-V1-D5-TEST-011,D5,tenant rent comes in regularly and pays my living costs now.,clarity,D5_OTHER_REGULAR,fictional_authored_2026-10-04_v1,D5:test:D5_OTHER_REGULAR:correction_boundary,test
+SYNTH-V1-D5-TEST-012,D5,Other regular source: patent royalties. I use those to fund the household bills.,clarity,D5_OTHER_REGULAR,fictional_authored_2026-10-04_v1,D5:test:D5_OTHER_REGULAR:correction_boundary,test
+SYNTH-V1-D5-TEST-013,D5,none regularly. no recurring source for the bills now.,clarity,D5_NO_REGULAR,fictional_authored_2026-10-04_v1,D5:test:D5_NO_REGULAR:correction_boundary,test
+SYNTH-V1-D5-TEST-014,D5,Correction: there is no regular living-cost funding source at present.,clarity,D5_NO_REGULAR,fictional_authored_2026-10-04_v1,D5:test:D5_NO_REGULAR:correction_boundary,test
+SYNTH-V1-D5-TEST-015,D5,salary AND pension payments pay living costs now. two sources.,clarity,D5_MULTIPLE,fictional_authored_2026-10-04_v1,D5:test:D5_MULTIPLE:correction_boundary,test
+SYNTH-V1-D5-TEST-016,D5,I meant both rental income and savings withdrawals fund my current bills; both apply.,clarity,D5_MULTIPLE,fictional_authored_2026-10-04_v1,D5:test:D5_MULTIPLE:correction_boundary,test
+SYNTH-V1-D6-TEST-001,D6,"whole 12 months, yes: ALL essential costs and repayments on time from separate accessible money.",clarity,D6_ALL,fictional_authored_2026-10-04_v1,D6:test:D6_ALL:correction_boundary,test
+SYNTH-V1-D6-TEST-002,D6,Correction: exclude this pot. Other usable resources pay every necessary cost when due throughout the year.,clarity,D6_ALL,fictional_authored_2026-10-04_v1,D6:test:D6_ALL:correction_boundary,test
+SYNTH-V1-D6-TEST-003,D6,"12 months without it: separate usable money pays SOME necessary bills on time, not all.",clarity,D6_SOME,fictional_authored_2026-10-04_v1,D6:test:D6_SOME:correction_boundary,test
+SYNTH-V1-D6-TEST-004,D6,"I meant partial coverage for the whole year, using other accessible funds; there is still a shortfall.",clarity,D6_SOME,fictional_authored_2026-10-04_v1,D6:test:D6_SOME:correction_boundary,test
+SYNTH-V1-D6-TEST-005,D6,none for that entire 12 months: no OTHER usable money pays any necessary cost.,clarity,D6_NONE,fictional_authored_2026-10-04_v1,D6:test:D6_NONE:correction_boundary,test
+SYNTH-V1-D6-TEST-006,D6,Correction: separate resources cover zero essential bills or repayments through the year without this pot.,clarity,D6_NONE,fictional_authored_2026-10-04_v1,D6:test:D6_NONE:correction_boundary,test
+SYNTH-V1-D7-TEST-001,D7,none due. I mean NO repayments currently required.,clarity,D7_NO_REQUIRED,fictional_authored_2026-10-04_v1,D7:test:D7_NO_REQUIRED:correction_boundary,test
+SYNTH-V1-D7-TEST-002,D7,"Correction: a balance exists, but there are no required repayments now.",clarity,D7_NO_REQUIRED,fictional_authored_2026-10-04_v1,D7:test:D7_NO_REQUIRED:correction_boundary,test
+SYNTH-V1-D7-TEST-003,D7,"all due payments made, no difficulty doing it.",clarity,D7_KEEPING_UP_EASILY,fictional_authored_2026-10-04_v1,D7:test:D7_KEEPING_UP_EASILY:correction_boundary,test
+SYNTH-V1-D7-TEST-004,D7,I meant keeping up EASILY with every required repayment now.,clarity,D7_KEEPING_UP_EASILY,fictional_authored_2026-10-04_v1,D7:test:D7_KEEPING_UP_EASILY:correction_boundary,test
+SYNTH-V1-D7-TEST-005,D7,"paid all of them, yep, but it's a struggle each time.",clarity,D7_KEEPING_UP_DIFFICULT,fictional_authored_2026-10-04_v1,D7:test:D7_KEEPING_UP_DIFFICULT:correction_boundary,test
+SYNTH-V1-D7-TEST-006,D7,"Correction: keeping up, WITH difficulty. No required instalment is missed.",clarity,D7_KEEPING_UP_DIFFICULT,fictional_authored_2026-10-04_v1,D7:test:D7_KEEPING_UP_DIFFICULT:correction_boundary,test
+SYNTH-V1-D7-TEST-007,D7,behind now. a required payment is overdue.,clarity,D7_FALLING_BEHIND,fictional_authored_2026-10-04_v1,D7:test:D7_FALLING_BEHIND:correction_boundary,test
+SYNTH-V1-D7-TEST-008,D7,I meant some due loan repayments are late; I am not keeping up with all of them.,clarity,D7_FALLING_BEHIND,fictional_authored_2026-10-04_v1,D7:test:D7_FALLING_BEHIND:correction_boundary,test
+SYNTH-V1-D8-TEST-001,D8,"none personally, ever. Just ordinary savings so far.",clarity,D8_NONE,fictional_authored_2026-10-04_v1,D8:test:D8_NONE:correction_boundary,test
+SYNTH-V1-D8-TEST-002,D8,Correction: I only watched those shares. I have never personally held an investment.,clarity,D8_NONE,fictional_authored_2026-10-04_v1,D8:test:D8_NONE:correction_boundary,test
+SYNTH-V1-D8-TEST-003,D8,"shares, actually mine. Not just watching Dad's account.",clarity,D8_SHARES,fictional_authored_2026-10-04_v1,D8:test:D8_SHARES:correction_boundary,test
+SYNTH-V1-D8-TEST-004,D8,The stock I personally held was inside my pension. One named type: shares.,clarity,D8_SHARES,fictional_authored_2026-10-04_v1,D8:test:D8_SHARES:correction_boundary,test
+SYNTH-V1-D8-TEST-005,D8,"actual corporate bonds, personally owned. not a bank savings bond.",clarity,D8_BONDS,fictional_authored_2026-10-04_v1,D8:test:D8_BONDS:correction_boundary,test
+SYNTH-V1-D8-TEST-006,D8,"I meant MY direct government bond holding, not my friend's bonds.",clarity,D8_BONDS,fictional_authored_2026-10-04_v1,D8:test:D8_BONDS:correction_boundary,test
+SYNTH-V1-D8-TEST-007,D8,"ETF actually held by me, even though inside my pension. one type.",clarity,D8_FUNDS_ETFS,fictional_authored_2026-10-04_v1,D8:test:D8_FUNDS_ETFS:correction_boundary,test
+SYNTH-V1-D8-TEST-008,D8,fund units were MY holdings. I didn't just follow their prices.,clarity,D8_FUNDS_ETFS,fictional_authored_2026-10-04_v1,D8:test:D8_FUNDS_ETFS:correction_boundary,test
+SYNTH-V1-D8-TEST-009,D8,"invested pension, mine. No directly held instrument being named here.",clarity,D8_INVESTED_PENSION_MANAGED,fictional_authored_2026-10-04_v1,D8:test:D8_INVESTED_PENSION_MANAGED:correction_boundary,test
+SYNTH-V1-D8-TEST-010,D8,"I mean my own manager-run portfolio holding, not investments owned by the manager.",clarity,D8_INVESTED_PENSION_MANAGED,fictional_authored_2026-10-04_v1,D8:test:D8_INVESTED_PENSION_MANAGED:correction_boundary,test
+SYNTH-V1-D8-TEST-011,D8,"crypto, personally held. Those wallet assets were mine.",clarity,D8_CRYPTO,fictional_authored_2026-10-04_v1,D8:test:D8_CRYPTO:correction_boundary,test
+SYNTH-V1-D8-TEST-012,D8,"I meant actual ownership of ether, not just reading crypto news.",clarity,D8_CRYPTO,fictional_authored_2026-10-04_v1,D8:test:D8_CRYPTO:correction_boundary,test
+SYNTH-V1-D8-TEST-013,D8,"other: MY peer-to-peer loan investment, actually held.",clarity,D8_OTHER,fictional_authored_2026-10-04_v1,D8:test:D8_OTHER:correction_boundary,test
+SYNTH-V1-D8-TEST-014,D8,I meant personal ownership in a forestry partnership. That's the named other type.,clarity,D8_OTHER,fictional_authored_2026-10-04_v1,D8:test:D8_OTHER:correction_boundary,test
+SYNTH-V1-D8-TEST-015,D8,"MY shares plus MY crypto. both actually held, two types.",clarity,D8_MULTIPLE,fictional_authored_2026-10-04_v1,D8:test:D8_MULTIPLE:correction_boundary,test
+SYNTH-V1-D8-TEST-016,D8,Not one ETF counted with its wrapper: I personally held bonds and a separate fund investment.,clarity,D8_MULTIPLE,fictional_authored_2026-10-04_v1,D8:test:D8_MULTIPLE:correction_boundary,test
+SYNTH-V1-D9-TEST-001,D9,"none in the last 12 months. owned stuff before, but no qualifying buys/sells or orders this year.",clarity,D9_ZERO,fictional_authored_2026-10-04_v1,D9:test:D9_ZERO:correction_boundary,test
+SYNTH-V1-D9-TEST-002,D9,Correction: zero purchases or sales instructed or made by me in the past year; the bank payments weren't trades.,clarity,D9_ZERO,fictional_authored_2026-10-04_v1,D9:test:D9_ZERO:correction_boundary,test
+SYNTH-V1-D9-TEST-003,D9,"5 total in the last year: buys AND sells combined, all my qualifying investment orders.",clarity,D9_COUNT1_5,fictional_authored_2026-10-04_v1,D9:test:D9_COUNT1_5:correction_boundary,test
+SYNTH-V1-D9-TEST-004,D9,"I corrected the period: two investment purchases in the past 12 months, not my lifetime count.",clarity,D9_COUNT1_5,fictional_authored_2026-10-04_v1,D9:test:D9_COUNT1_5:correction_boundary,test
+SYNTH-V1-D9-TEST-005,D9,"6 total qualifying buys/sells in the last 12 months, all made or ordered by me.",clarity,D9_COUNT6_10,fictional_authored_2026-10-04_v1,D9:test:D9_COUNT6_10:correction_boundary,test
+SYNTH-V1-D9-TEST-006,D9,"oops, nine investment transactions for the past year, not ninety.",clarity,D9_COUNT6_10,fictional_authored_2026-10-04_v1,D9:test:D9_COUNT6_10:correction_boundary,test
+SYNTH-V1-D9-TEST-007,D9,"11 exactly, all qualifying investment buys/sells I made in the last 12 months.",clarity,D9_COUNT11_PLUS,fictional_authored_2026-10-04_v1,D9:test:D9_COUNT11_PLUS:correction_boundary,test
+SYNTH-V1-D9-TEST-008,D9,"Correction, 16 for the past year; I'm counting my arranged investment purchases and sales only.",clarity,D9_COUNT11_PLUS,fictional_authored_2026-10-04_v1,D9:test:D9_COUNT11_PLUS:correction_boundary,test
+SYNTH-V1-D10-TEST-001,D10,none ACTUALLY invested from outside the portfolio in the last 12 months. gains don't count.,clarity,D10_ZERO,fictional_authored_2026-10-04_v1,D10:test:D10_ZERO:correction_boundary,test
+SYNTH-V1-D10-TEST-002,D10,Correction: recycled sale proceeds only; zero new external contribution invested over the past year.,clarity,D10_ZERO,fictional_authored_2026-10-04_v1,D10:test:D10_ZERO:correction_boundary,test
+SYNTH-V1-D10-TEST-003,D10,£999.99 new outside funds actually invested in the last 12 months; no gains or recycled proceeds counted.,clarity,D10_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D10:test:D10_POSITIVE_LT1000:correction_boundary,test
+SYNTH-V1-D10-TEST-004,D10,"past year: EUR 640, new external contribution, actually invested. not current value.",clarity,D10_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D10:test:D10_POSITIVE_LT1000:correction_boundary,test
+SYNTH-V1-D10-TEST-005,D10,"£1,000 exactly of NEW external money actually invested in the past 12 months.",clarity,D10_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D10:test:D10_FROM1000_LT5000:correction_boundary,test
+SYNTH-V1-D10-TEST-006,D10,"EUR 4999.50 for the year, fresh outside funds invested. current portfolio value is separate.",clarity,D10_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D10:test:D10_FROM1000_LT5000:correction_boundary,test
+SYNTH-V1-D10-TEST-007,D10,"£5,000 fresh external funds invested this past 12 months, exactly.",clarity,D10_FROM5000_LT10000,fictional_authored_2026-10-04_v1,D10:test:D10_FROM5000_LT10000:correction_boundary,test
+SYNTH-V1-D10-TEST-008,D10,EUR 9999.99 NEW money actually invested over the year. That's not the gains figure.,clarity,D10_FROM5000_LT10000,fictional_authored_2026-10-04_v1,D10:test:D10_FROM5000_LT10000:correction_boundary,test
+SYNTH-V1-D10-TEST-009,D10,"£10,000 exactly, fresh outside money actually invested over the last 12 months.",clarity,D10_FROM10000_PLUS,fictional_authored_2026-10-04_v1,D10:test:D10_FROM10000_PLUS:correction_boundary,test
+SYNTH-V1-D10-TEST-010,D10,"I mistyped: GBP 40,000 new externally funded money invested this past year, not my current balance.",clarity,D10_FROM10000_PLUS,fictional_authored_2026-10-04_v1,D10:test:D10_FROM10000_PLUS:correction_boundary,test
+SYNTH-V1-D11-TEST-001,D11,"could lose my starting money for good, some or all. No guaranteed recovery.",clarity,D11_LOSS_POSSIBLE,fictional_authored_2026-10-04_v1,D11:test:D11_LOSS_POSSIBLE:correction_boundary,test
+SYNTH-V1-D11-TEST-002,D11,I was wrong before: a market investment can permanently lose original capital; getting it back is not assured.,clarity,D11_LOSS_POSSIBLE,fictional_authored_2026-10-04_v1,D11:test:D11_LOSS_POSSIBLE:correction_boundary,test
+SYNTH-V1-D11-TEST-003,D11,"every drop WILL come back, that's what I currently believe.",clarity,D11_RECOVERY_ALWAYS,fictional_authored_2026-10-04_v1,D11:test:D11_RECOVERY_ALWAYS:correction_boundary,test
+SYNTH-V1-D11-TEST-004,D11,I mean market falls always recover completely; I'm sure that's how they work.,clarity,D11_RECOVERY_ALWAYS,fictional_authored_2026-10-04_v1,D11:test:D11_RECOVERY_ALWAYS:correction_boundary,test
+SYNTH-V1-D11-TEST-005,D11,"starting capital can't fall, I believe. only the gains can move.",clarity,D11_CAPITAL_PROTECTED,fictional_authored_2026-10-04_v1,D11:test:D11_CAPITAL_PROTECTED:correction_boundary,test
+SYNTH-V1-D11-TEST-006,D11,"Yes, for MARKET investments I currently believe the original amount is guaranteed safe.",clarity,D11_CAPITAL_PROTECTED,fictional_authored_2026-10-04_v1,D11:test:D11_CAPITAL_PROTECTED:correction_boundary,test
+SYNTH-V1-D12-TEST-001,D12,earliest REAL need is 3 years exactly. Not just an ideal holding time.,clarity,D12_SHORT,fictional_authored_2026-10-04_v1,D12:test:D12_SHORT:correction_boundary,test
+SYNTH-V1-D12-TEST-002,D12,"one included bit needed in 8 months; don't know dates for the rest, but that need is real.",clarity,D12_SHORT,fictional_authored_2026-10-04_v1,D12:test:D12_SHORT:correction_boundary,test
+SYNTH-V1-D12-TEST-003,D12,3 years and a day is the earliest realistic need; all included parts have no earlier need.,clarity,D12_MEDIUM,fictional_authored_2026-10-04_v1,D12:test:D12_MEDIUM:correction_boundary,test
+SYNTH-V1-D12-TEST-004,D12,correcting the date: first real need in 10 years exactly. Nothing from this pot needed sooner.,clarity,D12_MEDIUM,fictional_authored_2026-10-04_v1,D12:test:D12_MEDIUM:correction_boundary,test
+SYNTH-V1-D12-TEST-005,D12,"10 years and one day: earliest REAL need, no included part needed earlier.",clarity,D12_LONG,fictional_authored_2026-10-04_v1,D12:test:D12_LONG:correction_boundary,test
+SYNTH-V1-D12-TEST-006,D12,Correction: first realistic need is 17 years away. All this money has no sooner requirement.,clarity,D12_LONG,fictional_authored_2026-10-04_v1,D12:test:D12_LONG:correction_boundary,test
+SYNTH-V1-D13-TEST-001,D13,20% gone from THIS pot: rent could be hard to pay.,clarity,D13_ESSENTIALS_DIFFICULT,fictional_authored_2026-10-04_v1,D13:test:D13_ESSENTIALS_DIFFICULT:correction_boundary,test
+SYNTH-V1-D13-TEST-002,D13,"I meant practical difficulty with essential bills after that loss, not just feeling worried.",clarity,D13_ESSENTIALS_DIFFICULT,fictional_authored_2026-10-04_v1,D13:test:D13_ESSENTIALS_DIFFICULT:correction_boundary,test
+SYNTH-V1-D13-TEST-003,D13,"essentials still paid after 20% loss, but the holiday gets cancelled. That's the change.",clarity,D13_ADJUSTMENT,fictional_authored_2026-10-04_v1,D13:test:D13_ADJUSTMENT:correction_boundary,test
+SYNTH-V1-D13-TEST-004,D13,"Correction: bills remain covered, but I'd fund them from a different account after that loss.",clarity,D13_ADJUSTMENT,fictional_authored_2026-10-04_v1,D13:test:D13_ADJUSTMENT:correction_boundary,test
+SYNTH-V1-D13-TEST-005,D13,"20% loss: bills covered SAME way, budget unchanged, ALL other plans unchanged too.",clarity,D13_UNAFFECTED,fictional_authored_2026-10-04_v1,D13:test:D13_UNAFFECTED:correction_boundary,test
+SYNTH-V1-D13-TEST-006,D13,"I meant everything practical stays unaffected in that loss example: essentials, sources, budget and known plans.",clarity,D13_UNAFFECTED,fictional_authored_2026-10-04_v1,D13:test:D13_UNAFFECTED:correction_boundary,test
+SYNTH-V1-D14-TEST-001,D14,"smaller swings, less potential growth, yes. I know I could still lose money.",clarity,D14_LOWER,fictional_authored_2026-10-04_v1,D14:test:D14_LOWER:correction_boundary,test
+SYNTH-V1-D14-TEST-002,D14,Replace my old preference: I now choose smaller ups/downs even with less growth potential; loss still possible.,clarity,D14_LOWER,fictional_authored_2026-10-04_v1,D14:test:D14_LOWER:correction_boundary,test
+SYNTH-V1-D14-TEST-003,D14,"balanced, deliberately. potential growth AND limiting swings, possible loss accepted.",clarity,D14_BALANCED,fictional_authored_2026-10-04_v1,D14:test:D14_BALANCED:correction_boundary,test
+SYNTH-V1-D14-TEST-004,D14,"I now choose the balance trade-off consciously, including accepting that investment losses can happen.",clarity,D14_BALANCED,fictional_authored_2026-10-04_v1,D14:test:D14_BALANCED:correction_boundary,test
+SYNTH-V1-D14-TEST-005,D14,"more potential growth first. bigger swings AND permanent losses possible, I accept both.",clarity,D14_GREATER,fictional_authored_2026-10-04_v1,D14:test:D14_GREATER:correction_boundary,test
+SYNTH-V1-D14-TEST-006,D14,"Correction to my preference: greater growth potential, knowingly accepting larger ups/downs and possible permanent loss.",clarity,D14_GREATER,fictional_authored_2026-10-04_v1,D14:test:D14_GREATER:correction_boundary,test
+SYNTH-V1-D15-TEST-001,D15,"costs/plans covered, yes I get the example. emotionally that 20% fall is TOO much to accept.",clarity,D15_UNACCEPTABLE,fictional_authored_2026-10-04_v1,D15:test:D15_UNACCEPTABLE:correction_boundary,test
+SYNTH-V1-D15-TEST-002,D15,"I meant emotionally unacceptable in your covered-cost example, not difficulty paying real bills.",clarity,D15_UNACCEPTABLE,fictional_authored_2026-10-04_v1,D15:test:D15_UNACCEPTABLE:correction_boundary,test
+SYNTH-V1-D15-TEST-003,D15,"worried, yes, AND able to accept it. costs/plans covered as in your 20% example.",clarity,D15_WORRIED_ACCEPTABLE,fictional_authored_2026-10-04_v1,D15:test:D15_WORRIED_ACCEPTABLE:correction_boundary,test
+SYNTH-V1-D15-TEST-004,D15,"Correction: worried but emotionally acceptable under the covered-cost premise, even without assured recovery.",clarity,D15_WORRIED_ACCEPTABLE,fictional_authored_2026-10-04_v1,D15:test:D15_WORRIED_ACCEPTABLE:correction_boundary,test
+SYNTH-V1-D15-TEST-005,D15,"comfortable, barely worried, in that covered-cost 20% example. not depending on recovery.",clarity,D15_COMFORTABLE,fictional_authored_2026-10-04_v1,D15:test:D15_COMFORTABLE:correction_boundary,test
+SYNTH-V1-D15-TEST-006,D15,I meant little emotional worry with the example's costs/plans covered; I'd feel comfortable.,clarity,D15_COMFORTABLE,fictional_authored_2026-10-04_v1,D15:test:D15_COMFORTABLE:correction_boundary,test
+SYNTH-V1-D1-TEST-017,D1,"hmm I get what a purpose is, just not sure which use is mine for this pot.",undecided,,fictional_authored_2026-10-04_v1,D1:test:undecided:authored_contrasts,test
+SYNTH-V1-D1-TEST-018,D1,"Other purpose, yeah, but I cannot say what it is.",undecided,,fictional_authored_2026-10-04_v1,D1:test:undecided:authored_contrasts,test
+SYNTH-V1-D1-TEST-019,D1,what's a goal in this context? I don't understand the question.,confusion,,fictional_authored_2026-10-04_v1,D1:test:confusion:authored_contrasts,test
+SYNTH-V1-D1-TEST-020,D1,Find me a recipe for mushroom soup.,confusion,,fictional_authored_2026-10-04_v1,D1:test:confusion:authored_contrasts,test
+SYNTH-V1-D2-TEST-011,D2,"age question understood, but I'd rather not give a range.",undecided,,fictional_authored_2026-10-04_v1,D2:test:undecided:authored_contrasts,test
+SYNTH-V1-D2-TEST-012,D2,Dad's 67. Haven't said my own age.,undecided,,fictional_authored_2026-10-04_v1,D2:test:undecided:authored_contrasts,test
+SYNTH-V1-D2-TEST-013,D2,what does this age bracket stuff mean?,confusion,,fictional_authored_2026-10-04_v1,D2:test:confusion:authored_contrasts,test
+SYNTH-V1-D2-TEST-014,D2,Which bus goes to the zoo?,confusion,,fictional_authored_2026-10-04_v1,D2:test:confusion:authored_contrasts,test
+SYNTH-V1-D3-TEST-013,D3,"got the question, just don't know today's amount or which currency that old number used.",undecided,,fictional_authored_2026-10-04_v1,D3:test:undecided:authored_contrasts,test
+SYNTH-V1-D3-TEST-014,D3,"current money between £4900 and £5100, no closer estimate.",undecided,,fictional_authored_2026-10-04_v1,D3:test:undecided:authored_contrasts,test
+SYNTH-V1-D3-TEST-015,D3,"what do you mean by existing, like money I'll get later? I don't understand.",confusion,,fictional_authored_2026-10-04_v1,D3:test:confusion:authored_contrasts,test
+SYNTH-V1-D3-TEST-016,D3,Can you translate a restaurant menu?,confusion,,fictional_authored_2026-10-04_v1,D3:test:confusion:authored_contrasts,test
+SYNTH-V1-D4-TEST-013,D4,"it WAS in a fixed deposit, now dunno where this actual pot sits.",undecided,,fictional_authored_2026-10-04_v1,D4:test:undecided:authored_contrasts,test
+SYNTH-V1-D4-TEST-014,D4,"Another place, can't name it. I get the question.",undecided,,fictional_authored_2026-10-04_v1,D4:test:undecided:authored_contrasts,test
+SYNTH-V1-D4-TEST-015,D4,pension savings versus payment? don't understand that.,confusion,,fictional_authored_2026-10-04_v1,D4:test:confusion:authored_contrasts,test
+SYNTH-V1-D4-TEST-016,D4,Please list nearby museums.,confusion,,fictional_authored_2026-10-04_v1,D4:test:confusion:authored_contrasts,test
+SYNTH-V1-D5-TEST-017,D5,"I get funding sources, but dunno which one pays my CURRENT costs.",undecided,,fictional_authored_2026-10-04_v1,D5:test:undecided:authored_contrasts,test
+SYNTH-V1-D5-TEST-018,D5,My friend uses wages for bills. That says nothing about my source.,undecided,,fictional_authored_2026-10-04_v1,D5:test:undecided:authored_contrasts,test
+SYNTH-V1-D5-TEST-019,D5,what's a withdrawal in this question? I'm confused.,confusion,,fictional_authored_2026-10-04_v1,D5:test:confusion:authored_contrasts,test
+SYNTH-V1-D5-TEST-020,D5,Find me a beginner knitting pattern.,confusion,,fictional_authored_2026-10-04_v1,D5:test:confusion:authored_contrasts,test
+SYNTH-V1-D6-TEST-007,D6,year-long premise understood; just unsure if my OTHER available money meets all bills as due.,undecided,,fictional_authored_2026-10-04_v1,D6:test:undecided:authored_contrasts,test
+SYNTH-V1-D6-TEST-008,D6,"some other money exists, but I don't know the twelve-month coverage or access timing.",undecided,,fictional_authored_2026-10-04_v1,D6:test:undecided:authored_contrasts,test
+SYNTH-V1-D6-TEST-009,D6,can you explain what 'necessary' means? I don't get the question.,confusion,,fictional_authored_2026-10-04_v1,D6:test:confusion:authored_contrasts,test
+SYNTH-V1-D6-TEST-010,D6,"I will use the blocked money itself as my other backup, so all covered.",confusion,,fictional_authored_2026-10-04_v1,D6:test:confusion:authored_contrasts,test
+SYNTH-V1-D7-TEST-009,D7,probably none due?? I haven't checked the required repayments.,undecided,,fictional_authored_2026-10-04_v1,D7:test:undecided:authored_contrasts,test
+SYNTH-V1-D7-TEST-010,D7,none of the status choices fits what I can tell you; no status selected.,undecided,,fictional_authored_2026-10-04_v1,D7:test:undecided:authored_contrasts,test
+SYNTH-V1-D7-TEST-011,D7,what's an instalment that's required? don't understand.,confusion,,fictional_authored_2026-10-04_v1,D7:test:confusion:authored_contrasts,test
+SYNTH-V1-D7-TEST-012,D7,Tell me about medieval castles.,confusion,,fictional_authored_2026-10-04_v1,D7:test:confusion:authored_contrasts,test
+SYNTH-V1-D8-TEST-017,D8,"probably none personally, but not certain; I don't remember that old product.",undecided,,fictional_authored_2026-10-04_v1,D8:test:undecided:authored_contrasts,test
+SYNTH-V1-D8-TEST-018,D8,My uncle holds bitcoin. I haven't specified my own holdings.,undecided,,fictional_authored_2026-10-04_v1,D8:test:undecided:authored_contrasts,test
+SYNTH-V1-D8-TEST-019,D8,personally held? what's that mean here?,confusion,,fictional_authored_2026-10-04_v1,D8:test:confusion:authored_contrasts,test
+SYNTH-V1-D8-TEST-020,D8,"Just a bank deposit, which I think is the same as owning market investments. I don't get it.",confusion,,fictional_authored_2026-10-04_v1,D8:test:confusion:authored_contrasts,test
+SYNTH-V1-D9-TEST-009,D9,"maybe none in those 12 months, can't remember if that order completed.",undecided,,fictional_authored_2026-10-04_v1,D9:test:undecided:authored_contrasts,test
+SYNTH-V1-D9-TEST-010,D9,five OR six qualifying trades last year; can't be more precise.,undecided,,fictional_authored_2026-10-04_v1,D9:test:undecided:authored_contrasts,test
+SYNTH-V1-D9-TEST-011,D9,what qualifies as an investment sale? I don't understand.,confusion,,fictional_authored_2026-10-04_v1,D9:test:confusion:authored_contrasts,test
+SYNTH-V1-D9-TEST-012,D9,"I'm counting my landlord's rent payments as investment buys. That's what trades means, right?",confusion,,fictional_authored_2026-10-04_v1,D9:test:confusion:authored_contrasts,test
+SYNTH-V1-D10-TEST-011,D10,"probably none new from outside, dunno if last year's cash transfer got invested.",undecided,,fictional_authored_2026-10-04_v1,D10:test:undecided:authored_contrasts,test
+SYNTH-V1-D10-TEST-012,D10,"past-year fresh contribution invested was 8000, currency not given.",undecided,,fictional_authored_2026-10-04_v1,D10:test:undecided:authored_contrasts,test
+SYNTH-V1-D10-TEST-013,D10,new external means what? don't understand that term.,confusion,,fictional_authored_2026-10-04_v1,D10:test:confusion:authored_contrasts,test
+SYNTH-V1-D10-TEST-014,D10,"I count the profit the market made as new money I put in. That's a contribution, isn't it?",confusion,,fictional_authored_2026-10-04_v1,D10:test:confusion:authored_contrasts,test
+SYNTH-V1-D11-TEST-007,D11,"terms understood, but not sure whether the starting money might be gone for good.",undecided,,fictional_authored_2026-10-04_v1,D11:test:undecided:authored_contrasts,test
+SYNTH-V1-D11-TEST-008,D11,"capital can be permanently lost AND every fall always fully recovers, both are my beliefs.",undecided,,fictional_authored_2026-10-04_v1,D11:test:undecided:authored_contrasts,test
+SYNTH-V1-D11-TEST-009,D11,permanently? I don't know what that word means here.,confusion,,fictional_authored_2026-10-04_v1,D11:test:confusion:authored_contrasts,test
+SYNTH-V1-D11-TEST-010,D11,"I only mean my guaranteed bank deposit, not your market investment example.",confusion,,fictional_authored_2026-10-04_v1,D11:test:confusion:authored_contrasts,test
+SYNTH-V1-D12-TEST-007,D12,"I get the premise, but 20 years is just my ideal. Earliest real need unknown.",undecided,,fictional_authored_2026-10-04_v1,D12:test:undecided:authored_contrasts,test
+SYNTH-V1-D12-TEST-008,D12,"no need before 12 years, but that SAME included pot pays a bill in 6 months. Both apply.",undecided,,fictional_authored_2026-10-04_v1,D12:test:undecided:authored_contrasts,test
+SYNTH-V1-D12-TEST-009,D12,earliest realistically need? don't understand that phrase.,confusion,,fictional_authored_2026-10-04_v1,D12:test:confusion:authored_contrasts,test
+SYNTH-V1-D12-TEST-010,D12,Can you tell me how volcanoes form?,confusion,,fictional_authored_2026-10-04_v1,D12:test:confusion:authored_contrasts,test
+SYNTH-V1-D13-TEST-007,D13,"bills still covered, yup, but I dunno what budget, sources or other plans would do.",undecided,,fictional_authored_2026-10-04_v1,D13:test:undecided:authored_contrasts,test
+SYNTH-V1-D13-TEST-008,D13,it's worry I mean. Can't tell you a practical consequence for that 20% loss.,undecided,,fictional_authored_2026-10-04_v1,D13:test:undecided:authored_contrasts,test
+SYNTH-V1-D13-TEST-009,D13,what's an essential cost in this question? I don't understand.,confusion,,fictional_authored_2026-10-04_v1,D13:test:confusion:authored_contrasts,test
+SYNTH-V1-D13-TEST-010,D13,Please explain the rules of badminton.,confusion,,fictional_authored_2026-10-04_v1,D13:test:confusion:authored_contrasts,test
+SYNTH-V1-D14-TEST-007,D14,"I get all three, just cannot choose. middle isn't a deliberate preference for me.",undecided,,fictional_authored_2026-10-04_v1,D14:test:undecided:authored_contrasts,test
+SYNTH-V1-D14-TEST-008,D14,"higher returns please, but I haven't accepted larger swings or permanent loss.",undecided,,fictional_authored_2026-10-04_v1,D14:test:undecided:authored_contrasts,test
+SYNTH-V1-D14-TEST-009,D14,trade-off is what? I don't understand the wording.,confusion,,fictional_authored_2026-10-04_v1,D14:test:confusion:authored_contrasts,test
+SYNTH-V1-D14-TEST-010,D14,Find a recipe for vegetable curry.,confusion,,fictional_authored_2026-10-04_v1,D14:test:confusion:authored_contrasts,test
+SYNTH-V1-D15-TEST-007,D15,"worried, definitely. unsure whether I could ACCEPT that covered-cost fall though.",undecided,,fictional_authored_2026-10-04_v1,D15:test:undecided:authored_contrasts,test
+SYNTH-V1-D15-TEST-008,D15,"I get your premise, but can only accept if guaranteed recovery. Can't answer without that guarantee.",undecided,,fictional_authored_2026-10-04_v1,D15:test:undecided:authored_contrasts,test
+SYNTH-V1-D15-TEST-009,D15,feelings only? don't understand what you mean.,confusion,,fictional_authored_2026-10-04_v1,D15:test:confusion:authored_contrasts,test
+SYNTH-V1-D15-TEST-010,D15,Tell me about coral reefs.,confusion,,fictional_authored_2026-10-04_v1,D15:test:confusion:authored_contrasts,test

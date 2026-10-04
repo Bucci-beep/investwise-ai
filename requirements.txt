@@ -1,4 +1,6 @@
 pandas
 numpy
 scikit-learn
-pytestopenpyxl>=3.1,<4
+pytest
+openpyxl>=3.1,<4
+streamlit
