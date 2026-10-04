@@ -337,12 +337,12 @@ class ConversationEngine:
             result = self._set_candidate(qid, option.id, source="explicit_user_choice", reason="visible_shortcut_selected", flags=global_flags)
             return self._pace_supported_answer(qid, result, ordinary_care, support_requested, pace_requested)
 
-        # A currency-only reply can complete the immediately preceding amount
-        # follow-up. Combine it with the retained band before invoking ML; the
-        # option model is not expected to infer an amount band from "GBP".
-        if qid in {"D3", "D10"} and self._details(record).get("pending_option_id"):
+        # Amount bands and their named currency are objective bounded facts.
+        # Resolve them deterministically before ML, including a currency-only
+        # reply that completes the immediately preceding amount follow-up.
+        if qid in {"D3", "D10"}:
             completion = interpret_bounded_answer(self.spec, qid, text, self._details(record))
-            if completion.option_id is not None:
+            if completion.option_id is not None and completion.option_id not in {"D3_NO_EXISTING_POT", "D10_ZERO"}:
                 self._details(record).update(completion.context_details)
                 result = self._set_candidate(
                     qid,

@@ -157,6 +157,19 @@ def test_currency_only_followup_completes_retained_amount_without_ml():
     assert app.session_state["iw_last_response"]["bucket"] == "Clarity"
 
 
+def test_amount_and_currency_are_accepted_as_bounded_facts_before_ml():
+    app = open_default_app()
+    advance_visibly(app, "D3")
+
+    send(app, "About £30,000 GBP.")
+    record = engine(app).state.answers["D3"]
+    assert record.status == AnswerStatus.CANDIDATE
+    assert record.candidate_option_id == "D3_FROM20000_LT50000"
+    assert record.context_details["currency"] == "GBP"
+    assert record.source == "bounded_material_completion"
+    assert app.session_state["iw_last_response"]["bucket"] == "Clarity"
+
+
 def test_default_first_free_text_turn_uses_actual_ml_even_for_an_exact_label():
     app = open_default_app()
     qid = engine(app).state.current_question_id
