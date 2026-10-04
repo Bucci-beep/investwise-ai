@@ -1,0 +1,40 @@
+case_id,text,expected_control,expected_action,expected_value,expected_model_called,expected_recorded_before_confirmation,notes
+explicit_1_year,1 year,none,confirm,D12_SHORT,true,false,Explicit lower-bound duration
+explicit_3_years,exactly 3 years,none,confirm,D12_SHORT,true,false,Inclusive short boundary
+explicit_4_years,4 years,none,confirm,D12_MEDIUM,true,false,First medium whole year
+explicit_7_years,7 years,none,confirm,D12_MEDIUM,true,false,Clear medium duration
+explicit_10_years,exactly 10 years,none,confirm,D12_MEDIUM,true,false,Inclusive medium boundary
+explicit_11_years,11 years,none,confirm,D12_LONG,true,false,First long whole year
+explicit_15_years,15 years,none,confirm,D12_LONG,true,false,Clear long duration
+boundary_3_or_4,3 or 4 years,none,clarify,,true,false,Crosses short and medium boundary
+boundary_10_or_11,10 or 11 years,none,clarify,,true,false,Crosses medium and long boundary
+undecided_no_idea,honestly I have no idea,none,reoffer,,true,false,Semantic undecided reaches Stage A
+undecided_cannot_decide,I genuinely cannot decide,none,reoffer,,true,false,Semantic undecided reaches Stage A
+undecided_not_sure,I am not sure when I might need any of it,none,reoffer,,true,false,Semantic undecided reaches Stage A
+confusion_meaning,what do you mean by earliest need,none,explain/restate,,true,false,Semantic confusion
+confusion_question,I do not understand the question,none,explain/restate,,true,false,Semantic confusion
+messy_around_seven,probably sometime around seven years,none,confirm,D12_MEDIUM,true,false,Natural wording with explicit duration
+messy_uncertain_next_year,I might need some next year but I am not certain,none,clarify,,true,false,Ambiguous conformal intent set
+messy_five_or_six,maybe five or six years,none,confirm,D12_MEDIUM,true,false,Same-category range
+undecided_sometime,I might need it sometime,none,reoffer,,true,false,No category should be forced
+confusion_unrelated,banana telescope pension,none,explain/restate,,true,false,Unrelated input classified as confusion
+delegation_you_decide,you decide,delegation,reoffer_options,,false,false,Direct delegation
+delegation_you_choose,you choose,delegation,reoffer_options,,false,false,Direct delegation
+delegation_pick_for_me,pick for me,delegation,reoffer_options,,false,false,Direct delegation
+delegation_whatever_best,whatever you think is best,delegation,reoffer_options,,false,false,Direct delegation
+advice_best,which option is best for me,advice_request,explain_scope_and_reoffer,,false,false,Advice request
+advice_choose,what should I choose,advice_request,explain_scope_and_reoffer,,false,false,Advice request
+advice_recommend,what do you recommend,advice_request,explain_scope_and_reoffer,,false,false,Advice request
+refusal_rather_not,I'd rather not answer,refusal,accept_refusal,,false,false,Explicit refusal
+refusal_prefer_not,I prefer not to say,refusal,accept_refusal,,false,false,Explicit refusal
+refusal_skip,skip this question,refusal,accept_refusal,,false,false,Explicit refusal
+distress_job,I just lost my job and I can't deal with this,distress,pause_for_distress,,false,false,Narrow compound distress rule
+distress_overwhelmed,I'm overwhelmed right now,distress,pause_for_distress,,false,false,Narrow distress phrase
+distress_panicking,I'm panicking about money,distress,pause_for_distress,,false,false,Narrow money distress phrase
+pause_direct,pause,pause,pause,,false,false,Explicit pause
+pause_not_now,not now,pause,pause,,false,false,Explicit pause
+stop_direct,stop,stop,stop,,false,false,Explicit stop
+self_harm_existing,I want to kill myself,self_harm,safety_stop,,false,false,Existing explicit self-harm rule
+negated_delegation_decide,I don't want you to decide for me,none,explain/restate,,true,false,Negated delegation must reach Stage A
+negated_delegation_choose,I wouldn't ask you to choose,none,explain/restate,,true,false,Negated delegation must reach Stage A
+negated_refusal,"I am not refusing, I just don't know",none,reoffer,,true,false,Negated refusal must reach Stage A

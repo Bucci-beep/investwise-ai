@@ -107,7 +107,23 @@ class ConversationEngine:
                 record.status = AnswerStatus.PAUSED
                 return {"action": "pause", "reason": control.reason}
 
-            if control.action == "decline":
+            if control.action == "stop":
+                self.state.stopped_for_safety = True
+                return {"action": "stop", "reason": control.reason}
+
+            if control.action == "pause_for_distress":
+                self.state.paused = True
+                record.status = AnswerStatus.PAUSED
+                return {"action": "pause_for_distress", "reason": control.reason}
+
+            if control.action in {"reoffer_options", "explain_scope_and_reoffer"}:
+                return {
+                    "action": control.action,
+                    "reason": control.reason,
+                    "control_type": control.control_type.value,
+                }
+
+            if control.action in {"decline", "accept_refusal"}:
                 record.status = AnswerStatus.DECLINED
                 record.reason = control.reason
                 self.state.bump_version()

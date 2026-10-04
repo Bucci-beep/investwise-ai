@@ -91,6 +91,11 @@ class BoundedQuestionInterpreter:
 
         intent_prediction = self.intent_predictor.predict(text)
         intent_decision = decide_intent(intent_prediction)
+        deterministic_mapping = (
+            self.deterministic_mapper(text)
+            if self.deterministic_mapper is not None
+            else None
+        )
 
         # Semantic intent has authority over option mapping.
         #
@@ -102,12 +107,10 @@ class BoundedQuestionInterpreter:
                 raw_text=text,
                 intent_prediction=intent_prediction,
                 intent_decision=intent_decision,
+                deterministic_mapping=deterministic_mapping,
             )
 
-        deterministic_mapping = None
-
-        if self.deterministic_mapper is not None:
-            deterministic_mapping = self.deterministic_mapper(text)
+        if deterministic_mapping is not None:
 
             # Explicit durations spanning financial boundaries must not
             # be reduced to one option by the NLP model.
