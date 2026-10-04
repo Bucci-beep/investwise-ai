@@ -149,7 +149,7 @@ def initialise() -> None:
                 "iw_unsaved": False, "iw_question_token": None,
                 "iw_review_token": None, "iw_needs_correction": False,
                 "iw_help_pending": False, "iw_material_limit_owner": None,
-                "iw_large_text": False}
+                "iw_large_text": False, "iw_latest_classification": None}
     for key, value in defaults.items():
         st.session_state.setdefault(key, value)
     if not st.session_state.iw_messages:
@@ -247,7 +247,23 @@ def receive_result(result: dict[str, Any]) -> None:
 
 def submit(text: str, display_text: str | None = None, *, explicit_option_id: str | None = None) -> None:
     add_message("user", display_text or text)
-    receive_result(st.session_state.iw_engine.submit_answer(text, explicit_option_id=explicit_option_id))
+    engine = st.session_state.iw_engine
+    audit_start = len(engine.state.audit)
+    result = engine.submit_answer(text, explicit_option_id=explicit_option_id)
+    new_events = engine.state.audit[audit_start:]
+    interpretation = next(
+        (event for event in reversed(new_events)
+         if event.event_type in {"ml_interpretation", "pre_model_control"}),
+        None,
+    )
+    if interpretation is not None:
+        st.session_state.iw_latest_classification = {
+            "event_type": interpretation.event_type,
+            "question_id": interpretation.question_id,
+            "payload": dict(interpretation.payload),
+            "result": dict(result),
+        }
+    receive_result(result)
     st.rerun()
 
 
@@ -446,6 +462,60 @@ def render_demo_details(engine: Any) -> None:
             st.json([asdict(event) for event in engine.state.audit])
 
 
+def _display_label(value: Any) -> str | None:
+    if value is None:
+        return None
+    return str(value).replace("_", " ").strip().title()
+
+
+def render_latest_classification() -> None:
+    """Show a simple owner result and a separate technical trace."""
+    trace = st.session_state.iw_latest_classification
+    if not trace:
+        return
+
+    payload = trace["payload"]
+    result = trace["result"]
+    is_control = trace["event_type"] == "pre_model_control"
+    bucket = result.get("bucket") if is_control else payload.get("semantic_bucket")
+    owner_label = {
+        "Clarity": "Clarity",
+        "Confusion": "Confused",
+        "Undecided": "Undecided",
+    }.get(bucket)
+
+    # Never relabel model uncertainty as a user meaning. The owner card is
+    # shown only when one of the three dialogue meanings is established.
+    if owner_label:
+        with st.container(border=True):
+            st.caption("Conversation classification")
+            st.subheader(owner_label)
+
+    action = result.get("action")
+    candidate = result.get("candidate_option_label") or result.get("candidate_option_id")
+    if is_control:
+        developer_trace = {
+            "Control detected": _display_label(payload.get("reason") or payload.get("flag") or payload.get("action")),
+            "Model called": "No",
+            "Financial candidate": None,
+            "Action": _display_label(action),
+        }
+    else:
+        developer_trace = {
+            "Control detected": None,
+            "Model called": "Yes",
+            "Dialogue bucket": bucket,
+            "Intent set": payload.get("intent_set"),
+            "Option set": payload.get("option_set"),
+            "Financial candidate": candidate,
+            "Action": _display_label(action),
+            "Model uncertain": payload.get("model_uncertain", False),
+            "Reason": payload.get("reason"),
+        }
+    with st.expander("Developer classification trace"):
+        st.json(developer_trace)
+
+
 def render_transcript(engine: Any) -> None:
     with st.container(height=330, border=False, autoscroll=True, key="iw_thread"):
         for item in st.session_state.iw_messages:
@@ -616,6 +686,7 @@ def main() -> None:
         else:
             ensure_review(engine)
     render_transcript(engine)
+    render_latest_classification()
     if engine.state.stopped_for_safety:
         st.caption("Financial questions and saving have been stopped.")
         render_demo_details(engine)
