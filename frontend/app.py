@@ -263,6 +263,13 @@ def submit(text: str, display_text: str | None = None, *, explicit_option_id: st
             "payload": dict(interpretation.payload),
             "result": dict(result),
         }
+    elif result.get("bucket") or result.get("action") == "confirm":
+        st.session_state.iw_latest_classification = {
+            "event_type": "deterministic_interpretation",
+            "question_id": result.get("question_id"),
+            "payload": {"semantic_bucket": result.get("bucket") or "Clarity"},
+            "result": dict(result),
+        }
     receive_result(result)
     st.rerun()
 
@@ -477,6 +484,7 @@ def render_latest_classification() -> None:
     payload = trace["payload"]
     result = trace["result"]
     is_control = trace["event_type"] == "pre_model_control"
+    is_model = trace["event_type"] == "ml_interpretation"
     bucket = result.get("bucket") if is_control else payload.get("semantic_bucket")
     owner_label = {
         "Clarity": "Clarity",
@@ -500,7 +508,7 @@ def render_latest_classification() -> None:
             "Financial candidate": None,
             "Action": _display_label(action),
         }
-    else:
+    elif is_model:
         developer_trace = {
             "Control detected": None,
             "Model called": "Yes",
@@ -512,8 +520,40 @@ def render_latest_classification() -> None:
             "Model uncertain": payload.get("model_uncertain", False),
             "Reason": payload.get("reason"),
         }
+    else:
+        developer_trace = {
+            "Control detected": None,
+            "Model called": "No",
+            "Financial candidate": candidate,
+            "Action": _display_label(action),
+            "Reason": "Deterministic completion of supplied facts",
+        }
     with st.expander("Developer classification trace"):
         st.json(developer_trace)
+
+
+def render_final_profile_status(engine: Any) -> None:
+    if st.session_state.iw_finished_incomplete:
+        with st.container(border=True):
+            st.caption("Final profile status")
+            st.subheader("Incomplete — no final classification produced")
+            st.write("At least one answer remained unresolved, so the safety gate did not create or save a financial profile.")
+        return
+    if engine.current_question is not None:
+        return
+
+    report = engine.completion_report()
+    if not report["eligible_for_final_accuracy_confirmation"]:
+        return
+    answers = engine.state.answers
+    with st.container(border=True):
+        st.caption("Final profile classifications")
+        st.write({
+            "Time horizon": answers["D12"].selected_option_label,
+            "Capacity for loss": answers["D13"].selected_option_label,
+            "Attitude to risk": answers["D14"].selected_option_label,
+        })
+        st.caption("Awaiting the user's confirmation of the complete summary." if engine.state.final_accuracy_version != engine.state.profile_version else "Confirmed by the user.")
 
 
 def render_transcript(engine: Any) -> None:
@@ -687,6 +727,7 @@ def main() -> None:
             ensure_review(engine)
     render_transcript(engine)
     render_latest_classification()
+    render_final_profile_status(engine)
     if engine.state.stopped_for_safety:
         st.caption("Financial questions and saving have been stopped.")
         render_demo_details(engine)

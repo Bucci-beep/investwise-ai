@@ -330,11 +330,29 @@ class ConversationEngine:
             if teachback_required:
                 return self._understanding_recheck(qid)
             if qid in {"D3", "D10"} and option.id not in {"D3_NO_EXISTING_POT", "D10_ZERO"}:
+                self._details(record)["pending_option_id"] = option.id
                 result = self._mark_unresolved(qid, AnswerStatus.CONFUSION, "currency_and_range_required")
                 result["followup"] = f"You selected '{option.label}'. Which currency is that range in? Please include the range and named currency together in your own words; an approximate range is enough. You may also skip this optional question."
                 return result
             result = self._set_candidate(qid, option.id, source="explicit_user_choice", reason="visible_shortcut_selected", flags=global_flags)
             return self._pace_supported_answer(qid, result, ordinary_care, support_requested, pace_requested)
+
+        # A currency-only reply can complete the immediately preceding amount
+        # follow-up. Combine it with the retained band before invoking ML; the
+        # option model is not expected to infer an amount band from "GBP".
+        if qid in {"D3", "D10"} and self._details(record).get("pending_option_id"):
+            completion = interpret_bounded_answer(self.spec, qid, text, self._details(record))
+            if completion.option_id is not None:
+                self._details(record).update(completion.context_details)
+                result = self._set_candidate(
+                    qid,
+                    completion.option_id,
+                    source="bounded_material_completion",
+                    reason="currency_followup_completed",
+                    flags=set(completion.flags) | global_flags,
+                )
+                result["bucket"] = "Clarity"
+                return self._pace_supported_answer(qid, result, ordinary_care, support_requested, pace_requested)
 
         if self.question_resolver is not None:
             return self._submit_ml_answer(qid, text, ordinary_care, support_requested, pace_requested, teachback_required, previous_raw_text, global_flags)
@@ -577,6 +595,7 @@ class ConversationEngine:
             if goal_or_access and not re.search(r"\b(?:need|required|necessary|living costs|bills|untouched)\b", text, re.I):
                 return held_or_unresolved("goal_or_access_is_not_earliest_need", uncertain=True, followup="That describes a goal or access date. What is the earliest point when you may realistically need this money?")
         if qid in {"D3", "D10"} and resolved.candidate_option_id not in {"D3_NO_EXISTING_POT", "D10_ZERO"} and not validation.context_details.get("currency"):
+            self._details(record).update(validation.context_details)
             return held_or_unresolved("currency_and_range_required", followup="Please include the currency and the approximate range for this same money. You can also leave this optional context unanswered.")
         controls = {key: value for key, value in self._details(record).items() if key in {"understanding.teachback_required", "understanding.previous_belief"} or key.startswith("material.")}
         record.context_details = dict(validation.context_details) if validation.option_id == resolved.candidate_option_id else {}

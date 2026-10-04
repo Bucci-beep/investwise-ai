@@ -139,6 +139,24 @@ def test_default_factory_has_fitted_real_models_for_all_fifteen_questions():
             assert pipeline.named_steps["classifier"].coef_.size > 0
 
 
+def test_currency_only_followup_completes_retained_amount_without_ml():
+    app = open_default_app()
+    advance_visibly(app, "D3")
+
+    option_id = "D3_FROM5000_LT20000"
+    app.button(key=f"iw_option_D3_{option_id}").click().run(timeout=30)
+    assert not app.exception
+    assert engine(app).state.answers["D3"].context_details["pending_option_id"] == option_id
+
+    send(app, "pounds sterling")
+    record = engine(app).state.answers["D3"]
+    assert record.status == AnswerStatus.CANDIDATE
+    assert record.candidate_option_id == option_id
+    assert record.context_details["currency"] == "GBP"
+    assert record.source == "bounded_material_completion"
+    assert app.session_state["iw_last_response"]["bucket"] == "Clarity"
+
+
 def test_default_first_free_text_turn_uses_actual_ml_even_for_an_exact_label():
     app = open_default_app()
     qid = engine(app).state.current_question_id
