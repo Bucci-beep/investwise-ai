@@ -1,0 +1,114 @@
+======================================================================
+D5 EXPERIMENT 2 — WORD VS WORD + CHARACTER TF-IDF
+======================================================================
+Training rows: 120
+Development rows: 40
+Intent training distribution: Counter({'clarity': 96, 'undecided': 12, 'confusion': 12})
+
+INTENT — WORD ONLY
+Macro F1: 0.8533
+              precision    recall  f1-score   support
+
+     clarity       0.92      1.00      0.96        24
+   undecided       0.86      0.75      0.80         8
+   confusion       0.86      0.75      0.80         8
+
+    accuracy                           0.90        40
+   macro avg       0.88      0.83      0.85        40
+weighted avg       0.90      0.90      0.90        40
+
+Confusion matrix
+['clarity', 'undecided', 'confusion']
+[[24  0  0]
+ [ 1  6  1]
+ [ 1  1  6]]
+
+INTENT — WORD + CHARACTER
+Macro F1: 0.8849
+              precision    recall  f1-score   support
+
+     clarity       0.96      1.00      0.98        24
+   undecided       0.88      0.88      0.88         8
+   confusion       0.86      0.75      0.80         8
+
+    accuracy                           0.93        40
+   macro avg       0.90      0.88      0.88        40
+weighted avg       0.92      0.93      0.92        40
+
+Confusion matrix
+['clarity', 'undecided', 'confusion']
+[[24  0  0]
+ [ 0  7  1]
+ [ 1  1  6]]
+
+Option training distribution: Counter({'D5_SALARY': 12, 'D5_SELF_EMPLOYMENT': 12, 'D5_PENSION_PAYMENTS': 12, 'D5_BENEFITS_SUPPORT': 12, 'D5_WITHDRAWALS': 12, 'D5_OTHER_REGULAR': 12, 'D5_NO_REGULAR': 12, 'D5_MULTIPLE': 12})
+
+OPTION — WORD ONLY
+Macro F1: 0.9143
+                     precision    recall  f1-score   support
+
+          D5_SALARY       1.00      1.00      1.00         3
+ D5_SELF_EMPLOYMENT       0.75      1.00      0.86         3
+D5_PENSION_PAYMENTS       1.00      1.00      1.00         3
+D5_BENEFITS_SUPPORT       1.00      1.00      1.00         3
+     D5_WITHDRAWALS       0.75      1.00      0.86         3
+   D5_OTHER_REGULAR       1.00      0.67      0.80         3
+      D5_NO_REGULAR       1.00      1.00      1.00         3
+        D5_MULTIPLE       1.00      0.67      0.80         3
+
+           accuracy                           0.92        24
+          macro avg       0.94      0.92      0.91        24
+       weighted avg       0.94      0.92      0.91        24
+
+Confusion matrix
+['D5_SALARY', 'D5_SELF_EMPLOYMENT', 'D5_PENSION_PAYMENTS', 'D5_BENEFITS_SUPPORT', 'D5_WITHDRAWALS', 'D5_OTHER_REGULAR', 'D5_NO_REGULAR', 'D5_MULTIPLE']
+[[3 0 0 0 0 0 0 0]
+ [0 3 0 0 0 0 0 0]
+ [0 0 3 0 0 0 0 0]
+ [0 0 0 3 0 0 0 0]
+ [0 0 0 0 3 0 0 0]
+ [0 1 0 0 0 2 0 0]
+ [0 0 0 0 0 0 3 0]
+ [0 0 0 0 1 0 0 2]]
+
+OPTION — WORD + CHARACTER
+Macro F1: 0.9018
+                     precision    recall  f1-score   support
+
+          D5_SALARY       1.00      1.00      1.00         3
+ D5_SELF_EMPLOYMENT       1.00      1.00      1.00         3
+D5_PENSION_PAYMENTS       1.00      1.00      1.00         3
+D5_BENEFITS_SUPPORT       0.75      1.00      0.86         3
+     D5_WITHDRAWALS       0.75      1.00      0.86         3
+   D5_OTHER_REGULAR       1.00      1.00      1.00         3
+      D5_NO_REGULAR       1.00      1.00      1.00         3
+        D5_MULTIPLE       1.00      0.33      0.50         3
+
+           accuracy                           0.92        24
+          macro avg       0.94      0.92      0.90        24
+       weighted avg       0.94      0.92      0.90        24
+
+Confusion matrix
+['D5_SALARY', 'D5_SELF_EMPLOYMENT', 'D5_PENSION_PAYMENTS', 'D5_BENEFITS_SUPPORT', 'D5_WITHDRAWALS', 'D5_OTHER_REGULAR', 'D5_NO_REGULAR', 'D5_MULTIPLE']
+[[3 0 0 0 0 0 0 0]
+ [0 3 0 0 0 0 0 0]
+ [0 0 3 0 0 0 0 0]
+ [0 0 0 3 0 0 0 0]
+ [0 0 0 0 3 0 0 0]
+ [0 0 0 0 0 3 0 0]
+ [0 0 0 0 0 0 3 0]
+ [0 0 0 1 1 0 0 1]]
+
+======================================================================
+SUMMARY
+======================================================================
+Intent macro F1: word=0.8533 word+char=0.8849 delta=+0.0315
+Option macro F1: word=0.9143 word+char=0.9018 delta=-0.0125
+
+PREDICTION CHANGES
+INTENT D5-DEV-029: expected=undecided word=clarity word+char=undecided old_correct=False new_correct=True
+  Things changed recently and I haven't worked out what is regularly covering the expenses now.
+OPTION D5-DEV-018: expected=D5_OTHER_REGULAR word=D5_SELF_EMPLOYMENT word+char=D5_OTHER_REGULAR old_correct=False new_correct=True
+  These days the household runs on recurring licence payments from my work.
+OPTION D5-DEV-024: expected=D5_MULTIPLE word=D5_MULTIPLE word+char=D5_BENEFITS_SUPPORT old_correct=True new_correct=False
+  I use my freelance earnings as well as benefits for the regular household costs.
