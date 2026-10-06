@@ -1,0 +1,170 @@
+
+======================================================================
+MODEL A — V1 D5 ONLY
+======================================================================
+
+INTENT
+Training rows: 56
+Training distribution: Counter({'clarity': 48, 'undecided': 4, 'confusion': 4})
+Macro F1: 0.3247
+              precision    recall  f1-score   support
+
+     clarity       0.63      1.00      0.77        24
+   undecided       0.00      0.00      0.00         8
+   confusion       0.50      0.12      0.20         8
+
+    accuracy                           0.62        40
+   macro avg       0.38      0.38      0.32        40
+weighted avg       0.48      0.62      0.50        40
+
+Confusion matrix
+['clarity', 'undecided', 'confusion']
+[[24  0  0]
+ [ 7  0  1]
+ [ 7  0  1]]
+
+OPTION
+Training rows: 48
+Training distribution: Counter({'D5_SALARY': 6, 'D5_SELF_EMPLOYMENT': 6, 'D5_PENSION_PAYMENTS': 6, 'D5_BENEFITS_SUPPORT': 6, 'D5_WITHDRAWALS': 6, 'D5_OTHER_REGULAR': 6, 'D5_NO_REGULAR': 6, 'D5_MULTIPLE': 6})
+Macro F1: 0.5997
+                     precision    recall  f1-score   support
+
+          D5_SALARY       0.50      1.00      0.67         3
+ D5_SELF_EMPLOYMENT       0.60      1.00      0.75         3
+D5_PENSION_PAYMENTS       0.75      1.00      0.86         3
+D5_BENEFITS_SUPPORT       1.00      0.33      0.50         3
+     D5_WITHDRAWALS       0.75      1.00      0.86         3
+   D5_OTHER_REGULAR       1.00      0.33      0.50         3
+      D5_NO_REGULAR       0.67      0.67      0.67         3
+        D5_MULTIPLE       0.00      0.00      0.00         3
+
+           accuracy                           0.67        24
+          macro avg       0.66      0.67      0.60        24
+       weighted avg       0.66      0.67      0.60        24
+
+Confusion matrix
+['D5_SALARY', 'D5_SELF_EMPLOYMENT', 'D5_PENSION_PAYMENTS', 'D5_BENEFITS_SUPPORT', 'D5_WITHDRAWALS', 'D5_OTHER_REGULAR', 'D5_NO_REGULAR', 'D5_MULTIPLE']
+[[3 0 0 0 0 0 0 0]
+ [0 3 0 0 0 0 0 0]
+ [0 0 3 0 0 0 0 0]
+ [0 1 0 1 0 0 1 0]
+ [0 0 0 0 3 0 0 0]
+ [0 1 1 0 0 1 0 0]
+ [1 0 0 0 0 0 2 0]
+ [2 0 0 0 1 0 0 0]]
+
+MISCLASSIFICATIONS
+INTENT D5-DEV-025: expected=undecided predicted=clarity
+  I'm honestly not sure which source is actually paying the regular bills.
+INTENT D5-DEV-026: expected=undecided predicted=clarity
+  I'd need to check my bank account because I don't know what money we've been using for the household costs.
+INTENT D5-DEV-027: expected=undecided predicted=clarity
+  It could be my wages or money from savings. I'm not sure which one we're actually living on.
+INTENT D5-DEV-028: expected=undecided predicted=confusion
+  I understand what you're asking, I just don't know the answer without checking.
+INTENT D5-DEV-029: expected=undecided predicted=clarity
+  Things changed recently and I haven't worked out what is regularly covering the expenses now.
+INTENT D5-DEV-030: expected=undecided predicted=clarity
+  Not sure at the moment. I'd have to look at where the bill money has actually been coming from.
+INTENT D5-DEV-031: expected=undecided predicted=clarity
+  My partner handles most of our finances, so I genuinely don't know which source currently covers our living costs.
+INTENT D5-DEV-032: expected=undecided predicted=clarity
+  I know we have money coming in from a few places, but I couldn't tell you which of them is funding the day-to-day spending.
+INTENT D5-DEV-033: expected=confusion predicted=clarity
+  When you say living costs, what exactly are you including?
+INTENT D5-DEV-034: expected=confusion predicted=clarity
+  I'm not sure what you mean by a regular source of money.
+INTENT D5-DEV-035: expected=confusion predicted=clarity
+  Are you asking about all the money I receive or only the money I actually use to pay my bills?
+INTENT D5-DEV-036: expected=confusion predicted=clarity
+  Does my pension count if the money is still in the pension and I'm not taking payments from it?
+INTENT D5-DEV-037: expected=confusion predicted=clarity
+  Do you mean where my savings are held, or where the money for my everyday expenses comes from?
+INTENT D5-DEV-038: expected=confusion predicted=clarity
+  If my family helps me sometimes, does that count as income for this question?
+INTENT D5-DEV-039: expected=confusion predicted=clarity
+  Are you asking how much I spend each month or where the money to pay for it comes from?
+OPTION D5-DEV-010: expected=D5_BENEFITS_SUPPORT predicted=D5_NO_REGULAR
+  Universal Credit is covering my rent and day-to-day costs at the moment.
+OPTION D5-DEV-011: expected=D5_BENEFITS_SUPPORT predicted=D5_SELF_EMPLOYMENT
+  My brother helps me out every month and that's what I'm using for the household expenses.
+OPTION D5-DEV-017: expected=D5_OTHER_REGULAR predicted=D5_PENSION_PAYMENTS
+  I get royalty payments regularly and use those for my living costs.
+OPTION D5-DEV-018: expected=D5_OTHER_REGULAR predicted=D5_SELF_EMPLOYMENT
+  These days the household runs on recurring licence payments from my work.
+OPTION D5-DEV-019: expected=D5_NO_REGULAR predicted=D5_SALARY
+  Nothing regular is coming in to cover my living expenses at present.
+OPTION D5-DEV-022: expected=D5_MULTIPLE predicted=D5_WITHDRAWALS
+  Part comes from my wages and the rest comes from money I withdraw from savings.
+OPTION D5-DEV-023: expected=D5_MULTIPLE predicted=D5_SALARY
+  My pension covers some of the bills and rent from my flat covers the rest.
+OPTION D5-DEV-024: expected=D5_MULTIPLE predicted=D5_SALARY
+  I use my freelance earnings as well as benefits for the regular household costs.
+
+======================================================================
+MODEL B — V1 D5 + V2 AUGMENTATION
+======================================================================
+
+INTENT
+Training rows: 120
+Training distribution: Counter({'clarity': 96, 'undecided': 12, 'confusion': 12})
+Macro F1: 0.8533
+              precision    recall  f1-score   support
+
+     clarity       0.92      1.00      0.96        24
+   undecided       0.86      0.75      0.80         8
+   confusion       0.86      0.75      0.80         8
+
+    accuracy                           0.90        40
+   macro avg       0.88      0.83      0.85        40
+weighted avg       0.90      0.90      0.90        40
+
+Confusion matrix
+['clarity', 'undecided', 'confusion']
+[[24  0  0]
+ [ 1  6  1]
+ [ 1  1  6]]
+
+OPTION
+Training rows: 96
+Training distribution: Counter({'D5_SALARY': 12, 'D5_SELF_EMPLOYMENT': 12, 'D5_PENSION_PAYMENTS': 12, 'D5_BENEFITS_SUPPORT': 12, 'D5_WITHDRAWALS': 12, 'D5_OTHER_REGULAR': 12, 'D5_NO_REGULAR': 12, 'D5_MULTIPLE': 12})
+Macro F1: 0.9143
+                     precision    recall  f1-score   support
+
+          D5_SALARY       1.00      1.00      1.00         3
+ D5_SELF_EMPLOYMENT       0.75      1.00      0.86         3
+D5_PENSION_PAYMENTS       1.00      1.00      1.00         3
+D5_BENEFITS_SUPPORT       1.00      1.00      1.00         3
+     D5_WITHDRAWALS       0.75      1.00      0.86         3
+   D5_OTHER_REGULAR       1.00      0.67      0.80         3
+      D5_NO_REGULAR       1.00      1.00      1.00         3
+        D5_MULTIPLE       1.00      0.67      0.80         3
+
+           accuracy                           0.92        24
+          macro avg       0.94      0.92      0.91        24
+       weighted avg       0.94      0.92      0.91        24
+
+Confusion matrix
+['D5_SALARY', 'D5_SELF_EMPLOYMENT', 'D5_PENSION_PAYMENTS', 'D5_BENEFITS_SUPPORT', 'D5_WITHDRAWALS', 'D5_OTHER_REGULAR', 'D5_NO_REGULAR', 'D5_MULTIPLE']
+[[3 0 0 0 0 0 0 0]
+ [0 3 0 0 0 0 0 0]
+ [0 0 3 0 0 0 0 0]
+ [0 0 0 3 0 0 0 0]
+ [0 0 0 0 3 0 0 0]
+ [0 1 0 0 0 2 0 0]
+ [0 0 0 0 0 0 3 0]
+ [0 0 0 0 1 0 0 2]]
+
+MISCLASSIFICATIONS
+INTENT D5-DEV-028: expected=undecided predicted=confusion
+  I understand what you're asking, I just don't know the answer without checking.
+INTENT D5-DEV-029: expected=undecided predicted=clarity
+  Things changed recently and I haven't worked out what is regularly covering the expenses now.
+INTENT D5-DEV-034: expected=confusion predicted=undecided
+  I'm not sure what you mean by a regular source of money.
+INTENT D5-DEV-036: expected=confusion predicted=clarity
+  Does my pension count if the money is still in the pension and I'm not taking payments from it?
+OPTION D5-DEV-018: expected=D5_OTHER_REGULAR predicted=D5_SELF_EMPLOYMENT
+  These days the household runs on recurring licence payments from my work.
+OPTION D5-DEV-022: expected=D5_MULTIPLE predicted=D5_WITHDRAWALS
+  Part comes from my wages and the rest comes from money I withdraw from savings.

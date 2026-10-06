@@ -1,0 +1,35 @@
+{
+  "creation_date": "2026-10-05",
+  "fictional": true,
+  "contains_real_customer_data": false,
+  "purpose": "Controlled D5-only synthetic training-data development experiment.",
+  "source_identifier": "fictional_authored_d5_v2_experiment_2026-10-05",
+  "row_counts": {
+    "total": 64,
+    "train": 64
+  },
+  "class_counts": {
+    "clarity": 48,
+    "undecided": 8,
+    "confusion": 8
+  },
+  "option_counts": {
+    "D5_SALARY": 6,
+    "D5_SELF_EMPLOYMENT": 6,
+    "D5_PENSION_PAYMENTS": 6,
+    "D5_BENEFITS_SUPPORT": 6,
+    "D5_WITHDRAWALS": 6,
+    "D5_OTHER_REGULAR": 6,
+    "D5_NO_REGULAR": 6,
+    "D5_MULTIPLE": 6
+  },
+  "sha256": {
+    "d5_training_additions.csv": "0a2c60dd9701e1e08e040179eaf439a1ddcc52501f46aa82b9923c1857caeacc"
+  },
+  "v1_data_statement": "The existing v1 train.csv, calibration.csv, and test.csv were not modified.",
+  "runtime_statement": "This augmentation is not integrated into training or runtime behaviour.",
+  "limitations": [
+    "This is synthetic development augmentation, not evidence of real-customer performance.",
+    "Authored coverage cannot establish representativeness, semantic independence, or conformal coverage for real customers."
+  ]
+}

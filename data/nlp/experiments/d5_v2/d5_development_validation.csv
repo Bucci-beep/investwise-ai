@@ -1,0 +1,41 @@
+id,question_id,text,bucket,option_id,source,group_id,split
+D5-DEV-001,D5,"It's my wages really. That's what I use for rent and everything else.",clarity,D5_SALARY,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:salary:natural,validation
+D5-DEV-002,D5,"I earn a bit from selling things online too, but my normal salary is what pays the household bills.",clarity,D5_SALARY,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:salary:contrast,validation
+D5-DEV-003,D5,"Used to rely on savings, not anymore though. My wages cover day-to-day expenses now.",clarity,D5_SALARY,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:salary:change,validation
+D5-DEV-004,D5,"Money from the jobs I do for clients is what I live on.",clarity,D5_SELF_EMPLOYMENT,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:self_employed:natural,validation
+D5-DEV-005,D5,"I'm a sole trader and the business income covers my rent and usual spending.",clarity,D5_SELF_EMPLOYMENT,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:self_employed:direct,validation
+D5-DEV-006,D5,"No wage from an employer these days. I pay my living costs from my freelance work.",clarity,D5_SELF_EMPLOYMENT,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:self_employed:contrast,validation
+D5-DEV-007,D5,"The pension I get each month is what I live off.",clarity,D5_PENSION_PAYMENTS,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:pension:natural,validation
+D5-DEV-008,D5,"I've got other pension savings untouched, but the pension payments I receive cover my normal expenses.",clarity,D5_PENSION_PAYMENTS,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:pension:holding_contrast,validation
+D5-DEV-009,D5,"Since retiring I've been paying the bills with the pension that comes in every month.",clarity,D5_PENSION_PAYMENTS,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:pension:change,validation
+D5-DEV-010,D5,"Universal Credit is covering my rent and day-to-day costs at the moment.",clarity,D5_BENEFITS_SUPPORT,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:benefits:direct,validation
+D5-DEV-011,D5,"My brother helps me out every month and that's what I'm using for the household expenses.",clarity,D5_BENEFITS_SUPPORT,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:support:direct,validation
+D5-DEV-012,D5,"Benefits plus regular help from my family are covering my living costs right now.",clarity,D5_BENEFITS_SUPPORT,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:benefits_support:combined,validation
+D5-DEV-013,D5,"I'm dipping into my savings every month for the usual bills.",clarity,D5_WITHDRAWALS,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:withdrawals:natural,validation
+D5-DEV-014,D5,"I cash in a little of my investments regularly and use that money to live on.",clarity,D5_WITHDRAWALS,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:withdrawals:investments,validation
+D5-DEV-015,D5,"I do receive some income but I leave it alone. It's money I take from savings that actually pays my expenses.",clarity,D5_WITHDRAWALS,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:withdrawals:contrast,validation
+D5-DEV-016,D5,"Rent from a property I let out is what pays my regular expenses.",clarity,D5_OTHER_REGULAR,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:other:rental,validation
+D5-DEV-017,D5,"I get royalty payments regularly and use those for my living costs.",clarity,D5_OTHER_REGULAR,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:other:royalties,validation
+D5-DEV-018,D5,"These days the household runs on recurring licence payments from my work.",clarity,D5_OTHER_REGULAR,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:other:licensing,validation
+D5-DEV-019,D5,"Nothing regular is coming in to cover my living expenses at present.",clarity,D5_NO_REGULAR,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:none:explicit,validation
+D5-DEV-020,D5,"I've had a couple of one-off payments, but no regular source is paying the bills.",clarity,D5_NO_REGULAR,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:none:one_off,validation
+D5-DEV-021,D5,"I'm unemployed at the moment and, just to be clear, I don't have any regular money funding my living costs.",clarity,D5_NO_REGULAR,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:none:explicit_unemployed,validation
+D5-DEV-022,D5,"Part comes from my wages and the rest comes from money I withdraw from savings.",clarity,D5_MULTIPLE,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:multiple:salary_withdrawals,validation
+D5-DEV-023,D5,"My pension covers some of the bills and rent from my flat covers the rest.",clarity,D5_MULTIPLE,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:multiple:pension_rent,validation
+D5-DEV-024,D5,"I use my freelance earnings as well as benefits for the regular household costs.",clarity,D5_MULTIPLE,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:multiple:self_employed_benefits,validation
+D5-DEV-025,D5,"I'm honestly not sure which source is actually paying the regular bills.",undecided,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:undecided:unknown_source,validation
+D5-DEV-026,D5,"I'd need to check my bank account because I don't know what money we've been using for the household costs.",undecided,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:undecided:needs_records,validation
+D5-DEV-027,D5,"It could be my wages or money from savings. I'm not sure which one we're actually living on.",undecided,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:undecided:between_sources,validation
+D5-DEV-028,D5,"I understand what you're asking, I just don't know the answer without checking.",undecided,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:undecided:explicit_understanding,validation
+D5-DEV-029,D5,"Things changed recently and I haven't worked out what is regularly covering the expenses now.",undecided,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:undecided:recent_change,validation
+D5-DEV-030,D5,"Not sure at the moment. I'd have to look at where the bill money has actually been coming from.",undecided,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:undecided:needs_records_short,validation
+D5-DEV-031,D5,"My partner handles most of our finances, so I genuinely don't know which source currently covers our living costs.",undecided,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:undecided:knowledge_gap,validation
+D5-DEV-032,D5,"I know we have money coming in from a few places, but I couldn't tell you which of them is funding the day-to-day spending.",undecided,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:undecided:multiple_unknown,validation
+D5-DEV-033,D5,"When you say living costs, what exactly are you including?",confusion,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:confusion:living_cost_scope,validation
+D5-DEV-034,D5,"I'm not sure what you mean by a regular source of money.",confusion,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:confusion:regular_definition,validation
+D5-DEV-035,D5,"Are you asking about all the money I receive or only the money I actually use to pay my bills?",confusion,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:confusion:funding_scope,validation
+D5-DEV-036,D5,"Does my pension count if the money is still in the pension and I'm not taking payments from it?",confusion,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:confusion:pension_holding,validation
+D5-DEV-037,D5,"Do you mean where my savings are held, or where the money for my everyday expenses comes from?",confusion,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:confusion:wrong_premise,validation
+D5-DEV-038,D5,"If my family helps me sometimes, does that count as income for this question?",confusion,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:confusion:support_definition,validation
+D5-DEV-039,D5,"Are you asking how much I spend each month or where the money to pay for it comes from?",confusion,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:confusion:amount_vs_source,validation
+D5-DEV-040,D5,"Sorry, I don't really understand what you're asking me to choose between here.",confusion,,fictional_authored_d5_dev_validation_2026-10-06,D5:dev:confusion:general,validation
