@@ -1,0 +1,166 @@
+EXPERIMENT 4 — D5 FROZEN SENTENCE-TRANSFORMER REPRESENTATION
+
+Purpose
+-------
+Test whether a pretrained contextual sentence representation improves D5
+classification, particularly the compositional and contextual-attribution
+weaknesses identified in Experiments 3 and 3B.
+
+Models
+------
+Baseline:
+- Existing BoundedTextClassifier
+- Word TF-IDF (1,2-grams)
+- Logistic Regression
+
+Contextual candidate:
+- sentence-transformers/all-MiniLM-L6-v2
+- Frozen pretrained encoder
+- 384-dimensional normalized sentence embeddings
+- Logistic Regression
+- No transformer fine-tuning
+
+Logistic Regression settings:
+- max_iter=1000
+- random_state=42
+- class_weight="balanced"
+
+Training data
+-------------
+Intent:
+- 120 D5 rows (V1 + V2 augmentation)
+- clarity: 96
+- undecided: 12
+- confusion: 12
+
+Option:
+- 96 clarity rows
+- 12 examples for each of 8 D5 options
+
+No development-validation or stress-test examples were used for training.
+
+DEVELOPMENT VALIDATION — INTENT
+-------------------------------
+40 examples
+
+Word TF-IDF macro F1: 0.8533
+MiniLM macro F1:       0.8849
+
+MiniLM accuracy: 0.93
+
+MiniLM per-class F1:
+- clarity:   0.98
+- undecided: 0.80
+- confusion: 0.88
+
+Prediction change:
+- D5-DEV-036 was corrected from clarity to confusion:
+  "Does my pension count if the money is still in the pension and I'm not
+  taking payments from it?"
+
+Interpretation:
+MiniLM produced a modest improvement for the three-way intent task.
+
+DEVELOPMENT VALIDATION — OPTION
+-------------------------------
+24 clarity examples
+
+Word TF-IDF macro F1: 0.9143
+MiniLM macro F1:       0.6545
+
+MiniLM accuracy: 0.71
+
+MiniLM per-class F1:
+- D5_SALARY:           0.40
+- D5_SELF_EMPLOYMENT:  0.57
+- D5_PENSION_PAYMENTS: 0.86
+- D5_BENEFITS_SUPPORT: 0.80
+- D5_WITHDRAWALS:      0.75
+- D5_OTHER_REGULAR:    0.86
+- D5_NO_REGULAR:       1.00
+- D5_MULTIPLE:         0.00
+
+MiniLM failed to correctly classify any of the three D5_MULTIPLE development
+examples.
+
+COMPOSITIONAL CHALLENGE
+-----------------------
+18 targeted examples
+
+Overall:
+- Word TF-IDF: 16/18 (88.9%)
+- MiniLM:       7/18 (38.9%)
+
+By case type:
+- single_source:
+  TF-IDF 6/6
+  MiniLM 6/6
+
+- multiple_source:
+  TF-IDF 5/6
+  MiniLM 0/6
+
+- negative_control:
+  TF-IDF 5/6
+  MiniLM 1/6
+
+The frozen MiniLM representation handled all simple single-source examples but
+failed all six multiple-source examples.
+
+COMPETING-SOURCE CHALLENGE
+--------------------------
+18 targeted examples
+
+Overall:
+- Word TF-IDF: 11/18 (61.1%)
+- MiniLM:       5/18 (27.8%)
+
+By case type:
+- multiple_salary_benefits:
+  TF-IDF 1/3
+  MiniLM 0/3
+
+- multiple_salary_pension:
+  TF-IDF 2/3
+  MiniLM 0/3
+
+- multiple_salary_rental:
+  TF-IDF 3/3
+  MiniLM 1/3
+
+- salary_distractor:
+  TF-IDF 5/9
+  MiniLM 4/9
+
+CONCLUSION
+----------
+A frozen general-purpose sentence-transformer representation did not improve
+D5 option classification.
+
+It modestly improved intent classification, but substantially reduced option
+performance and performed particularly poorly on multiple-source composition
+and competing-source attribution.
+
+The result does not support replacing the existing word TF-IDF representation
+with frozen MiniLM embeddings.
+
+Combined with Experiments 1-3B, the evidence suggests that the remaining D5
+weakness is not simply insufficient surface-level or generic semantic
+representation. The task requires explicit handling of relationships between
+financial sources, including whether a mentioned source actually funds living
+costs and whether multiple valid source categories jointly contribute.
+
+This experiment does not establish that all transformer approaches would fail.
+The encoder was frozen and was not adapted to the D5 task.
+
+LIMITATIONS
+-----------
+- Training and evaluation data are synthetic/authored development data.
+- The development and stress sets have already been observed during model
+  development and are not independent final validation.
+- Stress-test accuracy must not be interpreted as real-world accuracy.
+- No transformer fine-tuning was performed.
+- No conformal calibration or coverage evaluation was performed.
+- No final test set was used.
+- Results apply to this specific frozen MiniLM configuration and should not be
+  generalized to transformer models as a whole.
