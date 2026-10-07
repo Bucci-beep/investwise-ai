@@ -1,0 +1,108 @@
+======================================================================
+D5 EXPERIMENT 3B — COMPETING SOURCE STRESS TEST
+======================================================================
+Training rows: 96
+Challenge rows: 18
+
+FAIL D5-COMP-B-001 [multiple_salary_benefits]
+Expected:  D5_MULTIPLE
+Predicted: D5_BENEFITS_SUPPORT
+Text: My salary pays some of my household costs and benefits cover the rest.
+
+FAIL D5-COMP-B-002 [multiple_salary_benefits]
+Expected:  D5_MULTIPLE
+Predicted: D5_SALARY
+Text: I use my wages for the rent and benefits for my other regular expenses.
+
+PASS D5-COMP-B-003 [multiple_salary_benefits]
+Expected:  D5_MULTIPLE
+Predicted: D5_MULTIPLE
+Text: Both my wages and benefit payments go towards my day-to-day living costs.
+
+FAIL D5-COMP-B-004 [salary_distractor]
+Expected:  D5_BENEFITS_SUPPORT
+Predicted: D5_SALARY
+Text: I receive a salary but don't use it for living expenses. Benefits cover those.
+
+FAIL D5-COMP-B-005 [salary_distractor]
+Expected:  D5_BENEFITS_SUPPORT
+Predicted: D5_SALARY
+Text: My wages are saved rather than spent. I rely on benefits for the household bills.
+
+PASS D5-COMP-B-006 [salary_distractor]
+Expected:  D5_BENEFITS_SUPPORT
+Predicted: D5_BENEFITS_SUPPORT
+Text: I have employment income, but none of it pays my living costs; benefits do.
+
+PASS D5-COMP-B-007 [multiple_salary_rental]
+Expected:  D5_MULTIPLE
+Predicted: D5_MULTIPLE
+Text: My salary covers part of the bills and rental income pays the remainder.
+
+PASS D5-COMP-B-008 [multiple_salary_rental]
+Expected:  D5_MULTIPLE
+Predicted: D5_MULTIPLE
+Text: I use wages for some household spending and rent from my property for the rest.
+
+PASS D5-COMP-B-009 [multiple_salary_rental]
+Expected:  D5_MULTIPLE
+Predicted: D5_MULTIPLE
+Text: Both my employment income and rental income currently fund my living costs.
+
+FAIL D5-COMP-B-010 [salary_distractor]
+Expected:  D5_OTHER_REGULAR
+Predicted: D5_SALARY
+Text: I still earn a salary, but I don't spend it on living costs. Rental income pays those.
+
+FAIL D5-COMP-B-011 [salary_distractor]
+Expected:  D5_OTHER_REGULAR
+Predicted: D5_SALARY
+Text: My wages go into savings and aren't used for household expenses. The rent I receive pays the bills.
+
+PASS D5-COMP-B-012 [salary_distractor]
+Expected:  D5_OTHER_REGULAR
+Predicted: D5_OTHER_REGULAR
+Text: I get paid by my employer, but that money doesn't fund my regular expenses; my rental income does.
+
+FAIL D5-COMP-B-013 [multiple_salary_pension]
+Expected:  D5_MULTIPLE
+Predicted: D5_PENSION_PAYMENTS
+Text: My wages cover some regular expenses and my pension payments cover the rest.
+
+PASS D5-COMP-B-014 [multiple_salary_pension]
+Expected:  D5_MULTIPLE
+Predicted: D5_MULTIPLE
+Text: I use both my salary and the pension payments I receive to meet my living costs.
+
+PASS D5-COMP-B-015 [multiple_salary_pension]
+Expected:  D5_MULTIPLE
+Predicted: D5_MULTIPLE
+Text: Part of my household spending comes from wages and part comes from my pension income.
+
+PASS D5-COMP-B-016 [salary_distractor]
+Expected:  D5_PENSION_PAYMENTS
+Predicted: D5_PENSION_PAYMENTS
+Text: I receive wages, but they aren't used for my living expenses. My pension payments cover them.
+
+PASS D5-COMP-B-017 [salary_distractor]
+Expected:  D5_PENSION_PAYMENTS
+Predicted: D5_PENSION_PAYMENTS
+Text: My salary goes straight into savings. I live on the pension payments I receive.
+
+PASS D5-COMP-B-018 [salary_distractor]
+Expected:  D5_PENSION_PAYMENTS
+Predicted: D5_PENSION_PAYMENTS
+Text: Although I still have employment income, it doesn't pay the household bills. My pension income does.
+
+======================================================================
+SUMMARY
+======================================================================
+multiple_salary_benefits: 1/3 (33.3%)
+multiple_salary_pension: 2/3 (66.7%)
+multiple_salary_rental: 3/3 (100.0%)
+salary_distractor: 5/9 (55.6%)
+
+CONCEPTUAL BREAKDOWN
+Salary genuinely contributes: 6/9 (66.7%)
+Salary is only a distractor: 5/9 (55.6%)
+Overall: 11/18 (61.1%)

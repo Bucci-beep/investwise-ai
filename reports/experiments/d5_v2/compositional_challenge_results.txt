@@ -1,0 +1,103 @@
+======================================================================
+D5 EXPERIMENT 3 — COMPOSITIONAL CHALLENGE
+======================================================================
+Training rows: 96
+Challenge rows: 18
+
+PASS D5-COMP-001 [single_source]
+Expected:  D5_SALARY
+Predicted: D5_SALARY
+Text: My wages pay my regular living costs.
+
+PASS D5-COMP-002 [single_source]
+Expected:  D5_WITHDRAWALS
+Predicted: D5_WITHDRAWALS
+Text: I use money from my savings to cover my regular living costs.
+
+PASS D5-COMP-003 [single_source]
+Expected:  D5_PENSION_PAYMENTS
+Predicted: D5_PENSION_PAYMENTS
+Text: My pension payments cover my regular household expenses.
+
+PASS D5-COMP-004 [single_source]
+Expected:  D5_BENEFITS_SUPPORT
+Predicted: D5_BENEFITS_SUPPORT
+Text: Benefits are what I currently use to pay my usual living costs.
+
+PASS D5-COMP-005 [single_source]
+Expected:  D5_SELF_EMPLOYMENT
+Predicted: D5_SELF_EMPLOYMENT
+Text: Income from my freelance work pays my regular expenses.
+
+PASS D5-COMP-006 [single_source]
+Expected:  D5_OTHER_REGULAR
+Predicted: D5_OTHER_REGULAR
+Text: Rent from a property I own covers my regular living costs.
+
+PASS D5-COMP-007 [multiple_source]
+Expected:  D5_MULTIPLE
+Predicted: D5_MULTIPLE
+Text: My wages cover some of my bills and I withdraw from savings for the rest.
+
+FAIL D5-COMP-008 [multiple_source]
+Expected:  D5_MULTIPLE
+Predicted: D5_BENEFITS_SUPPORT
+Text: My salary pays part of my living costs and benefits cover the remainder.
+
+PASS D5-COMP-009 [multiple_source]
+Expected:  D5_MULTIPLE
+Predicted: D5_MULTIPLE
+Text: My pension payments cover some expenses and rental income covers the others.
+
+PASS D5-COMP-010 [multiple_source]
+Expected:  D5_MULTIPLE
+Predicted: D5_MULTIPLE
+Text: I use both my freelance earnings and benefits to pay my regular household costs.
+
+PASS D5-COMP-011 [multiple_source]
+Expected:  D5_MULTIPLE
+Predicted: D5_MULTIPLE
+Text: My pension income pays some bills and I withdraw from savings to cover the rest.
+
+PASS D5-COMP-012 [multiple_source]
+Expected:  D5_MULTIPLE
+Predicted: D5_MULTIPLE
+Text: Rental income covers part of my expenses and benefits pay for the rest.
+
+PASS D5-COMP-013 [negative_control]
+Expected:  D5_SALARY
+Predicted: D5_SALARY
+Text: I have savings, but I don't use them for living costs. My salary pays the bills.
+
+PASS D5-COMP-014 [negative_control]
+Expected:  D5_BENEFITS_SUPPORT
+Predicted: D5_BENEFITS_SUPPORT
+Text: I receive wages, but they go straight into savings. Benefits currently cover my living costs.
+
+PASS D5-COMP-015 [negative_control]
+Expected:  D5_SELF_EMPLOYMENT
+Predicted: D5_SELF_EMPLOYMENT
+Text: I own a pension pot, but I am not taking anything from it. My freelance income pays my expenses.
+
+PASS D5-COMP-016 [negative_control]
+Expected:  D5_PENSION_PAYMENTS
+Predicted: D5_PENSION_PAYMENTS
+Text: I earn rental income, but I save all of it. My pension payments cover my day-to-day costs.
+
+PASS D5-COMP-017 [negative_control]
+Expected:  D5_WITHDRAWALS
+Predicted: D5_WITHDRAWALS
+Text: I get help from family occasionally, but it doesn't pay my regular bills. I use savings for those.
+
+FAIL D5-COMP-018 [negative_control]
+Expected:  D5_OTHER_REGULAR
+Predicted: D5_SALARY
+Text: I still receive a salary, but I don't use it for household spending. Rental income covers those costs.
+
+======================================================================
+SUMMARY
+======================================================================
+single_source: 6/6 (100.0%)
+multiple_source: 5/6 (83.3%)
+negative_control: 5/6 (83.3%)
+Overall: 16/18 (88.9%)
