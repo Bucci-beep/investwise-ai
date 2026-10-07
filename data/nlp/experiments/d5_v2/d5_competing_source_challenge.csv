@@ -1,0 +1,19 @@
+id,question_id,text,expected_option,case_type,group_id
+D5-COMP-B-001,D5,"My salary pays some of my household costs and benefits cover the rest.",D5_MULTIPLE,multiple_salary_benefits,D5:compb:salary_benefits:1
+D5-COMP-B-002,D5,"I use my wages for the rent and benefits for my other regular expenses.",D5_MULTIPLE,multiple_salary_benefits,D5:compb:salary_benefits:2
+D5-COMP-B-003,D5,"Both my wages and benefit payments go towards my day-to-day living costs.",D5_MULTIPLE,multiple_salary_benefits,D5:compb:salary_benefits:3
+D5-COMP-B-004,D5,"I receive a salary but don't use it for living expenses. Benefits cover those.",D5_BENEFITS_SUPPORT,salary_distractor,D5:compb:salary_benefits_negated:1
+D5-COMP-B-005,D5,"My wages are saved rather than spent. I rely on benefits for the household bills.",D5_BENEFITS_SUPPORT,salary_distractor,D5:compb:salary_benefits_negated:2
+D5-COMP-B-006,D5,"I have employment income, but none of it pays my living costs; benefits do.",D5_BENEFITS_SUPPORT,salary_distractor,D5:compb:salary_benefits_negated:3
+D5-COMP-B-007,D5,"My salary covers part of the bills and rental income pays the remainder.",D5_MULTIPLE,multiple_salary_rental,D5:compb:salary_rental:1
+D5-COMP-B-008,D5,"I use wages for some household spending and rent from my property for the rest.",D5_MULTIPLE,multiple_salary_rental,D5:compb:salary_rental:2
+D5-COMP-B-009,D5,"Both my employment income and rental income currently fund my living costs.",D5_MULTIPLE,multiple_salary_rental,D5:compb:salary_rental:3
+D5-COMP-B-010,D5,"I still earn a salary, but I don't spend it on living costs. Rental income pays those.",D5_OTHER_REGULAR,salary_distractor,D5:compb:salary_rental_negated:1
+D5-COMP-B-011,D5,"My wages go into savings and aren't used for household expenses. The rent I receive pays the bills.",D5_OTHER_REGULAR,salary_distractor,D5:compb:salary_rental_negated:2
+D5-COMP-B-012,D5,"I get paid by my employer, but that money doesn't fund my regular expenses; my rental income does.",D5_OTHER_REGULAR,salary_distractor,D5:compb:salary_rental_negated:3
+D5-COMP-B-013,D5,"My wages cover some regular expenses and my pension payments cover the rest.",D5_MULTIPLE,multiple_salary_pension,D5:compb:salary_pension:1
+D5-COMP-B-014,D5,"I use both my salary and the pension payments I receive to meet my living costs.",D5_MULTIPLE,multiple_salary_pension,D5:compb:salary_pension:2
+D5-COMP-B-015,D5,"Part of my household spending comes from wages and part comes from my pension income.",D5_MULTIPLE,multiple_salary_pension,D5:compb:salary_pension:3
+D5-COMP-B-016,D5,"I receive wages, but they aren't used for my living expenses. My pension payments cover them.",D5_PENSION_PAYMENTS,salary_distractor,D5:compb:salary_pension_negated:1
+D5-COMP-B-017,D5,"My salary goes straight into savings. I live on the pension payments I receive.",D5_PENSION_PAYMENTS,salary_distractor,D5:compb:salary_pension_negated:2
+D5-COMP-B-018,D5,"Although I still have employment income, it doesn't pay the household bills. My pension income does.",D5_PENSION_PAYMENTS,salary_distractor,D5:compb:salary_pension_negated:3

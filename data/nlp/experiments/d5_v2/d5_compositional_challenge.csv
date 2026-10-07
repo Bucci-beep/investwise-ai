@@ -1,0 +1,19 @@
+id,question_id,text,expected_option,case_type,group_id
+D5-COMP-001,D5,"My wages pay my regular living costs.",D5_SALARY,single_source,D5:comp:salary
+D5-COMP-002,D5,"I use money from my savings to cover my regular living costs.",D5_WITHDRAWALS,single_source,D5:comp:withdrawals
+D5-COMP-003,D5,"My pension payments cover my regular household expenses.",D5_PENSION_PAYMENTS,single_source,D5:comp:pension
+D5-COMP-004,D5,"Benefits are what I currently use to pay my usual living costs.",D5_BENEFITS_SUPPORT,single_source,D5:comp:benefits
+D5-COMP-005,D5,"Income from my freelance work pays my regular expenses.",D5_SELF_EMPLOYMENT,single_source,D5:comp:self_employment
+D5-COMP-006,D5,"Rent from a property I own covers my regular living costs.",D5_OTHER_REGULAR,single_source,D5:comp:rental
+D5-COMP-007,D5,"My wages cover some of my bills and I withdraw from savings for the rest.",D5_MULTIPLE,multiple_source,D5:comp:salary_withdrawals
+D5-COMP-008,D5,"My salary pays part of my living costs and benefits cover the remainder.",D5_MULTIPLE,multiple_source,D5:comp:salary_benefits
+D5-COMP-009,D5,"My pension payments cover some expenses and rental income covers the others.",D5_MULTIPLE,multiple_source,D5:comp:pension_rental
+D5-COMP-010,D5,"I use both my freelance earnings and benefits to pay my regular household costs.",D5_MULTIPLE,multiple_source,D5:comp:selfemployment_benefits
+D5-COMP-011,D5,"My pension income pays some bills and I withdraw from savings to cover the rest.",D5_MULTIPLE,multiple_source,D5:comp:pension_withdrawals
+D5-COMP-012,D5,"Rental income covers part of my expenses and benefits pay for the rest.",D5_MULTIPLE,multiple_source,D5:comp:rental_benefits
+D5-COMP-013,D5,"I have savings, but I don't use them for living costs. My salary pays the bills.",D5_SALARY,negative_control,D5:comp:salary_not_savings
+D5-COMP-014,D5,"I receive wages, but they go straight into savings. Benefits currently cover my living costs.",D5_BENEFITS_SUPPORT,negative_control,D5:comp:benefits_not_salary
+D5-COMP-015,D5,"I own a pension pot, but I am not taking anything from it. My freelance income pays my expenses.",D5_SELF_EMPLOYMENT,negative_control,D5:comp:selfemployment_not_pension
+D5-COMP-016,D5,"I earn rental income, but I save all of it. My pension payments cover my day-to-day costs.",D5_PENSION_PAYMENTS,negative_control,D5:comp:pension_not_rental
+D5-COMP-017,D5,"I get help from family occasionally, but it doesn't pay my regular bills. I use savings for those.",D5_WITHDRAWALS,negative_control,D5:comp:withdrawals_not_support
+D5-COMP-018,D5,"I still receive a salary, but I don't use it for household spending. Rental income covers those costs.",D5_OTHER_REGULAR,negative_control,D5:comp:rental_not_salary
