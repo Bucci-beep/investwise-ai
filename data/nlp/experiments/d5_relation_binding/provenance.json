@@ -1,0 +1,23 @@
+{
+  "experiment": "D5 Experiment 5C",
+  "purpose": "Train explicit source-specific relation binding using paired responses containing one active and one inactive funding source.",
+  "case_count": 34,
+  "training_row_count": 68,
+  "rows_per_case": 2,
+  "sha256": "72a57e7f155589f6f46d9a1d894b3096a56904d9026aa852925834ad00ea08b1",
+  "design": {
+    "salary_benefits": 4,
+    "salary_pension": 4,
+    "salary_other_regular": 4,
+    "salary_withdrawals": 4,
+    "salary_self_employment": 4,
+    "non_salary_pairings": 4,
+    "additional_non_salary_pairings": 10
+  },
+  "limitations": [
+    "Synthetic authored development data is not evidence of real-customer performance.",
+    "The dataset was designed after observing source attribution failures in earlier D5 experiments.",
+    "Observed development and stress sets are not independent final validation.",
+    "The dataset tests targeted relation binding and does not establish conformal coverage or deployment performance."
+  ]
+}

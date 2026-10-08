@@ -1,0 +1,107 @@
+D5 EXPERIMENT 5C — TARGET-CONDITIONED RELATION BINDING
+
+Purpose
+-------
+Test whether explicit target-source conditioning plus paired competing-source
+training can improve binding between a financial source and whether that
+specific source currently funds living costs.
+
+Architecture
+------------
+Customer response
+-> deterministic source mention detection
+-> target-conditioned attribution representation
+   TARGET_SOURCE_<source> + customer response
+-> word TF-IDF
+-> Logistic Regression
+-> ACTIVE / INACTIVE
+-> retain ACTIVE sources
+-> deterministic D5 aggregation
+
+Training
+--------
+5B single-source attribution rows: 96
+5C paired relation-binding rows: 68
+Total attribution training rows: 164
+
+The 5C relation-binding data contains paired responses in which one source
+is ACTIVE and another source is explicitly INACTIVE.
+
+No classifier thresholds were tuned after observing evaluation results.
+
+Results
+-------
+Development option:
+20/24 = 83.3%
+Abstain: 3/24 = 12.5%
+
+Compositional challenge:
+12/18 = 66.7%
+Abstain: 5/18 = 27.8%
+
+By type:
+- multiple_source: 6/6 = 100.0%
+- negative_control: 0/6 = 0.0%
+- single_source: 6/6 = 100.0%
+
+Competing-source challenge:
+10/18 = 55.6%
+Abstain: 6/18 = 33.3%
+
+By type:
+- multiple_salary_benefits: 3/3 = 100.0%
+- multiple_salary_pension: 3/3 = 100.0%
+- multiple_salary_rental: 3/3 = 100.0%
+- salary_distractor: 1/9 = 11.1%
+
+Reference results
+-----------------
+Direct TF-IDF:
+- development: 91.7%
+- compositional: 88.9%
+- competing-source: 61.1%
+
+Experiment 5A:
+- development: 50.0%
+- compositional: 66.7%
+- competing-source: 44.4%
+
+Experiment 5B:
+- development: 70.8%
+- compositional: 72.2%
+- competing-source: 50.0%
+
+Interpretation
+--------------
+5C substantially improved development accuracy relative to 5B and modestly
+improved competing-source accuracy.
+
+The model continued to perform perfectly on the controlled genuine
+multiple-source cases. Across the competing-source set, all salary+benefits,
+salary+pension, and salary+rental MULTIPLE cases were resolved correctly.
+
+However, target conditioning did not solve the central relation-binding
+failure. Only 1/9 salary-distractor cases was correct.
+
+The dominant failure remains distinguishing a source that is mentioned but
+explicitly inactive from another source in the same response that actually
+funds living costs.
+
+The current word TF-IDF representation appears capable of recognising source
+vocabulary and many compositional combinations, but target markers and paired
+training alone are insufficient for robust clause-to-source attribution.
+
+The development improvement cannot be attributed entirely to relation binding
+because 5C also expanded deterministic mention-pattern coverage for previously
+missed expressions such as sole trader and dipping into savings.
+
+Limitations
+-----------
+- Synthetic/authored development evidence.
+- 5C data was designed after observing earlier D5 failure modes.
+- Evaluation sets were already observed during development.
+- Zero exact duplication does not establish semantic independence.
+- Deterministic mention patterns remain incomplete.
+- No conformal prediction was evaluated.
+- No final test set was used.
+- Results do not establish real-customer performance.

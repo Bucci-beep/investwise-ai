@@ -1,0 +1,69 @@
+id,case_id,question_id,source,attribution,text,split,origin
+RB-01-benefits_support,RB-01,D5,benefits_support,active,"My wages are kept aside, while benefit payments currently cover my household expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-01-salary,RB-01,D5,salary,inactive,"My wages are kept aside, while benefit payments currently cover my household expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-02-salary,RB-02,D5,salary,active,Benefits come in but I save them; my salary is what currently pays the regular bills.,train,fictional_authored_d5_relation_binding_5c
+RB-02-benefits_support,RB-02,D5,benefits_support,inactive,Benefits come in but I save them; my salary is what currently pays the regular bills.,train,fictional_authored_d5_relation_binding_5c
+RB-03-benefits_support,RB-03,D5,benefits_support,active,I earn wages but do not spend them on everyday costs; regular family support pays those expenses.,train,fictional_authored_d5_relation_binding_5c
+RB-03-salary,RB-03,D5,salary,inactive,I earn wages but do not spend them on everyday costs; regular family support pays those expenses.,train,fictional_authored_d5_relation_binding_5c
+RB-04-salary,RB-04,D5,salary,active,"Family support is put aside rather than spent, and my employment income covers my normal living costs.",train,fictional_authored_d5_relation_binding_5c
+RB-04-benefits_support,RB-04,D5,benefits_support,inactive,"Family support is put aside rather than spent, and my employment income covers my normal living costs.",train,fictional_authored_d5_relation_binding_5c
+RB-05-pension_payments,RB-05,D5,pension_payments,active,"My salary goes into savings, while the pension payments I receive are used for my everyday expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-05-salary,RB-05,D5,salary,inactive,"My salary goes into savings, while the pension payments I receive are used for my everyday expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-06-salary,RB-06,D5,salary,active,I receive pension income but keep it untouched; my wages currently pay the household bills.,train,fictional_authored_d5_relation_binding_5c
+RB-06-pension_payments,RB-06,D5,pension_payments,inactive,I receive pension income but keep it untouched; my wages currently pay the household bills.,train,fictional_authored_d5_relation_binding_5c
+RB-07-pension_payments,RB-07,D5,pension_payments,active,Employment income still comes in but is not used for living costs; my pension payments cover them.,train,fictional_authored_d5_relation_binding_5c
+RB-07-salary,RB-07,D5,salary,inactive,Employment income still comes in but is not used for living costs; my pension payments cover them.,train,fictional_authored_d5_relation_binding_5c
+RB-08-salary,RB-08,D5,salary,active,"The pension money is saved rather than spent, whereas my salary funds my current day-to-day expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-08-pension_payments,RB-08,D5,pension_payments,inactive,"The pension money is saved rather than spent, whereas my salary funds my current day-to-day expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-09-other_regular,RB-09,D5,other_regular,active,My wages are not used for household spending; the rental income I receive currently pays those costs.,train,fictional_authored_d5_relation_binding_5c
+RB-09-salary,RB-09,D5,salary,inactive,My wages are not used for household spending; the rental income I receive currently pays those costs.,train,fictional_authored_d5_relation_binding_5c
+RB-10-salary,RB-10,D5,salary,active,"Rental receipts stay in the property account, while my salary pays my regular living expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-10-other_regular,RB-10,D5,other_regular,inactive,"Rental receipts stay in the property account, while my salary pays my regular living expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-11-other_regular,RB-11,D5,other_regular,active,I keep my employment income separate from household spending; recurring royalties cover my everyday costs.,train,fictional_authored_d5_relation_binding_5c
+RB-11-salary,RB-11,D5,salary,inactive,I keep my employment income separate from household spending; recurring royalties cover my everyday costs.,train,fictional_authored_d5_relation_binding_5c
+RB-12-salary,RB-12,D5,salary,active,"My licence income is saved rather than used for bills, and my wages currently fund my living costs.",train,fictional_authored_d5_relation_binding_5c
+RB-12-other_regular,RB-12,D5,other_regular,inactive,"My licence income is saved rather than used for bills, and my wages currently fund my living costs.",train,fictional_authored_d5_relation_binding_5c
+RB-13-withdrawals,RB-13,D5,withdrawals,active,"My salary is saved each month, while withdrawals from my investments pay my regular expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-13-salary,RB-13,D5,salary,inactive,"My salary is saved each month, while withdrawals from my investments pay my regular expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-14-salary,RB-14,D5,salary,active,I make savings withdrawals but keep that money aside; my wages are what pay the household bills.,train,fictional_authored_d5_relation_binding_5c
+RB-14-withdrawals,RB-14,D5,withdrawals,inactive,I make savings withdrawals but keep that money aside; my wages are what pay the household bills.,train,fictional_authored_d5_relation_binding_5c
+RB-15-withdrawals,RB-15,D5,withdrawals,active,Employment income does not go towards my living costs; money drawn from savings currently covers them.,train,fictional_authored_d5_relation_binding_5c
+RB-15-salary,RB-15,D5,salary,inactive,Employment income does not go towards my living costs; money drawn from savings currently covers them.,train,fictional_authored_d5_relation_binding_5c
+RB-16-salary,RB-16,D5,salary,active,"The money I withdraw from investments is reinvested, whereas my salary funds my everyday spending.",train,fictional_authored_d5_relation_binding_5c
+RB-16-withdrawals,RB-16,D5,withdrawals,inactive,"The money I withdraw from investments is reinvested, whereas my salary funds my everyday spending.",train,fictional_authored_d5_relation_binding_5c
+RB-17-self_employment,RB-17,D5,self_employment,active,I still receive wages but save them; earnings from my freelance work currently pay my living costs.,train,fictional_authored_d5_relation_binding_5c
+RB-17-salary,RB-17,D5,salary,inactive,I still receive wages but save them; earnings from my freelance work currently pay my living costs.,train,fictional_authored_d5_relation_binding_5c
+RB-18-salary,RB-18,D5,salary,active,"My freelance income stays in the business, while my salary covers my normal household expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-18-self_employment,RB-18,D5,self_employment,inactive,"My freelance income stays in the business, while my salary covers my normal household expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-19-self_employment,RB-19,D5,self_employment,active,"The wages from my job are kept aside, and payments from my own business fund my day-to-day costs.",train,fictional_authored_d5_relation_binding_5c
+RB-19-salary,RB-19,D5,salary,inactive,"The wages from my job are kept aside, and payments from my own business fund my day-to-day costs.",train,fictional_authored_d5_relation_binding_5c
+RB-20-salary,RB-20,D5,salary,active,Client earnings are reinvested rather than spent on living costs; my employment income pays those bills.,train,fictional_authored_d5_relation_binding_5c
+RB-20-self_employment,RB-20,D5,self_employment,inactive,Client earnings are reinvested rather than spent on living costs; my employment income pays those bills.,train,fictional_authored_d5_relation_binding_5c
+RB-21-other_regular,RB-21,D5,other_regular,active,"My pension payments are saved, while rental income currently covers my household expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-21-pension_payments,RB-21,D5,pension_payments,inactive,"My pension payments are saved, while rental income currently covers my household expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-22-withdrawals,RB-22,D5,withdrawals,active,I receive benefits but keep that money aside; withdrawals from savings currently pay my living costs.,train,fictional_authored_d5_relation_binding_5c
+RB-22-benefits_support,RB-22,D5,benefits_support,inactive,I receive benefits but keep that money aside; withdrawals from savings currently pay my living costs.,train,fictional_authored_d5_relation_binding_5c
+RB-23-pension_payments,RB-23,D5,pension_payments,active,"Freelance earnings are retained in the business, while my pension income funds my everyday spending.",train,fictional_authored_d5_relation_binding_5c
+RB-23-self_employment,RB-23,D5,self_employment,inactive,"Freelance earnings are retained in the business, while my pension income funds my everyday spending.",train,fictional_authored_d5_relation_binding_5c
+RB-24-benefits_support,RB-24,D5,benefits_support,active,"Rental receipts are saved rather than spent, and regular family support currently pays my household bills.",train,fictional_authored_d5_relation_binding_5c
+RB-24-other_regular,RB-24,D5,other_regular,inactive,"Rental receipts are saved rather than spent, and regular family support currently pays my household bills.",train,fictional_authored_d5_relation_binding_5c
+RB-25-benefits_support,RB-25,D5,benefits_support,active,"My freelance earnings stay in the business, while benefit payments currently cover my regular household costs.",train,fictional_authored_d5_relation_binding_5c
+RB-25-self_employment,RB-25,D5,self_employment,inactive,"My freelance earnings stay in the business, while benefit payments currently cover my regular household costs.",train,fictional_authored_d5_relation_binding_5c
+RB-26-self_employment,RB-26,D5,self_employment,active,"Benefits are saved rather than spent, while income from my own business pays my everyday expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-26-benefits_support,RB-26,D5,benefits_support,inactive,"Benefits are saved rather than spent, while income from my own business pays my everyday expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-27-withdrawals,RB-27,D5,withdrawals,active,"My pension payments are kept aside, while withdrawals from investments currently fund my living costs.",train,fictional_authored_d5_relation_binding_5c
+RB-27-pension_payments,RB-27,D5,pension_payments,inactive,"My pension payments are kept aside, while withdrawals from investments currently fund my living costs.",train,fictional_authored_d5_relation_binding_5c
+RB-28-pension_payments,RB-28,D5,pension_payments,active,"Money withdrawn from savings is reinvested, while my pension income currently pays the household bills.",train,fictional_authored_d5_relation_binding_5c
+RB-28-withdrawals,RB-28,D5,withdrawals,inactive,"Money withdrawn from savings is reinvested, while my pension income currently pays the household bills.",train,fictional_authored_d5_relation_binding_5c
+RB-29-self_employment,RB-29,D5,self_employment,active,"Rental income stays in the property account, while earnings from my freelance work cover my normal living expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-29-other_regular,RB-29,D5,other_regular,inactive,"Rental income stays in the property account, while earnings from my freelance work cover my normal living expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-30-other_regular,RB-30,D5,other_regular,active,"My business earnings are retained rather than spent, while the rent I receive currently pays my household costs.",train,fictional_authored_d5_relation_binding_5c
+RB-30-self_employment,RB-30,D5,self_employment,inactive,"My business earnings are retained rather than spent, while the rent I receive currently pays my household costs.",train,fictional_authored_d5_relation_binding_5c
+RB-31-other_regular,RB-31,D5,other_regular,active,"Regular family support is put aside, while rental income currently funds my day-to-day spending.",train,fictional_authored_d5_relation_binding_5c
+RB-31-benefits_support,RB-31,D5,benefits_support,inactive,"Regular family support is put aside, while rental income currently funds my day-to-day spending.",train,fictional_authored_d5_relation_binding_5c
+RB-32-benefits_support,RB-32,D5,benefits_support,active,"The rent I receive is saved rather than spent, while benefit payments currently cover my normal living expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-32-other_regular,RB-32,D5,other_regular,inactive,"The rent I receive is saved rather than spent, while benefit payments currently cover my normal living expenses.",train,fictional_authored_d5_relation_binding_5c
+RB-33-withdrawals,RB-33,D5,withdrawals,active,"My freelance income is kept in the business, while money drawn from savings currently pays my regular bills.",train,fictional_authored_d5_relation_binding_5c
+RB-33-self_employment,RB-33,D5,self_employment,inactive,"My freelance income is kept in the business, while money drawn from savings currently pays my regular bills.",train,fictional_authored_d5_relation_binding_5c
+RB-34-self_employment,RB-34,D5,self_employment,active,"Withdrawals from investments are kept aside, while earnings from my own business currently fund my living costs.",train,fictional_authored_d5_relation_binding_5c
+RB-34-withdrawals,RB-34,D5,withdrawals,inactive,"Withdrawals from investments are kept aside, while earnings from my own business currently fund my living costs.",train,fictional_authored_d5_relation_binding_5c
