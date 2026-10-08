@@ -1,0 +1,97 @@
+id,question_id,text,original_option,group_id,salary,self_employment,pension_payments,benefits_support,withdrawals,other_regular,no_regular
+SYNTH-V1-D5-TRAIN-001,D5,My salary currently pays my living costs.,D5_SALARY,D5:train:D5_SALARY:direct,1,0,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-002,D5,I fund regular household bills from my wages.,D5_SALARY,D5:train:D5_SALARY:direct,1,0,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-003,D5,My employment pay is the source for my everyday expenses.,D5_SALARY,D5:train:D5_SALARY:direct,1,0,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-004,D5,Salary income covers the living costs I pay now.,D5_SALARY,D5:train:D5_SALARY:direct,1,0,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-005,D5,"I use my monthly wages for rent, food and utilities.",D5_SALARY,D5:train:D5_SALARY:direct,1,0,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-006,D5,At present my regular living costs are funded by employee earnings.,D5_SALARY,D5:train:D5_SALARY:direct,1,0,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-007,D5,My self-employment earnings currently pay my living costs.,D5_SELF_EMPLOYMENT,D5:train:D5_SELF_EMPLOYMENT:direct,0,1,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-008,D5,I fund household expenses from freelance income.,D5_SELF_EMPLOYMENT,D5:train:D5_SELF_EMPLOYMENT:direct,0,1,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-009,D5,The money from my own business pays my regular bills.,D5_SELF_EMPLOYMENT,D5:train:D5_SELF_EMPLOYMENT:direct,0,1,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-010,D5,At present I use sole-trader earnings for everyday living costs.,D5_SELF_EMPLOYMENT,D5:train:D5_SELF_EMPLOYMENT:direct,0,1,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-011,D5,My self-employed work provides the money for rent and food.,D5_SELF_EMPLOYMENT,D5:train:D5_SELF_EMPLOYMENT:direct,0,1,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-012,D5,Current living costs are funded by my consultancy business income.,D5_SELF_EMPLOYMENT,D5:train:D5_SELF_EMPLOYMENT:direct,0,1,0,0,0,0,0
+SYNTH-V1-D5-TRAIN-013,D5,My pension payments currently pay my living costs.,D5_PENSION_PAYMENTS,D5:train:D5_PENSION_PAYMENTS:direct,0,0,1,0,0,0,0
+SYNTH-V1-D5-TRAIN-014,D5,I use regular pension income for household bills.,D5_PENSION_PAYMENTS,D5:train:D5_PENSION_PAYMENTS:direct,0,0,1,0,0,0,0
+SYNTH-V1-D5-TRAIN-015,D5,The pension I receive funds my everyday expenses.,D5_PENSION_PAYMENTS,D5:train:D5_PENSION_PAYMENTS:direct,0,0,1,0,0,0,0
+SYNTH-V1-D5-TRAIN-016,D5,At present my retirement pension payments pay for food and rent.,D5_PENSION_PAYMENTS,D5:train:D5_PENSION_PAYMENTS:direct,0,0,1,0,0,0,0
+SYNTH-V1-D5-TRAIN-017,D5,Living costs are funded by pension income received each month.,D5_PENSION_PAYMENTS,D5:train:D5_PENSION_PAYMENTS:direct,0,0,1,0,0,0,0
+SYNTH-V1-D5-TRAIN-018,D5,My regular pension receipts supply money for necessary spending.,D5_PENSION_PAYMENTS,D5:train:D5_PENSION_PAYMENTS:direct,0,0,1,0,0,0,0
+SYNTH-V1-D5-TRAIN-019,D5,Benefits currently pay my living costs.,D5_BENEFITS_SUPPORT,D5:train:D5_BENEFITS_SUPPORT:direct,0,0,0,1,0,0,0
+SYNTH-V1-D5-TRAIN-020,D5,I use regular financial support from my parents for household bills.,D5_BENEFITS_SUPPORT,D5:train:D5_BENEFITS_SUPPORT:direct,0,0,0,1,0,0,0
+SYNTH-V1-D5-TRAIN-021,D5,My everyday expenses are funded by benefits and regular family support.,D5_BENEFITS_SUPPORT,D5:train:D5_BENEFITS_SUPPORT:direct,0,0,0,1,0,0,0
+SYNTH-V1-D5-TRAIN-022,D5,A partner's regular support pays my living costs now.,D5_BENEFITS_SUPPORT,D5:train:D5_BENEFITS_SUPPORT:direct,0,0,0,1,0,0,0
+SYNTH-V1-D5-TRAIN-023,D5,At present I pay routine costs using state benefits.,D5_BENEFITS_SUPPORT,D5:train:D5_BENEFITS_SUPPORT:direct,0,0,0,1,0,0,0
+SYNTH-V1-D5-TRAIN-024,D5,Regular money from my family funds my rent and food.,D5_BENEFITS_SUPPORT,D5:train:D5_BENEFITS_SUPPORT:direct,0,0,0,1,0,0,0
+SYNTH-V1-D5-TRAIN-025,D5,I currently pay living costs by withdrawing from savings.,D5_WITHDRAWALS,D5:train:D5_WITHDRAWALS:direct,0,0,0,0,1,0,0
+SYNTH-V1-D5-TRAIN-026,D5,Regular investment withdrawals fund my household bills.,D5_WITHDRAWALS,D5:train:D5_WITHDRAWALS:direct,0,0,0,0,1,0,0
+SYNTH-V1-D5-TRAIN-027,D5,I draw money from my savings account for everyday expenses.,D5_WITHDRAWALS,D5:train:D5_WITHDRAWALS:direct,0,0,0,0,1,0,0
+SYNTH-V1-D5-TRAIN-028,D5,At present I use withdrawals from my investments for rent and food.,D5_WITHDRAWALS,D5:train:D5_WITHDRAWALS:direct,0,0,0,0,1,0,0
+SYNTH-V1-D5-TRAIN-029,D5,My current living-cost money comes from spending down savings.,D5_WITHDRAWALS,D5:train:D5_WITHDRAWALS:direct,0,0,0,0,1,0,0
+SYNTH-V1-D5-TRAIN-030,D5,Savings and investment withdrawals supply my routine spending.,D5_WITHDRAWALS,D5:train:D5_WITHDRAWALS:direct,0,0,0,0,1,0,0
+SYNTH-V1-D5-TRAIN-031,D5,Rental income currently pays my living costs.,D5_OTHER_REGULAR,D5:train:D5_OTHER_REGULAR:direct,0,0,0,0,0,1,0
+SYNTH-V1-D5-TRAIN-032,D5,I fund household bills from regular royalties.,D5_OTHER_REGULAR,D5:train:D5_OTHER_REGULAR:direct,0,0,0,0,0,1,0
+SYNTH-V1-D5-TRAIN-033,D5,Recurring rental receipts pay my everyday expenses.,D5_OTHER_REGULAR,D5:train:D5_OTHER_REGULAR:direct,0,0,0,0,0,1,0
+SYNTH-V1-D5-TRAIN-034,D5,My regular trust distributions fund living costs now.,D5_OTHER_REGULAR,D5:train:D5_OTHER_REGULAR:direct,0,0,0,0,0,1,0
+SYNTH-V1-D5-TRAIN-035,D5,At present recurring licensing income pays for my food and rent.,D5_OTHER_REGULAR,D5:train:D5_OTHER_REGULAR:direct,0,0,0,0,0,1,0
+SYNTH-V1-D5-TRAIN-036,D5,My routine costs are funded by regular property rent.,D5_OTHER_REGULAR,D5:train:D5_OTHER_REGULAR:direct,0,0,0,0,0,1,0
+SYNTH-V1-D5-TRAIN-037,D5,I have no regular source of money for living costs.,D5_NO_REGULAR,D5:train:D5_NO_REGULAR:direct,0,0,0,0,0,0,1
+SYNTH-V1-D5-TRAIN-038,D5,No recurring source currently funds my everyday expenses.,D5_NO_REGULAR,D5:train:D5_NO_REGULAR:direct,0,0,0,0,0,0,1
+SYNTH-V1-D5-TRAIN-039,D5,There is no regular living-cost funding source at present.,D5_NO_REGULAR,D5:train:D5_NO_REGULAR:direct,0,0,0,0,0,0,1
+SYNTH-V1-D5-TRAIN-040,D5,I do not currently receive any regular source for my bills.,D5_NO_REGULAR,D5:train:D5_NO_REGULAR:direct,0,0,0,0,0,0,1
+SYNTH-V1-D5-TRAIN-041,D5,I have no ongoing source of money for household costs.,D5_NO_REGULAR,D5:train:D5_NO_REGULAR:direct,0,0,0,0,0,0,1
+SYNTH-V1-D5-TRAIN-042,D5,At the moment no regular source supplies my necessary spending.,D5_NO_REGULAR,D5:train:D5_NO_REGULAR:direct,0,0,0,0,0,0,1
+SYNTH-V1-D5-TRAIN-043,D5,My salary and savings withdrawals currently fund living costs.,D5_MULTIPLE,D5:train:D5_MULTIPLE:direct,1,0,0,0,1,0,0
+SYNTH-V1-D5-TRAIN-044,D5,Wages and benefits both pay my regular household expenses.,D5_MULTIPLE,D5:train:D5_MULTIPLE:direct,1,0,0,1,0,0,0
+SYNTH-V1-D5-TRAIN-045,D5,I use pension payments and rental income for everyday costs.,D5_MULTIPLE,D5:train:D5_MULTIPLE:direct,0,0,1,0,0,1,0
+SYNTH-V1-D5-TRAIN-046,D5,Freelance earnings and regular family support fund my bills now.,D5_MULTIPLE,D5:train:D5_MULTIPLE:direct,0,1,0,1,0,0,0
+SYNTH-V1-D5-TRAIN-047,D5,Current living costs come from salary plus rental receipts.,D5_MULTIPLE,D5:train:D5_MULTIPLE:direct,1,0,0,0,0,1,0
+SYNTH-V1-D5-TRAIN-048,D5,Pension income and savings withdrawals both fund my necessary spending.,D5_MULTIPLE,D5:train:D5_MULTIPLE:direct,0,0,1,0,1,0,0
+SYNTH-D5-V2-001,D5,"My wages cover the rent, food and the usual monthly bills.",D5_SALARY,D5:v2:clarity:D5_SALARY:wages_direct,1,0,0,0,0,0,0
+SYNTH-D5-V2-002,D5,Just my pay packet — that's what keeps the household running.,D5_SALARY,D5:v2:clarity:D5_SALARY:wages_direct,1,0,0,0,0,0,0
+SYNTH-D5-V2-003,D5,"I do freelance bits too, but I don't use that money for living costs; my salary pays those.",D5_SALARY,D5:v2:clarity:D5_SALARY:employment_funding_contrast,1,0,0,0,0,0,0
+SYNTH-D5-V2-004,D5,"Having a rental flat sounds relevant, but its income stays in the property account. I live on my wages.",D5_SALARY,D5:v2:clarity:D5_SALARY:employment_funding_contrast,1,0,0,0,0,0,0
+SYNTH-D5-V2-005,D5,Used to draw from savings. These days it's my salary that pays for day-to-day life.,D5_SALARY,D5:v2:clarity:D5_SALARY:current_source_correction,1,0,0,0,0,0,0
+SYNTH-D5-V2-006,D5,"wages atm... they pay my normal bills, yep (sorry, bit rushed)",D5_SALARY,D5:v2:clarity:D5_SALARY:messy_salary,1,0,0,0,0,0,0
+SYNTH-D5-V2-007,D5,I pay my household expenses from the money I earn running my own plumbing business.,D5_SELF_EMPLOYMENT,D5:v2:clarity:D5_SELF_EMPLOYMENT:business_drawings,0,1,0,0,0,0,0
+SYNTH-D5-V2-008,D5,The café's earnings are what I take home for groceries and bills.,D5_SELF_EMPLOYMENT,D5:v2:clarity:D5_SELF_EMPLOYMENT:business_drawings,0,1,0,0,0,0,0
+SYNTH-D5-V2-009,D5,"I'm self-employed now, and my client work funds my everyday living costs.",D5_SELF_EMPLOYMENT,D5:v2:clarity:D5_SELF_EMPLOYMENT:contractor_current,0,1,0,0,0,0,0
+SYNTH-D5-V2-010,D5,My invoicing income pays the mortgage and day-to-day stuff — no salary these days.,D5_SELF_EMPLOYMENT,D5:v2:clarity:D5_SELF_EMPLOYMENT:contractor_current,0,1,0,0,0,0,0
+SYNTH-D5-V2-011,D5,Not wages anymore; I left that job. It's earnings from my own design work that currently support me.,D5_SELF_EMPLOYMENT,D5:v2:clarity:D5_SELF_EMPLOYMENT:past_salary_correction,0,1,0,0,0,0,0
+SYNTH-D5-V2-012,D5,sole trader income pays the bills rn... varies a bit but thats the source,D5_SELF_EMPLOYMENT,D5:v2:clarity:D5_SELF_EMPLOYMENT:messy_self_employed,0,1,0,0,0,0,0
+SYNTH-D5-V2-013,D5,My monthly pension payments pay for my regular household costs.,D5_PENSION_PAYMENTS,D5:v2:clarity:D5_PENSION_PAYMENTS:pension_income_direct,0,0,1,0,0,0,0
+SYNTH-D5-V2-014,D5,I live on the pension income that lands in my account each month.,D5_PENSION_PAYMENTS,D5:v2:clarity:D5_PENSION_PAYMENTS:pension_income_direct,0,0,1,0,0,0,0
+SYNTH-D5-V2-015,D5,"I own a separate pension pot, but that's untouched; the pension already in payment covers my bills.",D5_PENSION_PAYMENTS,D5:v2:clarity:D5_PENSION_PAYMENTS:pension_holding_contrast,0,0,1,0,0,0,0
+SYNTH-D5-V2-016,D5,It isn't merely a pension balance — I'm receiving payments from it and using them for everyday expenses.,D5_PENSION_PAYMENTS,D5:v2:clarity:D5_PENSION_PAYMENTS:pension_holding_contrast,0,0,1,0,0,0,0
+SYNTH-D5-V2-017,D5,I lived on wages before retiring; now my pension payments fund day-to-day life.,D5_PENSION_PAYMENTS,D5:v2:clarity:D5_PENSION_PAYMENTS:retirement_change,0,0,1,0,0,0,0
+SYNTH-D5-V2-018,D5,"pension paymnts, monthly... thats my food / council tax money now",D5_PENSION_PAYMENTS,D5:v2:clarity:D5_PENSION_PAYMENTS:messy_pension,0,0,1,0,0,0,0
+SYNTH-D5-V2-019,D5,My benefits currently cover the rent and my normal living expenses.,D5_BENEFITS_SUPPORT,D5:v2:clarity:D5_BENEFITS_SUPPORT:benefits_direct,0,0,0,1,0,0,0
+SYNTH-D5-V2-020,D5,"Universal Credit is the money I use for food, utilities and the rest.",D5_BENEFITS_SUPPORT,D5:v2:clarity:D5_BENEFITS_SUPPORT:benefits_direct,0,0,0,1,0,0,0
+SYNTH-D5-V2-021,D5,"My sister sends me money every month, and that regular help pays my living costs.",D5_BENEFITS_SUPPORT,D5:v2:clarity:D5_BENEFITS_SUPPORT:person_support,0,0,0,1,0,0,0
+SYNTH-D5-V2-022,D5,I don't live off my occasional gig earnings; my partner's regular support covers the household bills.,D5_BENEFITS_SUPPORT,D5:v2:clarity:D5_BENEFITS_SUPPORT:person_support,0,0,0,1,0,0,0
+SYNTH-D5-V2-023,D5,Benefits cover most things and my dad regularly helps with the rest of my living costs.,D5_BENEFITS_SUPPORT,D5:v2:clarity:D5_BENEFITS_SUPPORT:benefits_and_support_one_category,0,0,0,1,0,0,0
+SYNTH-D5-V2-024,D5,"benefits + a regular bit from mum, thats how I manage the usual bills",D5_BENEFITS_SUPPORT,D5:v2:clarity:D5_BENEFITS_SUPPORT:messy_support,0,0,0,1,0,0,0
+SYNTH-D5-V2-025,D5,I transfer money out of my savings each month to pay my living expenses.,D5_WITHDRAWALS,D5:v2:clarity:D5_WITHDRAWALS:savings_drawdown,0,0,0,0,1,0,0
+SYNTH-D5-V2-026,D5,At the moment I'm running the household by drawing down my cash savings.,D5_WITHDRAWALS,D5:v2:clarity:D5_WITHDRAWALS:savings_drawdown,0,0,0,0,1,0,0
+SYNTH-D5-V2-027,D5,Regular withdrawals from my investment account fund the mortgage and groceries.,D5_WITHDRAWALS,D5:v2:clarity:D5_WITHDRAWALS:investment_sales,0,0,0,0,1,0,0
+SYNTH-D5-V2-028,D5,I sell a small amount of my funds each month and use the proceeds for everyday costs.,D5_WITHDRAWALS,D5:v2:clarity:D5_WITHDRAWALS:investment_sales,0,0,0,0,1,0,0
+SYNTH-D5-V2-029,D5,"I still receive a tiny wage, but save all of it; withdrawals from investments actually pay my bills.",D5_WITHDRAWALS,D5:v2:clarity:D5_WITHDRAWALS:income_not_used_contrast,0,0,0,0,1,0,0
+SYNTH-D5-V2-030,D5,taking ££ out of savings for rent n food atm — that's what I'm living on,D5_WITHDRAWALS,D5:v2:clarity:D5_WITHDRAWALS:messy_withdrawals,0,0,0,0,1,0,0
+SYNTH-D5-V2-031,D5,The rent from my lodger is the regular income I use for household costs.,D5_OTHER_REGULAR,D5:v2:clarity:D5_OTHER_REGULAR:rental_income,0,0,0,0,0,1,0
+SYNTH-D5-V2-032,D5,My living expenses come from monthly rent paid by tenants in my other property.,D5_OTHER_REGULAR,D5:v2:clarity:D5_OTHER_REGULAR:rental_income,0,0,0,0,0,1,0
+SYNTH-D5-V2-033,D5,Royalties from my back catalogue arrive regularly and pay my normal bills.,D5_OTHER_REGULAR,D5:v2:clarity:D5_OTHER_REGULAR:named_recurring_source,0,0,0,0,0,1,0
+SYNTH-D5-V2-034,D5,"A monthly annuity payment, separate from any pension, funds my day-to-day spending.",D5_OTHER_REGULAR,D5:v2:clarity:D5_OTHER_REGULAR:named_recurring_source,0,0,0,0,0,1,0
+SYNTH-D5-V2-035,D5,"I used to use my salary, but now recurring licence fees cover my living costs.",D5_OTHER_REGULAR,D5:v2:clarity:D5_OTHER_REGULAR:source_change_other,0,0,0,0,0,1,0
+SYNTH-D5-V2-036,D5,"tenant rent every month = groceries, power, all the regular stuff for me",D5_OTHER_REGULAR,D5:v2:clarity:D5_OTHER_REGULAR:messy_other_regular,0,0,0,0,0,1,0
+SYNTH-D5-V2-037,D5,I don't currently have any regular source paying my living costs.,D5_NO_REGULAR,D5:v2:clarity:D5_NO_REGULAR:explicit_none,0,0,0,0,0,0,1
+SYNTH-D5-V2-038,D5,There is no recurring money for my everyday expenses at the moment.,D5_NO_REGULAR,D5:v2:clarity:D5_NO_REGULAR:explicit_none,0,0,0,0,0,0,1
+SYNTH-D5-V2-039,D5,No regular source — I'm getting by on a one-off cash gift for now.,D5_NO_REGULAR,D5:v2:clarity:D5_NO_REGULAR:one_off_not_regular,0,0,0,0,0,0,1
+SYNTH-D5-V2-040,D5,Nothing comes in regularly for bills; I sold my bike once to cover this month.,D5_NO_REGULAR,D5:v2:clarity:D5_NO_REGULAR:one_off_not_regular,0,0,0,0,0,0,1
+SYNTH-D5-V2-041,D5,"I'm out of work, and to be explicit, no other regular source is funding my living costs.",D5_NO_REGULAR,D5:v2:clarity:D5_NO_REGULAR:unemployment_explicit_none,0,0,0,0,0,0,1
+SYNTH-D5-V2-042,D5,none right now... no regular money for rent/food etc,D5_NO_REGULAR,D5:v2:clarity:D5_NO_REGULAR:messy_none,0,0,0,0,0,0,1
+SYNTH-D5-V2-043,D5,My wages pay part of the bills and rental income covers the rest.,D5_MULTIPLE,D5:v2:clarity:D5_MULTIPLE:salary_plus_other,1,0,0,0,0,1,0
+SYNTH-D5-V2-044,D5,Both my salary and monthly investment withdrawals fund our everyday costs.,D5_MULTIPLE,D5:v2:clarity:D5_MULTIPLE:salary_plus_other,1,0,0,0,1,0,0
+SYNTH-D5-V2-045,D5,I use pension payments for groceries and draw from savings for the household bills.,D5_MULTIPLE,D5:v2:clarity:D5_MULTIPLE:pension_plus_other,0,0,1,0,1,0,0
+SYNTH-D5-V2-046,D5,Living costs come from two places now: my pension income and rent from a tenant.,D5_MULTIPLE,D5:v2:clarity:D5_MULTIPLE:pension_plus_other,0,0,1,0,0,1,0
+SYNTH-D5-V2-047,D5,"My business earnings cover most expenses, with benefits paying some regular bills too.",D5_MULTIPLE,D5:v2:clarity:D5_MULTIPLE:self_employed_plus_support,0,1,0,1,0,0,0
+SYNTH-D5-V2-048,D5,bit of wages + bit drawn from savings... both go on the day-to-day stuff,D5_MULTIPLE,D5:v2:clarity:D5_MULTIPLE:messy_mixed,1,0,0,0,1,0,0

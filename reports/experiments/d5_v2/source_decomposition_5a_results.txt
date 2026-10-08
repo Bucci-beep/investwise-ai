@@ -1,0 +1,109 @@
+D5 EXPERIMENT 5A — NAIVE SOURCE DECOMPOSITION
+
+Purpose
+-------
+Test whether replacing direct 8-class D5 option classification with
+independent source detection plus deterministic aggregation improves
+compositional and contextual attribution performance.
+
+Architecture
+------------
+Training data:
+- 96 existing D5 clarity examples from v1 + v2.
+- No new synthetic training sentences were added.
+
+Seven binary labels:
+- salary
+- self_employment
+- pension_payments
+- benefits_support
+- withdrawals
+- other_regular
+- no_regular
+
+Representation:
+- Word TF-IDF
+- ngram_range=(1,2)
+- sublinear_tf=True
+
+Classifier:
+- Independent LogisticRegression classifier for each source
+- class_weight="balanced"
+- random_state=42
+
+Aggregation:
+- no_regular=1 and no positive source -> D5_NO_REGULAR
+- exactly one positive source -> corresponding D5 option
+- two or more positive sources -> D5_MULTIPLE
+- zero detected sources -> ABSTAIN_NO_SOURCE
+- no_regular plus positive source -> ABSTAIN_CONFLICT
+
+Positive training counts
+------------------------
+salary: 18
+self_employment: 14
+pension_payments: 16
+benefits_support: 15
+withdrawals: 17
+other_regular: 16
+no_regular: 12
+
+Results
+-------
+Development option set:
+- Direct TF-IDF baseline: 91.7% accuracy
+- Source decomposition: 12/24 = 50.0%
+- Abstain: 10/24 = 41.7%
+
+Compositional challenge:
+- Direct TF-IDF baseline: 16/18 = 88.9%
+- Source decomposition: 12/18 = 66.7%
+- Abstain: 4/18 = 22.2%
+
+By case type:
+- multiple_source: 5/6 = 83.3%
+- negative_control: 3/6 = 50.0%
+- single_source: 4/6 = 66.7%
+
+Competing-source challenge:
+- Direct TF-IDF baseline: 11/18 = 61.1%
+- Source decomposition: 8/18 = 44.4%
+- Abstain: 3/18 = 16.7%
+
+By case type:
+- multiple_salary_benefits: 1/3 = 33.3%
+- multiple_salary_pension: 1/3 = 33.3%
+- multiple_salary_rental: 2/3 = 66.7%
+- salary_distractor: 4/9 = 44.4%
+
+Interpretation
+--------------
+Experiment 5A does not outperform the existing direct D5 classifier.
+
+A major failure mode is failure to activate any source detector, producing
+ABSTAIN_NO_SOURCE even for semantically clear source statements.
+
+The deterministic aggregation itself appears viable when the relevant
+sources are detected: the model retained 5/6 accuracy on the controlled
+multiple-source compositional cases.
+
+However, decomposition alone does not solve contextual attribution.
+The model can still activate a source merely because it is mentioned even
+when the text explicitly states that the source does not fund living costs.
+
+This supports a narrower hypothesis:
+D5 requires modelling not only source identity, but the relationship between
+a mentioned source and whether it actually funds current living costs.
+
+Experiment 5A therefore motivates Experiment 5B, which will explicitly
+represent source attribution rather than merely source presence.
+
+Limitations
+-----------
+- Development and stress datasets are synthetic/authored development evidence.
+- These sets have already been observed during model development.
+- Results are not independent final validation.
+- No conformal prediction was evaluated.
+- No threshold tuning was performed.
+- No final test set was used.
+- Results should not be interpreted as real-customer performance.
