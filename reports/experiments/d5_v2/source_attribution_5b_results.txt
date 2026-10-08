@@ -1,0 +1,104 @@
+D5 EXPERIMENT 5B — EXPLICIT SOURCE ATTRIBUTION
+
+Purpose
+-------
+Test whether explicitly distinguishing ACTIVE from INACTIVE funding sources
+improves D5 source composition and contextual attribution.
+
+Training augmentation
+---------------------
+96 synthetic attribution examples:
+- 6 source categories
+- 8 ACTIVE examples per source
+- 8 INACTIVE examples per source
+- 96 unique normalized texts
+- zero exact text overlap with the observed development, compositional,
+  and competing-source evaluation sets
+
+Architecture
+------------
+Customer response
+-> deterministic source mention detection
+-> shared word TF-IDF attribution classifier
+-> ACTIVE / INACTIVE for each mentioned source
+-> retain ACTIVE sources
+-> deterministic D5 aggregation
+
+The attribution classifier used:
+- word TF-IDF
+- ngram_range=(1,2)
+- sublinear_tf=True
+- LogisticRegression
+- class_weight="balanced"
+- random_state=42
+
+No threshold tuning was performed after evaluation.
+
+Results
+-------
+Development option:
+17/24 = 70.8%
+Abstain: 6/24 = 25.0%
+
+Compositional challenge:
+13/18 = 72.2%
+Abstain: 4/18 = 22.2%
+
+By type:
+- multiple_source: 6/6 = 100.0%
+- negative_control: 1/6 = 16.7%
+- single_source: 6/6 = 100.0%
+
+Competing-source challenge:
+9/18 = 50.0%
+Abstain: 7/18 = 38.9%
+
+By type:
+- multiple_salary_benefits: 3/3 = 100.0%
+- multiple_salary_pension: 3/3 = 100.0%
+- multiple_salary_rental: 3/3 = 100.0%
+- salary_distractor: 0/9 = 0.0%
+
+Reference results
+-----------------
+Direct TF-IDF:
+- development: 91.7%
+- compositional: 88.9%
+- competing-source: 61.1%
+
+Experiment 5A:
+- development: 50.0%
+- compositional: 66.7%
+- competing-source: 44.4%
+
+Interpretation
+--------------
+Experiment 5B improves substantially over naive source decomposition but does
+not outperform the original direct classifier overall.
+
+The architecture shows a strong positive result for source composition:
+all controlled multiple-source cases were resolved correctly, including
+all salary+benefits, salary+pension, and salary+rental competing-source
+examples.
+
+However, the model failed all nine salary-distractor cases.
+
+The dominant failure is relational attribution. When one source is explicitly
+inactive and another source is active in the same sentence, the shared
+sentence-level attribution classifier frequently assigns the inactive
+relationship to both sources or otherwise fails to bind the funding relation
+to the correct source.
+
+This narrows the remaining structural problem from source identification or
+composition to source-specific relation binding.
+
+Limitations
+-----------
+- Synthetic/authored development evidence.
+- Attribution augmentation was designed after observing earlier D5 failures.
+- Zero exact overlap does not establish semantic independence.
+- Evaluation sets have already been observed during development.
+- Deterministic mention patterns are incomplete.
+- No conformal prediction was evaluated.
+- No final test set was used.
+- Results do not establish real-customer performance.

@@ -1,0 +1,54 @@
+D5 EXPERIMENT 5B — SOURCE ATTRIBUTION TRAINING AUDIT
+
+Purpose
+-------
+Determine whether the existing 96 D5 clarity training examples contain
+sufficient supervision to distinguish a source that actively funds current
+living costs from a source that is merely mentioned, historical, saved, or
+otherwise inactive.
+
+Audit result
+------------
+Total D5 clarity training rows: 96
+
+Rows flagged by lexical audit as potentially mentioning a non-active source:
+10
+
+Manual review found approximately 9 useful attribution/distractor examples.
+
+Examples include:
+- freelance income mentioned but inactive; salary active
+- rental income mentioned but inactive; salary active
+- historical savings withdrawals; salary active
+- salary/wages absent or historical; self-employment active
+- historical wages; pension active
+- wage received but saved; withdrawals active
+- pension contrasted with non-pension annuity; other regular active
+- historical salary; other regular active
+
+One lexical flag involving the phrase "no other regular source" should not
+be treated as evidence that the OTHER_REGULAR category is explicitly
+inactive. It is a lexical match rather than a concrete competing-source
+mention.
+
+Interpretation
+--------------
+The existing D5 training set contains some genuine source-attribution
+evidence, but it is sparse and unevenly distributed across source types.
+
+Training a three-state ACTIVE / INACTIVE / ABSENT classifier directly from
+these 96 examples would therefore create a severely imbalanced experiment
+and would not provide a clean test of the attribution hypothesis.
+
+Experiment 5B should instead introduce an isolated, explicitly labelled,
+balanced source-attribution training augmentation. The augmentation should
+contain matched ACTIVE and INACTIVE examples for each source category and
+must remain separate from the existing v1/v2 datasets.
+
+Observed development and stress examples must not be copied into the
+augmentation.
+
+Limitations
+-----------
+The lexical audit is a discovery aid, not a semantic annotation system.
+Pattern matches can produce false positives and were manually reviewed.

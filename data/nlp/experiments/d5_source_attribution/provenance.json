@@ -1,0 +1,22 @@
+{
+  "experiment": "D5 Experiment 5B",
+  "purpose": "Balanced synthetic development augmentation for learning whether a specifically named source actively funds current living costs or is explicitly inactive.",
+  "row_count": 96,
+  "sources": [
+    "salary",
+    "self_employment",
+    "pension_payments",
+    "benefits_support",
+    "withdrawals",
+    "other_regular"
+  ],
+  "active_examples_per_source": 8,
+  "inactive_examples_per_source": 8,
+  "sha256": "db9de39f24b040c472bfa737f1f675cfbe9bc1e65a8ae3fc6be3d4d91b09ea9d",
+  "limitations": [
+    "Synthetic authored development data is not evidence of real-customer performance.",
+    "The dataset was created after observing weaknesses in earlier D5 development experiments.",
+    "Observed development and stress examples must not be treated as independent validation.",
+    "The augmentation tests source attribution only and does not establish final D5 classification performance."
+  ]
+}

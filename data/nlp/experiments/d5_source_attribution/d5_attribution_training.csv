@@ -1,0 +1,97 @@
+id,question_id,source,attribution,text,split,origin
+D5-ATTR-SALARY-ACTIVE-01,D5,salary,active,My salary currently pays for my regular household expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-ACTIVE-02,D5,salary,active,"The wages from my job are what I use for rent, food and bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-ACTIVE-03,D5,salary,active,I live on my employment income and use it for everyday costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-ACTIVE-04,D5,salary,active,My monthly pay from work funds my normal living expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-ACTIVE-05,D5,salary,active,The money I earn as an employee currently covers my household spending.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-ACTIVE-06,D5,salary,active,My wages go towards the regular costs of running my home.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-ACTIVE-07,D5,salary,active,I use the salary from my job to meet my day-to-day expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-ACTIVE-08,D5,salary,active,Employment income is currently what pays my usual living costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-INACTIVE-01,D5,salary,inactive,"I receive a salary, but I put it into savings rather than use it for living costs.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-INACTIVE-02,D5,salary,inactive,"My wages still come in, but they do not pay my household expenses.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-INACTIVE-03,D5,salary,inactive,"I have employment income, although none of it currently goes towards my regular bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-INACTIVE-04,D5,salary,inactive,My salary is kept aside and is not used for my day-to-day spending.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-INACTIVE-05,D5,salary,inactive,"I get paid by my employer, but that money does not fund my current living costs.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-INACTIVE-06,D5,salary,inactive,The wages from my job are invested instead of being used for household expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-INACTIVE-07,D5,salary,inactive,"I still earn a salary, although my regular living costs are paid from somewhere else.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SALARY-INACTIVE-08,D5,salary,inactive,"Employment income comes in each month, but I do not use it for rent, food or bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-ACTIVE-01,D5,self_employment,active,Income from my freelance work currently pays my regular living costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-ACTIVE-02,D5,self_employment,active,The money I make from my business is what I use for household expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-ACTIVE-03,D5,self_employment,active,Client payments from my self-employed work cover my everyday bills.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-ACTIVE-04,D5,self_employment,active,My current living costs are funded by earnings from working for myself.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-ACTIVE-05,D5,self_employment,active,"The income from my own business pays for my rent, food and regular expenses.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-ACTIVE-06,D5,self_employment,active,I use my freelance earnings to meet my normal household costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-ACTIVE-07,D5,self_employment,active,Payments for the contract work I do currently fund my day-to-day spending.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-ACTIVE-08,D5,self_employment,active,Money earned through my self-employment is what supports my regular living expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-INACTIVE-01,D5,self_employment,inactive,"I do some freelance work, but I keep that income separate from my living expenses.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-INACTIVE-02,D5,self_employment,inactive,"My business earns money, although I do not use those earnings for household costs.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-INACTIVE-03,D5,self_employment,inactive,"I receive client payments, but they are retained in the business rather than spent on my bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-INACTIVE-04,D5,self_employment,inactive,"My self-employed income exists, but none of it currently funds my everyday spending.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-INACTIVE-05,D5,self_employment,inactive,"I earn money from contract work, although it is not used for my regular living costs.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-INACTIVE-06,D5,self_employment,inactive,The income from my business is reinvested and does not pay my household expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-INACTIVE-07,D5,self_employment,inactive,"I still have freelance earnings, but those payments are not what I live on.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-SELF_EMPLOYMENT-INACTIVE-08,D5,self_employment,inactive,"Money comes in from my own work, but I keep it aside instead of using it for rent, food or bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-ACTIVE-01,D5,pension_payments,active,The pension payments I receive currently cover my regular living costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-ACTIVE-02,D5,pension_payments,active,I use my monthly pension income to pay my household bills.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-ACTIVE-03,D5,pension_payments,active,Money paid to me from my pension funds my everyday expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-ACTIVE-04,D5,pension_payments,active,My current pension payments are what I live on.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-ACTIVE-05,D5,pension_payments,active,"The pension income arriving each month pays for my rent, food and other regular costs.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-ACTIVE-06,D5,pension_payments,active,I rely on the pension payments I receive for my normal household spending.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-ACTIVE-07,D5,pension_payments,active,My day-to-day expenses are currently funded by pension income.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-ACTIVE-08,D5,pension_payments,active,The money being paid out from my pension covers my usual living costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-INACTIVE-01,D5,pension_payments,inactive,"I receive pension payments, but I save them rather than use them for living costs.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-INACTIVE-02,D5,pension_payments,inactive,"Pension income comes in, although it does not currently pay my household expenses.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-INACTIVE-03,D5,pension_payments,inactive,"I have money being paid from a pension, but none of it goes towards my regular bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-INACTIVE-04,D5,pension_payments,inactive,My pension payments are kept aside and are not used for everyday spending.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-INACTIVE-05,D5,pension_payments,inactive,"I receive pension income each month, although my living costs are funded elsewhere.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-INACTIVE-06,D5,pension_payments,inactive,The pension money I get is invested rather than spent on household expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-INACTIVE-07,D5,pension_payments,inactive,"Pension payments arrive regularly, but they are not what I currently live on.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-PENSION_PAYMENTS-INACTIVE-08,D5,pension_payments,inactive,"I get income from a pension, but I do not use it for rent, food or normal bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-ACTIVE-01,D5,benefits_support,active,The benefits I receive currently pay my regular living costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-ACTIVE-02,D5,benefits_support,active,"I use benefit payments to cover my rent, food and household bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-ACTIVE-03,D5,benefits_support,active,Regular financial support from my family funds my everyday expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-ACTIVE-04,D5,benefits_support,active,The support I receive each month is what I use for normal living costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-ACTIVE-05,D5,benefits_support,active,Benefit income currently covers my usual household spending.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-ACTIVE-06,D5,benefits_support,active,Money regularly provided by a family member pays my day-to-day expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-ACTIVE-07,D5,benefits_support,active,I rely on the benefits coming in to meet my regular bills.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-ACTIVE-08,D5,benefits_support,active,Regular support from someone else is currently funding my living costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-INACTIVE-01,D5,benefits_support,inactive,"I receive benefits, but I save them instead of using them for living costs.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-INACTIVE-02,D5,benefits_support,inactive,"Benefit payments come in, although they do not currently pay my household expenses.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-INACTIVE-03,D5,benefits_support,inactive,"My family gives me regular financial support, but I keep that money aside.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-INACTIVE-04,D5,benefits_support,inactive,"I receive support each month, although none of it is used for my normal bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-INACTIVE-05,D5,benefits_support,inactive,"Benefits are paid to me, but my current living costs are funded elsewhere.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-INACTIVE-06,D5,benefits_support,inactive,"A family member regularly sends me money, but it does not pay my household expenses.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-INACTIVE-07,D5,benefits_support,inactive,"I still receive benefit income, although that money is not what I live on.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-BENEFITS_SUPPORT-INACTIVE-08,D5,benefits_support,inactive,"Regular support comes in from someone else, but I do not use it for rent, food or bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-ACTIVE-01,D5,withdrawals,active,I regularly withdraw money from my savings to pay my living costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-ACTIVE-02,D5,withdrawals,active,Money I take from my investments currently covers my household expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-ACTIVE-03,D5,withdrawals,active,I draw from my savings to meet my normal day-to-day bills.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-ACTIVE-04,D5,withdrawals,active,Regular withdrawals from my investments are what I use to live on.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-ACTIVE-05,D5,withdrawals,active,"I use money taken out of my savings for rent, food and other regular costs.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-ACTIVE-06,D5,withdrawals,active,My everyday spending is currently funded by withdrawals from investments.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-ACTIVE-07,D5,withdrawals,active,I take money from my savings regularly to cover household bills.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-ACTIVE-08,D5,withdrawals,active,The withdrawals I make from my investments pay my usual living expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-INACTIVE-01,D5,withdrawals,inactive,"I make withdrawals from savings, but I do not use that money for living costs.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-INACTIVE-02,D5,withdrawals,inactive,"Money comes out of my investments, although it does not pay my household expenses.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-INACTIVE-03,D5,withdrawals,inactive,"I sometimes withdraw from savings, but those withdrawals are kept aside from my regular bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-INACTIVE-04,D5,withdrawals,inactive,"I take money from investments, although none of it currently funds my everyday spending.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-INACTIVE-05,D5,withdrawals,inactive,"Savings withdrawals occur, but my living costs are paid from somewhere else.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-INACTIVE-06,D5,withdrawals,inactive,I withdraw money from my investments and reinvest it rather than use it for household expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-INACTIVE-07,D5,withdrawals,inactive,"I still take money from savings occasionally, but it is not what I live on.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-WITHDRAWALS-INACTIVE-08,D5,withdrawals,inactive,"Withdrawals from my investments are not used for my rent, food or normal bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-ACTIVE-01,D5,other_regular,active,The rental income I receive currently pays my regular living costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-ACTIVE-02,D5,other_regular,active,Royalties coming in each month are what I use for household expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-ACTIVE-03,D5,other_regular,active,Regular licence payments currently fund my everyday spending.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-ACTIVE-04,D5,other_regular,active,The rent I receive from a property pays my normal living costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-ACTIVE-05,D5,other_regular,active,"Recurring royalty income covers my rent, food and household bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-ACTIVE-06,D5,other_regular,active,I use regular licensing income to meet my day-to-day expenses.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-ACTIVE-07,D5,other_regular,active,Money from a tenant comes in regularly and funds my household spending.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-ACTIVE-08,D5,other_regular,active,"Another recurring income source, rental receipts, currently pays my living expenses.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-INACTIVE-01,D5,other_regular,inactive,"I receive rental income, but I keep it separate from my living expenses.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-INACTIVE-02,D5,other_regular,inactive,"Royalties come in regularly, although they do not currently pay my household bills.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-INACTIVE-03,D5,other_regular,inactive,"I receive licence payments, but that money is saved rather than used for everyday spending.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-INACTIVE-04,D5,other_regular,inactive,"Rental income arrives each month, although none of it funds my regular living costs.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-INACTIVE-05,D5,other_regular,inactive,"I have recurring royalty income, but my household expenses are paid from somewhere else.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-INACTIVE-06,D5,other_regular,inactive,The rent from my property is reinvested and is not used for my day-to-day costs.,train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-INACTIVE-07,D5,other_regular,inactive,"Regular licensing income comes in, but it is not what I currently live on.",train,fictional_authored_d5_attribution_5b
+D5-ATTR-OTHER_REGULAR-INACTIVE-08,D5,other_regular,inactive,"I receive money from a tenant, although I do not use it for rent, food or household bills.",train,fictional_authored_d5_attribution_5b
