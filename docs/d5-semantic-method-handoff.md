@@ -6,7 +6,9 @@
 
 The application default, all 15 questions, existing trained models and datasets remain unchanged. The repaired interpreter uses **GPT-6.1 Sol, low reasoning**. The branch now includes an [independent, manually launched terminal demonstration](../demos/d5/README.md) with its compatible runtime dependencies. It accepts new fictional replies through one direct interpreter; it does not enable a new route in the normal Streamlit app.
 
-The fresh standalone environment installed and started successfully. Its one live pass completed the first three original examples correctly, then stopped when the provider reported service overload on case 04. The remaining cases were not attempted; this is not an eleven-case pass of the new entry. The [separate packaging record](d5-standalone-verification.md) preserves that limitation without replacing the complete historical repair comparison below.
+**A complete live D5 conversation has now succeeded through that terminal entry.** Existing case 09 prompted a focused actual-use question; case 01 produced a pension-only candidate which was confirmed; `/change` invalidated it; case 02 produced a fresh mixed-source candidate which was confirmed. Three model calls completed, with no service failures or retries. Confirmation and correction navigation made zero extra calls. The [report and actual transcript](d5-live-conversation-2026-10-12/REPORT.md) and [company demonstration instructions](../demos/d5/README.md#use-it-for-the-company-demonstration) are ready for teammates to use.
+
+The earlier fresh-install eleven-case pass completed the first three cases, then stopped on provider overload at case 04. That interrupted pass remains unchanged in the [packaging record](d5-standalone-verification.md). The later conversation used three existing examples; it does not complete that eleven-case pass or establish unseen-text accuracy. Publishing this update adds no model calls, examples or tests.
 
 ## The business meaning the interpreter must preserve
 
@@ -48,7 +50,7 @@ For example, case 10 now receives: “It is fine to be unsure. Does money from s
 
 Every nonclear output contains no financial option or facts. Missing information alone is not customer indecision. The existing abstention mechanism also carries an understood information gap: cases 07 and 09 have `semantic_bucket: null`, `model_abstain: true` and a specific topic. Its existing `model_uncertain` diagnostic stays true; the authored wording distinguishes a missing fact from unrecognised language. This adds no fourth customer bucket.
 
-The model retains `tools: []`, `tool_choice: "none"`, `store: false` and low reasoning. It has no execution, confirmation or save capability. The unchanged transport accepts completed passive output, with no automatic retry, substitute model or response repair. The engine retains controls, clarification limits, confirmation, correction and separate save consent; this handoff does not claim a new full-journey verification.
+The model retains `tools: []`, `tool_choice: "none"`, `store: false` and low reasoning. It has no execution, confirmation or save capability. The unchanged transport accepts completed passive output, with no automatic retry, substitute model or response repair. The engine retains controls, clarification limits, confirmation, correction and separate save consent. The successful standalone D5 conversation does not establish a full fifteen-question journey or exercise profile saving.
 
 ## The same eleven examples before and after
 
@@ -92,7 +94,7 @@ These files remain review references under `docs/`. At the handoff baseline, sta
 
 The runnable demonstration addresses that gap with the exact dependency closure in `demos/d5/runtime/`, loaded only by its separate process. Its [runtime manifest](../demos/d5/runtime-manifest.json) identifies the original and packaged hashes. The credential provider has only two portability changes: use the current user's home directory and enforce credential storage outside the full checkout. The model, prompt, schema, validators and authored follow-ups remain unchanged. NumPy/scikit-learn are import dependencies of the existing shared types; no classifier is trained or invoked by the D5 demo.
 
-Follow [the installation and launch instructions](../demos/d5/README.md) for Python 3.12 on macOS/Linux. Teammates use their own eligible account and external credentials. No credentials, caches or model artefacts are committed. Confirmation ends the D5 example; change/new/exit remain available, and other questions and profile saving are disabled there. The main application's full journey and separate save-consent route remain unchanged.
+Follow [the installation and launch instructions](../demos/d5/README.md) for Python 3.12 on macOS/Linux. Teammates use their own eligible account and external credentials. No credentials, caches or model artefacts are committed. Use the documented company sequence, or start `chat` and enter your own fictional wording; `check-11` is not a prerequisite. Follow-ups and corrections currently require complete funding statements. Confirmation ends the D5 example; change/new/exit remain available, and other questions and profile saving are disabled there. The main application's full journey and separate save-consent route remain unchanged.
 
 ## Evidence and reliability
 

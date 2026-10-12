@@ -4,6 +4,8 @@
 
 **Teammates can now install and manually start the repaired D5 terminal conversation.** Follow the [quick start](../demos/d5/README.md). This packages the existing interpreter and compatible dependencies; it does not enable a route in the normal app or change the semantic method.
 
+**Later, separately authorised conversation:** the unchanged entry completed the sequence 09 → 01 → confirmation → correction → 02 → confirmation, using three live calls and no new examples. See the [successful conversation report and transcript](d5-live-conversation-2026-10-12/REPORT.md). The interrupted eleven-case run below remains a distinct historical result; it was not resumed or converted into a pass.
+
 ## What was delivered
 
 - A separate `login` / `chat` entry, accepting fictional free text through one direct GPT-6.1 Sol low interpretation. Confirmation, correction, Help, pause/resume and stop use the existing engine. D5 ends before D6, and financial profile saving is disabled in this example.
@@ -15,7 +17,7 @@ The model, prompts, schema, validators and authored financial follow-ups were no
 
 ## One live pass, no additional examples
 
-The only live check used the **original eleven inputs and unchanged expectations** through the same `D5Session.submit` method as the terminal conversation. The entry and its files were frozen before the run. Expectations were not sent to the interpreter. The run stopped at the fourth input; the complete-set scorer did not run.
+The live check in this packaging round used the **original eleven inputs and unchanged expectations** through the same `D5Session.submit` method as the terminal conversation. The entry and its files were frozen before the run. Expectations were not sent to the interpreter. The run stopped at the fourth input; the complete-set scorer did not run.
 
 | Original case | Result in this standalone run |
 |---|---|
@@ -35,4 +37,4 @@ The [packaging record](d5-standalone-check-2026-10-12/packaging.json) records in
 
 The previous complete eleven-case repair evidence remains unchanged: clear correct candidates increased from five to seven, two same-category contract rejections disappeared, and receipt-only text no longer produced an unsupported MULTIPLE candidate. See the [technical handoff and exact before/after table](d5-semantic-method-handoff.md). Those historical results are **not** a complete pass of this new portable entry.
 
-This delivery establishes a runnable independent entry and three live completed examples in its clean environment. The full eleven-case portable check remains incomplete. Interactive confirmation/correction, a full fifteen-question UI journey and teammate-specific first sign-in were not exercised live in this round. No extra cases, test suite, app integration or default switch was added.
+This packaging round established a runnable independent entry and three live completed examples in its clean environment. The full eleven-case portable check remains incomplete. Interactive confirmation/correction was not exercised in that round; it subsequently succeeded in the separately recorded D5 conversation linked above. A full fifteen-question UI journey and teammate-specific first sign-in remain unverified here. No extra cases, test suite, app integration or default switch was added.

@@ -2,6 +2,8 @@
 
 This is a manually started **terminal conversation** using the repaired D5 interpreter: GPT-6.1 Sol with low reasoning. You can type new fictional replies, read the interpretation or focused follow-up, confirm a candidate and replace an earlier answer. The normal Streamlit app, its default model route and its 15 questions are unchanged.
 
+One complete live D5 conversation has now succeeded: a focused follow-up, pension-only confirmation, correction and fresh confirmation of mixed funding. It used three existing examples and three model calls. The [saved conversation and transcript](../../docs/d5-live-conversation-2026-10-12/REPORT.md) show what actually happened.
+
 ## Install once
 
 Use **Python 3.12 on macOS or Linux**, a terminal and a local browser for sign-in. The existing credential implementation uses POSIX file locking; native Windows is not supported. Installation requires network access. The package pins match the source experiment; no model weights or additional LLM are downloaded.
@@ -52,6 +54,28 @@ Ordinary replies such as the original pension terminology question go through th
 Confirmation ends this D5 example rather than opening D6. You can then change D5, start a separate example or exit. This isolated example cannot save a completed financial profile or bypass the main application's separate save-consent workflow. A pause, stop or safety response creates no financial answer. Any human handover shown is simulated; nobody is contacted.
 
 The screen shows the number of interpretation calls for each action. Financial interpretation uses one direct model call; Help and deterministic controls do not constitute model successes. No choice menu is used as free-text recovery.
+
+## Use it for the company demonstration
+
+Start `chat` once. Enter each line below separately, read the response, then enter the next line. These are the exact existing examples used in the successful conversation; there is no need to run `check-11` first.
+
+| Step | What to enter | What to look for |
+|---|---|---|
+| 1 | `I receive wages and pension payments` | A question about which sources actually pay living costs; no assumed financial answer. |
+| 2 | `My wages stay in savings. My pension pays the bills.` | Pension-only candidate, with wages excluded; asks for confirmation. |
+| 3 | `/confirm` | Confirms the pension answer in this session, with zero new model calls. |
+| 4 | `/change` | Invalidates the previous answer and asks for a complete replacement. |
+| 5 | `Both my wages and pension pay for everyday costs.` | New mixed-source candidate with both categories, awaiting fresh confirmation. |
+| 6 | `/confirm` | Confirms the corrected answer, with zero new model calls. |
+| 7 | `/exit` | Ends the session without saving a financial profile. |
+
+Explain the business point: **receiving money does not establish how it is used; one complete interpretation supports a focused follow-up, confirmation and correction.** The transcript records one successful live run, not guaranteed wording or a guarantee that the service will be available at the meeting. If a live request fails, the session stops. The saved transcript can be shown as a labelled recording of the earlier run; it must not be presented as live inference.
+
+## Try your own wording
+
+Use the same `chat` command and type your own fictional D5 answer instead of the demonstration sequence. Use `/new` between independent examples and `/change` to replace an answer within the same example. Read the proposed meaning before using `/confirm`.
+
+For follow-ups and corrections, give the **complete current funding situation** rather than only “yes” or “that too”. Note whether the app interpreted the meaning correctly, asked a useful question, rejected the answer, or encountered a service failure. Your wording is sent live; no new training, default switch or test-bank edit is required. This publication did not run any extra examples or model calls.
 
 ## Local records and access failures
 
