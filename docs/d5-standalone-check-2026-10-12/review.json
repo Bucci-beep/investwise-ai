@@ -1,0 +1,57 @@
+{
+  "review_type": "Independent AI review of saved records only; no new inference or cases",
+  "reviewer": "d5_handoff_review",
+  "cases": [
+    {
+      "id": "D5-STD-01",
+      "raw_meaning_correct": true,
+      "accepted_candidate_correct": true,
+      "expected_option": "D5_PENSION_PAYMENTS",
+      "observation": "Pension pays current costs; wages explicitly excluded.",
+      "confirmation_wording_correct": true
+    },
+    {
+      "id": "D5-STD-02",
+      "raw_meaning_correct": true,
+      "accepted_candidate_correct": true,
+      "expected_option": "D5_MULTIPLE",
+      "observation": "Wages and pension both pay current costs.",
+      "confirmation_wording_correct": true
+    },
+    {
+      "id": "D5-STD-03",
+      "raw_meaning_correct": true,
+      "accepted_candidate_correct": true,
+      "expected_option": "D5_SALARY",
+      "observation": "Two employers form one salary category with the same relations.",
+      "confirmation_wording_correct": true
+    }
+  ],
+  "completed_cases": 3,
+  "actual_model_calls": 4,
+  "correct_raw_meanings_among_completed": 3,
+  "correct_accepted_candidates_among_completed": 3,
+  "failure_case": "D5-STD-04",
+  "failure_classification": "Provider overload, no semantic output; not a contract rejection",
+  "provider_error_code": "server_is_overloaded",
+  "provider_error_type": "service_unavailable_error",
+  "http_status": 200,
+  "not_attempted": [
+    "D5-STD-05",
+    "D5-STD-06",
+    "D5-STD-07",
+    "D5-STD-08",
+    "D5-STD-09",
+    "D5-STD-10",
+    "D5-STD-11"
+  ],
+  "complete_eleven_case_pass": false,
+  "retry": false,
+  "choice_recovery": 0,
+  "confirmation_or_save_actions": 0,
+  "help_case_reached": false,
+  "remaining_case_semantic_results": null,
+  "credential_values_in_published_records": false,
+  "raw_provider_headers_published": false,
+  "historical_full_repair_results": "Preserved separately under docs/d5-semantic-repair/evidence/"
+}

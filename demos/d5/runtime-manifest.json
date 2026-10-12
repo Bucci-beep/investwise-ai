@@ -1,0 +1,938 @@
+{
+  "schema_version": 1,
+  "purpose": "Standalone manually launched D5 demo runtime dependency packaging; application defaults are unchanged.",
+  "created_utc": "2026-10-12T09:15:24.894790+00:00",
+  "source_repository": "investwise-d5-composition-2026-10-08",
+  "source_base_commit": "0edfcd0",
+  "source_working_tree_contains_uncommitted_experiment_code": true,
+  "target_base_commit": "50c6ebd",
+  "dependency_manifest": {
+    "path": "docs/d5-semantic-repair/manifest.json",
+    "sha256": "9533e8bfd07cd34c5791b7936391622f468936ba8c8b2285c8b268707b8161fd"
+  },
+  "model": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "low",
+    "unchanged": true
+  },
+  "inventory": {
+    "dependency_modules": 37,
+    "package_init_files": 1,
+    "config_files": 3,
+    "total_files": 41,
+    "byte_identical_files": 40,
+    "portability_modified_files": 1
+  },
+  "files": {
+    "ai/__init__.py": {
+      "source_path": "ai/__init__.py",
+      "copied_path": "demos/d5/runtime/ai/__init__.py",
+      "source_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "copied_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "byte_identical": true
+    },
+    "ai/all_question_ml.py": {
+      "source_path": "ai/all_question_ml.py",
+      "copied_path": "demos/d5/runtime/ai/all_question_ml.py",
+      "source_sha256": "e59854f80b102dfd8d9d561c3f3e88d82ee2f24e816138625cef9c7b23817284",
+      "copied_sha256": "e59854f80b102dfd8d9d561c3f3e88d82ee2f24e816138625cef9c7b23817284",
+      "byte_identical": true
+    },
+    "ai/bounded_answers.py": {
+      "source_path": "ai/bounded_answers.py",
+      "copied_path": "demos/d5/runtime/ai/bounded_answers.py",
+      "source_sha256": "41ac26e73992ab81025a9af8c3df4cf66c598d91cc318d84e1b35aca278b17db",
+      "copied_sha256": "41ac26e73992ab81025a9af8c3df4cf66c598d91cc318d84e1b35aca278b17db",
+      "byte_identical": true
+    },
+    "ai/conformal.py": {
+      "source_path": "ai/conformal.py",
+      "copied_path": "demos/d5/runtime/ai/conformal.py",
+      "source_sha256": "9438f1b8c8e88d97b447ccda82bba13200ba6e6eb9be27f9a4f1e8167242fad3",
+      "copied_sha256": "9438f1b8c8e88d97b447ccda82bba13200ba6e6eb9be27f9a4f1e8167242fad3",
+      "byte_identical": true
+    },
+    "ai/conversation_engine.py": {
+      "source_path": "ai/conversation_engine.py",
+      "copied_path": "demos/d5/runtime/ai/conversation_engine.py",
+      "source_sha256": "28bcc16d8b37aab692b1e065163871555d6c3dd7a98c59ff38c8430096f40285",
+      "copied_sha256": "28bcc16d8b37aab692b1e065163871555d6c3dd7a98c59ff38c8430096f40285",
+      "byte_identical": true
+    },
+    "ai/conversation_state.py": {
+      "source_path": "ai/conversation_state.py",
+      "copied_path": "demos/d5/runtime/ai/conversation_state.py",
+      "source_sha256": "ebaea8e9265e35f9a222d5d6ca9417564655f82af2543d6b92e84e9d26196bf3",
+      "copied_sha256": "ebaea8e9265e35f9a222d5d6ca9417564655f82af2543d6b92e84e9d26196bf3",
+      "byte_identical": true
+    },
+    "ai/d12_adapter.py": {
+      "source_path": "ai/d12_adapter.py",
+      "copied_path": "demos/d5/runtime/ai/d12_adapter.py",
+      "source_sha256": "3344f1c00b134b6362e08fb2929a633c7740da797d06a2f56efbae4c95942638",
+      "copied_sha256": "3344f1c00b134b6362e08fb2929a633c7740da797d06a2f56efbae4c95942638",
+      "byte_identical": true
+    },
+    "ai/d5_candidate_validation.py": {
+      "source_path": "ai/d5_candidate_validation.py",
+      "copied_path": "demos/d5/runtime/ai/d5_candidate_validation.py",
+      "source_sha256": "c4e6ee798566074185d0e55139c9d04bb47cf1cb4009e9d0c8c915a46af3b39c",
+      "copied_sha256": "c4e6ee798566074185d0e55139c9d04bb47cf1cb4009e9d0c8c915a46af3b39c",
+      "byte_identical": true
+    },
+    "ai/d5_candidate_validation_v6.py": {
+      "source_path": "ai/d5_candidate_validation_v6.py",
+      "copied_path": "demos/d5/runtime/ai/d5_candidate_validation_v6.py",
+      "source_sha256": "ee952118ca756def1de91f9034a83acc9ef1d92b8e37b48b8c8072b269bfab80",
+      "copied_sha256": "ee952118ca756def1de91f9034a83acc9ef1d92b8e37b48b8c8072b269bfab80",
+      "byte_identical": true
+    },
+    "ai/d5_candidate_validation_v7.py": {
+      "source_path": "ai/d5_candidate_validation_v7.py",
+      "copied_path": "demos/d5/runtime/ai/d5_candidate_validation_v7.py",
+      "source_sha256": "d7dde66ee78e78ee1d7b5d243acf8970dcbe937c8217c4d52b500a107916ff03",
+      "copied_sha256": "d7dde66ee78e78ee1d7b5d243acf8970dcbe937c8217c4d52b500a107916ff03",
+      "byte_identical": true
+    },
+    "ai/d5_candidate_validation_v8.py": {
+      "source_path": "ai/d5_candidate_validation_v8.py",
+      "copied_path": "demos/d5/runtime/ai/d5_candidate_validation_v8.py",
+      "source_sha256": "3d728e8b84517f974ef2c98c82d6608b5a0be26e68df2a7c6b212d09064c078f",
+      "copied_sha256": "3d728e8b84517f974ef2c98c82d6608b5a0be26e68df2a7c6b212d09064c078f",
+      "byte_identical": true
+    },
+    "ai/d5_chatgpt_auth.py": {
+      "source_path": "ai/d5_chatgpt_auth.py",
+      "copied_path": "demos/d5/runtime/ai/d5_chatgpt_auth.py",
+      "source_sha256": "ee9708b42422718643e18ee886b21b9449786e350a1259b35f1025a112395be7",
+      "copied_sha256": "d5b2fd66580c68728ab952f3cc832cc7c20ba85487346158ea2f887b72167160",
+      "byte_identical": false,
+      "portability_only_changes": [
+        {
+          "before": "DEFAULT_PROFILE_DIR = Path(\"/Users/husky/.config/investwise/d5-chatgpt-plan\")",
+          "after": "DEFAULT_PROFILE_DIR = Path.home() / \".config\" / \"investwise\" / \"d5-chatgpt-plan\"",
+          "reason": "Resolve the existing private OAuth profile location under the launching user home directory."
+        },
+        {
+          "before": "        repo = Path(__file__).resolve().parents[1]",
+          "after": "        repo = Path(__file__).resolve().parents[4]",
+          "reason": "Protect the whole checkout against credential storage after nesting the unchanged ai package under demos/d5/runtime."
+        }
+      ]
+    },
+    "ai/d5_chatgpt_header_diagnostic.py": {
+      "source_path": "ai/d5_chatgpt_header_diagnostic.py",
+      "copied_path": "demos/d5/runtime/ai/d5_chatgpt_header_diagnostic.py",
+      "source_sha256": "5b6c18bc5d15be197490c98d44247fb2f16d08177b58b594ee74005f5c3f73cd",
+      "copied_sha256": "5b6c18bc5d15be197490c98d44247fb2f16d08177b58b594ee74005f5c3f73cd",
+      "byte_identical": true
+    },
+    "ai/d5_chatgpt_missing_mime.py": {
+      "source_path": "ai/d5_chatgpt_missing_mime.py",
+      "copied_path": "demos/d5/runtime/ai/d5_chatgpt_missing_mime.py",
+      "source_sha256": "2726bf0e844aa2e8323fa762a5639153ccc263aa1b6a2a8653ace04b64a54078",
+      "copied_sha256": "2726bf0e844aa2e8323fa762a5639153ccc263aa1b6a2a8653ace04b64a54078",
+      "byte_identical": true
+    },
+    "ai/d5_chatgpt_plan_diagnostic.py": {
+      "source_path": "ai/d5_chatgpt_plan_diagnostic.py",
+      "copied_path": "demos/d5/runtime/ai/d5_chatgpt_plan_diagnostic.py",
+      "source_sha256": "e9cda34f09ad3bf01395db4b09d2e6a24b3ef9506bcd0566c1690af97e9e1b7a",
+      "copied_sha256": "e9cda34f09ad3bf01395db4b09d2e6a24b3ef9506bcd0566c1690af97e9e1b7a",
+      "byte_identical": true
+    },
+    "ai/d5_chatgpt_plan_transport.py": {
+      "source_path": "ai/d5_chatgpt_plan_transport.py",
+      "copied_path": "demos/d5/runtime/ai/d5_chatgpt_plan_transport.py",
+      "source_sha256": "ca7406ebd05522230e67d96b558f5e9b7c38a3bf9f4d38428a16fa65b59c00c5",
+      "copied_sha256": "ca7406ebd05522230e67d96b558f5e9b7c38a3bf9f4d38428a16fa65b59c00c5",
+      "byte_identical": true
+    },
+    "ai/d5_chatgpt_sse_compat.py": {
+      "source_path": "ai/d5_chatgpt_sse_compat.py",
+      "copied_path": "demos/d5/runtime/ai/d5_chatgpt_sse_compat.py",
+      "source_sha256": "b222f97be065162a769fb7f97120c2e341367bb1762631b06417b9f91456bb84",
+      "copied_sha256": "b222f97be065162a769fb7f97120c2e341367bb1762631b06417b9f91456bb84",
+      "byte_identical": true
+    },
+    "ai/d5_chatgpt_stream_assembly.py": {
+      "source_path": "ai/d5_chatgpt_stream_assembly.py",
+      "copied_path": "demos/d5/runtime/ai/d5_chatgpt_stream_assembly.py",
+      "source_sha256": "050a5e02e6532bbae835d24d52c3647ddeb6936eac95754fc37160c699b52571",
+      "copied_sha256": "050a5e02e6532bbae835d24d52c3647ddeb6936eac95754fc37160c699b52571",
+      "byte_identical": true
+    },
+    "ai/d5_llm_grounding.py": {
+      "source_path": "ai/d5_llm_grounding.py",
+      "copied_path": "demos/d5/runtime/ai/d5_llm_grounding.py",
+      "source_sha256": "3be7935f03520ad5896d7f460d2486c68acb0aba2f98c6cf466ea76d9b46f3c3",
+      "copied_sha256": "3be7935f03520ad5896d7f460d2486c68acb0aba2f98c6cf466ea76d9b46f3c3",
+      "byte_identical": true
+    },
+    "ai/d5_llm_grounding_v5.py": {
+      "source_path": "ai/d5_llm_grounding_v5.py",
+      "copied_path": "demos/d5/runtime/ai/d5_llm_grounding_v5.py",
+      "source_sha256": "b4fb04a837ffaf6e5109d5845f1ecd67a63430171fc91b662721bea146e2c098",
+      "copied_sha256": "b4fb04a837ffaf6e5109d5845f1ecd67a63430171fc91b662721bea146e2c098",
+      "byte_identical": true
+    },
+    "ai/d5_llm_grounding_v6.py": {
+      "source_path": "ai/d5_llm_grounding_v6.py",
+      "copied_path": "demos/d5/runtime/ai/d5_llm_grounding_v6.py",
+      "source_sha256": "2f6c0e8f9bff880aa74dd6f61d7fae455769ab88b388091bd2fe98eaa4c40e36",
+      "copied_sha256": "2f6c0e8f9bff880aa74dd6f61d7fae455769ab88b388091bd2fe98eaa4c40e36",
+      "byte_identical": true
+    },
+    "ai/d5_llm_grounding_v7.py": {
+      "source_path": "ai/d5_llm_grounding_v7.py",
+      "copied_path": "demos/d5/runtime/ai/d5_llm_grounding_v7.py",
+      "source_sha256": "7edb39a8458822d245cd193e56d26bed41f7092fb2f0f08c3adcd2ba5599b911",
+      "copied_sha256": "7edb39a8458822d245cd193e56d26bed41f7092fb2f0f08c3adcd2ba5599b911",
+      "byte_identical": true
+    },
+    "ai/d5_llm_grounding_v8.py": {
+      "source_path": "ai/d5_llm_grounding_v8.py",
+      "copied_path": "demos/d5/runtime/ai/d5_llm_grounding_v8.py",
+      "source_sha256": "aed9368c72308b2921379f2ced62549e0b273ee8c54d474cd9c6203c6221f825",
+      "copied_sha256": "aed9368c72308b2921379f2ced62549e0b273ee8c54d474cd9c6203c6221f825",
+      "byte_identical": true
+    },
+    "ai/d5_puzzle_interpreter.py": {
+      "source_path": "ai/d5_puzzle_interpreter.py",
+      "copied_path": "demos/d5/runtime/ai/d5_puzzle_interpreter.py",
+      "source_sha256": "fc5f9b24e1bb8a1ca81f45c576d26395fe2a63cbf606d10030f9492f47c2e864",
+      "copied_sha256": "fc5f9b24e1bb8a1ca81f45c576d26395fe2a63cbf606d10030f9492f47c2e864",
+      "byte_identical": true
+    },
+    "ai/d5_single_interpreter_contract.py": {
+      "source_path": "ai/d5_single_interpreter_contract.py",
+      "copied_path": "demos/d5/runtime/ai/d5_single_interpreter_contract.py",
+      "source_sha256": "ee4b49b8b217fde094ec2a89caf7a5aa937a8303a44315cde89a6cef0d2223cb",
+      "copied_sha256": "ee4b49b8b217fde094ec2a89caf7a5aa937a8303a44315cde89a6cef0d2223cb",
+      "byte_identical": true
+    },
+    "ai/d5_single_interpreter_contract_v2.py": {
+      "source_path": "ai/d5_single_interpreter_contract_v2.py",
+      "copied_path": "demos/d5/runtime/ai/d5_single_interpreter_contract_v2.py",
+      "source_sha256": "d84bef71c8f17166546c0269397bffdcd058c5b29ccf9d1bfea85dcf870e5e68",
+      "copied_sha256": "d84bef71c8f17166546c0269397bffdcd058c5b29ccf9d1bfea85dcf870e5e68",
+      "byte_identical": true
+    },
+    "ai/d5_single_interpreter_engine.py": {
+      "source_path": "ai/d5_single_interpreter_engine.py",
+      "copied_path": "demos/d5/runtime/ai/d5_single_interpreter_engine.py",
+      "source_sha256": "c83447df12d37f3c096a2d2367f060c2d3c622395592896eefd0fe74b3b6d3e2",
+      "copied_sha256": "c83447df12d37f3c096a2d2367f060c2d3c622395592896eefd0fe74b3b6d3e2",
+      "byte_identical": true
+    },
+    "ai/d5_single_interpreter_engine_v2.py": {
+      "source_path": "ai/d5_single_interpreter_engine_v2.py",
+      "copied_path": "demos/d5/runtime/ai/d5_single_interpreter_engine_v2.py",
+      "source_sha256": "9c9823b607cd52410f3a1645196690f8a028475ee876c0f71391b237fd5f0a73",
+      "copied_sha256": "9c9823b607cd52410f3a1645196690f8a028475ee876c0f71391b237fd5f0a73",
+      "byte_identical": true
+    },
+    "ai/d5_single_interpreter_transport.py": {
+      "source_path": "ai/d5_single_interpreter_transport.py",
+      "copied_path": "demos/d5/runtime/ai/d5_single_interpreter_transport.py",
+      "source_sha256": "b18a8356caf5794b54695e34ce639e6267d2b3a6016b3e86515d78948a78e6ee",
+      "copied_sha256": "b18a8356caf5794b54695e34ce639e6267d2b3a6016b3e86515d78948a78e6ee",
+      "byte_identical": true
+    },
+    "ai/d5_text_classifier.py": {
+      "source_path": "ai/d5_text_classifier.py",
+      "copied_path": "demos/d5/runtime/ai/d5_text_classifier.py",
+      "source_sha256": "9fc628753c8a1908b68bcd6ef7ab9496d2c32d4ba8a47349caf6c012e2e197ad",
+      "copied_sha256": "9fc628753c8a1908b68bcd6ef7ab9496d2c32d4ba8a47349caf6c012e2e197ad",
+      "byte_identical": true
+    },
+    "ai/d5_tool_free_gpt_experiment.py": {
+      "source_path": "ai/d5_tool_free_gpt_experiment.py",
+      "copied_path": "demos/d5/runtime/ai/d5_tool_free_gpt_experiment.py",
+      "source_sha256": "e4ea2ae23e1292e5d773b427bc657812ea895c4a9da8d1e94a341f423ae2e254",
+      "copied_sha256": "e4ea2ae23e1292e5d773b427bc657812ea895c4a9da8d1e94a341f423ae2e254",
+      "byte_identical": true
+    },
+    "ai/deterministic_conversation.py": {
+      "source_path": "ai/deterministic_conversation.py",
+      "copied_path": "demos/d5/runtime/ai/deterministic_conversation.py",
+      "source_sha256": "6799bdb9a2bbaf6bb141e59b9fe7d10e50450eaf06dcf45a887d4f2d881ece5e",
+      "copied_sha256": "6799bdb9a2bbaf6bb141e59b9fe7d10e50450eaf06dcf45a887d4f2d881ece5e",
+      "byte_identical": true
+    },
+    "ai/horizon_mapper.py": {
+      "source_path": "ai/horizon_mapper.py",
+      "copied_path": "demos/d5/runtime/ai/horizon_mapper.py",
+      "source_sha256": "2e5bac8ae15a66b874e05ed57417a3ac92b0d23d81d1d7393536619e67dcbb54",
+      "copied_sha256": "2e5bac8ae15a66b874e05ed57417a3ac92b0d23d81d1d7393536619e67dcbb54",
+      "byte_identical": true
+    },
+    "ai/llm_shadow.py": {
+      "source_path": "ai/llm_shadow.py",
+      "copied_path": "demos/d5/runtime/ai/llm_shadow.py",
+      "source_sha256": "57b7a3ccfdc543895ffaae35c3f342bcf06ec074eeb9dc512b277a5e571113b6",
+      "copied_sha256": "57b7a3ccfdc543895ffaae35c3f342bcf06ec074eeb9dc512b277a5e571113b6",
+      "byte_identical": true
+    },
+    "ai/pre_model_controls.py": {
+      "source_path": "ai/pre_model_controls.py",
+      "copied_path": "demos/d5/runtime/ai/pre_model_controls.py",
+      "source_sha256": "8983df7857c531a9fe9cf43f9eea0a14e1aafa7c6a5582663b6301c77deacd7b",
+      "copied_sha256": "8983df7857c531a9fe9cf43f9eea0a14e1aafa7c6a5582663b6301c77deacd7b",
+      "byte_identical": true
+    },
+    "ai/question_followups.py": {
+      "source_path": "ai/question_followups.py",
+      "copied_path": "demos/d5/runtime/ai/question_followups.py",
+      "source_sha256": "393054bfe109dc94a515e560286bf2f5024a72fd6a95befd5ac1cc7ae56457bb",
+      "copied_sha256": "393054bfe109dc94a515e560286bf2f5024a72fd6a95befd5ac1cc7ae56457bb",
+      "byte_identical": true
+    },
+    "ai/question_spec.py": {
+      "source_path": "ai/question_spec.py",
+      "copied_path": "demos/d5/runtime/ai/question_spec.py",
+      "source_sha256": "5c19e511ff0144400363f43bdf887dddb49dc6db0da14b3ca69bd6f1d7f3be63",
+      "copied_sha256": "5c19e511ff0144400363f43bdf887dddb49dc6db0da14b3ca69bd6f1d7f3be63",
+      "byte_identical": true
+    },
+    "ai/text_classifier.py": {
+      "source_path": "ai/text_classifier.py",
+      "copied_path": "demos/d5/runtime/ai/text_classifier.py",
+      "source_sha256": "8051914b85bbb1cb06e2dbaed4f85d138924e3ab7a234f1d3fc2c8844b943c15",
+      "copied_sha256": "8051914b85bbb1cb06e2dbaed4f85d138924e3ab7a234f1d3fc2c8844b943c15",
+      "byte_identical": true
+    },
+    "config/business-decision-spec.json": {
+      "source_path": "config/business-decision-spec.json",
+      "copied_path": "demos/d5/runtime/config/business-decision-spec.json",
+      "source_sha256": "77011caa61f1248aad6d3d20e5e51987fa1b60f93e117de0b8f5720215b8abea",
+      "copied_sha256": "77011caa61f1248aad6d3d20e5e51987fa1b60f93e117de0b8f5720215b8abea",
+      "byte_identical": true
+    },
+    "config/d5-single-interpreter-v1-prompt.txt": {
+      "source_path": "config/d5-single-interpreter-v1-prompt.txt",
+      "copied_path": "demos/d5/runtime/config/d5-single-interpreter-v1-prompt.txt",
+      "source_sha256": "9149ae9e9a3e12dce89f3e18a499d88f271bd77ce5b4c4aca172fb47adeb1a70",
+      "copied_sha256": "9149ae9e9a3e12dce89f3e18a499d88f271bd77ce5b4c4aca172fb47adeb1a70",
+      "byte_identical": true
+    },
+    "config/d5-single-interpreter-v2-prompt.txt": {
+      "source_path": "config/d5-single-interpreter-v2-prompt.txt",
+      "copied_path": "demos/d5/runtime/config/d5-single-interpreter-v2-prompt.txt",
+      "source_sha256": "98f3a1c33cdf876530198b54884178f3f07b48083dbf1dce79a5e4e0dcf8290f",
+      "copied_sha256": "98f3a1c33cdf876530198b54884178f3f07b48083dbf1dce79a5e4e0dcf8290f",
+      "byte_identical": true
+    }
+  },
+  "requirements": {
+    "path": "demos/d5/requirements.txt",
+    "sha256": "0fc66604ce0dd850b426d2fd268f39b6c12f1d54655620f368c4c7e41eb93e2e",
+    "source_python_version": "3.12.14",
+    "versions_verified_from_installed_metadata": {
+      "numpy": "2.5.3",
+      "scikit-learn": "1.9.1",
+      "PyJWT": "2.10.1",
+      "cryptography": "50.0.2",
+      "scipy": "1.18.1",
+      "joblib": "1.6.0",
+      "threadpoolctl": "3.7.0",
+      "cffi": "2.1.1",
+      "pycparser": "3.11",
+      "narwhals": "2.26.0",
+      "cloudpickle": "3.1.2"
+    },
+    "version_origins": {
+      "numerical": "Existing application virtual environment package metadata",
+      "cryptographic": "Existing isolated d5-chatgpt-plan-runtime package metadata"
+    },
+    "optional_packages_omitted": {
+      "mlx_lm": "Imported only inside unused MLXLocalGenerator.__call__.",
+      "huggingface_hub": "Imported only inside unused local_snapshot helper.",
+      "transformers": "No import in the 37-module dependency closure."
+    },
+    "supported_platform_note": "The unchanged credential provider requires POSIX fcntl and permission APIs (macOS/Linux). A fresh dependency installation has not been attempted by packaging."
+  },
+  "static_verification": {
+    "source_hashes_match_prior_manifest": true,
+    "parsed_python_files": 38,
+    "all_local_ai_imports_packaged": true,
+    "missing_local_ai_imports": [],
+    "local_ai_import_edges": [
+      {
+        "from": "ai/all_question_ml.py",
+        "to": "ai.conformal",
+        "line": 20
+      },
+      {
+        "from": "ai/all_question_ml.py",
+        "to": "ai.question_spec",
+        "line": 21
+      },
+      {
+        "from": "ai/all_question_ml.py",
+        "to": "ai.text_classifier",
+        "line": 22
+      },
+      {
+        "from": "ai/all_question_ml.py",
+        "to": "ai.d5_text_classifier",
+        "line": 221
+      },
+      {
+        "from": "ai/all_question_ml.py",
+        "to": "ai.d5_text_classifier",
+        "line": 280
+      },
+      {
+        "from": "ai/bounded_answers.py",
+        "to": "ai.question_spec",
+        "line": 12
+      },
+      {
+        "from": "ai/bounded_answers.py",
+        "to": "ai.pre_model_controls",
+        "line": 13
+      },
+      {
+        "from": "ai/conformal.py",
+        "to": "ai.text_classifier",
+        "line": 16
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.conversation_state",
+        "line": 9
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.d12_adapter",
+        "line": 10
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.deterministic_conversation",
+        "line": 11
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.pre_model_controls",
+        "line": 12
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.question_spec",
+        "line": 13
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.question_followups",
+        "line": 14
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.bounded_answers",
+        "line": 17
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.d5_candidate_validation",
+        "line": 18
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.horizon_mapper",
+        "line": 19
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.d5_candidate_validation_v8",
+        "line": 1233
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.d5_candidate_validation_v7",
+        "line": 1236
+      },
+      {
+        "from": "ai/conversation_engine.py",
+        "to": "ai.d5_candidate_validation_v6",
+        "line": 1240
+      },
+      {
+        "from": "ai/d5_candidate_validation.py",
+        "to": "ai.bounded_answers",
+        "line": 13
+      },
+      {
+        "from": "ai/d5_candidate_validation.py",
+        "to": "ai.question_spec",
+        "line": 14
+      },
+      {
+        "from": "ai/d5_candidate_validation.py",
+        "to": "ai.d5_text_classifier",
+        "line": 240
+      },
+      {
+        "from": "ai/d5_candidate_validation.py",
+        "to": "ai.d5_text_classifier",
+        "line": 296
+      },
+      {
+        "from": "ai/d5_candidate_validation.py",
+        "to": "ai.d5_text_classifier",
+        "line": 427
+      },
+      {
+        "from": "ai/d5_candidate_validation.py",
+        "to": "ai.d5_text_classifier",
+        "line": 520
+      },
+      {
+        "from": "ai/d5_candidate_validation.py",
+        "to": "ai.d5_llm_grounding_v5",
+        "line": 468
+      },
+      {
+        "from": "ai/d5_candidate_validation.py",
+        "to": "ai.d5_llm_grounding",
+        "line": 470
+      },
+      {
+        "from": "ai/d5_candidate_validation_v6.py",
+        "to": "ai.bounded_answers",
+        "line": 13
+      },
+      {
+        "from": "ai/d5_candidate_validation_v6.py",
+        "to": "ai.question_spec",
+        "line": 14
+      },
+      {
+        "from": "ai/d5_candidate_validation_v6.py",
+        "to": "ai.d5_llm_grounding_v6",
+        "line": 15
+      },
+      {
+        "from": "ai/d5_candidate_validation_v6.py",
+        "to": "ai.d5_text_classifier",
+        "line": 236
+      },
+      {
+        "from": "ai/d5_candidate_validation_v6.py",
+        "to": "ai.d5_text_classifier",
+        "line": 367
+      },
+      {
+        "from": "ai/d5_candidate_validation_v7.py",
+        "to": "ai.bounded_answers",
+        "line": 13
+      },
+      {
+        "from": "ai/d5_candidate_validation_v7.py",
+        "to": "ai.question_spec",
+        "line": 14
+      },
+      {
+        "from": "ai/d5_candidate_validation_v7.py",
+        "to": "ai.d5_llm_grounding_v7",
+        "line": 15
+      },
+      {
+        "from": "ai/d5_candidate_validation_v7.py",
+        "to": "ai.d5_text_classifier",
+        "line": 238
+      },
+      {
+        "from": "ai/d5_candidate_validation_v7.py",
+        "to": "ai.d5_text_classifier",
+        "line": 369
+      },
+      {
+        "from": "ai/d5_candidate_validation_v8.py",
+        "to": "ai.bounded_answers",
+        "line": 13
+      },
+      {
+        "from": "ai/d5_candidate_validation_v8.py",
+        "to": "ai.question_spec",
+        "line": 14
+      },
+      {
+        "from": "ai/d5_candidate_validation_v8.py",
+        "to": "ai.d5_llm_grounding_v8",
+        "line": 15
+      },
+      {
+        "from": "ai/d5_candidate_validation_v8.py",
+        "to": "ai.d5_text_classifier",
+        "line": 238
+      },
+      {
+        "from": "ai/d5_candidate_validation_v8.py",
+        "to": "ai.d5_text_classifier",
+        "line": 369
+      },
+      {
+        "from": "ai/d5_chatgpt_header_diagnostic.py",
+        "to": "ai",
+        "line": 7
+      },
+      {
+        "from": "ai/d5_chatgpt_header_diagnostic.py",
+        "to": "ai.llm_shadow",
+        "line": 8
+      },
+      {
+        "from": "ai/d5_chatgpt_missing_mime.py",
+        "to": "ai.d5_chatgpt_header_diagnostic",
+        "line": 7
+      },
+      {
+        "from": "ai/d5_chatgpt_missing_mime.py",
+        "to": "ai.llm_shadow",
+        "line": 10
+      },
+      {
+        "from": "ai/d5_chatgpt_plan_diagnostic.py",
+        "to": "ai",
+        "line": 16
+      },
+      {
+        "from": "ai/d5_chatgpt_plan_diagnostic.py",
+        "to": "ai.llm_shadow",
+        "line": 17
+      },
+      {
+        "from": "ai/d5_chatgpt_plan_transport.py",
+        "to": "ai.d5_tool_free_gpt_experiment",
+        "line": 19
+      },
+      {
+        "from": "ai/d5_chatgpt_plan_transport.py",
+        "to": "ai.llm_shadow",
+        "line": 23
+      },
+      {
+        "from": "ai/d5_chatgpt_sse_compat.py",
+        "to": "ai",
+        "line": 13
+      },
+      {
+        "from": "ai/d5_chatgpt_sse_compat.py",
+        "to": "ai",
+        "line": 14
+      },
+      {
+        "from": "ai/d5_chatgpt_sse_compat.py",
+        "to": "ai.llm_shadow",
+        "line": 15
+      },
+      {
+        "from": "ai/d5_chatgpt_stream_assembly.py",
+        "to": "ai.d5_chatgpt_missing_mime",
+        "line": 7
+      },
+      {
+        "from": "ai/d5_chatgpt_stream_assembly.py",
+        "to": "ai.llm_shadow",
+        "line": 8
+      },
+      {
+        "from": "ai/d5_puzzle_interpreter.py",
+        "to": "ai.all_question_ml",
+        "line": 21
+      },
+      {
+        "from": "ai/d5_puzzle_interpreter.py",
+        "to": "ai.llm_shadow",
+        "line": 22
+      },
+      {
+        "from": "ai/d5_puzzle_interpreter.py",
+        "to": "ai.pre_model_controls",
+        "line": 24
+      },
+      {
+        "from": "ai/d5_puzzle_interpreter.py",
+        "to": "ai.question_spec",
+        "line": 25
+      },
+      {
+        "from": "ai/d5_puzzle_interpreter.py",
+        "to": "ai.d5_llm_grounding",
+        "line": 361
+      },
+      {
+        "from": "ai/d5_single_interpreter_contract.py",
+        "to": "ai.all_question_ml",
+        "line": 17
+      },
+      {
+        "from": "ai/d5_single_interpreter_contract.py",
+        "to": "ai.d5_puzzle_interpreter",
+        "line": 18
+      },
+      {
+        "from": "ai/d5_single_interpreter_contract.py",
+        "to": "ai.llm_shadow",
+        "line": 19
+      },
+      {
+        "from": "ai/d5_single_interpreter_contract.py",
+        "to": "ai.question_spec",
+        "line": 20
+      },
+      {
+        "from": "ai/d5_single_interpreter_contract_v2.py",
+        "to": "ai.all_question_ml",
+        "line": 17
+      },
+      {
+        "from": "ai/d5_single_interpreter_contract_v2.py",
+        "to": "ai.d5_puzzle_interpreter",
+        "line": 18
+      },
+      {
+        "from": "ai/d5_single_interpreter_contract_v2.py",
+        "to": "ai.llm_shadow",
+        "line": 19
+      },
+      {
+        "from": "ai/d5_single_interpreter_contract_v2.py",
+        "to": "ai.question_spec",
+        "line": 20
+      },
+      {
+        "from": "ai/d5_single_interpreter_engine.py",
+        "to": "ai.bounded_answers",
+        "line": 15
+      },
+      {
+        "from": "ai/d5_single_interpreter_engine.py",
+        "to": "ai.conversation_engine",
+        "line": 16
+      },
+      {
+        "from": "ai/d5_single_interpreter_engine.py",
+        "to": "ai.conversation_state",
+        "line": 17
+      },
+      {
+        "from": "ai/d5_single_interpreter_engine.py",
+        "to": "ai.d5_single_interpreter_contract",
+        "line": 18
+      },
+      {
+        "from": "ai/d5_single_interpreter_engine.py",
+        "to": "ai.question_followups",
+        "line": 19
+      },
+      {
+        "from": "ai/d5_single_interpreter_engine_v2.py",
+        "to": "ai.d5_single_interpreter_engine",
+        "line": 6
+      },
+      {
+        "from": "ai/d5_single_interpreter_engine_v2.py",
+        "to": "ai.d5_single_interpreter_contract_v2",
+        "line": 7
+      },
+      {
+        "from": "ai/d5_single_interpreter_transport.py",
+        "to": "ai",
+        "line": 14
+      },
+      {
+        "from": "ai/d5_single_interpreter_transport.py",
+        "to": "ai.d5_chatgpt_missing_mime",
+        "line": 15
+      },
+      {
+        "from": "ai/d5_single_interpreter_transport.py",
+        "to": "ai.d5_chatgpt_stream_assembly",
+        "line": 16
+      },
+      {
+        "from": "ai/d5_single_interpreter_transport.py",
+        "to": "ai.d5_chatgpt_plan_diagnostic",
+        "line": 17
+      },
+      {
+        "from": "ai/d5_single_interpreter_transport.py",
+        "to": "ai.d5_puzzle_interpreter",
+        "line": 18
+      },
+      {
+        "from": "ai/d5_single_interpreter_transport.py",
+        "to": "ai.d5_single_interpreter_contract",
+        "line": 19
+      },
+      {
+        "from": "ai/d5_single_interpreter_transport.py",
+        "to": "ai.d5_tool_free_gpt_experiment",
+        "line": 20
+      },
+      {
+        "from": "ai/d5_single_interpreter_transport.py",
+        "to": "ai.llm_shadow",
+        "line": 21
+      },
+      {
+        "from": "ai/d5_text_classifier.py",
+        "to": "ai.text_classifier",
+        "line": 20
+      },
+      {
+        "from": "ai/d5_text_classifier.py",
+        "to": "ai.all_question_ml",
+        "line": 378
+      },
+      {
+        "from": "ai/d5_tool_free_gpt_experiment.py",
+        "to": "ai.d5_puzzle_interpreter",
+        "line": 16
+      },
+      {
+        "from": "ai/d5_tool_free_gpt_experiment.py",
+        "to": "ai.llm_shadow",
+        "line": 17
+      },
+      {
+        "from": "ai/deterministic_conversation.py",
+        "to": "ai.question_spec",
+        "line": 6
+      },
+      {
+        "from": "ai/llm_shadow.py",
+        "to": "ai.all_question_ml",
+        "line": 18
+      },
+      {
+        "from": "ai/llm_shadow.py",
+        "to": "ai.question_spec",
+        "line": 19
+      },
+      {
+        "from": "ai/question_followups.py",
+        "to": "ai.question_spec",
+        "line": 11
+      }
+    ],
+    "third_party_imports": {
+      "numpy": [
+        {
+          "path": "ai/conformal.py",
+          "line": 14,
+          "function_local": false
+        },
+        {
+          "path": "ai/text_classifier.py",
+          "line": 13,
+          "function_local": false
+        }
+      ],
+      "jwt": [
+        {
+          "path": "ai/d5_chatgpt_auth.py",
+          "line": 243,
+          "function_local": true
+        }
+      ],
+      "sklearn": [
+        {
+          "path": "ai/d5_text_classifier.py",
+          "line": 16,
+          "function_local": false
+        },
+        {
+          "path": "ai/d5_text_classifier.py",
+          "line": 17,
+          "function_local": false
+        },
+        {
+          "path": "ai/d5_text_classifier.py",
+          "line": 18,
+          "function_local": false
+        },
+        {
+          "path": "ai/text_classifier.py",
+          "line": 14,
+          "function_local": false
+        },
+        {
+          "path": "ai/text_classifier.py",
+          "line": 15,
+          "function_local": false
+        },
+        {
+          "path": "ai/text_classifier.py",
+          "line": 16,
+          "function_local": false
+        }
+      ],
+      "huggingface_hub": [
+        {
+          "path": "ai/llm_shadow.py",
+          "line": 244,
+          "function_local": true
+        }
+      ],
+      "mlx_lm": [
+        {
+          "path": "ai/llm_shadow.py",
+          "line": 231,
+          "function_local": true
+        },
+        {
+          "path": "ai/llm_shadow.py",
+          "line": 232,
+          "function_local": true
+        },
+        {
+          "path": "ai/llm_shadow.py",
+          "line": 229,
+          "function_local": true
+        }
+      ]
+    },
+    "credential_repository_boundary": "Path(__file__).resolve().parents[4]",
+    "credential_repository_boundary_resolves_to_checkout_root": true
+  },
+  "preservation": {
+    "application_default_changed": false,
+    "application_source_files_changed": false,
+    "full_source_business_spec_copied": true,
+    "all15_questions_preserved": true,
+    "import_names_unchanged": true,
+    "source_credentials_copied": false,
+    "credential_reads": 0,
+    "authentication_calls": 0,
+    "inference_calls": 0,
+    "new_cases": 0,
+    "fits": 0,
+    "calibrations": 0
+  },
+  "verification_limits": [
+    "Static parsing, hashes and dependency inventory do not establish a fresh install or a successful authenticated model call."
+  ],
+  "import_verification": {
+    "passed": true,
+    "imported_ai_modules": 38,
+    "all_ai_modules_loaded_from_packaged_runtime": true,
+    "jwt_asymmetric_verification_available": true,
+    "jwt_algorithms_checked": [
+      "RS256",
+      "ES256",
+      "EdDSA"
+    ],
+    "all_pinned_package_versions_match_existing_environment": true,
+    "portable_home_profile_constant_matches_expected": true,
+    "execution_environment": "Existing application Python 3.12.14 environment plus existing isolated OAuth packages; no fresh install.",
+    "credentials_constructed": 0,
+    "credential_reads": 0,
+    "authentication_calls": 0,
+    "model_calls": 0,
+    "test_cases": 0
+  }
+}

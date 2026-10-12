@@ -1,0 +1,15 @@
+# Pinned versions from the existing Python 3.12.14 source environment.
+# macOS/Linux: the unchanged credential provider uses fcntl and POSIX permissions.
+# Direct imports: numpy, sklearn and lazy jwt with asymmetric-signature support.
+numpy==2.5.3
+scikit-learn==1.9.1
+PyJWT[crypto]==2.10.1
+cryptography==50.0.2
+# Pin their existing numerical and cryptographic dependencies as well.
+scipy==1.18.1
+joblib==1.6.0
+threadpoolctl==3.7.0
+cffi==2.1.1
+pycparser==3.11
+narwhals==2.26.0
+cloudpickle==3.1.2

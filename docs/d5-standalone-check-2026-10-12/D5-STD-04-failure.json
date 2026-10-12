@@ -1,0 +1,45 @@
+{
+  "case_id": "D5-STD-04",
+  "actual_model_calls": 1,
+  "safe_backend_receipt": {
+    "backend": "single_interpreter_existing_chatgpt_plan_stream",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "model_requested": "gpt-6.1-sol",
+    "reasoning_effort_requested": "low",
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": true,
+    "timeout_seconds": 30,
+    "max_response_bytes": 1048576,
+    "provider_output_token_cap": null,
+    "actual_calls": 1,
+    "retry": false,
+    "output_repair": false,
+    "fresh_context": true,
+    "tool_dispatcher_present": false,
+    "blocked": true,
+    "timed_out": false,
+    "failure_code": "provider_rejected",
+    "stage": "provider",
+    "provider_error": {
+      "code": "server_is_overloaded",
+      "type": "service_unavailable_error",
+      "param": null
+    },
+    "http": {
+      "http_status": 200,
+      "content_type": "other",
+      "single_explicit_content_type": false,
+      "mislabelled_sse_candidate": false,
+      "missing_content_type_candidate": true
+    },
+    "stream_assembly": {
+      "version": 1,
+      "attempted": false,
+      "applied": false
+    },
+    "elapsed_seconds": 2.1407872500130907
+  },
+  "retry": false
+}
