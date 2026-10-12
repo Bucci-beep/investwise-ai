@@ -1,0 +1,109 @@
+{
+  "id": "D5-STD-06",
+  "input": "I use my savings for bills. My pension starts next year.",
+  "raw": {
+    "answer_scope": "complete",
+    "evidence": [
+      "I use my savings for bills.",
+      "My pension starts next year."
+    ],
+    "facts": [
+      {
+        "evidence": "I use my savings for bills.",
+        "owner": "self",
+        "pays_living_costs": "yes",
+        "source_category": "D5_WITHDRAWALS",
+        "source_instance_id": "group_1",
+        "time": "current"
+      },
+      {
+        "evidence": "My pension starts next year.",
+        "owner": "self",
+        "pays_living_costs": "unknown",
+        "source_category": "D5_PENSION_PAYMENTS",
+        "source_instance_id": "group_2",
+        "time": "future"
+      }
+    ],
+    "missing_information": [],
+    "model_abstain": false,
+    "option_id": "D5_WITHDRAWALS",
+    "semantic_bucket": "clarity"
+  },
+  "raw_output": "{\"answer_scope\":\"complete\",\"evidence\":[\"I use my savings for bills.\",\"My pension starts next year.\"],\"facts\":[{\"evidence\":\"I use my savings for bills.\",\"owner\":\"self\",\"pays_living_costs\":\"yes\",\"source_category\":\"D5_WITHDRAWALS\",\"source_instance_id\":\"group_1\",\"time\":\"current\"},{\"evidence\":\"My pension starts next year.\",\"owner\":\"self\",\"pays_living_costs\":\"unknown\",\"source_category\":\"D5_PENSION_PAYMENTS\",\"source_instance_id\":\"group_2\",\"time\":\"future\"}],\"missing_information\":[],\"model_abstain\":false,\"option_id\":\"D5_WITHDRAWALS\",\"semantic_bucket\":\"clarity\"}",
+  "result": {
+    "action": "confirm",
+    "question_id": "D5",
+    "candidate_option_id": "D5_WITHDRAWALS",
+    "candidate_option_label": "Savings or investment withdrawals",
+    "confirmation_text": "My understanding is that your living costs are currently paid by savings or investment withdrawals. Other sources mentioned but not counted as current funding: pension payments. Have I understood correctly?",
+    "context_details": {},
+    "recorded": false,
+    "bucket": "Clarity",
+    "contract_outcome": "financial_candidate"
+  },
+  "decision": {
+    "outcome": "financial_candidate",
+    "reason": "candidate_requires_confirmation",
+    "semantic_bucket": "clarity",
+    "option_id": "D5_WITHDRAWALS",
+    "answer_scope": "complete",
+    "input_sha256": "5a58fdc1a9dd5d2483d8fe643a6ae87bd38770908b13aee93fef290ee9c804dc",
+    "proposal_sha256": "54df1de42ef9eb55054f79956364f537feb620533a9016a05b753e6b31618e1d",
+    "spec_sha256": "de251a7783332cdd75ae11ff3663e1bbea2cc15014883e82475ef0375cfd342c",
+    "contract_sha256": "1cc2fab5578928f04c7b91d2ce2617c1a30f07c69c8e20e5fad818aa26a58e01",
+    "contract_version": "d5-single-interpreter-v2"
+  },
+  "actual_model_calls": 1,
+  "backend_call": {
+    "backend": "single_interpreter_existing_chatgpt_plan_stream",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "model_requested": "gpt-6.1-sol",
+    "reasoning_effort_requested": "low",
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": true,
+    "timeout_seconds": 30,
+    "max_response_bytes": 1048576,
+    "provider_output_token_cap": null,
+    "actual_calls": 1,
+    "retry": false,
+    "output_repair": false,
+    "fresh_context": true,
+    "tool_dispatcher_present": false,
+    "blocked": false,
+    "terminal_completed": true,
+    "status": "completed",
+    "provider_model": "gpt-6.1-sol",
+    "provider_reasoning": {
+      "effort": "low"
+    },
+    "usage": {
+      "input_tokens": 1829,
+      "output_tokens": 154,
+      "total_tokens": 1983
+    },
+    "http": {
+      "http_status": 200,
+      "content_type": "other",
+      "single_explicit_content_type": false,
+      "mislabelled_sse_candidate": false,
+      "missing_content_type_candidate": true
+    },
+    "stream_assembly": {
+      "version": 1,
+      "attempted": true,
+      "applied": true,
+      "original_terminal_output_shape": "empty_list",
+      "completed_item_count": 1
+    },
+    "elapsed_seconds": 6.222537124995142
+  },
+  "pre_model_control": null,
+  "answer_source": "d5_single_interpreter_v2",
+  "candidate": "D5_WITHDRAWALS",
+  "selected": null,
+  "confirmed_version": null,
+  "saved_version": null
+}

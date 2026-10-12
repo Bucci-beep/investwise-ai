@@ -1,0 +1,187 @@
+{
+  "at_utc": "2026-10-12T02:07:12.280466+00:00",
+  "scope": "Post-run review of the same 11 opened examples, not new tests or independent accuracy",
+  "counts": {
+    "examples": 11,
+    "actual_model_calls": 10,
+    "pre_model_help": 1,
+    "clear_raw_correct_before": 7,
+    "clear_raw_correct_after": 7,
+    "clear_denominator": 7,
+    "clear_accepted_correct_before": 5,
+    "clear_accepted_correct_after": 7,
+    "contract_rejections_before": 2,
+    "contract_rejections_after": 0,
+    "unsupported_receipt_only_candidate_before": "D5_MULTIPLE",
+    "receipt_only_candidate_after": null,
+    "choice_recoveries": 0,
+    "actual_ui_tests": 0,
+    "confirm_or_save_actions": 0
+  },
+  "correct_raw_clear_case_ids_preserved": [
+    "D5-STD-01",
+    "D5-STD-02",
+    "D5-STD-03",
+    "D5-STD-04",
+    "D5-STD-05",
+    "D5-STD-06",
+    "D5-STD-08"
+  ],
+  "correct_accepted_case_ids_preserved": [
+    "D5-STD-01",
+    "D5-STD-02",
+    "D5-STD-05",
+    "D5-STD-06",
+    "D5-STD-08"
+  ],
+  "lost_previous_correct_accepted_case_ids": [],
+  "contract_outcomes_after": {
+    "financial_candidate": 7,
+    "dialogue_only": 1,
+    "pre_model_control": 1,
+    "abstention": 2
+  },
+  "completed_passive_request_boundary_checks": [
+    "D5-STD-01",
+    "D5-STD-02",
+    "D5-STD-03",
+    "D5-STD-04",
+    "D5-STD-05",
+    "D5-STD-06",
+    "D5-STD-07",
+    "D5-STD-08",
+    "D5-STD-09",
+    "D5-STD-10"
+  ],
+  "case_findings": {
+    "D5-STD-01": {
+      "expected_kind": "clear",
+      "before_candidate": "D5_PENSION_PAYMENTS",
+      "after_candidate": "D5_PENSION_PAYMENTS",
+      "before_outcome": "financial_candidate",
+      "after_outcome": "financial_candidate",
+      "after_action": "confirm",
+      "after_topic": [],
+      "after_wording": "My understanding is that your living costs are currently paid by pension payments. Other sources mentioned but not counted as current funding: salary or wages. Have I understood correctly?"
+    },
+    "D5-STD-02": {
+      "expected_kind": "clear",
+      "before_candidate": "D5_MULTIPLE",
+      "after_candidate": "D5_MULTIPLE",
+      "before_outcome": "financial_candidate",
+      "after_outcome": "financial_candidate",
+      "after_action": "confirm",
+      "after_topic": [],
+      "after_wording": "My understanding is that your living costs are currently paid by pension payments and salary or wages. Have I understood correctly?"
+    },
+    "D5-STD-03": {
+      "expected_kind": "clear",
+      "before_candidate": null,
+      "after_candidate": "D5_SALARY",
+      "before_outcome": "rejection",
+      "after_outcome": "financial_candidate",
+      "after_action": "confirm",
+      "after_topic": [],
+      "after_wording": "My understanding is that your living costs are currently paid by salary or wages. Have I understood correctly?"
+    },
+    "D5-STD-04": {
+      "expected_kind": "clear",
+      "before_candidate": null,
+      "after_candidate": "D5_BENEFITS_SUPPORT",
+      "before_outcome": "rejection",
+      "after_outcome": "financial_candidate",
+      "after_action": "confirm",
+      "after_topic": [],
+      "after_wording": "My understanding is that your living costs are currently paid by benefits or regular support from someone else. Have I understood correctly?"
+    },
+    "D5-STD-05": {
+      "expected_kind": "clear",
+      "before_candidate": "D5_BENEFITS_SUPPORT",
+      "after_candidate": "D5_BENEFITS_SUPPORT",
+      "before_outcome": "financial_candidate",
+      "after_outcome": "financial_candidate",
+      "after_action": "confirm",
+      "after_topic": [],
+      "after_wording": "My understanding is that your living costs are currently paid by benefits or regular support from someone else. Have I understood correctly?"
+    },
+    "D5-STD-06": {
+      "expected_kind": "clear",
+      "before_candidate": "D5_WITHDRAWALS",
+      "after_candidate": "D5_WITHDRAWALS",
+      "before_outcome": "financial_candidate",
+      "after_outcome": "financial_candidate",
+      "after_action": "confirm",
+      "after_topic": [],
+      "after_wording": "My understanding is that your living costs are currently paid by savings or investment withdrawals. Other sources mentioned but not counted as current funding: pension payments. Have I understood correctly?"
+    },
+    "D5-STD-07": {
+      "expected_kind": "missing_information",
+      "before_candidate": null,
+      "after_candidate": null,
+      "before_outcome": "abstention",
+      "after_outcome": "abstention",
+      "after_action": "clarify",
+      "after_topic": [
+        "current_funding_unknown"
+      ],
+      "after_wording": "Which sources, if any, actually pay your housing, food and bills now? They may differ from money you receive or hold. You can name another source or leave this unresolved."
+    },
+    "D5-STD-08": {
+      "expected_kind": "clear",
+      "before_candidate": "D5_NO_REGULAR",
+      "after_candidate": "D5_NO_REGULAR",
+      "before_outcome": "financial_candidate",
+      "after_outcome": "financial_candidate",
+      "after_action": "confirm",
+      "after_topic": [],
+      "after_wording": "You have no regular source paying your living costs at the moment. Have I understood correctly?"
+    },
+    "D5-STD-09": {
+      "expected_kind": "missing_information",
+      "before_candidate": "D5_MULTIPLE",
+      "after_candidate": null,
+      "before_outcome": "financial_candidate",
+      "after_outcome": "abstention",
+      "after_action": "clarify",
+      "after_topic": [
+        "current_funding_unknown"
+      ],
+      "after_wording": "Which sources, if any, actually pay your housing, food and bills now? They may differ from money you receive or hold. You can name another source or leave this unresolved."
+    },
+    "D5-STD-10": {
+      "expected_kind": "undecided",
+      "before_candidate": null,
+      "after_candidate": null,
+      "before_outcome": "dialogue_only",
+      "after_outcome": "dialogue_only",
+      "after_action": "clarify",
+      "after_topic": [
+        "source_use_unknown:D5_SALARY"
+      ],
+      "after_wording": "It is fine to be unsure. Does money from salary or wages currently pay any of your living costs, or is that still unclear? Please include any other sources paying these costs so your reply gives the complete current answer."
+    },
+    "D5-STD-11": {
+      "expected_kind": "confusion",
+      "before_candidate": null,
+      "after_candidate": null,
+      "before_outcome": null,
+      "after_outcome": null,
+      "after_action": "explain",
+      "after_topic": null,
+      "after_wording": "This asks what pays your housing, food and bills now. Pension payments count when you receive and use them for these costs; simply holding money inside a pension fund does not count. Receiving money does not by itself mean you spend it on living costs. You can name one source or several. Benefits and regular support share one answer category."
+    }
+  },
+  "preservation": {
+    "input_bytes_identical": true,
+    "expectation_bytes_identical": true,
+    "frozen_files_checked": 235,
+    "changed_files": [],
+    "all_saved_record_hashes_match": true
+  },
+  "limitations": [
+    "Same opened examples only; not an independent accuracy estimate.",
+    "The controlled topics show relevant question selection; no subsequent follow-up answer was tested.",
+    "Help is authored control handling, not model understanding.",
+    "Existing shared-quote same-category conflicting-relation rejection remains; not covered by these 11."
+  ]
+}

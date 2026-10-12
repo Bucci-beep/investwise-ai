@@ -1,0 +1,11 @@
+{
+  "reviewer": "independent agent d5_handoff_review",
+  "kind": "read-only static review",
+  "findings_addressed": [
+    "v2 candidate provenance label without altering receipt guards",
+    "neutral any-other-source wording"
+  ],
+  "retained_limitation": "Different relations in the same category with the same full evidence quote can still trigger the existing contradiction guard; not exercised or claimed fixed by the 11 cases.",
+  "new_test_cases": 0,
+  "model_calls": 0
+}

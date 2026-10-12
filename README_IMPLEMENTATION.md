@@ -1,5 +1,7 @@
 # InvestWise: all-question ML prototype
 
+The [D5 semantic interpretation handoff](docs/d5-semantic-method-handoff.md) records the 12 October isolated repair, exact source references and the same eleven examples before and after. It does not change the application default or any of the 15 questions. Read it for the current D5 method and its integration boundary.
+
 All 15 questions now use question-specific TF-IDF + Logistic Regression models for free-text interpretation. Each question has an intent model with exactly three labels (`clarity`, `undecided`, `confusion`) and a model constrained to that question's approved financial options.
 
 ## Runtime flow

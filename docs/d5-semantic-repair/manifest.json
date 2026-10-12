@@ -1,0 +1,419 @@
+{
+  "purpose": "Exact source references and existing evidence for team handoff; not a runnable application integration",
+  "source_base_commit": "0edfcd0",
+  "source_working_tree_contains_uncommitted_experiment_code": true,
+  "target_base_commit": "61f42c234773445e7bf73331a27c5078c4ebb1a4",
+  "target_branch": "feature/all-question-ml-prototype",
+  "source_snapshots": [
+    {
+      "source_path": "ai/d5_single_interpreter_contract.py",
+      "package_path": "docs/d5-semantic-repair/source-reference/ai/d5_single_interpreter_contract.py",
+      "sha256": "ee4b49b8b217fde094ec2a89caf7a5aa937a8303a44315cde89a6cef0d2223cb"
+    },
+    {
+      "source_path": "ai/d5_single_interpreter_contract_v2.py",
+      "package_path": "docs/d5-semantic-repair/source-reference/ai/d5_single_interpreter_contract_v2.py",
+      "sha256": "d84bef71c8f17166546c0269397bffdcd058c5b29ccf9d1bfea85dcf870e5e68"
+    },
+    {
+      "source_path": "ai/d5_single_interpreter_engine.py",
+      "package_path": "docs/d5-semantic-repair/source-reference/ai/d5_single_interpreter_engine.py",
+      "sha256": "c83447df12d37f3c096a2d2367f060c2d3c622395592896eefd0fe74b3b6d3e2"
+    },
+    {
+      "source_path": "ai/d5_single_interpreter_engine_v2.py",
+      "package_path": "docs/d5-semantic-repair/source-reference/ai/d5_single_interpreter_engine_v2.py",
+      "sha256": "9c9823b607cd52410f3a1645196690f8a028475ee876c0f71391b237fd5f0a73"
+    },
+    {
+      "source_path": "ai/d5_single_interpreter_transport.py",
+      "package_path": "docs/d5-semantic-repair/source-reference/ai/d5_single_interpreter_transport.py",
+      "sha256": "b18a8356caf5794b54695e34ce639e6267d2b3a6016b3e86515d78948a78e6ee"
+    },
+    {
+      "source_path": "config/d5-single-interpreter-v1-prompt.txt",
+      "package_path": "docs/d5-semantic-repair/source-reference/config/d5-single-interpreter-v1-prompt.txt",
+      "sha256": "9149ae9e9a3e12dce89f3e18a499d88f271bd77ce5b4c4aca172fb47adeb1a70"
+    },
+    {
+      "source_path": "config/d5-single-interpreter-v2-prompt.txt",
+      "package_path": "docs/d5-semantic-repair/source-reference/config/d5-single-interpreter-v2-prompt.txt",
+      "sha256": "98f3a1c33cdf876530198b54884178f3f07b48083dbf1dce79a5e4e0dcf8290f"
+    }
+  ],
+  "dependency_inventory_method": "Static Python AST traversal of local ai imports, including conditional and function-local imports, from v2 contract, v2 engine, existing transport and auth",
+  "dependency_inventory_counts": {
+    "absent": 26,
+    "different": 6,
+    "identical": 5
+  },
+  "dependencies": {
+    "ai.all_question_ml": {
+      "path": "ai/all_question_ml.py",
+      "source_sha256": "e59854f80b102dfd8d9d561c3f3e88d82ee2f24e816138625cef9c7b23817284",
+      "target_sha256": "976738839f60e8cbed977f5ffeeac83374a3cb66f71e30be48af551fe3af143d",
+      "target_status": "different"
+    },
+    "ai.bounded_answers": {
+      "path": "ai/bounded_answers.py",
+      "source_sha256": "41ac26e73992ab81025a9af8c3df4cf66c598d91cc318d84e1b35aca278b17db",
+      "target_sha256": "4207e1e5ae75063ef8496efe8feeaed7e3fb0e814fdf36a1f9b8b5566ebb358b",
+      "target_status": "different"
+    },
+    "ai.conformal": {
+      "path": "ai/conformal.py",
+      "source_sha256": "9438f1b8c8e88d97b447ccda82bba13200ba6e6eb9be27f9a4f1e8167242fad3",
+      "target_sha256": "9438f1b8c8e88d97b447ccda82bba13200ba6e6eb9be27f9a4f1e8167242fad3",
+      "target_status": "identical"
+    },
+    "ai.conversation_engine": {
+      "path": "ai/conversation_engine.py",
+      "source_sha256": "28bcc16d8b37aab692b1e065163871555d6c3dd7a98c59ff38c8430096f40285",
+      "target_sha256": "85dc6a7c370bd2d4324177f3c1f2126faeeb355a1dea4f9623d371ac4ff4bc50",
+      "target_status": "different"
+    },
+    "ai.conversation_state": {
+      "path": "ai/conversation_state.py",
+      "source_sha256": "ebaea8e9265e35f9a222d5d6ca9417564655f82af2543d6b92e84e9d26196bf3",
+      "target_sha256": "ebaea8e9265e35f9a222d5d6ca9417564655f82af2543d6b92e84e9d26196bf3",
+      "target_status": "identical"
+    },
+    "ai.d12_adapter": {
+      "path": "ai/d12_adapter.py",
+      "source_sha256": "3344f1c00b134b6362e08fb2929a633c7740da797d06a2f56efbae4c95942638",
+      "target_sha256": "3344f1c00b134b6362e08fb2929a633c7740da797d06a2f56efbae4c95942638",
+      "target_status": "identical"
+    },
+    "ai.d5_candidate_validation": {
+      "path": "ai/d5_candidate_validation.py",
+      "source_sha256": "c4e6ee798566074185d0e55139c9d04bb47cf1cb4009e9d0c8c915a46af3b39c",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_candidate_validation_v6": {
+      "path": "ai/d5_candidate_validation_v6.py",
+      "source_sha256": "ee952118ca756def1de91f9034a83acc9ef1d92b8e37b48b8c8072b269bfab80",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_candidate_validation_v7": {
+      "path": "ai/d5_candidate_validation_v7.py",
+      "source_sha256": "d7dde66ee78e78ee1d7b5d243acf8970dcbe937c8217c4d52b500a107916ff03",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_candidate_validation_v8": {
+      "path": "ai/d5_candidate_validation_v8.py",
+      "source_sha256": "3d728e8b84517f974ef2c98c82d6608b5a0be26e68df2a7c6b212d09064c078f",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_chatgpt_auth": {
+      "path": "ai/d5_chatgpt_auth.py",
+      "source_sha256": "ee9708b42422718643e18ee886b21b9449786e350a1259b35f1025a112395be7",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_chatgpt_header_diagnostic": {
+      "path": "ai/d5_chatgpt_header_diagnostic.py",
+      "source_sha256": "5b6c18bc5d15be197490c98d44247fb2f16d08177b58b594ee74005f5c3f73cd",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_chatgpt_missing_mime": {
+      "path": "ai/d5_chatgpt_missing_mime.py",
+      "source_sha256": "2726bf0e844aa2e8323fa762a5639153ccc263aa1b6a2a8653ace04b64a54078",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_chatgpt_plan_diagnostic": {
+      "path": "ai/d5_chatgpt_plan_diagnostic.py",
+      "source_sha256": "e9cda34f09ad3bf01395db4b09d2e6a24b3ef9506bcd0566c1690af97e9e1b7a",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_chatgpt_plan_transport": {
+      "path": "ai/d5_chatgpt_plan_transport.py",
+      "source_sha256": "ca7406ebd05522230e67d96b558f5e9b7c38a3bf9f4d38428a16fa65b59c00c5",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_chatgpt_sse_compat": {
+      "path": "ai/d5_chatgpt_sse_compat.py",
+      "source_sha256": "b222f97be065162a769fb7f97120c2e341367bb1762631b06417b9f91456bb84",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_chatgpt_stream_assembly": {
+      "path": "ai/d5_chatgpt_stream_assembly.py",
+      "source_sha256": "050a5e02e6532bbae835d24d52c3647ddeb6936eac95754fc37160c699b52571",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_llm_grounding": {
+      "path": "ai/d5_llm_grounding.py",
+      "source_sha256": "3be7935f03520ad5896d7f460d2486c68acb0aba2f98c6cf466ea76d9b46f3c3",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_llm_grounding_v5": {
+      "path": "ai/d5_llm_grounding_v5.py",
+      "source_sha256": "b4fb04a837ffaf6e5109d5845f1ecd67a63430171fc91b662721bea146e2c098",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_llm_grounding_v6": {
+      "path": "ai/d5_llm_grounding_v6.py",
+      "source_sha256": "2f6c0e8f9bff880aa74dd6f61d7fae455769ab88b388091bd2fe98eaa4c40e36",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_llm_grounding_v7": {
+      "path": "ai/d5_llm_grounding_v7.py",
+      "source_sha256": "7edb39a8458822d245cd193e56d26bed41f7092fb2f0f08c3adcd2ba5599b911",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_llm_grounding_v8": {
+      "path": "ai/d5_llm_grounding_v8.py",
+      "source_sha256": "aed9368c72308b2921379f2ced62549e0b273ee8c54d474cd9c6203c6221f825",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_puzzle_interpreter": {
+      "path": "ai/d5_puzzle_interpreter.py",
+      "source_sha256": "fc5f9b24e1bb8a1ca81f45c576d26395fe2a63cbf606d10030f9492f47c2e864",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_single_interpreter_contract": {
+      "path": "ai/d5_single_interpreter_contract.py",
+      "source_sha256": "ee4b49b8b217fde094ec2a89caf7a5aa937a8303a44315cde89a6cef0d2223cb",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_single_interpreter_contract_v2": {
+      "path": "ai/d5_single_interpreter_contract_v2.py",
+      "source_sha256": "d84bef71c8f17166546c0269397bffdcd058c5b29ccf9d1bfea85dcf870e5e68",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_single_interpreter_engine": {
+      "path": "ai/d5_single_interpreter_engine.py",
+      "source_sha256": "c83447df12d37f3c096a2d2367f060c2d3c622395592896eefd0fe74b3b6d3e2",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_single_interpreter_engine_v2": {
+      "path": "ai/d5_single_interpreter_engine_v2.py",
+      "source_sha256": "9c9823b607cd52410f3a1645196690f8a028475ee876c0f71391b237fd5f0a73",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_single_interpreter_transport": {
+      "path": "ai/d5_single_interpreter_transport.py",
+      "source_sha256": "b18a8356caf5794b54695e34ce639e6267d2b3a6016b3e86515d78948a78e6ee",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_text_classifier": {
+      "path": "ai/d5_text_classifier.py",
+      "source_sha256": "9fc628753c8a1908b68bcd6ef7ab9496d2c32d4ba8a47349caf6c012e2e197ad",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.d5_tool_free_gpt_experiment": {
+      "path": "ai/d5_tool_free_gpt_experiment.py",
+      "source_sha256": "e4ea2ae23e1292e5d773b427bc657812ea895c4a9da8d1e94a341f423ae2e254",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.deterministic_conversation": {
+      "path": "ai/deterministic_conversation.py",
+      "source_sha256": "6799bdb9a2bbaf6bb141e59b9fe7d10e50450eaf06dcf45a887d4f2d881ece5e",
+      "target_sha256": "6799bdb9a2bbaf6bb141e59b9fe7d10e50450eaf06dcf45a887d4f2d881ece5e",
+      "target_status": "identical"
+    },
+    "ai.horizon_mapper": {
+      "path": "ai/horizon_mapper.py",
+      "source_sha256": "2e5bac8ae15a66b874e05ed57417a3ac92b0d23d81d1d7393536619e67dcbb54",
+      "target_sha256": "a75ea61e7046e09ff42b6b336e8d2668002e07d2203fe7e826a36daaa9670b07",
+      "target_status": "different"
+    },
+    "ai.llm_shadow": {
+      "path": "ai/llm_shadow.py",
+      "source_sha256": "57b7a3ccfdc543895ffaae35c3f342bcf06ec074eeb9dc512b277a5e571113b6",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.pre_model_controls": {
+      "path": "ai/pre_model_controls.py",
+      "source_sha256": "8983df7857c531a9fe9cf43f9eea0a14e1aafa7c6a5582663b6301c77deacd7b",
+      "target_sha256": "01de7642e8e4aa6160562169d0613aad7c3f05e603494f04b13036f06ae27d2b",
+      "target_status": "different"
+    },
+    "ai.question_followups": {
+      "path": "ai/question_followups.py",
+      "source_sha256": "393054bfe109dc94a515e560286bf2f5024a72fd6a95befd5ac1cc7ae56457bb",
+      "target_sha256": null,
+      "target_status": "absent"
+    },
+    "ai.question_spec": {
+      "path": "ai/question_spec.py",
+      "source_sha256": "5c19e511ff0144400363f43bdf887dddb49dc6db0da14b3ca69bd6f1d7f3be63",
+      "target_sha256": "bc8f6a7353144b2997960148a7609c42738484276e812827180360f6574c6447",
+      "target_status": "different"
+    },
+    "ai.text_classifier": {
+      "path": "ai/text_classifier.py",
+      "source_sha256": "8051914b85bbb1cb06e2dbaed4f85d138924e3ab7a234f1d3fc2c8844b943c15",
+      "target_sha256": "8051914b85bbb1cb06e2dbaed4f85d138924e3ab7a234f1d3fc2c8844b943c15",
+      "target_status": "identical"
+    }
+  },
+  "exact_source_schema_and_prompt_version": "Decision contract v2; unchanged JSON wire schema uses existing v1 transport schema name",
+  "repair_frozen_protocol_sha256": "d58f0e3b030a71e810b3560f036fa9c981c886de04ef2ef20f17c9085f24e356",
+  "frozen_files_preserved_at_packaging": 235,
+  "new_inference_calls_for_handoff": 0,
+  "source_credentials_copied": false,
+  "application_integration": false,
+  "evidence_files": [
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/comparison.json",
+      "sha256": "f662a629ba0230b5be7dd1d30e4bcf4251a096ba3dab2d745b3c116d068964dc"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/execution.json",
+      "sha256": "fce14517fa09a02619f49b40819a5954d9d8daa92095ed67186f36af32f9adf6"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/expectations.json",
+      "sha256": "1bc13701fbdd50105db38e8ad776587ef5ff672d7af86dc8c5b5e37ead001df6"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/inputs.json",
+      "sha256": "6ab9c5e390c849a396f0821b97b6a509bbab54e3d1804405e69c9124987466e2"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/records/D5-STD-01.json",
+      "sha256": "51a073256c365eaa24c439fb10effcfaf083bd4ce1929f9293611ae8ddf64385"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/records/D5-STD-02.json",
+      "sha256": "af492ff714b9b80e1705bffaf95c523bd53330984924de106f2566843accbc15"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/records/D5-STD-03.json",
+      "sha256": "db5c2a610f4734eebbc3b5a302d52b6cd8f967f312a773ba6649352cfaf42c69"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/records/D5-STD-04.json",
+      "sha256": "d484ec770fa32ae8a9d3b695d724d995d4940654b5d7fb00862a6368f0260419"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/records/D5-STD-05.json",
+      "sha256": "d1677fa0db00cd9387ecddcbd25e80b90d5e6febda45aa86183128b153de045d"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/records/D5-STD-06.json",
+      "sha256": "a0fe49a7a6af3a4f4a0ce1671bfd283f747b942a2081d650bd58c30a3daea401"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/records/D5-STD-07.json",
+      "sha256": "e12dec75d1870abf698589b645952f701dc7a8209ae538c56fd595c97726edd1"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/records/D5-STD-08.json",
+      "sha256": "50e974b1a87d9922b1a845a43e7d013b49ff7e8dc5c1e817cb02520c395235fc"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/records/D5-STD-09.json",
+      "sha256": "7251091a8065a2f17eee5eb8622c7b54b6a304642e0101c0ecdbfee947f8249b"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/records/D5-STD-10.json",
+      "sha256": "4af1a3cecc8ccee7980627d8d5b944e0786ae4565f5fa6e53ad66fc32a7605b1"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/records/D5-STD-11.json",
+      "sha256": "d7082aa17b60a454f286b080490ecec920c9c675be240ef6be01bf49a9f05a3a"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/result-review.json",
+      "sha256": "6550261577319c7bd366cefcfed787439fe52a9b67e6dcdfe8b7aa347b787748"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/after/static-review.json",
+      "sha256": "f1b1a40fe2187c596fc216c4ce6c6b954e322cc910f869756c5f7bf2700a8479"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/execution.json",
+      "sha256": "73a744acfff85dcec7273681b7c4e49cdb80e6f79e1f7eff1860f78b2034f702"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/expectations.json",
+      "sha256": "1bc13701fbdd50105db38e8ad776587ef5ff672d7af86dc8c5b5e37ead001df6"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/inputs.json",
+      "sha256": "6ab9c5e390c849a396f0821b97b6a509bbab54e3d1804405e69c9124987466e2"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/records/D5-STD-01.json",
+      "sha256": "873f76d08bb839fc0c27aa407c2b7fa7335e9e73c70ee8c921ec7cd7f3bf5ff1"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/records/D5-STD-02.json",
+      "sha256": "b6da1d04d5610f8a0f945f2219d02fd7e2ec204843c3529c223df37e0d497806"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/records/D5-STD-03.json",
+      "sha256": "aed30176550c99b711bbd0f80114cc0afb0a165d14335a089ff36e5b4c2fcd97"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/records/D5-STD-04.json",
+      "sha256": "a90276a60f5ad26312a813816b8d28660cec5dbe151864693c1eea19dd448aa6"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/records/D5-STD-05.json",
+      "sha256": "25bbc5c19944ef7a05bc3b344218d278cece56de5f9adcfe54c91803d189b7ce"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/records/D5-STD-06.json",
+      "sha256": "669af58d27e4fe0463de96ffc3f1c6f2ed9250579ebed07e4146866db575701c"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/records/D5-STD-07.json",
+      "sha256": "d7b0336564d315fc5913a77db6345055822138ca7a91a10e5a95645fa5fbae4a"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/records/D5-STD-08.json",
+      "sha256": "571b6c4813b47d527b45aee86031dc3007052d4e7e7bda561f8912f46e9e49b3"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/records/D5-STD-09.json",
+      "sha256": "751bf669ba328fcc183e5e885a0bbc56b281163c6c42b93b8672ed80d9a3fc55"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/records/D5-STD-10.json",
+      "sha256": "98535234943a3c89abeed9bb1b031543ae7950b96cd450afe3f1596f08beaac2"
+    },
+    {
+      "path": "docs/d5-semantic-repair/evidence/before/records/D5-STD-11.json",
+      "sha256": "d055b8b8b3e828ce304afe1187f4036731946bca7fa2ed441b9bcd0d9a75b66f"
+    }
+  ],
+  "business_spec_reference": {
+    "source_path": "config/business-decision-spec.json",
+    "source_file_sha256": "77011caa61f1248aad6d3d20e5e51987fa1b60f93e117de0b8f5720215b8abea",
+    "source_canonical_payload_sha256": "de251a7783332cdd75ae11ff3663e1bbea2cc15014883e82475ef0375cfd342c",
+    "target_file_sha256": "440ab6ba7e822fc460d142b1d60aa78e0a71eeaed3652145b87b07ddffe9a7b4",
+    "target_status": "different",
+    "d5_model_input_snapshot": "docs/d5-semantic-repair/source-reference/config/d5-question-options.json",
+    "snapshot_sha256": "c65353081e1d2803869ab93ca0a523dc3615a105960a913cae6624250c7a1f48",
+    "snapshot_contains": "Exact current_question and allowed_options values from saved requests, without the individual reply",
+    "request_context_identical_across_both_runs": true,
+    "source_request_sha256": "588ec5b74d8582716ff63f992477a16807e6d039ccd197e5895b6fd0e17d4828",
+    "target_application_spec_changed": false
+  }
+}

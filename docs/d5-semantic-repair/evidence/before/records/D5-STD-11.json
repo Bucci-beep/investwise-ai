@@ -1,0 +1,27 @@
+{
+  "id": "D5-STD-11",
+  "input": "Does pension mean my fund or payments?",
+  "raw": null,
+  "raw_output": null,
+  "result": {
+    "action": "explain",
+    "question_id": "D5",
+    "bucket": null,
+    "flag": "help_request",
+    "reason": "User requested help without a financial answer.",
+    "help_prompt": "This means what pays your housing, food and bills now. You can name one source or several. Benefits and regular support from someone else share one answer category. Money merely held, expected in future or used for someone else's costs does not automatically count.",
+    "definition_only": true,
+    "help_explanation_provided": true,
+    "factual_request_issued": false,
+    "clarification_turns": 0,
+    "recorded": false
+  },
+  "decision": null,
+  "actual_model_calls": 0,
+  "backend_call": {},
+  "pre_model_control": "explain",
+  "candidate": null,
+  "selected": null,
+  "confirmed_version": null,
+  "saved_version": null
+}

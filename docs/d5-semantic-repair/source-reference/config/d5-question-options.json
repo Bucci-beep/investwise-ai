@@ -1,0 +1,48 @@
+{
+  "current_question": {
+    "id": "D5",
+    "text": "What currently pays for your everyday living costs?"
+  },
+  "allowed_options": [
+    {
+      "definition": "Salary or wages currently provide funds for living costs.",
+      "id": "D5_SALARY",
+      "label": "Salary or wages"
+    },
+    {
+      "definition": "Self-employment earnings currently provide funds for living costs.",
+      "id": "D5_SELF_EMPLOYMENT",
+      "label": "Self-employment income"
+    },
+    {
+      "definition": "Pension payments received currently provide funds for living costs.",
+      "id": "D5_PENSION_PAYMENTS",
+      "label": "Pension payments"
+    },
+    {
+      "definition": "Benefits, regular support from someone else, or both. Both within this listed category remain one answer category. A different listed source such as salary plus benefits uses the mixed option.",
+      "id": "D5_BENEFITS_SUPPORT",
+      "label": "Benefits or regular support from someone else"
+    },
+    {
+      "definition": "Withdrawals from savings or investments currently provide funds for living costs.",
+      "id": "D5_WITHDRAWALS",
+      "label": "Savings or investment withdrawals"
+    },
+    {
+      "definition": "Rental receipts or another customer-named recurring source currently provide funds for living costs.",
+      "id": "D5_OTHER_REGULAR",
+      "label": "Rental income or another regular source"
+    },
+    {
+      "definition": "The user identifies no regular source for living costs; this is not an inference that no assets or one-off resources exist.",
+      "id": "D5_NO_REGULAR",
+      "label": "No regular source"
+    },
+    {
+      "definition": "At least two distinct listed regular-source categories fund living costs. Benefits and regular support are one existing category, even when both are received. No regular source is not compatible with a stated regular source.",
+      "id": "D5_MULTIPLE",
+      "label": "More than one listed source category"
+    }
+  ]
+}
