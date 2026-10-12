@@ -46,3 +46,8 @@ __pycache__/
 # Local conversation exports and browser screenshots are not publication data.
 /work/**/previous-disconnected-chat.*
 /work/**/*.png
+
+# Local D5 OAuth credentials must never be published, even if copied here manually.
+d5-chatgpt-plan/
+account-*.json
+pending-registration.json
