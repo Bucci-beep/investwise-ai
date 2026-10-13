@@ -1,31 +1,6 @@
 # D5 semantic interpretation technical handoff
 
-Updated 13 October 2026 · `feature/all-question-ml-prototype`
-
-## Latest runtime update: safety and exact confirmation
-
-The independent D5 terminal now includes two small software repairs:
-
-- The packaged safety controls recognise the previously missed `want to`, `planning to` and `intend to` jump-intent forms, while retaining the existing negation and quotation guards.
-- Confirmation quotes the user's exact validated active and excluded facts. For `No, just savings not investment withdrawals`, it displays `just savings` as current funding and `not investment withdrawals` as excluded. Both remain in the unchanged `D5_WITHDRAWALS` category; an exclusion is no longer hidden merely because it shares an active category.
-
-The saved model response already contained that distinction. This fixes its presentation rather than training or changing the model. The same verified interpretation is reused; no extra model call, financial wording classifier or cascade is added.
-
-The [runtime repair report](d5-runtime-repair-2026-10-13.md) and [recorded checks](d5-runtime-repair-2026-10-13.json) cover **22 existing affected inputs only**: ten safety examples, seven published clear replies and five replies from the existing screenshot session. All scoped checks passed offline; candidates, follow-ups, confirmation and correction were preserved. This publication runs no further tests or inference and does not establish current provider availability.
-
-**Teammate update, from the repository root:**
-
-```bash
-git switch feature/all-question-ml-prototype
-git pull --ff-only origin feature/all-question-ml-prototype
-"$HOME/.venvs/investwise-d5/bin/python" demos/d5/demo.py chat
-```
-
-Close any running D5 terminal before launching again so it loads the repaired runtime. First-time users should follow the [Python 3.12 dependency installation and their own ChatGPT sign-in](../demos/d5/README.md#install-once) before `chat`. Existing installations need no dependency change. Each teammate needs their own eligible account and available usage; credentials remain outside Git. `check-11` is not required to launch.
-
-Only the independent D5 runtime, its manifest and documentation are included in this update. Separate pending main-app safety/follow-up changes and their tests are not included. The model, prompts, schema, validators, all fifteen questions and the normal Streamlit default remain unchanged. The [runtime manifest](../demos/d5/runtime-manifest.json) records the two repair hashes; historical source-reference files and earlier evidence remain unchanged.
-
-## Earlier semantic repair and live demonstration
+12 October 2026 · `feature/all-question-ml-prototype`
 
 **The D5 repair improved the eleven existing examples without changing the model.** Seven clear replies now yield seven correct candidates instead of five. A reply that only states income received now prompts a question about actual use instead of an unsupported MULTIPLE answer. This handoff contains the implemented method, exact source references and the saved before/after evidence.
 
@@ -50,7 +25,7 @@ Count categories, not payers or accounts. Two employers remain one salary catego
 | Receipt versus use | “I receive wages and pension payments” became two active funding sources | The prompt explicitly separates receipt, ownership and availability from actual expenditure. Missing use information leaves the option unresolved. Case 09 changed at the raw interpretation stage. |
 | Same-category representation | Two employers, or benefits plus family help, were interpreted correctly but rejected as duplicate facts | Each fact now represents a group with identical category, owner, time and cost-use relations. Several payers can share that group and its original quotation. Cases 03 and 04 now pass the contract without inventing payer names or relaxing duplicate checks. |
 | Relevant follow-up | The interpreter identified uncertainty about wages but the engine asked a generic question | The same model response selects one controlled missing-information topic. The engine renders an authored question about that topic, without another model call or financial wording classifier. |
-| Visible explanation | Confirmation repeated a category; Help did not distinguish pension holdings from payments | The earlier repair named active categories and exclusions; the 13 October runtime repair now quotes exact active/excluded evidence to retain finer distinctions. The existing Help route uses an authored explanation of pension payments used for costs versus a pension holding. |
+| Visible explanation | Confirmation repeated a category; Help did not distinguish pension holdings from payments | Confirmation names active categories and exclusions. The existing Help route uses an authored explanation of pension payments used for costs versus a pension holding. |
 
 The representation is a **category/relation group**, not a count of real-world source instances, despite retaining the existing `source_instance_id` field name for wire compatibility. Different ownership, time or use relations stay separate. Duplicate groups remain invalid even if their quotations differ. No post-generation merger repairs a rejected output.
 
@@ -64,7 +39,7 @@ Controls run before interpretation. For eligible D5 text, one call receives the 
 
 | Outcome or topic | Behaviour |
 |---|---|
-| Clarity with complete supported funding | Propose the fixed option, quote the exact active/excluded evidence and request confirmation. |
+| Clarity with complete supported funding | Propose the fixed option, explain the active/excluded categories and request confirmation. |
 | `current_funding_unknown` | Ask which sources, if any, actually pay costs now; permit another source or an unresolved answer. This includes receipt-only and holding-only replies. |
 | Undecided with `source_use_unknown:<category>` | Ask neutrally whether the named category pays costs and explicitly allow remaining unsure. |
 | `complete_answer_needed` | Request the complete current answer, including the correction, instead of reconstructing omitted facts. |
@@ -117,7 +92,7 @@ The [D5 question and option snapshot](d5-semantic-repair/source-reference/config
 
 These files remain review references under `docs/`. At the handoff baseline, static dependency inspection found 37 local AI modules: 26 absent from the target branch, six different and five identical. The different shared modules included the conversation engine, pre-model controls, question specification, bounded answers, horizon mapper and all-question resolver. **Copying only the D5 files into the normal `ai/` directory would not reproduce the tested environment.**
 
-The runnable demonstration addresses that gap with the dependency closure in `demos/d5/runtime/`, loaded only by its separate process. Its [runtime manifest](../demos/d5/runtime-manifest.json) identifies original and current hashes, including the two 13 October repairs. The credential provider has only two portability changes: use the current user's home directory and enforce credential storage outside the full checkout. The model, prompt, schema, validators and authored follow-ups remain unchanged. NumPy/scikit-learn are import dependencies of the existing shared types; no classifier is trained or invoked by the D5 demo.
+The runnable demonstration addresses that gap with the exact dependency closure in `demos/d5/runtime/`, loaded only by its separate process. Its [runtime manifest](../demos/d5/runtime-manifest.json) identifies the original and packaged hashes. The credential provider has only two portability changes: use the current user's home directory and enforce credential storage outside the full checkout. The model, prompt, schema, validators and authored follow-ups remain unchanged. NumPy/scikit-learn are import dependencies of the existing shared types; no classifier is trained or invoked by the D5 demo.
 
 Follow [the installation and launch instructions](../demos/d5/README.md) for Python 3.12 on macOS/Linux. Teammates use their own eligible account and external credentials. No credentials, caches or model artefacts are committed. Use the documented company sequence, or start `chat` and enter your own fictional wording; `check-11` is not a prerequisite. Follow-ups and corrections currently require complete funding statements. Confirmation ends the D5 example; change/new/exit remain available, and other questions and profile saving are disabled there. The main application's full journey and separate save-consent route remain unchanged.
 
