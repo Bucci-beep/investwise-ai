@@ -209,7 +209,7 @@ _SELF_HARM = re.compile(
     r"\b(kill myself|end my life|suicide|hurt myself|harm myself|goodbye world)\b|"
     r"\bi(?:'?m| am)?\s+(?:going to|gonna|about to|will|plan to|planning to|intend to|want to)\s+"
     r"take\s+my(?: own)?\s+life\b(?!\s+(?:insurance|assurance)\b)|"
-    r"\b(?:i(?:'?m| am)?\s+(?:going to|gonna|about to)|i (?:will|plan to))\s+"
+    r"\bi(?:'?m| am)?\s+(?:going to|gonna|about to|will|plan to|planning to|intend to|want to)\s+"
     r"jump\s+(?:off|from|out of)\s+(?:(?:a|the|this|that|my)\s+)?"
     r"(?:building|roof|rooftop|bridge|balcony|window)\b|"
     r"\bi(?: am|'m) (?:thinking (?:of|about)|considering) (?:hurting|harming|killing) myself\b",

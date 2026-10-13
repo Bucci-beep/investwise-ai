@@ -2,6 +2,8 @@
 
 The [independent D5 terminal demo](demos/d5/README.md) can be installed and launched manually after your own ChatGPT sign-in. It uses the repaired GPT-6.1 Sol low interpreter without changing this application's default or any of its 15 questions. The [technical handoff](docs/d5-semantic-method-handoff.md) explains the method, exact source references and the same eleven examples before and after.
 
+The [13 October D5 runtime update](docs/d5-runtime-repair-2026-10-13.md) fixes missed safety wording and preserves exact source details such as "just savings" with "not investment withdrawals" excluded. Existing users can pull this branch and restart the independent terminal; dependencies and model settings are unchanged. The [handoff update instructions](docs/d5-semantic-method-handoff.md#latest-runtime-update-safety-and-exact-confirmation) include first-time setup and the scoped offline evidence.
+
 The [successful D5 conversation](docs/d5-live-conversation-2026-10-12/REPORT.md) records a focused follow-up, confirmation, correction and fresh confirmation in one live terminal session, using three existing examples and three model calls. Follow the [company demo sequence or try your own wording](demos/d5/README.md#use-it-for-the-company-demonstration). The earlier [eleven-case packaging check](docs/d5-standalone-verification.md) remains separately recorded as interrupted by provider overload at case 04.
 
 All 15 questions now use question-specific TF-IDF + Logistic Regression models for free-text interpretation. Each question has an intent model with exactly three labels (`clarity`, `undecided`, `confusion`) and a model constrained to that question's approved financial options.

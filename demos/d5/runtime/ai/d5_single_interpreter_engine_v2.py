@@ -2,7 +2,10 @@
 
 No source-word matching, extra interpreter, free-form model text rendering or
 changes to control/state transitions. Follow-up topics come from the same call.
+Confirmation quotes validated spans of the user's reply as data.
 """
+import json
+
 from ai.d5_single_interpreter_engine import D5SingleInterpreterEngine
 from ai.d5_single_interpreter_contract_v2 import SOURCE, SOURCE_USE_TOPICS
 
@@ -83,19 +86,22 @@ class D5BusinessStandardEngine(D5SingleInterpreterEngine):
         if receipt is None or not self._valid_receipt(text, result.get("candidate_option_id")):
             return result
         meaning = receipt.decision.interpretation
-        labels = {option.id: option.label.lower() for option in self.spec.question("D5").options}
-        active = {fact.source_category for fact in meaning.facts if fact.currently_funds_customer}
+        # Category labels are broader than the user's actual sources. Keep the
+        # exact validated evidence, including exclusions within an active category.
+        active = list(dict.fromkeys(fact.evidence for fact in meaning.facts
+                                    if fact.currently_funds_customer))
         if meaning.option_id == "D5_NO_REGULAR":
             playback = "You have no regular source paying your living costs at the moment."
         else:
-            names = " and ".join(labels[category] for category in sorted(active))
-            playback = f"My understanding is that your living costs are currently paid by {names}."
-        excluded = {fact.source_category for fact in meaning.facts
-                    if fact.source_category not in active | {"D5_NO_REGULAR"}
-                    and (fact.owner == "other" or fact.time in {"past", "future"}
-                         or fact.pays_living_costs == "no")}
+            quotes = "; ".join(json.dumps(quote, ensure_ascii=False) for quote in active)
+            playback = f"I understand your current living-cost funding as:\n{quotes}"
+        excluded = list(dict.fromkeys(fact.evidence for fact in meaning.facts
+                        if not fact.currently_funds_customer
+                        and fact.source_category != "D5_NO_REGULAR"
+                        and (fact.owner == "other" or fact.time in {"past", "future"}
+                             or fact.pays_living_costs == "no")))
         if excluded:
-            names = " and ".join(labels[category] for category in sorted(excluded))
-            playback += f" Other sources mentioned but not counted as current funding: {names}."
-        result["confirmation_text"] = playback + " Have I understood correctly?"
+            quotes = "; ".join(json.dumps(quote, ensure_ascii=False) for quote in excluded)
+            playback += f"\nNot counted as current funding, from your words:\n{quotes}"
+        result["confirmation_text"] = playback + "\nHave I understood correctly?"
         return result

@@ -33,6 +33,16 @@ There is no shared credential in the repository, API-key setup or billing fallba
 "$HOME/.venvs/investwise-d5/bin/python" demos/d5/demo.py chat
 ```
 
+For an existing installation, close the D5 terminal, update from the repository root, then launch `chat` again:
+
+```bash
+git switch feature/all-question-ml-prototype
+git pull --ff-only origin feature/all-question-ml-prototype
+"$HOME/.venvs/investwise-d5/bin/python" demos/d5/demo.py chat
+```
+
+The 13 October safety and confirmation repairs require no dependency change. They apply to this standalone terminal; the normal Streamlit default is unchanged. First-time users must complete installation and their own sign-in above. No test command is needed before launch.
+
 Enter a complete D5 answer on one line. The opening question is:
 
 > What currently pays for your everyday living costs?
@@ -101,6 +111,8 @@ The previous repair produced seven correct clear candidates, two missing-informa
 
 `runtime/` contains the existing tested dependency closure and full fifteen-question specification. A separate Python process loads that private `ai` package first and rejects imports mixed with the normal application's `ai` package. The normal factory and frontend never import this directory. Other-question resolution and profile saving are disabled in this example.
 
-No model, prompt, schema, semantic validator, business definition or follow-up was changed while packaging. Only the credential provider's personal default path and repository containment path were made portable. Numerical packages are import dependencies of existing shared types; the demo does not train or call those classifiers. The [runtime manifest](runtime-manifest.json) records original and packaged hashes, portability differences and pinned versions.
+No model, prompt, schema, semantic validator, business definition or follow-up was changed during the original packaging. At that point, only the credential provider's personal default path and repository containment path were made portable. The subsequent [13 October runtime repair](../../docs/d5-runtime-repair-2026-10-13.md) adds the existing jump-intent safety fix and uses exact user quotations for confirmation, preserving exclusions such as "not investment withdrawals". It uses the same model interpretation and leaves the normal application unchanged.
+
+Numerical packages are import dependencies of existing shared types; the demo does not train or call those classifiers. The [runtime manifest](runtime-manifest.json) records original and current hashes, portability differences, the two runtime repairs and pinned versions. The repair was checked only against existing affected examples using offline replay; it does not establish live service availability.
 
 For the semantic method and all eleven before/after cases, read the [technical handoff](../../docs/d5-semantic-method-handoff.md).
