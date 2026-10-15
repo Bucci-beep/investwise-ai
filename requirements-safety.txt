@@ -1,0 +1,3 @@
+# Optional: meaning-based safety layer (ai/safety_embeddings.py).
+# The model all-MiniLM-L6-v2 (~90 MB) downloads on first use.
+sentence-transformers==6.1.0
