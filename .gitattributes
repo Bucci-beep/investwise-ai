@@ -4,3 +4,5 @@
 *.json text eol=lf
 *.txt text eol=lf
 data/nlp/all_questions/*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+data/safety/*.csv -text
+data/safety/*.sha256 -text
