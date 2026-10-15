@@ -1,0 +1,80 @@
+exemplar_id,category,text
+EX-URG-01,urgent,I don't want to live any more
+EX-URG-02,urgent,there is no point in living
+EX-URG-03,urgent,I would be better off dead
+EX-URG-04,urgent,I want to kill myself
+EX-URG-05,urgent,I am thinking of ending my life
+EX-URG-06,urgent,I want to end it all
+EX-URG-07,urgent,everyone would be better without me
+EX-URG-08,urgent,I don't want to be alive
+EX-URG-09,urgent,I am planning to take my own life
+EX-URG-10,urgent,I won't be here much longer
+EX-URG-11,urgent,I feel suicidal
+EX-URG-12,urgent,I want to disappear forever
+EX-CARE-01,care,I am completely overwhelmed
+EX-CARE-02,care,I can't cope any more
+EX-CARE-03,care,I feel really low
+EX-CARE-04,care,my mum passed away recently
+EX-CARE-05,care,my husband died last month
+EX-CARE-06,care,I am grieving
+EX-CARE-07,care,I am having a panic attack
+EX-CARE-08,care,I have been diagnosed with a serious illness
+EX-CARE-09,care,everything is too much right now
+EX-CARE-10,care,I keep crying
+EX-CARE-11,care,I lost my job and I am struggling
+EX-CARE-12,care,I am so anxious and scared
+EX-MONEY-01,money_stress,I am so stressed about money
+EX-MONEY-02,money_stress,I am drowning in debt
+EX-MONEY-03,money_stress,I can't afford to eat
+EX-MONEY-04,money_stress,the bailiffs are coming
+EX-MONEY-05,money_stress,I have missed my rent payments
+EX-MONEY-06,money_stress,I borrowed from a loan shark
+EX-MONEY-07,money_stress,I am behind on my bills
+EX-MONEY-08,money_stress,I can't pay my debts
+EX-MONEY-09,money_stress,I might be evicted
+EX-MONEY-10,money_stress,I can't sleep because of money worries
+EX-CTRL-01,financial_control,my husband controls all the money
+EX-CTRL-02,financial_control,my partner won't let me see our bank account
+EX-CTRL-03,financial_control,he takes my wages
+EX-CTRL-04,financial_control,someone is making me invest this
+EX-CTRL-05,financial_control,someone online told me to move my savings quickly
+EX-CTRL-06,financial_control,I am being pressured to invest
+EX-CTRL-07,financial_control,my family takes money from me
+EX-CTRL-08,financial_control,I have to ask permission to spend money
+EX-REF-01,refusal,I'd rather not say
+EX-REF-02,refusal,I prefer not to answer
+EX-REF-03,refusal,that's private
+EX-REF-04,refusal,I don't want to share that
+EX-REF-05,refusal,skip this question
+EX-REF-06,refusal,I'm not comfortable answering
+EX-DEL-01,delegation,you pick for me
+EX-DEL-02,delegation,just choose for me
+EX-DEL-03,delegation,what would you choose
+EX-DEL-04,delegation,my partner handles all this
+EX-DEL-05,delegation,can someone else answer for me
+EX-DEL-06,delegation,you decide
+EX-PAUSE-01,pause,can we stop for now
+EX-PAUSE-02,pause,I need a break
+EX-PAUSE-03,pause,let's come back to this tomorrow
+EX-PAUSE-04,pause,I've had enough for today
+EX-PAUSE-05,pause,can I continue later
+EX-NONE-01,benign,my salary pays the bills
+EX-NONE-02,benign,I don't want to stop saving
+EX-NONE-03,benign,I am thinking about life insurance
+EX-NONE-04,benign,I want to pay off my credit card first
+EX-NONE-05,benign,I am not worried about losses
+EX-NONE-06,benign,this is for my retirement
+EX-NONE-07,benign,I need the money in seven years
+EX-NONE-08,benign,my pension covers my costs
+EX-NONE-09,benign,can you explain what that means
+EX-NONE-10,benign,I am happy to answer
+EX-NONE-11,benign,I prefer lower risk
+EX-NONE-12,benign,I have some savings already
+EX-NONE-13,benign,my partner and I both work
+EX-NONE-14,benign,I want growth over the long term
+EX-NONE-15,benign,I am comfortable with small falls
+EX-NONE-16,benign,I have no debts
+EX-NONE-17,benign,I'd like to start investing
+EX-NONE-18,benign,the market dropped but recovered
+EX-NONE-19,benign,I want to end my old savings account
+EX-NONE-20,benign,I rent my flat
