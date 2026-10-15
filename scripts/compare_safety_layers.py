@@ -6,6 +6,8 @@ Configurations (each adds to the one before):
     + wide_rules     broader patterns
     + similarity     nearest-exemplar similarity net
     similarity_only  the similarity net on its own, for reference
+    + embedding      rules + wider rules + sentence-embedding layer (if installed)
+    embedding_only   the embedding layer on its own, for reference
 
 Development set: data/safety/safety_benchmark_v1.csv. Everything in
 ai/safety_screen.py was written and tuned looking at this set.
@@ -18,6 +20,7 @@ fair test and a new held-out set is needed.
 Usage:
     python scripts/compare_safety_layers.py
     python scripts/compare_safety_layers.py --sweep          # threshold sweep, development set only
+    python scripts/compare_safety_layers.py --sweep-embedding  # same, for the embedding layer
     python scripts/compare_safety_layers.py --output reports/safety/layer_comparison_v1.json
 """
 
@@ -36,6 +39,9 @@ sys.path.insert(0, str(ROOT))
 
 from ai.safety_screen import (  # noqa: E402
     SimilarityNet, load_exemplars, rules_layer, screen, default_similarity_net,
+)
+from ai.safety_embeddings import (  # noqa: E402
+    EmbeddingNet, default_embedding_net, default_encoder, embeddings_available, screen_with_embeddings,
 )
 from scripts.evaluate_safety import wilson  # noqa: E402
 
@@ -61,6 +67,19 @@ CONFIGS = {
     "+similarity": lambda t: screen(t, use_wide_rules=True, use_similarity=True),
     "similarity_only": lambda t: default_similarity_net()(t),
 }
+
+EMBEDDING_CONFIGS = {
+    "+embedding": lambda t: screen_with_embeddings(t),
+    "embedding_only": lambda t: default_embedding_net()(t),
+}
+
+
+def active_configs() -> dict:
+    """The four word-based configurations, plus the embedding ones when installed."""
+    configs = dict(CONFIGS)
+    if embeddings_available():
+        configs.update(EMBEDDING_CONFIGS)
+    return configs
 
 
 def load(path: Path) -> list[dict[str, str]]:
@@ -138,15 +157,32 @@ def sweep(dev: list[dict[str, str]]) -> None:
         print(f"{threshold:>10.2f}{r['safety_recall']['hits']:>9}/{r['safety_recall']['n']:<5}{r['benign_false_alarms']['hits']:>8}/{r['benign_false_alarms']['n']}")
 
 
+def sweep_embedding(dev: list[dict[str, str]]) -> None:
+    exemplars = load_exemplars()
+    encoder = default_encoder()
+    print("Embedding threshold sweep on the DEVELOPMENT set only (embedding layer alone):")
+    print(f"{'threshold':>10}{'safety recall':>15}{'false alarms':>14}")
+    for threshold in [0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70]:
+        net = EmbeddingNet(exemplars, encoder, threshold=threshold)
+        r = score(dev, net)
+        print(f"{threshold:>10.2f}{r['safety_recall']['hits']:>9}/{r['safety_recall']['n']:<5}{r['benign_false_alarms']['hits']:>8}/{r['benign_false_alarms']['n']}")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("--sweep", action="store_true", help="threshold sweep on the development set only")
+    parser.add_argument("--sweep-embedding", action="store_true", help="embedding threshold sweep on the development set only")
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
 
     dev = load(DEV)
     if args.sweep:
         sweep(dev)
+        return
+    if args.sweep_embedding:
+        if not embeddings_available():
+            raise SystemExit("Install the embedding model first: pip install -r requirements-safety.txt")
+        sweep_embedding(dev)
         return
 
     digest = check_holdout_frozen()
@@ -156,23 +192,26 @@ def main() -> None:
         "development_set": str(DEV.relative_to(ROOT)),
         "holdout_set": str(HOLDOUT.relative_to(ROOT)),
         "holdout_sha256": digest,
-        "development": {name: score(dev, fn) for name, fn in CONFIGS.items()},
-        "holdout": {name: score(holdout, fn) for name, fn in CONFIGS.items()},
+        "development": {name: score(dev, fn) for name, fn in active_configs().items()},
+        "holdout": {name: score(holdout, fn) for name, fn in active_configs().items()},
         "limitations": [
             "Both sets and the exemplars were authored by one person; labels need independent review.",
             "Development results are optimistic: the new layers were written while looking at that set.",
             "Held-out numbers are small samples; read the confidence intervals, not just the rates.",
             "The similarity net is lexical (TF-IDF), not a meaning-based embedding model.",
+            "The held-out set was read before the embedding layer was built; its embedding results are 'seen', not a fresh test.",
             "Measures category detection only, not the wording or behaviour of the responses.",
         ],
     }
     table("DEVELOPMENT (v1 benchmark - layers were tuned here, so optimistic)", report["development"])
     table("HELD-OUT (frozen before the new layers were written)", report["holdout"])
     print("\nHeld-out misses with all layers:")
-    for miss in report["holdout"]["+similarity"]["misses"]:
+    best = "+embedding" if "+embedding" in report["holdout"] else "+similarity"
+    print(f"(misses and false alarms below are for: {best})")
+    for miss in report["holdout"][best]["misses"]:
         print(f"  [{miss['category']}] {miss['case_id']}: {miss['text']}  -> {miss['predicted']}")
     print("Held-out false alarms with all layers:")
-    for fa in report["holdout"]["+similarity"]["false_alarms"]:
+    for fa in report["holdout"][best]["false_alarms"]:
         print(f"  {fa['case_id']}: {fa['text']}  -> {fa['predicted']}")
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)

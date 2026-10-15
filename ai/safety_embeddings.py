@@ -27,8 +27,9 @@ from ai.safety_screen import (
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
 # Chosen on the development benchmark only (scripts/compare_safety_layers.py
-# --sweep-embedding). Placeholder until that sweep has been run.
-EMBEDDING_THRESHOLD = 0.50
+# --sweep-embedding): highest dev recall with at most 1/14 dev false alarms,
+# ties broken by the higher threshold. 0.60 -> 29/34 recall, 1/14 false alarms.
+EMBEDDING_THRESHOLD = 0.60
 EMBEDDING_MARGIN = 0.05
 
 Encoder = Callable[[Sequence[str]], np.ndarray]
