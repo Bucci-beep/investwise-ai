@@ -1,0 +1,19 @@
+{
+  "basis": "The 8 financial examples and 3 follow-up examples in docs/d5-business-semantic-standard.md. Already-opened illustrative examples, not an independent or release evaluation.",
+  "model_requests": "inputs only, existing prompt and option definitions; this file and the business standard are not supplied to the model",
+  "review_axes": ["raw source and relationship meaning", "contract acceptance or rejection", "engine follow-up relevance"],
+  "rubric": "Review raw meaning even when rejected. A format or provenance error is separately recorded. Clear cases require their expected option and supported complete source relations. Missing-information cases require no invented funding answer and no unsupported attribution of customer indecision/confusion; recognise supported excluded facts in raw semantic review only and do not force an exact raw bucket for incomplete answers. Nonclear contract outputs must still contain no financial facts. Model abstention is not focused-follow-up success. A safe generic rephrasing or choice menu is not a focused follow-up. Authored examples are not newly unseen evaluation. No choice clicks or confirmation/save actions are performed.",
+  "cases": {
+    "D5-STD-01": {"kind":"clear","option":"D5_PENSION_PAYMENTS","meaning":"Pension pays bills; wages are retained, not spent.","next":"Confirm pension and exclusion of wages."},
+    "D5-STD-02": {"kind":"clear","option":"D5_MULTIPLE","meaning":"Salary and pension both currently pay costs.","next":"Confirm the two named categories."},
+    "D5-STD-03": {"kind":"clear","option":"D5_SALARY","meaning":"Two employers fund costs; one salary category, not multiple categories.","next":"Confirm salary or wages."},
+    "D5-STD-04": {"kind":"clear","option":"D5_BENEFITS_SUPPORT","meaning":"Benefits and family help are distinct sources in one category.","next":"Confirm benefits or regular support."},
+    "D5-STD-05": {"kind":"clear","option":"D5_BENEFITS_SUPPORT","meaning":"Customer receives regular support for living costs; do not classify brother's earnings.","next":"Confirm regular support."},
+    "D5-STD-06": {"kind":"clear","option":"D5_WITHDRAWALS","meaning":"Current savings withdrawals fund bills; pension is future and excluded.","next":"Confirm withdrawals without asking irrelevant future-pension details."},
+    "D5-STD-07": {"kind":"missing_information","option":null,"meaning":"Undrawn pension holding establishes no active source. Other funding is not known; not no regular source.","next":"Ask what currently pays living costs; do not infer that the customer misunderstands or is undecided."},
+    "D5-STD-08": {"kind":"clear","option":"D5_NO_REGULAR","meaning":"Explicit current absence of a regular funding source, not absence of assets.","next":"Confirm no regular source."},
+    "D5-STD-09": {"kind":"missing_information","option":null,"meaning":"Receipt of wages and pension alone does not establish spending; do not default to multiple or customer indecision.","next":"Ask which sources actually fund costs now, allowing another source or neither."},
+    "D5-STD-10": {"kind":"undecided","option":null,"meaning":"Customer explicitly cannot establish whether wages also pay costs; no financial facts/option in nonclear contract output.","next":"Neutral question focused on wage use; allow unresolved, avoid a generic menu alone."},
+    "D5-STD-11": {"kind":"confusion","option":null,"meaning":"Terminology question, no personal financial assertion; no financial facts/option.","next":"Explain current payments used for bills versus a pension holding. If pre-model Help handles it, report dialogue success with zero interpretation calls, not model success."}
+  }
+}

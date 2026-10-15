@@ -1,0 +1,32 @@
+{
+  "dataset_version": "fictional_all_questions_v1",
+  "source": "fictional_authored_2026-10-04_v1",
+  "fictional": true,
+  "contains_real_customer_data": false,
+  "authorship": "New manually authored fictional utterances embedded in scripts/build_all_question_dataset.py.",
+  "allowed_labels_source": "config/business-decision-spec.json",
+  "specification_version": "v7-review",
+  "business_example_bank_used_for_generation": false,
+  "legacy_d12_datasets_used_or_modified": false,
+  "split_assignment": "Fixed at authorship; no randomized row-level split or paraphrase transformations. Groups are split-scoped semantic families.",
+  "training_role": "Fit TF-IDF vocabulary, Logistic Regression coefficients, and development choices using train.csv only.",
+  "calibration_role": "Held out from fitting; estimate split conformal quantiles after the model/configuration is fixed. Do not use to tune hyperparameters.",
+  "test_role": "Reserved held-out authored evaluation; read once after implementation is fixed. Do not train or tune on evaluation outcomes.",
+  "context_assumption": "Each row is interpreted under the exact current D-question wording and its stated hypothetical. No hidden previous answers are assumed.",
+  "label_policy": "clarity proposes exactly one approved option pending confirmation; undecided and confusion have no option. D11 misconceptions are clarity candidates that require the deterministic understanding hold.",
+  "null_encoding": "option_id is empty in CSV for null and JSON null in authoring metadata.",
+  "limitations": [
+    "Synthetic-only data, created by one author; no real-customer, demographic, language, dialect or distributional representativeness claim.",
+    "Distinct split expressions and group IDs prevent direct overlap but cannot prove semantic independence; shared approved terminology is unavoidable.",
+    "Calibration has five clarity examples per option and ten examples per other intent per question. Sparse option coverage may produce broad or empty prediction sets.",
+    "TF-IDF models may fail on unseen numbers, negation, multiple clauses, ownership, temporal scope, currency or conditional meaning; these examples do not establish semantic understanding.",
+    "Conformal coverage relies on exchangeability; synthetic calibration does not imply coverage for real first-time investors.",
+    "Current specification remains marked business_review_draft_pending_user_and_mentor_review; this dataset is a prototype and requires independent label review.",
+    "No example confirms an answer or authorizes saving; deterministic safeguards, exact user confirmation and separate save consent remain necessary."
+  ],
+  "sha256": {
+    "train.csv": "96543fe7cc72d8a27403ead432fcf81971b0b93b28a5ed77f9e3770fbda83abf",
+    "calibration.csv": "3b63ebddf80f8b5758bcbef9cb8d662741e68de38660455dcc4649106d5792be",
+    "test.csv": "18d0dd2ba9fdbe7fa37b9b5cb27be2bc09be435f472341a12b1050c2dfe029fe"
+  }
+}

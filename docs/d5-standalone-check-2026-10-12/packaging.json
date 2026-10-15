@@ -1,0 +1,73 @@
+{
+  "at_utc": "2026-10-12T09:32:04.338480+00:00",
+  "purpose": "Record the authorised standalone packaging checks without adding semantic examples",
+  "python_version": "3.12.14",
+  "platform": "Darwin",
+  "fresh_environment_install_completed": true,
+  "source_pythonpath_required": false,
+  "installed_versions": {
+    "numpy": "2.5.3",
+    "scikit-learn": "1.9.1",
+    "PyJWT": "2.10.1",
+    "cryptography": "50.0.2",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0",
+    "threadpoolctl": "3.7.0",
+    "cffi": "2.1.1",
+    "pycparser": "3.11",
+    "narwhals": "2.26.0",
+    "cloudpickle": "3.1.2"
+  },
+  "dependency_pins_match": true,
+  "terminal_startup_and_eof_observed": true,
+  "startup_model_calls": 0,
+  "new_browser_sign_in_exercised": false,
+  "existing_authorised_credentials_reused": true,
+  "runtime_files_verified": 41,
+  "pre_run_snapshot_files_verified": 49,
+  "original_repair_frozen_files_verified": 235,
+  "historical_evidence_files_verified": 31,
+  "runtime_mismatches": [],
+  "snapshot_mismatches": [],
+  "original_source_mismatches": [],
+  "historical_evidence_mismatches": [],
+  "base_commit": "50c6ebd995e62fef348e257d7850b4b96ba7b425",
+  "tracked_changes_from_base": [
+    "README_IMPLEMENTATION.md",
+    "docs/d5-semantic-method-handoff.md"
+  ],
+  "normal_application_source_changed": false,
+  "question_count": 15,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "runtime_manifest_sha256": "a88f82b72f766d2c3d86aee2856f59b51664526086f0aa1054b0014c2db1dbf1",
+  "live_check_completed": false,
+  "completed_original_cases": 3,
+  "actual_model_calls": 4,
+  "new_semantic_cases": 0,
+  "automatic_retries": 0,
+  "additional_test_suites_run": false,
+  "live_interactive_confirmation_or_correction_tested": false,
+  "linux_execution_verified": false,
+  "native_windows_supported": false,
+  "published_run_files": {
+    "started.json": "04730fb7d5c26625f4cfcc22d178abf613072e1e47a74727869899821c2aaad4",
+    "execution.json": "531dc91a1c2ad88c9b259ac06365fda7a22d331494c5e4036f299ceb3b0b3ed8",
+    "D5-STD-01.json": "6f32972f310e4c7720d1caf3bf6b952afb3a477944323f126ff92f9037fafc76",
+    "D5-STD-02.json": "93aba122441cd4536186016bd208a24993d777ac6f075f60b66e5069b8108d3a",
+    "D5-STD-03.json": "8117a287e235f241e29f24eaa0a1387123e50a39db546c710e7c7397d7998766",
+    "D5-STD-04-failure.json": "04b4b15b6d1b26ee418a83f9ab9b856563f2cef4be1b5a16ef0d700b9644fc6a"
+  },
+  "post_run_formatting": {
+    "at_utc": "2026-10-12T09:33:37.131356+00:00",
+    "path": "demos/d5/session.py",
+    "change": "Remove one trailing blank line at EOF; no executable code or runtime file changed",
+    "before_sha256": "5f8c34f8866ab4d7a2f548a07332dce7299bdef0bc3eec64ff4540e0532445d5",
+    "published_sha256": "983cf8a584affa3e58024e379f8923fe11686edc52509055a5bf98776bf94e94",
+    "python_ast_identical": true,
+    "additional_inference": false
+  },
+  "published_files_differing_from_pre_run_snapshot": [
+    "demos/d5/session.py"
+  ]
+}

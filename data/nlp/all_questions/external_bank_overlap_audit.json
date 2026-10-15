@@ -1,0 +1,17 @@
+{
+  "purpose": "After-authoring overlap check only; existing bank never supplied training or calibration utterances.",
+  "normalization": "Unicode word characters, casefold, punctuation collapsed, question-scoped.",
+  "business_example_bank": "/Users/husky/Desktop/hackathon Bristol 2026/business-example-bank.json",
+  "business_example_bank_sha256": "adcc69e71772fc37210e0756ccece15cd5422e44bad92e12f56a181f331f4a4a",
+  "exact_overlap_by_split": {
+    "train": 0,
+    "calibration": 0,
+    "test": 0
+  },
+  "coincidentally_identical_canonical_training_sentences_removed_before_freeze": 2,
+  "dataset_sha256": {
+    "train.csv": "96543fe7cc72d8a27403ead432fcf81971b0b93b28a5ed77f9e3770fbda83abf",
+    "calibration.csv": "3b63ebddf80f8b5758bcbef9cb8d662741e68de38660455dcc4649106d5792be",
+    "test.csv": "18d0dd2ba9fdbe7fa37b9b5cb27be2bc09be435f472341a12b1050c2dfe029fe"
+  }
+}

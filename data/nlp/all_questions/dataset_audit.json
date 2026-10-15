@@ -1,0 +1,708 @@
+{
+  "schema_valid": true,
+  "all_questions_covered_each_split": true,
+  "all_options_covered_each_split": true,
+  "question_count": 15,
+  "option_count": 72,
+  "total_rows": 1416,
+  "within_question_normalized_duplicates": 0,
+  "cross_split_group_overlap": 0,
+  "counts": {
+    "train": {
+      "rows": 552,
+      "buckets": {
+        "clarity": 432,
+        "undecided": 60,
+        "confusion": 60
+      },
+      "questions": {
+        "D1": {
+          "rows": 56,
+          "buckets": {
+            "clarity": 48,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D1_WEALTH": 6,
+            "D1_HOME": 6,
+            "D1_PURCHASE": 6,
+            "D1_RETIREMENT": 6,
+            "D1_LIVING_COSTS": 6,
+            "D1_EMERGENCIES": 6,
+            "D1_OTHER": 6,
+            "D1_MULTIPLE": 6
+          }
+        },
+        "D2": {
+          "rows": 38,
+          "buckets": {
+            "clarity": 30,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D2_UNDER18": 6,
+            "D2_AGE18_34": 6,
+            "D2_AGE35_49": 6,
+            "D2_AGE50_64": 6,
+            "D2_AGE65_PLUS": 6
+          }
+        },
+        "D3": {
+          "rows": 44,
+          "buckets": {
+            "clarity": 36,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D3_NO_EXISTING_POT": 6,
+            "D3_POSITIVE_LT1000": 6,
+            "D3_FROM1000_LT5000": 6,
+            "D3_FROM5000_LT20000": 6,
+            "D3_FROM20000_LT50000": 6,
+            "D3_FROM50000_PLUS": 6
+          }
+        },
+        "D4": {
+          "rows": 44,
+          "buckets": {
+            "clarity": 36,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D4_EASY_ACCESS": 6,
+            "D4_FIXED_TERM": 6,
+            "D4_INVESTMENTS": 6,
+            "D4_PENSION_SAVINGS": 6,
+            "D4_OTHER": 6,
+            "D4_MIXED": 6
+          }
+        },
+        "D5": {
+          "rows": 56,
+          "buckets": {
+            "clarity": 48,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D5_SALARY": 6,
+            "D5_SELF_EMPLOYMENT": 6,
+            "D5_PENSION_PAYMENTS": 6,
+            "D5_BENEFITS_SUPPORT": 6,
+            "D5_WITHDRAWALS": 6,
+            "D5_OTHER_REGULAR": 6,
+            "D5_NO_REGULAR": 6,
+            "D5_MULTIPLE": 6
+          }
+        },
+        "D6": {
+          "rows": 26,
+          "buckets": {
+            "clarity": 18,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D6_ALL": 6,
+            "D6_SOME": 6,
+            "D6_NONE": 6
+          }
+        },
+        "D7": {
+          "rows": 32,
+          "buckets": {
+            "clarity": 24,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D7_NO_REQUIRED": 6,
+            "D7_KEEPING_UP_EASILY": 6,
+            "D7_KEEPING_UP_DIFFICULT": 6,
+            "D7_FALLING_BEHIND": 6
+          }
+        },
+        "D8": {
+          "rows": 56,
+          "buckets": {
+            "clarity": 48,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D8_NONE": 6,
+            "D8_SHARES": 6,
+            "D8_BONDS": 6,
+            "D8_FUNDS_ETFS": 6,
+            "D8_INVESTED_PENSION_MANAGED": 6,
+            "D8_CRYPTO": 6,
+            "D8_OTHER": 6,
+            "D8_MULTIPLE": 6
+          }
+        },
+        "D9": {
+          "rows": 32,
+          "buckets": {
+            "clarity": 24,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D9_ZERO": 6,
+            "D9_COUNT1_5": 6,
+            "D9_COUNT6_10": 6,
+            "D9_COUNT11_PLUS": 6
+          }
+        },
+        "D10": {
+          "rows": 38,
+          "buckets": {
+            "clarity": 30,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D10_ZERO": 6,
+            "D10_POSITIVE_LT1000": 6,
+            "D10_FROM1000_LT5000": 6,
+            "D10_FROM5000_LT10000": 6,
+            "D10_FROM10000_PLUS": 6
+          }
+        },
+        "D11": {
+          "rows": 26,
+          "buckets": {
+            "clarity": 18,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D11_LOSS_POSSIBLE": 6,
+            "D11_RECOVERY_ALWAYS": 6,
+            "D11_CAPITAL_PROTECTED": 6
+          }
+        },
+        "D12": {
+          "rows": 26,
+          "buckets": {
+            "clarity": 18,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D12_SHORT": 6,
+            "D12_MEDIUM": 6,
+            "D12_LONG": 6
+          }
+        },
+        "D13": {
+          "rows": 26,
+          "buckets": {
+            "clarity": 18,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D13_ESSENTIALS_DIFFICULT": 6,
+            "D13_ADJUSTMENT": 6,
+            "D13_UNAFFECTED": 6
+          }
+        },
+        "D14": {
+          "rows": 26,
+          "buckets": {
+            "clarity": 18,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D14_LOWER": 6,
+            "D14_BALANCED": 6,
+            "D14_GREATER": 6
+          }
+        },
+        "D15": {
+          "rows": 26,
+          "buckets": {
+            "clarity": 18,
+            "undecided": 4,
+            "confusion": 4
+          },
+          "options": {
+            "D15_UNACCEPTABLE": 6,
+            "D15_WORRIED_ACCEPTABLE": 6,
+            "D15_COMFORTABLE": 6
+          }
+        }
+      }
+    },
+    "calibration": {
+      "rows": 660,
+      "buckets": {
+        "clarity": 360,
+        "undecided": 150,
+        "confusion": 150
+      },
+      "questions": {
+        "D1": {
+          "rows": 60,
+          "buckets": {
+            "clarity": 40,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D1_WEALTH": 5,
+            "D1_HOME": 5,
+            "D1_PURCHASE": 5,
+            "D1_RETIREMENT": 5,
+            "D1_LIVING_COSTS": 5,
+            "D1_EMERGENCIES": 5,
+            "D1_OTHER": 5,
+            "D1_MULTIPLE": 5
+          }
+        },
+        "D2": {
+          "rows": 45,
+          "buckets": {
+            "clarity": 25,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D2_UNDER18": 5,
+            "D2_AGE18_34": 5,
+            "D2_AGE35_49": 5,
+            "D2_AGE50_64": 5,
+            "D2_AGE65_PLUS": 5
+          }
+        },
+        "D3": {
+          "rows": 50,
+          "buckets": {
+            "clarity": 30,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D3_NO_EXISTING_POT": 5,
+            "D3_POSITIVE_LT1000": 5,
+            "D3_FROM1000_LT5000": 5,
+            "D3_FROM5000_LT20000": 5,
+            "D3_FROM20000_LT50000": 5,
+            "D3_FROM50000_PLUS": 5
+          }
+        },
+        "D4": {
+          "rows": 50,
+          "buckets": {
+            "clarity": 30,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D4_EASY_ACCESS": 5,
+            "D4_FIXED_TERM": 5,
+            "D4_INVESTMENTS": 5,
+            "D4_PENSION_SAVINGS": 5,
+            "D4_OTHER": 5,
+            "D4_MIXED": 5
+          }
+        },
+        "D5": {
+          "rows": 60,
+          "buckets": {
+            "clarity": 40,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D5_SALARY": 5,
+            "D5_SELF_EMPLOYMENT": 5,
+            "D5_PENSION_PAYMENTS": 5,
+            "D5_BENEFITS_SUPPORT": 5,
+            "D5_WITHDRAWALS": 5,
+            "D5_OTHER_REGULAR": 5,
+            "D5_NO_REGULAR": 5,
+            "D5_MULTIPLE": 5
+          }
+        },
+        "D6": {
+          "rows": 35,
+          "buckets": {
+            "clarity": 15,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D6_ALL": 5,
+            "D6_SOME": 5,
+            "D6_NONE": 5
+          }
+        },
+        "D7": {
+          "rows": 40,
+          "buckets": {
+            "clarity": 20,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D7_NO_REQUIRED": 5,
+            "D7_KEEPING_UP_EASILY": 5,
+            "D7_KEEPING_UP_DIFFICULT": 5,
+            "D7_FALLING_BEHIND": 5
+          }
+        },
+        "D8": {
+          "rows": 60,
+          "buckets": {
+            "clarity": 40,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D8_NONE": 5,
+            "D8_SHARES": 5,
+            "D8_BONDS": 5,
+            "D8_FUNDS_ETFS": 5,
+            "D8_INVESTED_PENSION_MANAGED": 5,
+            "D8_CRYPTO": 5,
+            "D8_OTHER": 5,
+            "D8_MULTIPLE": 5
+          }
+        },
+        "D9": {
+          "rows": 40,
+          "buckets": {
+            "clarity": 20,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D9_ZERO": 5,
+            "D9_COUNT1_5": 5,
+            "D9_COUNT6_10": 5,
+            "D9_COUNT11_PLUS": 5
+          }
+        },
+        "D10": {
+          "rows": 45,
+          "buckets": {
+            "clarity": 25,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D10_ZERO": 5,
+            "D10_POSITIVE_LT1000": 5,
+            "D10_FROM1000_LT5000": 5,
+            "D10_FROM5000_LT10000": 5,
+            "D10_FROM10000_PLUS": 5
+          }
+        },
+        "D11": {
+          "rows": 35,
+          "buckets": {
+            "clarity": 15,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D11_LOSS_POSSIBLE": 5,
+            "D11_RECOVERY_ALWAYS": 5,
+            "D11_CAPITAL_PROTECTED": 5
+          }
+        },
+        "D12": {
+          "rows": 35,
+          "buckets": {
+            "clarity": 15,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D12_SHORT": 5,
+            "D12_MEDIUM": 5,
+            "D12_LONG": 5
+          }
+        },
+        "D13": {
+          "rows": 35,
+          "buckets": {
+            "clarity": 15,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D13_ESSENTIALS_DIFFICULT": 5,
+            "D13_ADJUSTMENT": 5,
+            "D13_UNAFFECTED": 5
+          }
+        },
+        "D14": {
+          "rows": 35,
+          "buckets": {
+            "clarity": 15,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D14_LOWER": 5,
+            "D14_BALANCED": 5,
+            "D14_GREATER": 5
+          }
+        },
+        "D15": {
+          "rows": 35,
+          "buckets": {
+            "clarity": 15,
+            "undecided": 10,
+            "confusion": 10
+          },
+          "options": {
+            "D15_UNACCEPTABLE": 5,
+            "D15_WORRIED_ACCEPTABLE": 5,
+            "D15_COMFORTABLE": 5
+          }
+        }
+      }
+    },
+    "test": {
+      "rows": 204,
+      "buckets": {
+        "clarity": 144,
+        "undecided": 30,
+        "confusion": 30
+      },
+      "questions": {
+        "D1": {
+          "rows": 20,
+          "buckets": {
+            "clarity": 16,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D1_WEALTH": 2,
+            "D1_HOME": 2,
+            "D1_PURCHASE": 2,
+            "D1_RETIREMENT": 2,
+            "D1_LIVING_COSTS": 2,
+            "D1_EMERGENCIES": 2,
+            "D1_OTHER": 2,
+            "D1_MULTIPLE": 2
+          }
+        },
+        "D2": {
+          "rows": 14,
+          "buckets": {
+            "clarity": 10,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D2_UNDER18": 2,
+            "D2_AGE18_34": 2,
+            "D2_AGE35_49": 2,
+            "D2_AGE50_64": 2,
+            "D2_AGE65_PLUS": 2
+          }
+        },
+        "D3": {
+          "rows": 16,
+          "buckets": {
+            "clarity": 12,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D3_NO_EXISTING_POT": 2,
+            "D3_POSITIVE_LT1000": 2,
+            "D3_FROM1000_LT5000": 2,
+            "D3_FROM5000_LT20000": 2,
+            "D3_FROM20000_LT50000": 2,
+            "D3_FROM50000_PLUS": 2
+          }
+        },
+        "D4": {
+          "rows": 16,
+          "buckets": {
+            "clarity": 12,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D4_EASY_ACCESS": 2,
+            "D4_FIXED_TERM": 2,
+            "D4_INVESTMENTS": 2,
+            "D4_PENSION_SAVINGS": 2,
+            "D4_OTHER": 2,
+            "D4_MIXED": 2
+          }
+        },
+        "D5": {
+          "rows": 20,
+          "buckets": {
+            "clarity": 16,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D5_SALARY": 2,
+            "D5_SELF_EMPLOYMENT": 2,
+            "D5_PENSION_PAYMENTS": 2,
+            "D5_BENEFITS_SUPPORT": 2,
+            "D5_WITHDRAWALS": 2,
+            "D5_OTHER_REGULAR": 2,
+            "D5_NO_REGULAR": 2,
+            "D5_MULTIPLE": 2
+          }
+        },
+        "D6": {
+          "rows": 10,
+          "buckets": {
+            "clarity": 6,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D6_ALL": 2,
+            "D6_SOME": 2,
+            "D6_NONE": 2
+          }
+        },
+        "D7": {
+          "rows": 12,
+          "buckets": {
+            "clarity": 8,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D7_NO_REQUIRED": 2,
+            "D7_KEEPING_UP_EASILY": 2,
+            "D7_KEEPING_UP_DIFFICULT": 2,
+            "D7_FALLING_BEHIND": 2
+          }
+        },
+        "D8": {
+          "rows": 20,
+          "buckets": {
+            "clarity": 16,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D8_NONE": 2,
+            "D8_SHARES": 2,
+            "D8_BONDS": 2,
+            "D8_FUNDS_ETFS": 2,
+            "D8_INVESTED_PENSION_MANAGED": 2,
+            "D8_CRYPTO": 2,
+            "D8_OTHER": 2,
+            "D8_MULTIPLE": 2
+          }
+        },
+        "D9": {
+          "rows": 12,
+          "buckets": {
+            "clarity": 8,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D9_ZERO": 2,
+            "D9_COUNT1_5": 2,
+            "D9_COUNT6_10": 2,
+            "D9_COUNT11_PLUS": 2
+          }
+        },
+        "D10": {
+          "rows": 14,
+          "buckets": {
+            "clarity": 10,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D10_ZERO": 2,
+            "D10_POSITIVE_LT1000": 2,
+            "D10_FROM1000_LT5000": 2,
+            "D10_FROM5000_LT10000": 2,
+            "D10_FROM10000_PLUS": 2
+          }
+        },
+        "D11": {
+          "rows": 10,
+          "buckets": {
+            "clarity": 6,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D11_LOSS_POSSIBLE": 2,
+            "D11_RECOVERY_ALWAYS": 2,
+            "D11_CAPITAL_PROTECTED": 2
+          }
+        },
+        "D12": {
+          "rows": 10,
+          "buckets": {
+            "clarity": 6,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D12_SHORT": 2,
+            "D12_MEDIUM": 2,
+            "D12_LONG": 2
+          }
+        },
+        "D13": {
+          "rows": 10,
+          "buckets": {
+            "clarity": 6,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D13_ESSENTIALS_DIFFICULT": 2,
+            "D13_ADJUSTMENT": 2,
+            "D13_UNAFFECTED": 2
+          }
+        },
+        "D14": {
+          "rows": 10,
+          "buckets": {
+            "clarity": 6,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D14_LOWER": 2,
+            "D14_BALANCED": 2,
+            "D14_GREATER": 2
+          }
+        },
+        "D15": {
+          "rows": 10,
+          "buckets": {
+            "clarity": 6,
+            "undecided": 2,
+            "confusion": 2
+          },
+          "options": {
+            "D15_UNACCEPTABLE": 2,
+            "D15_WORRIED_ACCEPTABLE": 2,
+            "D15_COMFORTABLE": 2
+          }
+        }
+      }
+    }
+  }
+}

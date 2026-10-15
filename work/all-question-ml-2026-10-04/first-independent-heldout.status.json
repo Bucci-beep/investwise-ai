@@ -1,0 +1,7 @@
+{
+  "report": "work/all-question-ml-2026-10-04/first-independent-heldout.json",
+  "report_sha256": "b8e9d20aaf3909c6ff9447377c0c2abd93d31acdc8942ca59cf01474b136a3e7",
+  "status": "pre_dataset_finalization_not_frozen",
+  "reason": "Dataset author subsequently identified two coincidental exact training matches against an external business benchmark and is replacing them for provenance separation. Test contents and model settings are unchanged. Preserve this first result; any later execution reuses an already opened test set.",
+  "generated_utc": "2026-10-04T09:30:36.494195+00:00"
+}

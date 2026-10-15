@@ -1,0 +1,66 @@
+{
+  "purpose": "Publish the already completed D5 conversation; no new inference, cases or tests",
+  "published_at_utc": "2026-10-12T09:56:00.957950+00:00",
+  "source_run_commit": "43241c340c4c23fb5d66d559b5d44a63c2907b13",
+  "inference_calls_for_this_publication": 0,
+  "new_cases": 0,
+  "additional_tests": 0,
+  "credential_files_copied": false,
+  "transport_request_or_response_traces_copied": false,
+  "files": {
+    "plan.json": {
+      "source_sha256": "b58bb79a38a6369a1b89828d5b15997f1aaf2d5b3a64849b1d0762969ecf2633",
+      "published_sha256": "b58bb79a38a6369a1b89828d5b15997f1aaf2d5b3a64849b1d0762969ecf2633",
+      "byte_identical": true,
+      "changes": []
+    },
+    "results.json": {
+      "source_sha256": "4e3c7f774378af33b0c52c82c414f4d1543062d468a60fa0ceb4e852baf4ea34",
+      "published_sha256": "4e3c7f774378af33b0c52c82c414f4d1543062d468a60fa0ceb4e852baf4ea34",
+      "byte_identical": true,
+      "changes": []
+    },
+    "TRANSCRIPT.txt": {
+      "source_sha256": "d24d8ba48e1e61f539083755377650f2ae6c82434ee2e8dee46b8a0b342a47fa",
+      "published_sha256": "d193195dc2047532e5e4b089ebd9bb75adc41c94468939572f99e61cb975d14a",
+      "byte_identical": false,
+      "changes": [
+        "Replaced one personal local output-directory path with <local-private-session-directory>"
+      ]
+    },
+    "terminal-transcript.json": {
+      "source_sha256": "daaed5233304291a7ee26c570ceba66b0643cad649676b87e653c0580b2f16aa",
+      "published_sha256": "83369acec663260296b7f09cd3b9a0e422390f84c069f21e85e6ee12ae9e090d",
+      "byte_identical": false,
+      "changes": [
+        "Replaced one personal local output-directory path with <local-private-session-directory>"
+      ]
+    },
+    "REPORT.md": {
+      "source_sha256": "51266d43e8ad6b63fca6b6d9d67815a951301849c327f9c79610f7739897a05e",
+      "published_sha256": "27bf21ce1f08e02e36c04ddbaeddacd4ef6d7abf0682ea09d0daa3de01cd7cef",
+      "byte_identical": false,
+      "changes": [
+        "Updated publication provenance and launch links; observed results unchanged"
+      ]
+    },
+    "session/reply-0001-b5b21f6c.json": {
+      "source_sha256": "fbf631df2cbff3cd857bb9d4ccff583a62009555e243f26b394c107e026464b6",
+      "published_sha256": "fbf631df2cbff3cd857bb9d4ccff583a62009555e243f26b394c107e026464b6",
+      "byte_identical": true,
+      "changes": []
+    },
+    "session/reply-0002-0fe4d44c.json": {
+      "source_sha256": "e46d9f1bc64747baa711651787bec3d0c56116ff18c75cdedfdbe752c2a400a5",
+      "published_sha256": "e46d9f1bc64747baa711651787bec3d0c56116ff18c75cdedfdbe752c2a400a5",
+      "byte_identical": true,
+      "changes": []
+    },
+    "session/reply-0003-128495f2.json": {
+      "source_sha256": "5eace676995df1c410a0b0fa8123c2d42bdfedd5f2701d47a8ee7b8aa731ac0f",
+      "published_sha256": "5eace676995df1c410a0b0fa8123c2d42bdfedd5f2701d47a8ee7b8aa731ac0f",
+      "byte_identical": true,
+      "changes": []
+    }
+  }
+}

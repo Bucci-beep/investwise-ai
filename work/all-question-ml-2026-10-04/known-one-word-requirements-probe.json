@@ -1,0 +1,66 @@
+{
+  "label": "known_one_word_requirements_probe_not_heldout",
+  "model_source_hash": "13b6a8f494c773e90d28e8d105cc1b2de7bbebba20db980331b23397f253c4b8",
+  "results": [
+    {
+      "reply": "none",
+      "resolver_candidate": "D8_NONE",
+      "resolver_bucket": "Clarity",
+      "intent_set": [
+        "clarity"
+      ],
+      "option_set": [
+        "D8_NONE"
+      ],
+      "reason": "option_identified_requires_confirmation",
+      "engine_action": "confirm",
+      "engine_candidate": "D8_NONE",
+      "engine_reason": null,
+      "confirmed_option": null
+    },
+    {
+      "reply": "shares",
+      "resolver_candidate": null,
+      "resolver_bucket": null,
+      "intent_set": [
+        "clarity",
+        "undecided"
+      ],
+      "option_set": [],
+      "reason": "intent_model_uncertainty",
+      "engine_action": "clarify",
+      "engine_candidate": null,
+      "engine_reason": "intent_model_uncertainty",
+      "confirmed_option": null
+    },
+    {
+      "reply": "bonds",
+      "resolver_candidate": null,
+      "resolver_bucket": null,
+      "intent_set": [
+        "clarity"
+      ],
+      "option_set": [
+        "D8_BONDS",
+        "D8_MULTIPLE"
+      ],
+      "reason": "option_model_uncertainty",
+      "engine_action": "clarify",
+      "engine_candidate": null,
+      "engine_reason": "option_model_uncertainty",
+      "confirmed_option": null
+    },
+    {
+      "reply": "cash",
+      "resolver_candidate": null,
+      "resolver_bucket": null,
+      "intent_set": [],
+      "option_set": [],
+      "reason": "intent_insufficient_lexical_support",
+      "engine_action": "clarify",
+      "engine_candidate": null,
+      "engine_reason": "intent_insufficient_lexical_support",
+      "confirmed_option": null
+    }
+  ]
+}

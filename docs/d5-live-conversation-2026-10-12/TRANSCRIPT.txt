@@ -1,0 +1,38 @@
+InvestWise — independent D5 example | GPT-6.1 Sol, low reasoning
+Use fictional text only. Replies and safe backend traces are recorded locally at: <local-private-session-directory>
+The normal app is unchanged. This example cannot save a financial profile.
+Commands: /help /confirm /change /pause /resume /stop /new /exit
+
+What currently pays for your everyday living costs?
+
+You: I receive wages and pension payments
+Which sources, if any, actually pay your housing, food and bills now? They may differ from money you receive or hold. You can name another source or leave this unresolved.
+[Interpretation calls for this action: 1]
+
+You: My wages stay in savings. My pension pays the bills.
+
+Clarity
+My understanding is that your living costs are currently paid by pension payments. Other sources mentioned but not counted as current funding: salary or wages. Have I understood correctly?
+Use /confirm if correct, or /change to replace this answer.
+[Interpretation calls for this action: 1]
+
+You: /confirm
+D5 is confirmed in this session only. This standalone example ends here; no profile has been saved. Use /change, /new or /exit.
+[Interpretation calls for this action: 0]
+
+You: /change
+The previous D5 answer is invalidated. Give the complete replacement answer.
+[Interpretation calls for this action: 0]
+
+You: Both my wages and pension pay for everyday costs.
+
+Clarity
+My understanding is that your living costs are currently paid by pension payments and salary or wages. Have I understood correctly?
+Use /confirm if correct, or /change to replace this answer.
+[Interpretation calls for this action: 1]
+
+You: /confirm
+D5 is confirmed in this session only. This standalone example ends here; no profile has been saved. Use /change, /new or /exit.
+[Interpretation calls for this action: 0]
+
+You: /exit

@@ -1,0 +1,553 @@
+id,question_id,text,bucket,option_id,source,group_id,split
+SYNTH-V1-D1-TRAIN-001,D1,"This money is for building my wealth, without any particular purchase in mind.",clarity,D1_WEALTH,fictional_authored_2026-10-04_v1,D1:train:D1_WEALTH:direct,train
+SYNTH-V1-D1-TRAIN-002,D1,I want to grow my savings generally; there is no specific spending goal for this pot.,clarity,D1_WEALTH,fictional_authored_2026-10-04_v1,D1:train:D1_WEALTH:direct,train
+SYNTH-V1-D1-TRAIN-003,D1,General wealth building is the purpose of the money we are discussing.,clarity,D1_WEALTH,fictional_authored_2026-10-04_v1,D1:train:D1_WEALTH:direct,train
+SYNTH-V1-D1-TRAIN-004,D1,"I am accumulating wealth with this amount, not funding any named future expense.",clarity,D1_WEALTH,fictional_authored_2026-10-04_v1,D1:train:D1_WEALTH:direct,train
+SYNTH-V1-D1-TRAIN-005,D1,There is no particular purchase or retirement goal attached to this money; just growing wealth.,clarity,D1_WEALTH,fictional_authored_2026-10-04_v1,D1:train:D1_WEALTH:direct,train
+SYNTH-V1-D1-TRAIN-006,D1,My aim for the agreed pot is general wealth accumulation.,clarity,D1_WEALTH,fictional_authored_2026-10-04_v1,D1:train:D1_WEALTH:direct,train
+SYNTH-V1-D1-TRAIN-007,D1,This money is for buying my home.,clarity,D1_HOME,fictional_authored_2026-10-04_v1,D1:train:D1_HOME:direct,train
+SYNTH-V1-D1-TRAIN-008,D1,I am saving this pot for a house deposit.,clarity,D1_HOME,fictional_authored_2026-10-04_v1,D1:train:D1_HOME:direct,train
+SYNTH-V1-D1-TRAIN-009,D1,The amount we agreed is intended to purchase a flat.,clarity,D1_HOME,fictional_authored_2026-10-04_v1,D1:train:D1_HOME:direct,train
+SYNTH-V1-D1-TRAIN-010,D1,A home purchase is the purpose of this money.,clarity,D1_HOME,fictional_authored_2026-10-04_v1,D1:train:D1_HOME:direct,train
+SYNTH-V1-D1-TRAIN-011,D1,I have set this money aside to buy a property to live in.,clarity,D1_HOME,fictional_authored_2026-10-04_v1,D1:train:D1_HOME:direct,train
+SYNTH-V1-D1-TRAIN-012,D1,This pot will go towards purchasing my first home.,clarity,D1_HOME,fictional_authored_2026-10-04_v1,D1:train:D1_HOME:direct,train
+SYNTH-V1-D1-TRAIN-013,D1,This money is to buy a car.,clarity,D1_PURCHASE,fictional_authored_2026-10-04_v1,D1:train:D1_PURCHASE:direct,train
+SYNTH-V1-D1-TRAIN-014,D1,The pot is for a planned university tuition payment.,clarity,D1_PURCHASE,fictional_authored_2026-10-04_v1,D1:train:D1_PURCHASE:direct,train
+SYNTH-V1-D1-TRAIN-015,D1,I am saving this amount for a large wedding payment.,clarity,D1_PURCHASE,fictional_authored_2026-10-04_v1,D1:train:D1_PURCHASE:direct,train
+SYNTH-V1-D1-TRAIN-016,D1,This agreed money is for a new kitchen purchase.,clarity,D1_PURCHASE,fictional_authored_2026-10-04_v1,D1:train:D1_PURCHASE:direct,train
+SYNTH-V1-D1-TRAIN-017,D1,The money we are discussing will pay for a replacement van.,clarity,D1_PURCHASE,fictional_authored_2026-10-04_v1,D1:train:D1_PURCHASE:direct,train
+SYNTH-V1-D1-TRAIN-018,D1,I have earmarked this pot for a major planned holiday payment.,clarity,D1_PURCHASE,fictional_authored_2026-10-04_v1,D1:train:D1_PURCHASE:direct,train
+SYNTH-V1-D1-TRAIN-019,D1,This money is for my retirement.,clarity,D1_RETIREMENT,fictional_authored_2026-10-04_v1,D1:train:D1_RETIREMENT:direct,train
+SYNTH-V1-D1-TRAIN-020,D1,I want this pot to support me after I retire.,clarity,D1_RETIREMENT,fictional_authored_2026-10-04_v1,D1:train:D1_RETIREMENT:direct,train
+SYNTH-V1-D1-TRAIN-021,D1,Retirement is the purpose of the agreed amount.,clarity,D1_RETIREMENT,fictional_authored_2026-10-04_v1,D1:train:D1_RETIREMENT:direct,train
+SYNTH-V1-D1-TRAIN-022,D1,I am building wealth for retirement with this money.,clarity,D1_RETIREMENT,fictional_authored_2026-10-04_v1,D1:train:D1_RETIREMENT:direct,train
+SYNTH-V1-D1-TRAIN-023,D1,These savings are intended to fund my retired life.,clarity,D1_RETIREMENT,fictional_authored_2026-10-04_v1,D1:train:D1_RETIREMENT:direct,train
+SYNTH-V1-D1-TRAIN-024,D1,This amount is earmarked for income when I stop working.,clarity,D1_RETIREMENT,fictional_authored_2026-10-04_v1,D1:train:D1_RETIREMENT:direct,train
+SYNTH-V1-D1-TRAIN-025,D1,This money pays my regular living costs.,clarity,D1_LIVING_COSTS,fictional_authored_2026-10-04_v1,D1:train:D1_LIVING_COSTS:direct,train
+SYNTH-V1-D1-TRAIN-026,D1,I use the included pot for rent and groceries.,clarity,D1_LIVING_COSTS,fictional_authored_2026-10-04_v1,D1:train:D1_LIVING_COSTS:direct,train
+SYNTH-V1-D1-TRAIN-027,D1,The purpose of this amount is funding ordinary necessary bills.,clarity,D1_LIVING_COSTS,fictional_authored_2026-10-04_v1,D1:train:D1_LIVING_COSTS:direct,train
+SYNTH-V1-D1-TRAIN-028,D1,These savings pay my routine household expenses.,clarity,D1_LIVING_COSTS,fictional_authored_2026-10-04_v1,D1:train:D1_LIVING_COSTS:direct,train
+SYNTH-V1-D1-TRAIN-029,D1,"This money is set aside for regular food, rent and utility payments.",clarity,D1_LIVING_COSTS,fictional_authored_2026-10-04_v1,D1:train:D1_LIVING_COSTS:direct,train
+SYNTH-V1-D1-TRAIN-030,D1,My everyday living costs are what this pot is for.,clarity,D1_LIVING_COSTS,fictional_authored_2026-10-04_v1,D1:train:D1_LIVING_COSTS:direct,train
+SYNTH-V1-D1-TRAIN-031,D1,This pot is my emergency fund.,clarity,D1_EMERGENCIES,fictional_authored_2026-10-04_v1,D1:train:D1_EMERGENCIES:direct,train
+SYNTH-V1-D1-TRAIN-032,D1,The included money is reserved for unexpected costs.,clarity,D1_EMERGENCIES,fictional_authored_2026-10-04_v1,D1:train:D1_EMERGENCIES:direct,train
+SYNTH-V1-D1-TRAIN-033,D1,I keep this amount for emergencies such as an unexpected repair.,clarity,D1_EMERGENCIES,fictional_authored_2026-10-04_v1,D1:train:D1_EMERGENCIES:direct,train
+SYNTH-V1-D1-TRAIN-034,D1,Unexpected expenses are the purpose of this money.,clarity,D1_EMERGENCIES,fictional_authored_2026-10-04_v1,D1:train:D1_EMERGENCIES:direct,train
+SYNTH-V1-D1-TRAIN-035,D1,These savings are a reserve for unforeseen needs.,clarity,D1_EMERGENCIES,fictional_authored_2026-10-04_v1,D1:train:D1_EMERGENCIES:direct,train
+SYNTH-V1-D1-TRAIN-036,D1,This money is set aside in case an emergency comes up.,clarity,D1_EMERGENCIES,fictional_authored_2026-10-04_v1,D1:train:D1_EMERGENCIES:direct,train
+SYNTH-V1-D1-TRAIN-037,D1,This money is set aside for charitable donations.,clarity,D1_OTHER,fictional_authored_2026-10-04_v1,D1:train:D1_OTHER:direct,train
+SYNTH-V1-D1-TRAIN-038,D1,The purpose of this pot is funding community grants.,clarity,D1_OTHER,fictional_authored_2026-10-04_v1,D1:train:D1_OTHER:direct,train
+SYNTH-V1-D1-TRAIN-039,D1,I have reserved this amount as a gift to my adult children.,clarity,D1_OTHER,fictional_authored_2026-10-04_v1,D1:train:D1_OTHER:direct,train
+SYNTH-V1-D1-TRAIN-040,D1,This agreed money will seed my small business.,clarity,D1_OTHER,fictional_authored_2026-10-04_v1,D1:train:D1_OTHER:direct,train
+SYNTH-V1-D1-TRAIN-041,D1,I want to leave this pot as an inheritance for my niece.,clarity,D1_OTHER,fictional_authored_2026-10-04_v1,D1:train:D1_OTHER:direct,train
+SYNTH-V1-D1-TRAIN-042,D1,The money is intended to sponsor a local youth club.,clarity,D1_OTHER,fictional_authored_2026-10-04_v1,D1:train:D1_OTHER:direct,train
+SYNTH-V1-D1-TRAIN-043,D1,One part is for buying a home and another part is for retirement.,clarity,D1_MULTIPLE,fictional_authored_2026-10-04_v1,D1:train:D1_MULTIPLE:direct,train
+SYNTH-V1-D1-TRAIN-044,D1,This money includes a car fund and a separate emergency reserve.,clarity,D1_MULTIPLE,fictional_authored_2026-10-04_v1,D1:train:D1_MULTIPLE:direct,train
+SYNTH-V1-D1-TRAIN-045,D1,Part of this pot pays ordinary living costs and part is for a home purchase.,clarity,D1_MULTIPLE,fictional_authored_2026-10-04_v1,D1:train:D1_MULTIPLE:direct,train
+SYNTH-V1-D1-TRAIN-046,D1,I have earmarked separate portions for retirement and a planned tuition payment.,clarity,D1_MULTIPLE,fictional_authored_2026-10-04_v1,D1:train:D1_MULTIPLE:direct,train
+SYNTH-V1-D1-TRAIN-047,D1,The included money serves two purposes: general wealth building and emergencies.,clarity,D1_MULTIPLE,fictional_authored_2026-10-04_v1,D1:train:D1_MULTIPLE:direct,train
+SYNTH-V1-D1-TRAIN-048,D1,There is a retirement portion and a separate portion for regular living costs.,clarity,D1_MULTIPLE,fictional_authored_2026-10-04_v1,D1:train:D1_MULTIPLE:direct,train
+SYNTH-V1-D2-TRAIN-001,D2,I am 17 years old.,clarity,D2_UNDER18,fictional_authored_2026-10-04_v1,D2:train:D2_UNDER18:direct,train
+SYNTH-V1-D2-TRAIN-002,D2,My current age is 16.,clarity,D2_UNDER18,fictional_authored_2026-10-04_v1,D2:train:D2_UNDER18:direct,train
+SYNTH-V1-D2-TRAIN-003,D2,I am under eighteen.,clarity,D2_UNDER18,fictional_authored_2026-10-04_v1,D2:train:D2_UNDER18:direct,train
+SYNTH-V1-D2-TRAIN-004,D2,I'm in the under-18 age range.,clarity,D2_UNDER18,fictional_authored_2026-10-04_v1,D2:train:D2_UNDER18:direct,train
+SYNTH-V1-D2-TRAIN-005,D2,I am fifteen now.,clarity,D2_UNDER18,fictional_authored_2026-10-04_v1,D2:train:D2_UNDER18:direct,train
+SYNTH-V1-D2-TRAIN-006,D2,I'm 14 at the moment.,clarity,D2_UNDER18,fictional_authored_2026-10-04_v1,D2:train:D2_UNDER18:direct,train
+SYNTH-V1-D2-TRAIN-007,D2,I am 18 years old.,clarity,D2_AGE18_34,fictional_authored_2026-10-04_v1,D2:train:D2_AGE18_34:direct,train
+SYNTH-V1-D2-TRAIN-008,D2,My current age is 27.,clarity,D2_AGE18_34,fictional_authored_2026-10-04_v1,D2:train:D2_AGE18_34:direct,train
+SYNTH-V1-D2-TRAIN-009,D2,I'm thirty-four now.,clarity,D2_AGE18_34,fictional_authored_2026-10-04_v1,D2:train:D2_AGE18_34:direct,train
+SYNTH-V1-D2-TRAIN-010,D2,I am in the 18 to 34 age band.,clarity,D2_AGE18_34,fictional_authored_2026-10-04_v1,D2:train:D2_AGE18_34:direct,train
+SYNTH-V1-D2-TRAIN-011,D2,I am twenty-two.,clarity,D2_AGE18_34,fictional_authored_2026-10-04_v1,D2:train:D2_AGE18_34:direct,train
+SYNTH-V1-D2-TRAIN-012,D2,I'm currently 31.,clarity,D2_AGE18_34,fictional_authored_2026-10-04_v1,D2:train:D2_AGE18_34:direct,train
+SYNTH-V1-D2-TRAIN-013,D2,I am 35 years old.,clarity,D2_AGE35_49,fictional_authored_2026-10-04_v1,D2:train:D2_AGE35_49:direct,train
+SYNTH-V1-D2-TRAIN-014,D2,My current age is 42.,clarity,D2_AGE35_49,fictional_authored_2026-10-04_v1,D2:train:D2_AGE35_49:direct,train
+SYNTH-V1-D2-TRAIN-015,D2,I'm forty-nine now.,clarity,D2_AGE35_49,fictional_authored_2026-10-04_v1,D2:train:D2_AGE35_49:direct,train
+SYNTH-V1-D2-TRAIN-016,D2,I am in the 35 to 49 age range.,clarity,D2_AGE35_49,fictional_authored_2026-10-04_v1,D2:train:D2_AGE35_49:direct,train
+SYNTH-V1-D2-TRAIN-017,D2,I am thirty-seven.,clarity,D2_AGE35_49,fictional_authored_2026-10-04_v1,D2:train:D2_AGE35_49:direct,train
+SYNTH-V1-D2-TRAIN-018,D2,I'm currently 46.,clarity,D2_AGE35_49,fictional_authored_2026-10-04_v1,D2:train:D2_AGE35_49:direct,train
+SYNTH-V1-D2-TRAIN-019,D2,I am 50 years old.,clarity,D2_AGE50_64,fictional_authored_2026-10-04_v1,D2:train:D2_AGE50_64:direct,train
+SYNTH-V1-D2-TRAIN-020,D2,My current age is 58.,clarity,D2_AGE50_64,fictional_authored_2026-10-04_v1,D2:train:D2_AGE50_64:direct,train
+SYNTH-V1-D2-TRAIN-021,D2,I'm sixty-four now.,clarity,D2_AGE50_64,fictional_authored_2026-10-04_v1,D2:train:D2_AGE50_64:direct,train
+SYNTH-V1-D2-TRAIN-022,D2,I am in the 50 to 64 age band.,clarity,D2_AGE50_64,fictional_authored_2026-10-04_v1,D2:train:D2_AGE50_64:direct,train
+SYNTH-V1-D2-TRAIN-023,D2,I am fifty-two.,clarity,D2_AGE50_64,fictional_authored_2026-10-04_v1,D2:train:D2_AGE50_64:direct,train
+SYNTH-V1-D2-TRAIN-024,D2,I'm currently 61.,clarity,D2_AGE50_64,fictional_authored_2026-10-04_v1,D2:train:D2_AGE50_64:direct,train
+SYNTH-V1-D2-TRAIN-025,D2,I am 65 years old.,clarity,D2_AGE65_PLUS,fictional_authored_2026-10-04_v1,D2:train:D2_AGE65_PLUS:direct,train
+SYNTH-V1-D2-TRAIN-026,D2,My current age is 72.,clarity,D2_AGE65_PLUS,fictional_authored_2026-10-04_v1,D2:train:D2_AGE65_PLUS:direct,train
+SYNTH-V1-D2-TRAIN-027,D2,I'm over sixty-five.,clarity,D2_AGE65_PLUS,fictional_authored_2026-10-04_v1,D2:train:D2_AGE65_PLUS:direct,train
+SYNTH-V1-D2-TRAIN-028,D2,I am in the 65 or older age range.,clarity,D2_AGE65_PLUS,fictional_authored_2026-10-04_v1,D2:train:D2_AGE65_PLUS:direct,train
+SYNTH-V1-D2-TRAIN-029,D2,I am eighty.,clarity,D2_AGE65_PLUS,fictional_authored_2026-10-04_v1,D2:train:D2_AGE65_PLUS:direct,train
+SYNTH-V1-D2-TRAIN-030,D2,I'm currently 69.,clarity,D2_AGE65_PLUS,fictional_authored_2026-10-04_v1,D2:train:D2_AGE65_PLUS:direct,train
+SYNTH-V1-D3-TRAIN-001,D3,I have no existing money to include yet.,clarity,D3_NO_EXISTING_POT,fictional_authored_2026-10-04_v1,D3:train:D3_NO_EXISTING_POT:direct,train
+SYNTH-V1-D3-TRAIN-002,D3,No current pot has been identified for this conversation.,clarity,D3_NO_EXISTING_POT,fictional_authored_2026-10-04_v1,D3:train:D3_NO_EXISTING_POT:direct,train
+SYNTH-V1-D3-TRAIN-003,D3,I have zero existing money set aside for this.,clarity,D3_NO_EXISTING_POT,fictional_authored_2026-10-04_v1,D3:train:D3_NO_EXISTING_POT:direct,train
+SYNTH-V1-D3-TRAIN-004,D3,There isn't an existing pot; I only have a future savings target.,clarity,D3_NO_EXISTING_POT,fictional_authored_2026-10-04_v1,D3:train:D3_NO_EXISTING_POT:direct,train
+SYNTH-V1-D3-TRAIN-005,D3,I haven't identified any money that I currently hold for this conversation.,clarity,D3_NO_EXISTING_POT,fictional_authored_2026-10-04_v1,D3:train:D3_NO_EXISTING_POT:direct,train
+SYNTH-V1-D3-TRAIN-006,D3,This is future saving only; there is no present pot.,clarity,D3_NO_EXISTING_POT,fictional_authored_2026-10-04_v1,D3:train:D3_NO_EXISTING_POT:direct,train
+SYNTH-V1-D3-TRAIN-007,D3,The existing money in scope is GBP 500.,clarity,D3_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D3:train:D3_POSITIVE_LT1000:direct,train
+SYNTH-V1-D3-TRAIN-008,D3,I currently have 750 euros in this pot.,clarity,D3_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D3:train:D3_POSITIVE_LT1000:direct,train
+SYNTH-V1-D3-TRAIN-009,D3,This conversation covers my existing 200 pounds.,clarity,D3_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D3:train:D3_POSITIVE_LT1000:direct,train
+SYNTH-V1-D3-TRAIN-010,D3,There is GBP 999 already in the agreed pot.,clarity,D3_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D3:train:D3_POSITIVE_LT1000:direct,train
+SYNTH-V1-D3-TRAIN-011,D3,I have EUR 100 of current savings to discuss.,clarity,D3_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D3:train:D3_POSITIVE_LT1000:direct,train
+SYNTH-V1-D3-TRAIN-012,D3,The included existing amount is 600 US dollars.,clarity,D3_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D3:train:D3_POSITIVE_LT1000:direct,train
+SYNTH-V1-D3-TRAIN-013,D3,The existing money in scope is GBP 1000.,clarity,D3_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM1000_LT5000:direct,train
+SYNTH-V1-D3-TRAIN-014,D3,I currently have 2500 euros in this pot.,clarity,D3_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM1000_LT5000:direct,train
+SYNTH-V1-D3-TRAIN-015,D3,This conversation covers my existing 4000 pounds.,clarity,D3_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM1000_LT5000:direct,train
+SYNTH-V1-D3-TRAIN-016,D3,There is GBP 4999 already in the agreed pot.,clarity,D3_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM1000_LT5000:direct,train
+SYNTH-V1-D3-TRAIN-017,D3,I have EUR 1800 of current savings to discuss.,clarity,D3_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM1000_LT5000:direct,train
+SYNTH-V1-D3-TRAIN-018,D3,The included existing amount is 3200 US dollars.,clarity,D3_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM1000_LT5000:direct,train
+SYNTH-V1-D3-TRAIN-019,D3,The existing money in scope is GBP 5000.,clarity,D3_FROM5000_LT20000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM5000_LT20000:direct,train
+SYNTH-V1-D3-TRAIN-020,D3,I currently have 12000 euros in this pot.,clarity,D3_FROM5000_LT20000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM5000_LT20000:direct,train
+SYNTH-V1-D3-TRAIN-021,D3,This conversation covers my existing 18000 pounds.,clarity,D3_FROM5000_LT20000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM5000_LT20000:direct,train
+SYNTH-V1-D3-TRAIN-022,D3,There is GBP 19999 already in the agreed pot.,clarity,D3_FROM5000_LT20000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM5000_LT20000:direct,train
+SYNTH-V1-D3-TRAIN-023,D3,I have EUR 6500 of current savings to discuss.,clarity,D3_FROM5000_LT20000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM5000_LT20000:direct,train
+SYNTH-V1-D3-TRAIN-024,D3,The included existing amount is 15000 US dollars.,clarity,D3_FROM5000_LT20000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM5000_LT20000:direct,train
+SYNTH-V1-D3-TRAIN-025,D3,The existing money in scope is GBP 20000.,clarity,D3_FROM20000_LT50000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM20000_LT50000:direct,train
+SYNTH-V1-D3-TRAIN-026,D3,I currently have 30000 euros in this pot.,clarity,D3_FROM20000_LT50000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM20000_LT50000:direct,train
+SYNTH-V1-D3-TRAIN-027,D3,This conversation covers my existing 45000 pounds.,clarity,D3_FROM20000_LT50000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM20000_LT50000:direct,train
+SYNTH-V1-D3-TRAIN-028,D3,There is GBP 49999 already in the agreed pot.,clarity,D3_FROM20000_LT50000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM20000_LT50000:direct,train
+SYNTH-V1-D3-TRAIN-029,D3,I have EUR 24000 of current savings to discuss.,clarity,D3_FROM20000_LT50000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM20000_LT50000:direct,train
+SYNTH-V1-D3-TRAIN-030,D3,The included existing amount is 38000 US dollars.,clarity,D3_FROM20000_LT50000,fictional_authored_2026-10-04_v1,D3:train:D3_FROM20000_LT50000:direct,train
+SYNTH-V1-D3-TRAIN-031,D3,The existing money in scope is GBP 50000.,clarity,D3_FROM50000_PLUS,fictional_authored_2026-10-04_v1,D3:train:D3_FROM50000_PLUS:direct,train
+SYNTH-V1-D3-TRAIN-032,D3,I currently have 80000 euros in this pot.,clarity,D3_FROM50000_PLUS,fictional_authored_2026-10-04_v1,D3:train:D3_FROM50000_PLUS:direct,train
+SYNTH-V1-D3-TRAIN-033,D3,This conversation covers my existing 120000 pounds.,clarity,D3_FROM50000_PLUS,fictional_authored_2026-10-04_v1,D3:train:D3_FROM50000_PLUS:direct,train
+SYNTH-V1-D3-TRAIN-034,D3,There is GBP 75000 already in the agreed pot.,clarity,D3_FROM50000_PLUS,fictional_authored_2026-10-04_v1,D3:train:D3_FROM50000_PLUS:direct,train
+SYNTH-V1-D3-TRAIN-035,D3,I have EUR 60000 of current savings to discuss.,clarity,D3_FROM50000_PLUS,fictional_authored_2026-10-04_v1,D3:train:D3_FROM50000_PLUS:direct,train
+SYNTH-V1-D3-TRAIN-036,D3,The included existing amount is 90000 US dollars.,clarity,D3_FROM50000_PLUS,fictional_authored_2026-10-04_v1,D3:train:D3_FROM50000_PLUS:direct,train
+SYNTH-V1-D4-TRAIN-001,D4,This money is in my current account.,clarity,D4_EASY_ACCESS,fictional_authored_2026-10-04_v1,D4:train:D4_EASY_ACCESS:direct,train
+SYNTH-V1-D4-TRAIN-002,D4,The included pot is held in easy-access savings.,clarity,D4_EASY_ACCESS,fictional_authored_2026-10-04_v1,D4:train:D4_EASY_ACCESS:direct,train
+SYNTH-V1-D4-TRAIN-003,D4,I keep this amount in an ordinary bank current account.,clarity,D4_EASY_ACCESS,fictional_authored_2026-10-04_v1,D4:train:D4_EASY_ACCESS:direct,train
+SYNTH-V1-D4-TRAIN-004,D4,All the agreed money is in a savings account with easy access.,clarity,D4_EASY_ACCESS,fictional_authored_2026-10-04_v1,D4:train:D4_EASY_ACCESS:direct,train
+SYNTH-V1-D4-TRAIN-005,D4,My instant-access savings account holds this money.,clarity,D4_EASY_ACCESS,fictional_authored_2026-10-04_v1,D4:train:D4_EASY_ACCESS:direct,train
+SYNTH-V1-D4-TRAIN-006,D4,This pot is currently in an everyday bank account.,clarity,D4_EASY_ACCESS,fictional_authored_2026-10-04_v1,D4:train:D4_EASY_ACCESS:direct,train
+SYNTH-V1-D4-TRAIN-007,D4,This money is in a fixed-term savings account.,clarity,D4_FIXED_TERM,fictional_authored_2026-10-04_v1,D4:train:D4_FIXED_TERM:direct,train
+SYNTH-V1-D4-TRAIN-008,D4,The pot is held in a deposit with withdrawal restrictions.,clarity,D4_FIXED_TERM,fictional_authored_2026-10-04_v1,D4:train:D4_FIXED_TERM:direct,train
+SYNTH-V1-D4-TRAIN-009,D4,I currently keep this amount in a one-year term deposit.,clarity,D4_FIXED_TERM,fictional_authored_2026-10-04_v1,D4:train:D4_FIXED_TERM:direct,train
+SYNTH-V1-D4-TRAIN-010,D4,The included money is locked in a fixed-rate savings bond.,clarity,D4_FIXED_TERM,fictional_authored_2026-10-04_v1,D4:train:D4_FIXED_TERM:direct,train
+SYNTH-V1-D4-TRAIN-011,D4,All this money is in restricted-access term savings.,clarity,D4_FIXED_TERM,fictional_authored_2026-10-04_v1,D4:train:D4_FIXED_TERM:direct,train
+SYNTH-V1-D4-TRAIN-012,D4,A fixed-term bank deposit holds the agreed pot.,clarity,D4_FIXED_TERM,fictional_authored_2026-10-04_v1,D4:train:D4_FIXED_TERM:direct,train
+SYNTH-V1-D4-TRAIN-013,D4,This money is held directly in shares outside a pension.,clarity,D4_INVESTMENTS,fictional_authored_2026-10-04_v1,D4:train:D4_INVESTMENTS:direct,train
+SYNTH-V1-D4-TRAIN-014,D4,"The pot is currently in investment funds, not a pension.",clarity,D4_INVESTMENTS,fictional_authored_2026-10-04_v1,D4:train:D4_INVESTMENTS:direct,train
+SYNTH-V1-D4-TRAIN-015,D4,I hold the agreed money in bonds in a normal brokerage account.,clarity,D4_INVESTMENTS,fictional_authored_2026-10-04_v1,D4:train:D4_INVESTMENTS:direct,train
+SYNTH-V1-D4-TRAIN-016,D4,These funds are invested in ETFs outside any pension.,clarity,D4_INVESTMENTS,fictional_authored_2026-10-04_v1,D4:train:D4_INVESTMENTS:direct,train
+SYNTH-V1-D4-TRAIN-017,D4,The included amount is currently in direct investments.,clarity,D4_INVESTMENTS,fictional_authored_2026-10-04_v1,D4:train:D4_INVESTMENTS:direct,train
+SYNTH-V1-D4-TRAIN-018,D4,All this pot is held as shares in a non-pension investment account.,clarity,D4_INVESTMENTS,fictional_authored_2026-10-04_v1,D4:train:D4_INVESTMENTS:direct,train
+SYNTH-V1-D4-TRAIN-019,D4,This money is currently held inside my pension.,clarity,D4_PENSION_SAVINGS,fictional_authored_2026-10-04_v1,D4:train:D4_PENSION_SAVINGS:direct,train
+SYNTH-V1-D4-TRAIN-020,D4,The included pot is pension savings for retirement.,clarity,D4_PENSION_SAVINGS,fictional_authored_2026-10-04_v1,D4:train:D4_PENSION_SAVINGS:direct,train
+SYNTH-V1-D4-TRAIN-021,D4,All this amount is in a pension account invested in funds.,clarity,D4_PENSION_SAVINGS,fictional_authored_2026-10-04_v1,D4:train:D4_PENSION_SAVINGS:direct,train
+SYNTH-V1-D4-TRAIN-022,D4,These savings are held in my retirement pension.,clarity,D4_PENSION_SAVINGS,fictional_authored_2026-10-04_v1,D4:train:D4_PENSION_SAVINGS:direct,train
+SYNTH-V1-D4-TRAIN-023,D4,This money is in a pension wrapper containing shares.,clarity,D4_PENSION_SAVINGS,fictional_authored_2026-10-04_v1,D4:train:D4_PENSION_SAVINGS:direct,train
+SYNTH-V1-D4-TRAIN-024,D4,My pension savings account contains the agreed amount.,clarity,D4_PENSION_SAVINGS,fictional_authored_2026-10-04_v1,D4:train:D4_PENSION_SAVINGS:direct,train
+SYNTH-V1-D4-TRAIN-025,D4,cash,clarity,D4_OTHER,fictional_authored_2026-10-04_v1,D4:train:D4_OTHER:direct,train
+SYNTH-V1-D4-TRAIN-026,D4,The included pot is banknotes kept at home.,clarity,D4_OTHER,fictional_authored_2026-10-04_v1,D4:train:D4_OTHER:direct,train
+SYNTH-V1-D4-TRAIN-027,D4,This money is currently in my electronic money wallet.,clarity,D4_OTHER,fictional_authored_2026-10-04_v1,D4:train:D4_OTHER:direct,train
+SYNTH-V1-D4-TRAIN-028,D4,The agreed amount is cash in a safe.,clarity,D4_OTHER,fictional_authored_2026-10-04_v1,D4:train:D4_OTHER:direct,train
+SYNTH-V1-D4-TRAIN-029,D4,These funds are held in a named payment-app wallet.,clarity,D4_OTHER,fictional_authored_2026-10-04_v1,D4:train:D4_OTHER:direct,train
+SYNTH-V1-D4-TRAIN-030,D4,This pot consists of cash stored in a lockbox.,clarity,D4_OTHER,fictional_authored_2026-10-04_v1,D4:train:D4_OTHER:direct,train
+SYNTH-V1-D4-TRAIN-031,D4,Part is in easy-access savings and a separate part is in a fixed-term deposit.,clarity,D4_MIXED,fictional_authored_2026-10-04_v1,D4:train:D4_MIXED:direct,train
+SYNTH-V1-D4-TRAIN-032,D4,This pot includes current-account money and separate directly held shares.,clarity,D4_MIXED,fictional_authored_2026-10-04_v1,D4:train:D4_MIXED:direct,train
+SYNTH-V1-D4-TRAIN-033,D4,Some of the agreed money is physical cash and some is in a pension.,clarity,D4_MIXED,fictional_authored_2026-10-04_v1,D4:train:D4_MIXED:direct,train
+SYNTH-V1-D4-TRAIN-034,D4,One included holding is in my pension and another is in a bank savings account.,clarity,D4_MIXED,fictional_authored_2026-10-04_v1,D4:train:D4_MIXED:direct,train
+SYNTH-V1-D4-TRAIN-035,D4,The money is split between a term deposit and non-pension investment funds.,clarity,D4_MIXED,fictional_authored_2026-10-04_v1,D4:train:D4_MIXED:direct,train
+SYNTH-V1-D4-TRAIN-036,D4,Separate portions are held as cash and in an easy-access account.,clarity,D4_MIXED,fictional_authored_2026-10-04_v1,D4:train:D4_MIXED:direct,train
+SYNTH-V1-D5-TRAIN-001,D5,My salary currently pays my living costs.,clarity,D5_SALARY,fictional_authored_2026-10-04_v1,D5:train:D5_SALARY:direct,train
+SYNTH-V1-D5-TRAIN-002,D5,I fund regular household bills from my wages.,clarity,D5_SALARY,fictional_authored_2026-10-04_v1,D5:train:D5_SALARY:direct,train
+SYNTH-V1-D5-TRAIN-003,D5,My employment pay is the source for my everyday expenses.,clarity,D5_SALARY,fictional_authored_2026-10-04_v1,D5:train:D5_SALARY:direct,train
+SYNTH-V1-D5-TRAIN-004,D5,Salary income covers the living costs I pay now.,clarity,D5_SALARY,fictional_authored_2026-10-04_v1,D5:train:D5_SALARY:direct,train
+SYNTH-V1-D5-TRAIN-005,D5,"I use my monthly wages for rent, food and utilities.",clarity,D5_SALARY,fictional_authored_2026-10-04_v1,D5:train:D5_SALARY:direct,train
+SYNTH-V1-D5-TRAIN-006,D5,At present my regular living costs are funded by employee earnings.,clarity,D5_SALARY,fictional_authored_2026-10-04_v1,D5:train:D5_SALARY:direct,train
+SYNTH-V1-D5-TRAIN-007,D5,My self-employment earnings currently pay my living costs.,clarity,D5_SELF_EMPLOYMENT,fictional_authored_2026-10-04_v1,D5:train:D5_SELF_EMPLOYMENT:direct,train
+SYNTH-V1-D5-TRAIN-008,D5,I fund household expenses from freelance income.,clarity,D5_SELF_EMPLOYMENT,fictional_authored_2026-10-04_v1,D5:train:D5_SELF_EMPLOYMENT:direct,train
+SYNTH-V1-D5-TRAIN-009,D5,The money from my own business pays my regular bills.,clarity,D5_SELF_EMPLOYMENT,fictional_authored_2026-10-04_v1,D5:train:D5_SELF_EMPLOYMENT:direct,train
+SYNTH-V1-D5-TRAIN-010,D5,At present I use sole-trader earnings for everyday living costs.,clarity,D5_SELF_EMPLOYMENT,fictional_authored_2026-10-04_v1,D5:train:D5_SELF_EMPLOYMENT:direct,train
+SYNTH-V1-D5-TRAIN-011,D5,My self-employed work provides the money for rent and food.,clarity,D5_SELF_EMPLOYMENT,fictional_authored_2026-10-04_v1,D5:train:D5_SELF_EMPLOYMENT:direct,train
+SYNTH-V1-D5-TRAIN-012,D5,Current living costs are funded by my consultancy business income.,clarity,D5_SELF_EMPLOYMENT,fictional_authored_2026-10-04_v1,D5:train:D5_SELF_EMPLOYMENT:direct,train
+SYNTH-V1-D5-TRAIN-013,D5,My pension payments currently pay my living costs.,clarity,D5_PENSION_PAYMENTS,fictional_authored_2026-10-04_v1,D5:train:D5_PENSION_PAYMENTS:direct,train
+SYNTH-V1-D5-TRAIN-014,D5,I use regular pension income for household bills.,clarity,D5_PENSION_PAYMENTS,fictional_authored_2026-10-04_v1,D5:train:D5_PENSION_PAYMENTS:direct,train
+SYNTH-V1-D5-TRAIN-015,D5,The pension I receive funds my everyday expenses.,clarity,D5_PENSION_PAYMENTS,fictional_authored_2026-10-04_v1,D5:train:D5_PENSION_PAYMENTS:direct,train
+SYNTH-V1-D5-TRAIN-016,D5,At present my retirement pension payments pay for food and rent.,clarity,D5_PENSION_PAYMENTS,fictional_authored_2026-10-04_v1,D5:train:D5_PENSION_PAYMENTS:direct,train
+SYNTH-V1-D5-TRAIN-017,D5,Living costs are funded by pension income received each month.,clarity,D5_PENSION_PAYMENTS,fictional_authored_2026-10-04_v1,D5:train:D5_PENSION_PAYMENTS:direct,train
+SYNTH-V1-D5-TRAIN-018,D5,My regular pension receipts supply money for necessary spending.,clarity,D5_PENSION_PAYMENTS,fictional_authored_2026-10-04_v1,D5:train:D5_PENSION_PAYMENTS:direct,train
+SYNTH-V1-D5-TRAIN-019,D5,Benefits currently pay my living costs.,clarity,D5_BENEFITS_SUPPORT,fictional_authored_2026-10-04_v1,D5:train:D5_BENEFITS_SUPPORT:direct,train
+SYNTH-V1-D5-TRAIN-020,D5,I use regular financial support from my parents for household bills.,clarity,D5_BENEFITS_SUPPORT,fictional_authored_2026-10-04_v1,D5:train:D5_BENEFITS_SUPPORT:direct,train
+SYNTH-V1-D5-TRAIN-021,D5,My everyday expenses are funded by benefits and regular family support.,clarity,D5_BENEFITS_SUPPORT,fictional_authored_2026-10-04_v1,D5:train:D5_BENEFITS_SUPPORT:direct,train
+SYNTH-V1-D5-TRAIN-022,D5,A partner's regular support pays my living costs now.,clarity,D5_BENEFITS_SUPPORT,fictional_authored_2026-10-04_v1,D5:train:D5_BENEFITS_SUPPORT:direct,train
+SYNTH-V1-D5-TRAIN-023,D5,At present I pay routine costs using state benefits.,clarity,D5_BENEFITS_SUPPORT,fictional_authored_2026-10-04_v1,D5:train:D5_BENEFITS_SUPPORT:direct,train
+SYNTH-V1-D5-TRAIN-024,D5,Regular money from my family funds my rent and food.,clarity,D5_BENEFITS_SUPPORT,fictional_authored_2026-10-04_v1,D5:train:D5_BENEFITS_SUPPORT:direct,train
+SYNTH-V1-D5-TRAIN-025,D5,I currently pay living costs by withdrawing from savings.,clarity,D5_WITHDRAWALS,fictional_authored_2026-10-04_v1,D5:train:D5_WITHDRAWALS:direct,train
+SYNTH-V1-D5-TRAIN-026,D5,Regular investment withdrawals fund my household bills.,clarity,D5_WITHDRAWALS,fictional_authored_2026-10-04_v1,D5:train:D5_WITHDRAWALS:direct,train
+SYNTH-V1-D5-TRAIN-027,D5,I draw money from my savings account for everyday expenses.,clarity,D5_WITHDRAWALS,fictional_authored_2026-10-04_v1,D5:train:D5_WITHDRAWALS:direct,train
+SYNTH-V1-D5-TRAIN-028,D5,At present I use withdrawals from my investments for rent and food.,clarity,D5_WITHDRAWALS,fictional_authored_2026-10-04_v1,D5:train:D5_WITHDRAWALS:direct,train
+SYNTH-V1-D5-TRAIN-029,D5,My current living-cost money comes from spending down savings.,clarity,D5_WITHDRAWALS,fictional_authored_2026-10-04_v1,D5:train:D5_WITHDRAWALS:direct,train
+SYNTH-V1-D5-TRAIN-030,D5,Savings and investment withdrawals supply my routine spending.,clarity,D5_WITHDRAWALS,fictional_authored_2026-10-04_v1,D5:train:D5_WITHDRAWALS:direct,train
+SYNTH-V1-D5-TRAIN-031,D5,Rental income currently pays my living costs.,clarity,D5_OTHER_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_OTHER_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-032,D5,I fund household bills from regular royalties.,clarity,D5_OTHER_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_OTHER_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-033,D5,Recurring rental receipts pay my everyday expenses.,clarity,D5_OTHER_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_OTHER_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-034,D5,My regular trust distributions fund living costs now.,clarity,D5_OTHER_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_OTHER_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-035,D5,At present recurring licensing income pays for my food and rent.,clarity,D5_OTHER_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_OTHER_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-036,D5,My routine costs are funded by regular property rent.,clarity,D5_OTHER_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_OTHER_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-037,D5,I have no regular source of money for living costs.,clarity,D5_NO_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_NO_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-038,D5,No recurring source currently funds my everyday expenses.,clarity,D5_NO_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_NO_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-039,D5,There is no regular living-cost funding source at present.,clarity,D5_NO_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_NO_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-040,D5,I do not currently receive any regular source for my bills.,clarity,D5_NO_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_NO_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-041,D5,I have no ongoing source of money for household costs.,clarity,D5_NO_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_NO_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-042,D5,At the moment no regular source supplies my necessary spending.,clarity,D5_NO_REGULAR,fictional_authored_2026-10-04_v1,D5:train:D5_NO_REGULAR:direct,train
+SYNTH-V1-D5-TRAIN-043,D5,My salary and savings withdrawals currently fund living costs.,clarity,D5_MULTIPLE,fictional_authored_2026-10-04_v1,D5:train:D5_MULTIPLE:direct,train
+SYNTH-V1-D5-TRAIN-044,D5,Wages and benefits both pay my regular household expenses.,clarity,D5_MULTIPLE,fictional_authored_2026-10-04_v1,D5:train:D5_MULTIPLE:direct,train
+SYNTH-V1-D5-TRAIN-045,D5,I use pension payments and rental income for everyday costs.,clarity,D5_MULTIPLE,fictional_authored_2026-10-04_v1,D5:train:D5_MULTIPLE:direct,train
+SYNTH-V1-D5-TRAIN-046,D5,Freelance earnings and regular family support fund my bills now.,clarity,D5_MULTIPLE,fictional_authored_2026-10-04_v1,D5:train:D5_MULTIPLE:direct,train
+SYNTH-V1-D5-TRAIN-047,D5,Current living costs come from salary plus rental receipts.,clarity,D5_MULTIPLE,fictional_authored_2026-10-04_v1,D5:train:D5_MULTIPLE:direct,train
+SYNTH-V1-D5-TRAIN-048,D5,Pension income and savings withdrawals both fund my necessary spending.,clarity,D5_MULTIPLE,fictional_authored_2026-10-04_v1,D5:train:D5_MULTIPLE:direct,train
+SYNTH-V1-D6-TRAIN-001,D6,Other usable money would cover all necessary costs and repayments throughout the 12 months without this pot.,clarity,D6_ALL,fictional_authored_2026-10-04_v1,D6:train:D6_ALL:direct,train
+SYNTH-V1-D6-TRAIN-002,D6,My other income can pay every necessary bill when due for all twelve months; none uses this money.,clarity,D6_ALL,fictional_authored_2026-10-04_v1,D6:train:D6_ALL:direct,train
+SYNTH-V1-D6-TRAIN-003,D6,"All my essential costs, including repayments, would be covered on time for a year using separate resources.",clarity,D6_ALL,fictional_authored_2026-10-04_v1,D6:train:D6_ALL:direct,train
+SYNTH-V1-D6-TRAIN-004,D6,"Excluding the agreed pot, available income covers all necessary living costs over the whole 12 months.",clarity,D6_ALL,fictional_authored_2026-10-04_v1,D6:train:D6_ALL:direct,train
+SYNTH-V1-D6-TRAIN-005,D6,"For the full year without this money, other usable resources pay every essential cost and required repayment on time.",clarity,D6_ALL,fictional_authored_2026-10-04_v1,D6:train:D6_ALL:direct,train
+SYNTH-V1-D6-TRAIN-006,D6,Separate funds available as needed would cover all necessary costs throughout twelve months of this pot being unavailable.,clarity,D6_ALL,fictional_authored_2026-10-04_v1,D6:train:D6_ALL:direct,train
+SYNTH-V1-D6-TRAIN-007,D6,Other usable money would cover some but not all necessary costs and repayments over the full 12 months without this pot.,clarity,D6_SOME,fictional_authored_2026-10-04_v1,D6:train:D6_SOME:direct,train
+SYNTH-V1-D6-TRAIN-008,D6,"My other income pays only part of the necessary bills when due during the twelve months, excluding this money.",clarity,D6_SOME,fictional_authored_2026-10-04_v1,D6:train:D6_SOME:direct,train
+SYNTH-V1-D6-TRAIN-009,D6,"For a year without this pot, separate accessible resources cover some essential expenses but leave others uncovered.",clarity,D6_SOME,fictional_authored_2026-10-04_v1,D6:train:D6_SOME:direct,train
+SYNTH-V1-D6-TRAIN-010,D6,Other available funds would pay food but not all rent and repayments throughout the year.,clarity,D6_SOME,fictional_authored_2026-10-04_v1,D6:train:D6_SOME:direct,train
+SYNTH-V1-D6-TRAIN-011,D6,Some necessary costs across all twelve months are payable from other usable money; not every cost is covered.,clarity,D6_SOME,fictional_authored_2026-10-04_v1,D6:train:D6_SOME:direct,train
+SYNTH-V1-D6-TRAIN-012,D6,"Without this amount for 12 months, separate resources can meet part, but not all, of my necessary living costs on time.",clarity,D6_SOME,fictional_authored_2026-10-04_v1,D6:train:D6_SOME:direct,train
+SYNTH-V1-D6-TRAIN-013,D6,No other usable money would cover any necessary costs during the 12 months without this pot.,clarity,D6_NONE,fictional_authored_2026-10-04_v1,D6:train:D6_NONE:direct,train
+SYNTH-V1-D6-TRAIN-014,D6,"Without this amount for a year, none of my necessary bills or repayments would be covered by other resources.",clarity,D6_NONE,fictional_authored_2026-10-04_v1,D6:train:D6_NONE:direct,train
+SYNTH-V1-D6-TRAIN-015,D6,For the full twelve months I have no separate available funds to pay any essential cost when due.,clarity,D6_NONE,fictional_authored_2026-10-04_v1,D6:train:D6_NONE:direct,train
+SYNTH-V1-D6-TRAIN-016,D6,Other usable income or money covers zero necessary living costs in this year-long scenario.,clarity,D6_NONE,fictional_authored_2026-10-04_v1,D6:train:D6_NONE:direct,train
+SYNTH-V1-D6-TRAIN-017,D6,None of the necessary costs over those twelve months is payable from resources outside this pot.,clarity,D6_NONE,fictional_authored_2026-10-04_v1,D6:train:D6_NONE:direct,train
+SYNTH-V1-D6-TRAIN-018,D6,"If the money is unavailable for a year, no other accessible resources meet any of my essential costs.",clarity,D6_NONE,fictional_authored_2026-10-04_v1,D6:train:D6_NONE:direct,train
+SYNTH-V1-D7-TRAIN-001,D7,none,clarity,D7_NO_REQUIRED,fictional_authored_2026-10-04_v1,D7:train:D7_NO_REQUIRED:direct,train
+SYNTH-V1-D7-TRAIN-002,D7,I have no required repayments now.,clarity,D7_NO_REQUIRED,fictional_authored_2026-10-04_v1,D7:train:D7_NO_REQUIRED:direct,train
+SYNTH-V1-D7-TRAIN-003,D7,There are currently no loan or credit payments due from me.,clarity,D7_NO_REQUIRED,fictional_authored_2026-10-04_v1,D7:train:D7_NO_REQUIRED:direct,train
+SYNTH-V1-D7-TRAIN-004,D7,"No repayments are required at present, although I still have a debt balance.",clarity,D7_NO_REQUIRED,fictional_authored_2026-10-04_v1,D7:train:D7_NO_REQUIRED:direct,train
+SYNTH-V1-D7-TRAIN-005,D7,I am not currently required to make any loan repayments.,clarity,D7_NO_REQUIRED,fictional_authored_2026-10-04_v1,D7:train:D7_NO_REQUIRED:direct,train
+SYNTH-V1-D7-TRAIN-006,D7,No credit repayment is due now.,clarity,D7_NO_REQUIRED,fictional_authored_2026-10-04_v1,D7:train:D7_NO_REQUIRED:direct,train
+SYNTH-V1-D7-TRAIN-007,D7,I meet all required repayments without difficulty.,clarity,D7_KEEPING_UP_EASILY,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_EASILY:direct,train
+SYNTH-V1-D7-TRAIN-008,D7,Every current loan payment is on time and easy to manage.,clarity,D7_KEEPING_UP_EASILY,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_EASILY:direct,train
+SYNTH-V1-D7-TRAIN-009,D7,I am keeping up with all loan and credit repayments comfortably.,clarity,D7_KEEPING_UP_EASILY,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_EASILY:direct,train
+SYNTH-V1-D7-TRAIN-010,D7,All payments due are made on time without a struggle.,clarity,D7_KEEPING_UP_EASILY,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_EASILY:direct,train
+SYNTH-V1-D7-TRAIN-011,D7,Required repayments are fully up to date and cause no difficulty.,clarity,D7_KEEPING_UP_EASILY,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_EASILY:direct,train
+SYNTH-V1-D7-TRAIN-012,D7,I pay every required credit instalment without problems.,clarity,D7_KEEPING_UP_EASILY,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_EASILY:direct,train
+SYNTH-V1-D7-TRAIN-013,D7,"I meet all required repayments, but it is difficult.",clarity,D7_KEEPING_UP_DIFFICULT,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_DIFFICULT:direct,train
+SYNTH-V1-D7-TRAIN-014,D7,"Every payment is up to date, though paying them is a struggle.",clarity,D7_KEEPING_UP_DIFFICULT,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_DIFFICULT:direct,train
+SYNTH-V1-D7-TRAIN-015,D7,I am keeping up with all loan and credit repayments with difficulty.,clarity,D7_KEEPING_UP_DIFFICULT,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_DIFFICULT:direct,train
+SYNTH-V1-D7-TRAIN-016,D7,"All payments due are paid on time, but they are hard to manage.",clarity,D7_KEEPING_UP_DIFFICULT,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_DIFFICULT:direct,train
+SYNTH-V1-D7-TRAIN-017,D7,"I haven't missed a required repayment, although making them is difficult.",clarity,D7_KEEPING_UP_DIFFICULT,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_DIFFICULT:direct,train
+SYNTH-V1-D7-TRAIN-018,D7,"I pay every required instalment, but it strains me.",clarity,D7_KEEPING_UP_DIFFICULT,fictional_authored_2026-10-04_v1,D7:train:D7_KEEPING_UP_DIFFICULT:direct,train
+SYNTH-V1-D7-TRAIN-019,D7,I am falling behind on required repayments.,clarity,D7_FALLING_BEHIND,fictional_authored_2026-10-04_v1,D7:train:D7_FALLING_BEHIND:direct,train
+SYNTH-V1-D7-TRAIN-020,D7,Some loan payments currently due have not been paid on time.,clarity,D7_FALLING_BEHIND,fictional_authored_2026-10-04_v1,D7:train:D7_FALLING_BEHIND:direct,train
+SYNTH-V1-D7-TRAIN-021,D7,I have missed required credit repayments.,clarity,D7_FALLING_BEHIND,fictional_authored_2026-10-04_v1,D7:train:D7_FALLING_BEHIND:direct,train
+SYNTH-V1-D7-TRAIN-022,D7,At least one required instalment is overdue now.,clarity,D7_FALLING_BEHIND,fictional_authored_2026-10-04_v1,D7:train:D7_FALLING_BEHIND:direct,train
+SYNTH-V1-D7-TRAIN-023,D7,I am in arrears on some current loan payments.,clarity,D7_FALLING_BEHIND,fictional_authored_2026-10-04_v1,D7:train:D7_FALLING_BEHIND:direct,train
+SYNTH-V1-D7-TRAIN-024,D7,I cannot keep up; some repayments due are late.,clarity,D7_FALLING_BEHIND,fictional_authored_2026-10-04_v1,D7:train:D7_FALLING_BEHIND:direct,train
+SYNTH-V1-D8-TRAIN-001,D8,none,clarity,D8_NONE,fictional_authored_2026-10-04_v1,D8:train:D8_NONE:direct,train
+SYNTH-V1-D8-TRAIN-002,D8,I have never personally held investments.,clarity,D8_NONE,fictional_authored_2026-10-04_v1,D8:train:D8_NONE:direct,train
+SYNTH-V1-D8-TRAIN-003,D8,I have only bank savings and have never owned market investments.,clarity,D8_NONE,fictional_authored_2026-10-04_v1,D8:train:D8_NONE:direct,train
+SYNTH-V1-D8-TRAIN-004,D8,No investment has ever been held by me personally.,clarity,D8_NONE,fictional_authored_2026-10-04_v1,D8:train:D8_NONE:direct,train
+SYNTH-V1-D8-TRAIN-005,D8,I have no personal investment holding history.,clarity,D8_NONE,fictional_authored_2026-10-04_v1,D8:train:D8_NONE:direct,train
+SYNTH-V1-D8-TRAIN-006,D8,"I have never owned shares, funds or any other market investment.",clarity,D8_NONE,fictional_authored_2026-10-04_v1,D8:train:D8_NONE:direct,train
+SYNTH-V1-D8-TRAIN-007,D8,shares,clarity,D8_SHARES,fictional_authored_2026-10-04_v1,D8:train:D8_SHARES:direct,train
+SYNTH-V1-D8-TRAIN-008,D8,I owned company shares myself.,clarity,D8_SHARES,fictional_authored_2026-10-04_v1,D8:train:D8_SHARES:direct,train
+SYNTH-V1-D8-TRAIN-009,D8,My own investment holdings have been stocks only.,clarity,D8_SHARES,fictional_authored_2026-10-04_v1,D8:train:D8_SHARES:direct,train
+SYNTH-V1-D8-TRAIN-010,D8,I personally bought and held shares outside a managed portfolio.,clarity,D8_SHARES,fictional_authored_2026-10-04_v1,D8:train:D8_SHARES:direct,train
+SYNTH-V1-D8-TRAIN-011,D8,I was the beneficial owner of company shares.,clarity,D8_SHARES,fictional_authored_2026-10-04_v1,D8:train:D8_SHARES:direct,train
+SYNTH-V1-D8-TRAIN-012,D8,Shares are the investment type I have personally owned.,clarity,D8_SHARES,fictional_authored_2026-10-04_v1,D8:train:D8_SHARES:direct,train
+SYNTH-V1-D8-TRAIN-013,D8,bonds,clarity,D8_BONDS,fictional_authored_2026-10-04_v1,D8:train:D8_BONDS:direct,train
+SYNTH-V1-D8-TRAIN-014,D8,I owned government bonds myself.,clarity,D8_BONDS,fictional_authored_2026-10-04_v1,D8:train:D8_BONDS:direct,train
+SYNTH-V1-D8-TRAIN-015,D8,My own investment holdings have been corporate bonds.,clarity,D8_BONDS,fictional_authored_2026-10-04_v1,D8:train:D8_BONDS:direct,train
+SYNTH-V1-D8-TRAIN-016,D8,I personally bought and held an individual bond.,clarity,D8_BONDS,fictional_authored_2026-10-04_v1,D8:train:D8_BONDS:direct,train
+SYNTH-V1-D8-TRAIN-017,D8,I was the beneficial owner of investment bonds.,clarity,D8_BONDS,fictional_authored_2026-10-04_v1,D8:train:D8_BONDS:direct,train
+SYNTH-V1-D8-TRAIN-018,D8,Bonds are the market-investment type I have personally owned.,clarity,D8_BONDS,fictional_authored_2026-10-04_v1,D8:train:D8_BONDS:direct,train
+SYNTH-V1-D8-TRAIN-019,D8,I have personally held investment funds.,clarity,D8_FUNDS_ETFS,fictional_authored_2026-10-04_v1,D8:train:D8_FUNDS_ETFS:direct,train
+SYNTH-V1-D8-TRAIN-020,D8,I owned an ETF myself.,clarity,D8_FUNDS_ETFS,fictional_authored_2026-10-04_v1,D8:train:D8_FUNDS_ETFS:direct,train
+SYNTH-V1-D8-TRAIN-021,D8,My own investment holdings have been funds and ETFs.,clarity,D8_FUNDS_ETFS,fictional_authored_2026-10-04_v1,D8:train:D8_FUNDS_ETFS:direct,train
+SYNTH-V1-D8-TRAIN-022,D8,I personally bought and held units in an investment fund.,clarity,D8_FUNDS_ETFS,fictional_authored_2026-10-04_v1,D8:train:D8_FUNDS_ETFS:direct,train
+SYNTH-V1-D8-TRAIN-023,D8,I was the beneficial owner of a tracker ETF.,clarity,D8_FUNDS_ETFS,fictional_authored_2026-10-04_v1,D8:train:D8_FUNDS_ETFS:direct,train
+SYNTH-V1-D8-TRAIN-024,D8,Funds are the investment type I have personally owned.,clarity,D8_FUNDS_ETFS,fictional_authored_2026-10-04_v1,D8:train:D8_FUNDS_ETFS:direct,train
+SYNTH-V1-D8-TRAIN-025,D8,I have personally held an invested pension.,clarity,D8_INVESTED_PENSION_MANAGED,fictional_authored_2026-10-04_v1,D8:train:D8_INVESTED_PENSION_MANAGED:direct,train
+SYNTH-V1-D8-TRAIN-026,D8,My own holding was a managed investment portfolio.,clarity,D8_INVESTED_PENSION_MANAGED,fictional_authored_2026-10-04_v1,D8:train:D8_INVESTED_PENSION_MANAGED:direct,train
+SYNTH-V1-D8-TRAIN-027,D8,"I own an invested workplace pension, without identifying a direct instrument.",clarity,D8_INVESTED_PENSION_MANAGED,fictional_authored_2026-10-04_v1,D8:train:D8_INVESTED_PENSION_MANAGED:direct,train
+SYNTH-V1-D8-TRAIN-028,D8,The investment I have personally held is a manager-run portfolio.,clarity,D8_INVESTED_PENSION_MANAGED,fictional_authored_2026-10-04_v1,D8:train:D8_INVESTED_PENSION_MANAGED:direct,train
+SYNTH-V1-D8-TRAIN-029,D8,My personal experience is an invested pension account.,clarity,D8_INVESTED_PENSION_MANAGED,fictional_authored_2026-10-04_v1,D8:train:D8_INVESTED_PENSION_MANAGED:direct,train
+SYNTH-V1-D8-TRAIN-030,D8,I held a discretionary managed investment portfolio myself.,clarity,D8_INVESTED_PENSION_MANAGED,fictional_authored_2026-10-04_v1,D8:train:D8_INVESTED_PENSION_MANAGED:direct,train
+SYNTH-V1-D8-TRAIN-031,D8,Cryptoasset holdings in my own wallet are my personal investment experience.,clarity,D8_CRYPTO,fictional_authored_2026-10-04_v1,D8:train:D8_CRYPTO:direct,train
+SYNTH-V1-D8-TRAIN-032,D8,I owned bitcoin myself.,clarity,D8_CRYPTO,fictional_authored_2026-10-04_v1,D8:train:D8_CRYPTO:direct,train
+SYNTH-V1-D8-TRAIN-033,D8,My own investment holdings have been cryptocurrency.,clarity,D8_CRYPTO,fictional_authored_2026-10-04_v1,D8:train:D8_CRYPTO:direct,train
+SYNTH-V1-D8-TRAIN-034,D8,I personally bought and held ether.,clarity,D8_CRYPTO,fictional_authored_2026-10-04_v1,D8:train:D8_CRYPTO:direct,train
+SYNTH-V1-D8-TRAIN-035,D8,I was the owner of crypto tokens in my wallet.,clarity,D8_CRYPTO,fictional_authored_2026-10-04_v1,D8:train:D8_CRYPTO:direct,train
+SYNTH-V1-D8-TRAIN-036,D8,Cryptoassets are the investment type I have personally owned.,clarity,D8_CRYPTO,fictional_authored_2026-10-04_v1,D8:train:D8_CRYPTO:direct,train
+SYNTH-V1-D8-TRAIN-037,D8,I personally held a peer-to-peer loan investment.,clarity,D8_OTHER,fictional_authored_2026-10-04_v1,D8:train:D8_OTHER:direct,train
+SYNTH-V1-D8-TRAIN-038,D8,I owned an investment in a private partnership myself.,clarity,D8_OTHER,fictional_authored_2026-10-04_v1,D8:train:D8_OTHER:direct,train
+SYNTH-V1-D8-TRAIN-039,D8,My personal investment was a directly owned forestry partnership.,clarity,D8_OTHER,fictional_authored_2026-10-04_v1,D8:train:D8_OTHER:direct,train
+SYNTH-V1-D8-TRAIN-040,D8,I personally held an unlisted property partnership investment.,clarity,D8_OTHER,fictional_authored_2026-10-04_v1,D8:train:D8_OTHER:direct,train
+SYNTH-V1-D8-TRAIN-041,D8,I owned a peer-to-peer lending investment in my own account.,clarity,D8_OTHER,fictional_authored_2026-10-04_v1,D8:train:D8_OTHER:direct,train
+SYNTH-V1-D8-TRAIN-042,D8,I personally held a direct farmland partnership investment.,clarity,D8_OTHER,fictional_authored_2026-10-04_v1,D8:train:D8_OTHER:direct,train
+SYNTH-V1-D8-TRAIN-043,D8,I have personally held shares and bonds.,clarity,D8_MULTIPLE,fictional_authored_2026-10-04_v1,D8:train:D8_MULTIPLE:direct,train
+SYNTH-V1-D8-TRAIN-044,D8,I owned ETFs and cryptoassets myself.,clarity,D8_MULTIPLE,fictional_authored_2026-10-04_v1,D8:train:D8_MULTIPLE:direct,train
+SYNTH-V1-D8-TRAIN-045,D8,My own investments included direct shares and a separate managed portfolio.,clarity,D8_MULTIPLE,fictional_authored_2026-10-04_v1,D8:train:D8_MULTIPLE:direct,train
+SYNTH-V1-D8-TRAIN-046,D8,I personally held government bonds and investment funds.,clarity,D8_MULTIPLE,fictional_authored_2026-10-04_v1,D8:train:D8_MULTIPLE:direct,train
+SYNTH-V1-D8-TRAIN-047,D8,I owned bitcoin and company stocks myself.,clarity,D8_MULTIPLE,fictional_authored_2026-10-04_v1,D8:train:D8_MULTIPLE:direct,train
+SYNTH-V1-D8-TRAIN-048,D8,My personal holdings included an invested pension and separate direct bonds.,clarity,D8_MULTIPLE,fictional_authored_2026-10-04_v1,D8:train:D8_MULTIPLE:direct,train
+SYNTH-V1-D9-TRAIN-001,D9,none,clarity,D9_ZERO,fictional_authored_2026-10-04_v1,D9:train:D9_ZERO:direct,train
+SYNTH-V1-D9-TRAIN-002,D9,I made or instructed zero investment purchases or sales in the past 12 months.,clarity,D9_ZERO,fictional_authored_2026-10-04_v1,D9:train:D9_ZERO:direct,train
+SYNTH-V1-D9-TRAIN-003,D9,No investment trades were made or ordered by me over the last year.,clarity,D9_ZERO,fictional_authored_2026-10-04_v1,D9:train:D9_ZERO:direct,train
+SYNTH-V1-D9-TRAIN-004,D9,I haven't bought or sold any investments in the previous twelve months.,clarity,D9_ZERO,fictional_authored_2026-10-04_v1,D9:train:D9_ZERO:direct,train
+SYNTH-V1-D9-TRAIN-005,D9,My count of qualifying purchases and sales for the past year is zero.,clarity,D9_ZERO,fictional_authored_2026-10-04_v1,D9:train:D9_ZERO:direct,train
+SYNTH-V1-D9-TRAIN-006,D9,I held existing investments but made no purchases or sales during the last 12 months.,clarity,D9_ZERO,fictional_authored_2026-10-04_v1,D9:train:D9_ZERO:direct,train
+SYNTH-V1-D9-TRAIN-007,D9,I made two investment purchases in the past 12 months.,clarity,D9_COUNT1_5,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT1_5:direct,train
+SYNTH-V1-D9-TRAIN-008,D9,I instructed five investment purchases and sales in total over the last year.,clarity,D9_COUNT1_5,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT1_5:direct,train
+SYNTH-V1-D9-TRAIN-009,D9,My total qualifying trade count for the past twelve months is one.,clarity,D9_COUNT1_5,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT1_5:direct,train
+SYNTH-V1-D9-TRAIN-010,D9,I bought investments three times in the last year and made no sales.,clarity,D9_COUNT1_5,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT1_5:direct,train
+SYNTH-V1-D9-TRAIN-011,D9,I made four purchases or sales of investments during the previous 12 months.,clarity,D9_COUNT1_5,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT1_5:direct,train
+SYNTH-V1-D9-TRAIN-012,D9,The number of investment buys and sells I made or instructed in the last year is between one and five.,clarity,D9_COUNT1_5,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT1_5:direct,train
+SYNTH-V1-D9-TRAIN-013,D9,I made six investment purchases in the past 12 months.,clarity,D9_COUNT6_10,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT6_10:direct,train
+SYNTH-V1-D9-TRAIN-014,D9,I instructed ten investment purchases and sales in total over the last year.,clarity,D9_COUNT6_10,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT6_10:direct,train
+SYNTH-V1-D9-TRAIN-015,D9,My total qualifying trade count for the past twelve months is eight.,clarity,D9_COUNT6_10,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT6_10:direct,train
+SYNTH-V1-D9-TRAIN-016,D9,I bought investments seven times in the last year and made no sales.,clarity,D9_COUNT6_10,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT6_10:direct,train
+SYNTH-V1-D9-TRAIN-017,D9,I made nine purchases or sales of investments during the previous 12 months.,clarity,D9_COUNT6_10,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT6_10:direct,train
+SYNTH-V1-D9-TRAIN-018,D9,The number of investment buys and sells I made or instructed in the last year is between six and ten.,clarity,D9_COUNT6_10,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT6_10:direct,train
+SYNTH-V1-D9-TRAIN-019,D9,I made eleven investment purchases in the past 12 months.,clarity,D9_COUNT11_PLUS,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT11_PLUS:direct,train
+SYNTH-V1-D9-TRAIN-020,D9,I instructed twenty investment purchases and sales in total over the last year.,clarity,D9_COUNT11_PLUS,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT11_PLUS:direct,train
+SYNTH-V1-D9-TRAIN-021,D9,My total qualifying trade count for the past twelve months is fifteen.,clarity,D9_COUNT11_PLUS,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT11_PLUS:direct,train
+SYNTH-V1-D9-TRAIN-022,D9,I bought investments twelve times in the last year and made no sales.,clarity,D9_COUNT11_PLUS,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT11_PLUS:direct,train
+SYNTH-V1-D9-TRAIN-023,D9,I made thirty purchases or sales of investments during the previous 12 months.,clarity,D9_COUNT11_PLUS,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT11_PLUS:direct,train
+SYNTH-V1-D9-TRAIN-024,D9,The number of investment buys and sells I made or instructed in the last year is eleven or more.,clarity,D9_COUNT11_PLUS,fictional_authored_2026-10-04_v1,D9:train:D9_COUNT11_PLUS:direct,train
+SYNTH-V1-D10-TRAIN-001,D10,none,clarity,D10_ZERO,fictional_authored_2026-10-04_v1,D10:train:D10_ZERO:direct,train
+SYNTH-V1-D10-TRAIN-002,D10,I invested no new external money in the past 12 months.,clarity,D10_ZERO,fictional_authored_2026-10-04_v1,D10:train:D10_ZERO:direct,train
+SYNTH-V1-D10-TRAIN-003,D10,Zero new money from outside my investment portfolio was invested over the last year.,clarity,D10_ZERO,fictional_authored_2026-10-04_v1,D10:train:D10_ZERO:direct,train
+SYNTH-V1-D10-TRAIN-004,D10,I made no new investment contributions during the previous twelve months.,clarity,D10_ZERO,fictional_authored_2026-10-04_v1,D10:train:D10_ZERO:direct,train
+SYNTH-V1-D10-TRAIN-005,D10,There was no new external money actually put into investments in the past year.,clarity,D10_ZERO,fictional_authored_2026-10-04_v1,D10:train:D10_ZERO:direct,train
+SYNTH-V1-D10-TRAIN-006,D10,I reinvested sale proceeds but invested zero new outside money during the last 12 months.,clarity,D10_ZERO,fictional_authored_2026-10-04_v1,D10:train:D10_ZERO:direct,train
+SYNTH-V1-D10-TRAIN-007,D10,I invested GBP 500 of new external money in the past 12 months.,clarity,D10_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D10:train:D10_POSITIVE_LT1000:direct,train
+SYNTH-V1-D10-TRAIN-008,D10,I put 750 euros from outside my portfolio into investments during the last year.,clarity,D10_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D10:train:D10_POSITIVE_LT1000:direct,train
+SYNTH-V1-D10-TRAIN-009,D10,My new outside money actually invested over the past twelve months was GBP 200.,clarity,D10_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D10:train:D10_POSITIVE_LT1000:direct,train
+SYNTH-V1-D10-TRAIN-010,D10,I contributed and invested GBP 999 of new external funds over the last year.,clarity,D10_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D10:train:D10_POSITIVE_LT1000:direct,train
+SYNTH-V1-D10-TRAIN-011,D10,EUR 100 was the new money from outside the portfolio I actually invested in the past year.,clarity,D10_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D10:train:D10_POSITIVE_LT1000:direct,train
+SYNTH-V1-D10-TRAIN-012,D10,"I invested 600 US dollars of new external money during the previous 12 months, excluding gains and sale proceeds.",clarity,D10_POSITIVE_LT1000,fictional_authored_2026-10-04_v1,D10:train:D10_POSITIVE_LT1000:direct,train
+SYNTH-V1-D10-TRAIN-013,D10,I invested GBP 1000 of new external money in the past 12 months.,clarity,D10_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM1000_LT5000:direct,train
+SYNTH-V1-D10-TRAIN-014,D10,I put 2500 euros from outside my portfolio into investments during the last year.,clarity,D10_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM1000_LT5000:direct,train
+SYNTH-V1-D10-TRAIN-015,D10,My new outside money actually invested over the past twelve months was GBP 4000.,clarity,D10_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM1000_LT5000:direct,train
+SYNTH-V1-D10-TRAIN-016,D10,I contributed and invested GBP 4999 of new external funds over the last year.,clarity,D10_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM1000_LT5000:direct,train
+SYNTH-V1-D10-TRAIN-017,D10,EUR 1800 was the new money from outside the portfolio I actually invested in the past year.,clarity,D10_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM1000_LT5000:direct,train
+SYNTH-V1-D10-TRAIN-018,D10,"I invested 3200 US dollars of new external money during the previous 12 months, excluding gains and sale proceeds.",clarity,D10_FROM1000_LT5000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM1000_LT5000:direct,train
+SYNTH-V1-D10-TRAIN-019,D10,I invested GBP 5000 of new external money in the past 12 months.,clarity,D10_FROM5000_LT10000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM5000_LT10000:direct,train
+SYNTH-V1-D10-TRAIN-020,D10,I put 7500 euros from outside my portfolio into investments during the last year.,clarity,D10_FROM5000_LT10000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM5000_LT10000:direct,train
+SYNTH-V1-D10-TRAIN-021,D10,My new outside money actually invested over the past twelve months was GBP 8000.,clarity,D10_FROM5000_LT10000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM5000_LT10000:direct,train
+SYNTH-V1-D10-TRAIN-022,D10,I contributed and invested GBP 9999 of new external funds over the last year.,clarity,D10_FROM5000_LT10000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM5000_LT10000:direct,train
+SYNTH-V1-D10-TRAIN-023,D10,EUR 6500 was the new money from outside the portfolio I actually invested in the past year.,clarity,D10_FROM5000_LT10000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM5000_LT10000:direct,train
+SYNTH-V1-D10-TRAIN-024,D10,"I invested 9000 US dollars of new external money during the previous 12 months, excluding gains and sale proceeds.",clarity,D10_FROM5000_LT10000,fictional_authored_2026-10-04_v1,D10:train:D10_FROM5000_LT10000:direct,train
+SYNTH-V1-D10-TRAIN-025,D10,I invested GBP 10000 of new external money in the past 12 months.,clarity,D10_FROM10000_PLUS,fictional_authored_2026-10-04_v1,D10:train:D10_FROM10000_PLUS:direct,train
+SYNTH-V1-D10-TRAIN-026,D10,I put 15000 euros from outside my portfolio into investments during the last year.,clarity,D10_FROM10000_PLUS,fictional_authored_2026-10-04_v1,D10:train:D10_FROM10000_PLUS:direct,train
+SYNTH-V1-D10-TRAIN-027,D10,My new outside money actually invested over the past twelve months was GBP 25000.,clarity,D10_FROM10000_PLUS,fictional_authored_2026-10-04_v1,D10:train:D10_FROM10000_PLUS:direct,train
+SYNTH-V1-D10-TRAIN-028,D10,I contributed and invested GBP 50000 of new external funds over the last year.,clarity,D10_FROM10000_PLUS,fictional_authored_2026-10-04_v1,D10:train:D10_FROM10000_PLUS:direct,train
+SYNTH-V1-D10-TRAIN-029,D10,EUR 12000 was the new money from outside the portfolio I actually invested in the past year.,clarity,D10_FROM10000_PLUS,fictional_authored_2026-10-04_v1,D10:train:D10_FROM10000_PLUS:direct,train
+SYNTH-V1-D10-TRAIN-030,D10,"I invested 20000 US dollars of new external money during the previous 12 months, excluding gains and sale proceeds.",clarity,D10_FROM10000_PLUS,fictional_authored_2026-10-04_v1,D10:train:D10_FROM10000_PLUS:direct,train
+SYNTH-V1-D11-TRAIN-001,D11,"Some or all original money can be permanently lost, and recovery is not guaranteed.",clarity,D11_LOSS_POSSIBLE,fictional_authored_2026-10-04_v1,D11:train:D11_LOSS_POSSIBLE:direct,train
+SYNTH-V1-D11-TRAIN-002,D11,With market investments I could lose my initial capital forever; it need not recover.,clarity,D11_LOSS_POSSIBLE,fictional_authored_2026-10-04_v1,D11:train:D11_LOSS_POSSIBLE:direct,train
+SYNTH-V1-D11-TRAIN-003,D11,"The original investment can be lost partly or completely, with no promise of recovery.",clarity,D11_LOSS_POSSIBLE,fictional_authored_2026-10-04_v1,D11:train:D11_LOSS_POSSIBLE:direct,train
+SYNTH-V1-D11-TRAIN-004,D11,I understand that market losses can permanently reduce all or some of the money I started with.,clarity,D11_LOSS_POSSIBLE,fictional_authored_2026-10-04_v1,D11:train:D11_LOSS_POSSIBLE:direct,train
+SYNTH-V1-D11-TRAIN-005,D11,My initial money is at risk of permanent loss and every fall does not have to recover.,clarity,D11_LOSS_POSSIBLE,fictional_authored_2026-10-04_v1,D11:train:D11_LOSS_POSSIBLE:direct,train
+SYNTH-V1-D11-TRAIN-006,D11,Investments whose values change can permanently lose original capital; I cannot rely on it coming back.,clarity,D11_LOSS_POSSIBLE,fictional_authored_2026-10-04_v1,D11:train:D11_LOSS_POSSIBLE:direct,train
+SYNTH-V1-D11-TRAIN-007,D11,I think every fall in an investment's value always recovers.,clarity,D11_RECOVERY_ALWAYS,fictional_authored_2026-10-04_v1,D11:train:D11_RECOVERY_ALWAYS:direct,train
+SYNTH-V1-D11-TRAIN-008,D11,Market investments must eventually return all the original money after any drop.,clarity,D11_RECOVERY_ALWAYS,fictional_authored_2026-10-04_v1,D11:train:D11_RECOVERY_ALWAYS:direct,train
+SYNTH-V1-D11-TRAIN-009,D11,I believe investment losses always come back if I wait.,clarity,D11_RECOVERY_ALWAYS,fictional_authored_2026-10-04_v1,D11:train:D11_RECOVERY_ALWAYS:direct,train
+SYNTH-V1-D11-TRAIN-010,D11,"Every market fall is guaranteed to recover fully, in my view.",clarity,D11_RECOVERY_ALWAYS,fictional_authored_2026-10-04_v1,D11:train:D11_RECOVERY_ALWAYS:direct,train
+SYNTH-V1-D11-TRAIN-011,D11,I think my original money will always be recovered after a market decline.,clarity,D11_RECOVERY_ALWAYS,fictional_authored_2026-10-04_v1,D11:train:D11_RECOVERY_ALWAYS:direct,train
+SYNTH-V1-D11-TRAIN-012,D11,My belief is that all falls in market investment value inevitably recover.,clarity,D11_RECOVERY_ALWAYS,fictional_authored_2026-10-04_v1,D11:train:D11_RECOVERY_ALWAYS:direct,train
+SYNTH-V1-D11-TRAIN-013,D11,I think the original amount in market investments cannot fall.,clarity,D11_CAPITAL_PROTECTED,fictional_authored_2026-10-04_v1,D11:train:D11_CAPITAL_PROTECTED:direct,train
+SYNTH-V1-D11-TRAIN-014,D11,My belief is that the money I originally invest is protected from any decline.,clarity,D11_CAPITAL_PROTECTED,fictional_authored_2026-10-04_v1,D11:train:D11_CAPITAL_PROTECTED:direct,train
+SYNTH-V1-D11-TRAIN-015,D11,"For investments whose value changes, I think I cannot lose the starting capital.",clarity,D11_CAPITAL_PROTECTED,fictional_authored_2026-10-04_v1,D11:train:D11_CAPITAL_PROTECTED:direct,train
+SYNTH-V1-D11-TRAIN-016,D11,I believe market investments guarantee the original money I put in.,clarity,D11_CAPITAL_PROTECTED,fictional_authored_2026-10-04_v1,D11:train:D11_CAPITAL_PROTECTED:direct,train
+SYNTH-V1-D11-TRAIN-017,D11,"The original investment amount cannot go down, as I understand it.",clarity,D11_CAPITAL_PROTECTED,fictional_authored_2026-10-04_v1,D11:train:D11_CAPITAL_PROTECTED:direct,train
+SYNTH-V1-D11-TRAIN-018,D11,I think only profits fluctuate; the original money invested is always safe.,clarity,D11_CAPITAL_PROTECTED,fictional_authored_2026-10-04_v1,D11:train:D11_CAPITAL_PROTECTED:direct,train
+SYNTH-V1-D12-TRAIN-001,D12,The earliest realistic need for this money is in one year.,clarity,D12_SHORT,fictional_authored_2026-10-04_v1,D12:train:D12_SHORT:direct,train
+SYNTH-V1-D12-TRAIN-002,D12,I may realistically need part of the agreed pot in two years.,clarity,D12_SHORT,fictional_authored_2026-10-04_v1,D12:train:D12_SHORT:direct,train
+SYNTH-V1-D12-TRAIN-003,D12,My first realistic need for this money is exactly three years from now.,clarity,D12_SHORT,fictional_authored_2026-10-04_v1,D12:train:D12_SHORT:direct,train
+SYNTH-V1-D12-TRAIN-004,D12,I realistically need an included portion within six months.,clarity,D12_SHORT,fictional_authored_2026-10-04_v1,D12:train:D12_SHORT:direct,train
+SYNTH-V1-D12-TRAIN-005,D12,Within three years is the earliest realistic need for some of this money.,clarity,D12_SHORT,fictional_authored_2026-10-04_v1,D12:train:D12_SHORT:direct,train
+SYNTH-V1-D12-TRAIN-006,D12,I have a realistic need for this pot next month.,clarity,D12_SHORT,fictional_authored_2026-10-04_v1,D12:train:D12_SHORT:direct,train
+SYNTH-V1-D12-TRAIN-007,D12,"The earliest realistic need for any of this money is four years away, with no earlier need.",clarity,D12_MEDIUM,fictional_authored_2026-10-04_v1,D12:train:D12_MEDIUM:direct,train
+SYNTH-V1-D12-TRAIN-008,D12,I will first realistically need this pot in five years and none of it sooner.,clarity,D12_MEDIUM,fictional_authored_2026-10-04_v1,D12:train:D12_MEDIUM:direct,train
+SYNTH-V1-D12-TRAIN-009,D12,My earliest realistic need is exactly ten years; no included part is needed earlier.,clarity,D12_MEDIUM,fictional_authored_2026-10-04_v1,D12:train:D12_MEDIUM:direct,train
+SYNTH-V1-D12-TRAIN-010,D12,"This money's first realistic need is seven years from now, with no sooner requirement.",clarity,D12_MEDIUM,fictional_authored_2026-10-04_v1,D12:train:D12_MEDIUM:direct,train
+SYNTH-V1-D12-TRAIN-011,D12,The earliest realistic need for the whole scope is more than three and at most ten years.,clarity,D12_MEDIUM,fictional_authored_2026-10-04_v1,D12:train:D12_MEDIUM:direct,train
+SYNTH-V1-D12-TRAIN-012,D12,"I realistically need this pot in eight years, not any earlier.",clarity,D12_MEDIUM,fictional_authored_2026-10-04_v1,D12:train:D12_MEDIUM:direct,train
+SYNTH-V1-D12-TRAIN-013,D12,"The earliest realistic need for any of this money is twelve years away, with no earlier need.",clarity,D12_LONG,fictional_authored_2026-10-04_v1,D12:train:D12_LONG:direct,train
+SYNTH-V1-D12-TRAIN-014,D12,I will first realistically need this pot in fifteen years and none of it sooner.,clarity,D12_LONG,fictional_authored_2026-10-04_v1,D12:train:D12_LONG:direct,train
+SYNTH-V1-D12-TRAIN-015,D12,My earliest realistic need is twenty years; no included part is needed earlier.,clarity,D12_LONG,fictional_authored_2026-10-04_v1,D12:train:D12_LONG:direct,train
+SYNTH-V1-D12-TRAIN-016,D12,"This money's first realistic need is eleven years from now, with no sooner requirement.",clarity,D12_LONG,fictional_authored_2026-10-04_v1,D12:train:D12_LONG:direct,train
+SYNTH-V1-D12-TRAIN-017,D12,"The earliest realistic need for the whole scope is more than ten years, with no earlier requirement.",clarity,D12_LONG,fictional_authored_2026-10-04_v1,D12:train:D12_LONG:direct,train
+SYNTH-V1-D12-TRAIN-018,D12,"I realistically need this pot in eighteen years, not any earlier.",clarity,D12_LONG,fictional_authored_2026-10-04_v1,D12:train:D12_LONG:direct,train
+SYNTH-V1-D13-TRAIN-001,D13,"If 20% of this money were lost, paying my rent could become difficult.",clarity,D13_ESSENTIALS_DIFFICULT,fictional_authored_2026-10-04_v1,D13:train:D13_ESSENTIALS_DIFFICULT:direct,train
+SYNTH-V1-D13-TRAIN-002,D13,A twenty-percent loss would make it hard to meet my essential food costs.,clarity,D13_ESSENTIALS_DIFFICULT,fictional_authored_2026-10-04_v1,D13:train:D13_ESSENTIALS_DIFFICULT:direct,train
+SYNTH-V1-D13-TRAIN-003,D13,Losing 20% of the agreed pot could leave my required repayments difficult to pay.,clarity,D13_ESSENTIALS_DIFFICULT,fictional_authored_2026-10-04_v1,D13:train:D13_ESSENTIALS_DIFFICULT:direct,train
+SYNTH-V1-D13-TRAIN-004,D13,"Under the 20% loss example, I might struggle with necessary household bills.",clarity,D13_ESSENTIALS_DIFFICULT,fictional_authored_2026-10-04_v1,D13:train:D13_ESSENTIALS_DIFFICULT:direct,train
+SYNTH-V1-D13-TRAIN-005,D13,Some essential costs would become difficult after a twenty-percent loss of this money.,clarity,D13_ESSENTIALS_DIFFICULT,fictional_authored_2026-10-04_v1,D13:train:D13_ESSENTIALS_DIFFICULT:direct,train
+SYNTH-V1-D13-TRAIN-006,D13,"If I lost a fifth of this pot, I could struggle to pay utility bills.",clarity,D13_ESSENTIALS_DIFFICULT,fictional_authored_2026-10-04_v1,D13:train:D13_ESSENTIALS_DIFFICULT:direct,train
+SYNTH-V1-D13-TRAIN-007,D13,"After a 20% loss, essentials stay covered but I would postpone my holiday.",clarity,D13_ADJUSTMENT,fictional_authored_2026-10-04_v1,D13:train:D13_ADJUSTMENT:direct,train
+SYNTH-V1-D13-TRAIN-008,D13,"Losing twenty percent leaves essential bills payable, but I would change my budget.",clarity,D13_ADJUSTMENT,fictional_authored_2026-10-04_v1,D13:train:D13_ADJUSTMENT:direct,train
+SYNTH-V1-D13-TRAIN-009,D13,"With that loss I can still pay necessities, but would use a different account to pay them.",clarity,D13_ADJUSTMENT,fictional_authored_2026-10-04_v1,D13:train:D13_ADJUSTMENT:direct,train
+SYNTH-V1-D13-TRAIN-010,D13,"If a fifth of this money were lost, essentials are covered but my planned car purchase changes.",clarity,D13_ADJUSTMENT,fictional_authored_2026-10-04_v1,D13:train:D13_ADJUSTMENT:direct,train
+SYNTH-V1-D13-TRAIN-011,D13,"The 20% loss would not stop essential payments, but would require reducing discretionary spending.",clarity,D13_ADJUSTMENT,fictional_authored_2026-10-04_v1,D13:train:D13_ADJUSTMENT:direct,train
+SYNTH-V1-D13-TRAIN-012,D13,"Essentials would be covered after a twenty-percent loss, but other plans would need adjustment.",clarity,D13_ADJUSTMENT,fictional_authored_2026-10-04_v1,D13:train:D13_ADJUSTMENT:direct,train
+SYNTH-V1-D13-TRAIN-013,D13,"A 20% loss would leave essentials, their funding, my budget and other plans unchanged.",clarity,D13_UNAFFECTED,fictional_authored_2026-10-04_v1,D13:train:D13_UNAFFECTED:direct,train
+SYNTH-V1-D13-TRAIN-014,D13,"After losing twenty percent, all essential costs remain covered the same way and my budget and plans are unaffected.",clarity,D13_UNAFFECTED,fictional_authored_2026-10-04_v1,D13:train:D13_UNAFFECTED:direct,train
+SYNTH-V1-D13-TRAIN-015,D13,"If a fifth of this pot were lost, essential payments and funding stay unchanged, as do my budget and other plans.",clarity,D13_UNAFFECTED,fictional_authored_2026-10-04_v1,D13:train:D13_UNAFFECTED:direct,train
+SYNTH-V1-D13-TRAIN-016,D13,"The 20% loss has no practical effect on essential coverage, payment sources, budget or known plans.",clarity,D13_UNAFFECTED,fictional_authored_2026-10-04_v1,D13:train:D13_UNAFFECTED:direct,train
+SYNTH-V1-D13-TRAIN-017,D13,"All necessities would still be paid from the same sources after that loss, with no budget or plan changes.",clarity,D13_UNAFFECTED,fictional_authored_2026-10-04_v1,D13:train:D13_UNAFFECTED:direct,train
+SYNTH-V1-D13-TRAIN-018,D13,"Losing twenty percent would not change paying essentials, how they are funded, my spending budget or any known plan.",clarity,D13_UNAFFECTED,fictional_authored_2026-10-04_v1,D13:train:D13_UNAFFECTED:direct,train
+SYNTH-V1-D14-TRAIN-001,D14,"I prefer smaller ups and downs even if potential growth is lower, and I know losses can happen.",clarity,D14_LOWER,fictional_authored_2026-10-04_v1,D14:train:D14_LOWER:direct,train
+SYNTH-V1-D14-TRAIN-002,D14,"I deliberately choose lower potential growth for smaller fluctuations, accepting that investment loss is possible.",clarity,D14_LOWER,fictional_authored_2026-10-04_v1,D14:train:D14_LOWER:direct,train
+SYNTH-V1-D14-TRAIN-003,D14,For this money I want smaller swings rather than more potential growth; I still accept loss can occur.,clarity,D14_LOWER,fictional_authored_2026-10-04_v1,D14:train:D14_LOWER:direct,train
+SYNTH-V1-D14-TRAIN-004,D14,"My preference is less fluctuation with lower growth potential, without assuming capital protection.",clarity,D14_LOWER,fictional_authored_2026-10-04_v1,D14:train:D14_LOWER:direct,train
+SYNTH-V1-D14-TRAIN-005,D14,I choose the trade-off of smaller ups and downs and reduced possible growth while recognising losses.,clarity,D14_LOWER,fictional_authored_2026-10-04_v1,D14:train:D14_LOWER:direct,train
+SYNTH-V1-D14-TRAIN-006,D14,I want lower fluctuations even at the cost of lower potential growth; the investment can still lose money.,clarity,D14_LOWER,fictional_authored_2026-10-04_v1,D14:train:D14_LOWER:direct,train
+SYNTH-V1-D14-TRAIN-007,D14,"I deliberately want to balance potential growth with limiting ups and downs, accepting losses can happen.",clarity,D14_BALANCED,fictional_authored_2026-10-04_v1,D14:train:D14_BALANCED:direct,train
+SYNTH-V1-D14-TRAIN-008,D14,"My preference is a balance between possible growth and reduced fluctuations, with possible investment losses.",clarity,D14_BALANCED,fictional_authored_2026-10-04_v1,D14:train:D14_BALANCED:direct,train
+SYNTH-V1-D14-TRAIN-009,D14,I choose the balanced trade-off of growth potential and limiting swings while accepting loss.,clarity,D14_BALANCED,fictional_authored_2026-10-04_v1,D14:train:D14_BALANCED:direct,train
+SYNTH-V1-D14-TRAIN-010,D14,"I want growth and limiting ups and downs balanced for this money, knowing losses remain possible.",clarity,D14_BALANCED,fictional_authored_2026-10-04_v1,D14:train:D14_BALANCED:direct,train
+SYNTH-V1-D14-TRAIN-011,D14,I intentionally choose a balance of potential growth and smaller fluctuations; I accept that money can be lost.,clarity,D14_BALANCED,fictional_authored_2026-10-04_v1,D14:train:D14_BALANCED:direct,train
+SYNTH-V1-D14-TRAIN-012,D14,"For this pot I want to balance possible growth with limiting changes in value, and accept loss risk.",clarity,D14_BALANCED,fictional_authored_2026-10-04_v1,D14:train:D14_BALANCED:direct,train
+SYNTH-V1-D14-TRAIN-013,D14,"For this pot, greater growth potential comes first; larger fluctuations and permanent loss are both risks I accept.",clarity,D14_GREATER,fictional_authored_2026-10-04_v1,D14:train:D14_GREATER:direct,train
+SYNTH-V1-D14-TRAIN-014,D14,For this money I choose more growth potential despite bigger fluctuations and the chance of permanent loss.,clarity,D14_GREATER,fictional_authored_2026-10-04_v1,D14:train:D14_GREATER:direct,train
+SYNTH-V1-D14-TRAIN-015,D14,"My preference is greater possible growth, accepting larger swings and that original money could be lost forever.",clarity,D14_GREATER,fictional_authored_2026-10-04_v1,D14:train:D14_GREATER:direct,train
+SYNTH-V1-D14-TRAIN-016,D14,I deliberately favour growth potential while accepting bigger value changes and permanent loss risk.,clarity,D14_GREATER,fictional_authored_2026-10-04_v1,D14:train:D14_GREATER:direct,train
+SYNTH-V1-D14-TRAIN-017,D14,I choose the higher-growth-potential trade-off with larger ups and downs and possible permanent capital loss.,clarity,D14_GREATER,fictional_authored_2026-10-04_v1,D14:train:D14_GREATER:direct,train
+SYNTH-V1-D14-TRAIN-018,D14,Greater potential growth is my priority; I accept increased fluctuations and possible permanent loss of this money.,clarity,D14_GREATER,fictional_authored_2026-10-04_v1,D14:train:D14_GREATER:direct,train
+SYNTH-V1-D15-TRAIN-001,D15,"Even with essentials and plans covered, a 20% fall is too uncomfortable for me to accept emotionally.",clarity,D15_UNACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_UNACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-002,D15,In the covered-cost feelings example I could not emotionally accept losing twenty percent.,clarity,D15_UNACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_UNACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-003,D15,"With bills and plans covered and no guaranteed recovery, I would be too uncomfortable to accept the fall.",clarity,D15_UNACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_UNACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-004,D15,A fifth gone would be emotionally unacceptable even if all my costs and plans stayed covered.,clarity,D15_UNACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_UNACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-005,D15,"For the feelings-only 20% fall, I would feel unable to accept it despite covered essentials and plans.",clarity,D15_UNACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_UNACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-006,D15,The covered-cost twenty-percent fall would cause more discomfort than I could accept.,clarity,D15_UNACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_UNACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-007,D15,"With essentials and plans covered, I would worry about a 20% fall but could accept it.",clarity,D15_WORRIED_ACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_WORRIED_ACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-008,D15,"In that covered-cost feelings example, a twenty-percent fall would worry me yet be emotionally acceptable.",clarity,D15_WORRIED_ACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_WORRIED_ACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-009,D15,"I would be worried but able to accept the loss with bills and plans covered, without relying on recovery.",clarity,D15_WORRIED_ACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_WORRIED_ACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-010,D15,"A fifth falling would make me anxious, but I could accept it under your covered-cost premise.",clarity,D15_WORRIED_ACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_WORRIED_ACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-011,D15,"For the feelings-only 20% example I would worry, while still accepting the situation emotionally.",clarity,D15_WORRIED_ACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_WORRIED_ACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-012,D15,"I could accept the covered-cost twenty-percent fall, although I would feel worried.",clarity,D15_WORRIED_ACCEPTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_WORRIED_ACCEPTABLE:direct,train
+SYNTH-V1-D15-TRAIN-013,D15,"With essentials and plans covered, I would be comfortable with little worry about a 20% fall.",clarity,D15_COMFORTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_COMFORTABLE:direct,train
+SYNTH-V1-D15-TRAIN-014,D15,"In that covered-cost feelings example, the twenty-percent fall would cause little worry and I would feel comfortable.",clarity,D15_COMFORTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_COMFORTABLE:direct,train
+SYNTH-V1-D15-TRAIN-015,D15,"I would feel comfortable and hardly worried, without relying on recovery, if bills and plans remain covered.",clarity,D15_COMFORTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_COMFORTABLE:direct,train
+SYNTH-V1-D15-TRAIN-016,D15,A fifth falling would leave me comfortable with little concern under your covered-cost premise.,clarity,D15_COMFORTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_COMFORTABLE:direct,train
+SYNTH-V1-D15-TRAIN-017,D15,"For the feelings-only 20% example I would feel comfortable, with very little worry.",clarity,D15_COMFORTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_COMFORTABLE:direct,train
+SYNTH-V1-D15-TRAIN-018,D15,The covered-cost twenty-percent fall would not worry me much; I would be emotionally comfortable.,clarity,D15_COMFORTABLE,fictional_authored_2026-10-04_v1,D15:train:D15_COMFORTABLE:direct,train
+SYNTH-V1-D1-TRAIN-049,D1,"I know what purpose means, but haven't decided what this pot is for.",undecided,,fictional_authored_2026-10-04_v1,D1:train:undecided:authored_contrasts,train
+SYNTH-V1-D1-TRAIN-050,D1,It might be for a home or retirement; I cannot choose its purpose.,undecided,,fictional_authored_2026-10-04_v1,D1:train:undecided:authored_contrasts,train
+SYNTH-V1-D1-TRAIN-051,D1,"Other, but I haven't identified what that other purpose is.",undecided,,fictional_authored_2026-10-04_v1,D1:train:undecided:authored_contrasts,train
+SYNTH-V1-D1-TRAIN-052,D1,This money has no emergency purpose and all of it is for emergencies.,undecided,,fictional_authored_2026-10-04_v1,D1:train:undecided:authored_contrasts,train
+SYNTH-V1-D1-TRAIN-053,D1,What does the purpose of money mean in this question?,confusion,,fictional_authored_2026-10-04_v1,D1:train:confusion:authored_contrasts,train
+SYNTH-V1-D1-TRAIN-054,D1,Could you explain the goal choices?,confusion,,fictional_authored_2026-10-04_v1,D1:train:confusion:authored_contrasts,train
+SYNTH-V1-D1-TRAIN-055,D1,I need assistance understanding the question about what the money is for.,confusion,,fictional_authored_2026-10-04_v1,D1:train:confusion:authored_contrasts,train
+SYNTH-V1-D1-TRAIN-056,D1,Please tell me the train times to Bath.,confusion,,fictional_authored_2026-10-04_v1,D1:train:confusion:authored_contrasts,train
+SYNTH-V1-D2-TRAIN-031,D2,I don't want to share my age.,undecided,,fictional_authored_2026-10-04_v1,D2:train:undecided:authored_contrasts,train
+SYNTH-V1-D2-TRAIN-032,D2,I know the age bands but cannot tell which applies to me.,undecided,,fictional_authored_2026-10-04_v1,D2:train:undecided:authored_contrasts,train
+SYNTH-V1-D2-TRAIN-033,D2,"I'm around 34 or 35, I'm unsure.",undecided,,fictional_authored_2026-10-04_v1,D2:train:undecided:authored_contrasts,train
+SYNTH-V1-D2-TRAIN-034,D2,"I am retired, but I haven't said how old I am.",undecided,,fictional_authored_2026-10-04_v1,D2:train:undecided:authored_contrasts,train
+SYNTH-V1-D2-TRAIN-035,D2,What is an age range?,confusion,,fictional_authored_2026-10-04_v1,D2:train:confusion:authored_contrasts,train
+SYNTH-V1-D2-TRAIN-036,D2,Can you explain how the age choices work?,confusion,,fictional_authored_2026-10-04_v1,D2:train:confusion:authored_contrasts,train
+SYNTH-V1-D2-TRAIN-037,D2,I do not understand what number you want for age.,confusion,,fictional_authored_2026-10-04_v1,D2:train:confusion:authored_contrasts,train
+SYNTH-V1-D2-TRAIN-038,D2,Recommend a detective novel.,confusion,,fictional_authored_2026-10-04_v1,D2:train:confusion:authored_contrasts,train
+SYNTH-V1-D3-TRAIN-037,D3,I have some existing money but don't know how much.,undecided,,fictional_authored_2026-10-04_v1,D3:train:undecided:authored_contrasts,train
+SYNTH-V1-D3-TRAIN-038,D3,"About 3000, but I haven't named the currency.",undecided,,fictional_authored_2026-10-04_v1,D3:train:undecided:authored_contrasts,train
+SYNTH-V1-D3-TRAIN-039,D3,I want 10000 someday; I haven't identified how much existing money I have.,undecided,,fictional_authored_2026-10-04_v1,D3:train:undecided:authored_contrasts,train
+SYNTH-V1-D3-TRAIN-040,D3,The current GBP amount is somewhere between 4000 and 6000.,undecided,,fictional_authored_2026-10-04_v1,D3:train:undecided:authored_contrasts,train
+SYNTH-V1-D3-TRAIN-041,D3,What is existing money supposed to mean?,confusion,,fictional_authored_2026-10-04_v1,D3:train:confusion:authored_contrasts,train
+SYNTH-V1-D3-TRAIN-042,D3,Can you explain the amount bands?,confusion,,fictional_authored_2026-10-04_v1,D3:train:confusion:authored_contrasts,train
+SYNTH-V1-D3-TRAIN-043,D3,I don't understand what money this question refers to.,confusion,,fictional_authored_2026-10-04_v1,D3:train:confusion:authored_contrasts,train
+SYNTH-V1-D3-TRAIN-044,D3,Tell me how to repair a bicycle tyre.,confusion,,fictional_authored_2026-10-04_v1,D3:train:confusion:authored_contrasts,train
+SYNTH-V1-D4-TRAIN-037,D4,I am not sure where this money currently sits.,undecided,,fictional_authored_2026-10-04_v1,D4:train:undecided:authored_contrasts,train
+SYNTH-V1-D4-TRAIN-038,D4,"Other place, but I can't identify it.",undecided,,fictional_authored_2026-10-04_v1,D4:train:undecided:authored_contrasts,train
+SYNTH-V1-D4-TRAIN-039,D4,My father has a pension; I have not said where my own pot is held.,undecided,,fictional_authored_2026-10-04_v1,D4:train:undecided:authored_contrasts,train
+SYNTH-V1-D4-TRAIN-040,D4,All this money is in cash and none of it is in cash.,undecided,,fictional_authored_2026-10-04_v1,D4:train:undecided:authored_contrasts,train
+SYNTH-V1-D4-TRAIN-041,D4,What does currently held mean?,confusion,,fictional_authored_2026-10-04_v1,D4:train:confusion:authored_contrasts,train
+SYNTH-V1-D4-TRAIN-042,D4,I don't understand the difference between pension savings and payments.,confusion,,fictional_authored_2026-10-04_v1,D4:train:confusion:authored_contrasts,train
+SYNTH-V1-D4-TRAIN-043,D4,Can you help explain these holding locations?,confusion,,fictional_authored_2026-10-04_v1,D4:train:confusion:authored_contrasts,train
+SYNTH-V1-D4-TRAIN-044,D4,Write a poem about mountains.,confusion,,fictional_authored_2026-10-04_v1,D4:train:confusion:authored_contrasts,train
+SYNTH-V1-D5-TRAIN-049,D5,"I know the question, but don't know what currently funds my bills.",undecided,,fictional_authored_2026-10-04_v1,D5:train:undecided:authored_contrasts,train
+SYNTH-V1-D5-TRAIN-050,D5,"I have salary income, but haven't said whether I use it for living costs.",undecided,,fictional_authored_2026-10-04_v1,D5:train:undecided:authored_contrasts,train
+SYNTH-V1-D5-TRAIN-051,D5,"Other regular source, but I can't name it.",undecided,,fictional_authored_2026-10-04_v1,D5:train:undecided:authored_contrasts,train
+SYNTH-V1-D5-TRAIN-052,D5,I have no regular source and my salary regularly funds my living costs.,undecided,,fictional_authored_2026-10-04_v1,D5:train:undecided:authored_contrasts,train
+SYNTH-V1-D5-TRAIN-053,D5,What counts as living-cost funding?,confusion,,fictional_authored_2026-10-04_v1,D5:train:confusion:authored_contrasts,train
+SYNTH-V1-D5-TRAIN-054,D5,I don't understand the word recurring.,confusion,,fictional_authored_2026-10-04_v1,D5:train:confusion:authored_contrasts,train
+SYNTH-V1-D5-TRAIN-055,D5,Could you help explain these income choices?,confusion,,fictional_authored_2026-10-04_v1,D5:train:confusion:authored_contrasts,train
+SYNTH-V1-D5-TRAIN-056,D5,Tell me a joke about penguins.,confusion,,fictional_authored_2026-10-04_v1,D5:train:confusion:authored_contrasts,train
+SYNTH-V1-D6-TRAIN-019,D6,"I would probably be okay, but I don't know what necessary costs are covered.",undecided,,fictional_authored_2026-10-04_v1,D6:train:undecided:authored_contrasts,train
+SYNTH-V1-D6-TRAIN-020,D6,"My other savings exist, but I don't know if they're available when bills are due.",undecided,,fictional_authored_2026-10-04_v1,D6:train:undecided:authored_contrasts,train
+SYNTH-V1-D6-TRAIN-021,D6,I could cover all costs for twelve months and could cover none of them.,undecided,,fictional_authored_2026-10-04_v1,D6:train:undecided:authored_contrasts,train
+SYNTH-V1-D6-TRAIN-022,D6,"I have income, but I haven't worked out coverage over the full year without this pot.",undecided,,fictional_authored_2026-10-04_v1,D6:train:undecided:authored_contrasts,train
+SYNTH-V1-D6-TRAIN-023,D6,What does unavailable for twelve months mean?,confusion,,fictional_authored_2026-10-04_v1,D6:train:confusion:authored_contrasts,train
+SYNTH-V1-D6-TRAIN-024,D6,I don't understand what counts as necessary living costs.,confusion,,fictional_authored_2026-10-04_v1,D6:train:confusion:authored_contrasts,train
+SYNTH-V1-D6-TRAIN-025,D6,"My backup for this pot is this exact same pot, so I think that covers it.",confusion,,fictional_authored_2026-10-04_v1,D6:train:confusion:authored_contrasts,train
+SYNTH-V1-D6-TRAIN-026,D6,Can you show me a pasta recipe?,confusion,,fictional_authored_2026-10-04_v1,D6:train:confusion:authored_contrasts,train
+SYNTH-V1-D7-TRAIN-025,D7,"Probably none, but I'm unsure whether repayments are currently required.",undecided,,fictional_authored_2026-10-04_v1,D7:train:undecided:authored_contrasts,train
+SYNTH-V1-D7-TRAIN-026,D7,I have a mortgage balance but haven't said whether payments are due or being met.,undecided,,fictional_authored_2026-10-04_v1,D7:train:undecided:authored_contrasts,train
+SYNTH-V1-D7-TRAIN-027,D7,"I make payments, but I don't know whether all required repayments are up to date.",undecided,,fictional_authored_2026-10-04_v1,D7:train:undecided:authored_contrasts,train
+SYNTH-V1-D7-TRAIN-028,D7,All required repayments are on time and some required repayments are overdue now.,undecided,,fictional_authored_2026-10-04_v1,D7:train:undecided:authored_contrasts,train
+SYNTH-V1-D7-TRAIN-029,D7,What is a required repayment?,confusion,,fictional_authored_2026-10-04_v1,D7:train:confusion:authored_contrasts,train
+SYNTH-V1-D7-TRAIN-030,D7,I don't understand the phrase falling behind.,confusion,,fictional_authored_2026-10-04_v1,D7:train:confusion:authored_contrasts,train
+SYNTH-V1-D7-TRAIN-031,D7,Can you explain the repayment choices?,confusion,,fictional_authored_2026-10-04_v1,D7:train:confusion:authored_contrasts,train
+SYNTH-V1-D7-TRAIN-032,D7,Who won the tennis tournament?,confusion,,fictional_authored_2026-10-04_v1,D7:train:confusion:authored_contrasts,train
+SYNTH-V1-D8-TRAIN-049,D8,"Probably none, but I don't know if I ever personally held investments.",undecided,,fictional_authored_2026-10-04_v1,D8:train:undecided:authored_contrasts,train
+SYNTH-V1-D8-TRAIN-050,D8,My dad owns shares; I haven't said whether I personally held anything.,undecided,,fictional_authored_2026-10-04_v1,D8:train:undecided:authored_contrasts,train
+SYNTH-V1-D8-TRAIN-051,D8,"I have another investment, but I can't identify what product it was.",undecided,,fictional_authored_2026-10-04_v1,D8:train:undecided:authored_contrasts,train
+SYNTH-V1-D8-TRAIN-052,D8,I never personally held investments and I personally owned shares.,undecided,,fictional_authored_2026-10-04_v1,D8:train:undecided:authored_contrasts,train
+SYNTH-V1-D8-TRAIN-053,D8,What does personally held mean?,confusion,,fictional_authored_2026-10-04_v1,D8:train:confusion:authored_contrasts,train
+SYNTH-V1-D8-TRAIN-054,D8,I think my ordinary bank deposit counts as market investment ownership.,confusion,,fictional_authored_2026-10-04_v1,D8:train:confusion:authored_contrasts,train
+SYNTH-V1-D8-TRAIN-055,D8,Could you help explain investment types?,confusion,,fictional_authored_2026-10-04_v1,D8:train:confusion:authored_contrasts,train
+SYNTH-V1-D8-TRAIN-056,D8,Suggest a board game.,confusion,,fictional_authored_2026-10-04_v1,D8:train:confusion:authored_contrasts,train
+SYNTH-V1-D9-TRAIN-025,D9,"Probably none, but I cannot recall my investment transactions in the past 12 months.",undecided,,fictional_authored_2026-10-04_v1,D9:train:undecided:authored_contrasts,train
+SYNTH-V1-D9-TRAIN-026,D9,"I made trades, but haven't specified the period or count.",undecided,,fictional_authored_2026-10-04_v1,D9:train:undecided:authored_contrasts,train
+SYNTH-V1-D9-TRAIN-027,D9,"Between five and six investment trades in the last year, I am unsure.",undecided,,fictional_authored_2026-10-04_v1,D9:train:undecided:authored_contrasts,train
+SYNTH-V1-D9-TRAIN-028,D9,I made zero and eight qualifying investment transactions in the same past year.,undecided,,fictional_authored_2026-10-04_v1,D9:train:undecided:authored_contrasts,train
+SYNTH-V1-D9-TRAIN-029,D9,What counts as an investment purchase or sale?,confusion,,fictional_authored_2026-10-04_v1,D9:train:confusion:authored_contrasts,train
+SYNTH-V1-D9-TRAIN-030,D9,I think my ordinary grocery payments are investment trades.,confusion,,fictional_authored_2026-10-04_v1,D9:train:confusion:authored_contrasts,train
+SYNTH-V1-D9-TRAIN-031,D9,Can you explain made or instructed?,confusion,,fictional_authored_2026-10-04_v1,D9:train:confusion:authored_contrasts,train
+SYNTH-V1-D9-TRAIN-032,D9,How do I grow tomatoes?,confusion,,fictional_authored_2026-10-04_v1,D9:train:confusion:authored_contrasts,train
+SYNTH-V1-D10-TRAIN-031,D10,"Probably none, but I don't know whether any new outside money was invested last year.",undecided,,fictional_authored_2026-10-04_v1,D10:train:undecided:authored_contrasts,train
+SYNTH-V1-D10-TRAIN-032,D10,I added 3000 but have not named a currency or whether it was actually invested.,undecided,,fictional_authored_2026-10-04_v1,D10:train:undecided:authored_contrasts,train
+SYNTH-V1-D10-TRAIN-033,D10,"My current portfolio is GBP 10000, not a stated past-year contribution.",undecided,,fictional_authored_2026-10-04_v1,D10:train:undecided:authored_contrasts,train
+SYNTH-V1-D10-TRAIN-034,D10,I invested zero and GBP 5000 of new outside money in the same past twelve months.,undecided,,fictional_authored_2026-10-04_v1,D10:train:undecided:authored_contrasts,train
+SYNTH-V1-D10-TRAIN-035,D10,What does new external money mean?,confusion,,fictional_authored_2026-10-04_v1,D10:train:confusion:authored_contrasts,train
+SYNTH-V1-D10-TRAIN-036,D10,I think market gains are new contributions I put in.,confusion,,fictional_authored_2026-10-04_v1,D10:train:confusion:authored_contrasts,train
+SYNTH-V1-D10-TRAIN-037,D10,Can you explain recycled sale proceeds?,confusion,,fictional_authored_2026-10-04_v1,D10:train:confusion:authored_contrasts,train
+SYNTH-V1-D10-TRAIN-038,D10,What's a good recipe for scones?,confusion,,fictional_authored_2026-10-04_v1,D10:train:confusion:authored_contrasts,train
+SYNTH-V1-D11-TRAIN-019,D11,I know the question but don't know whether original money can be permanently lost.,undecided,,fictional_authored_2026-10-04_v1,D11:train:undecided:authored_contrasts,train
+SYNTH-V1-D11-TRAIN-020,D11,"It can go down, but I am not sure whether recovery is certain.",undecided,,fictional_authored_2026-10-04_v1,D11:train:undecided:authored_contrasts,train
+SYNTH-V1-D11-TRAIN-021,D11,Permanent loss is possible and every fall must recover fully.,undecided,,fictional_authored_2026-10-04_v1,D11:train:undecided:authored_contrasts,train
+SYNTH-V1-D11-TRAIN-022,D11,I understand the choices but cannot choose my belief.,undecided,,fictional_authored_2026-10-04_v1,D11:train:undecided:authored_contrasts,train
+SYNTH-V1-D11-TRAIN-023,D11,What does permanent loss mean?,confusion,,fictional_authored_2026-10-04_v1,D11:train:confusion:authored_contrasts,train
+SYNTH-V1-D11-TRAIN-024,D11,I don't understand the difference between original capital and profits.,confusion,,fictional_authored_2026-10-04_v1,D11:train:confusion:authored_contrasts,train
+SYNTH-V1-D11-TRAIN-025,D11,Can you help explain this understanding question?,confusion,,fictional_authored_2026-10-04_v1,D11:train:confusion:authored_contrasts,train
+SYNTH-V1-D11-TRAIN-026,D11,Who invented the steam engine?,confusion,,fictional_authored_2026-10-04_v1,D11:train:confusion:authored_contrasts,train
+SYNTH-V1-D12-TRAIN-019,D12,"I ideally want to hold for twenty years, but haven't identified the earliest realistic need.",undecided,,fictional_authored_2026-10-04_v1,D12:train:undecided:authored_contrasts,train
+SYNTH-V1-D12-TRAIN-020,D12,"I might need this money in three or four years, I cannot say which.",undecided,,fictional_authored_2026-10-04_v1,D12:train:undecided:authored_contrasts,train
+SYNTH-V1-D12-TRAIN-021,D12,I haven't worked out when any included money could realistically be needed.,undecided,,fictional_authored_2026-10-04_v1,D12:train:undecided:authored_contrasts,train
+SYNTH-V1-D12-TRAIN-022,D12,The first realistic need is fifteen years away and this same pot must pay rent next month.,undecided,,fictional_authored_2026-10-04_v1,D12:train:undecided:authored_contrasts,train
+SYNTH-V1-D12-TRAIN-023,D12,What does earliest realistic need mean?,confusion,,fictional_authored_2026-10-04_v1,D12:train:confusion:authored_contrasts,train
+SYNTH-V1-D12-TRAIN-024,D12,I don't understand how a goal date differs from needing the money.,confusion,,fictional_authored_2026-10-04_v1,D12:train:confusion:authored_contrasts,train
+SYNTH-V1-D12-TRAIN-025,D12,Can you explain this timing question?,confusion,,fictional_authored_2026-10-04_v1,D12:train:confusion:authored_contrasts,train
+SYNTH-V1-D12-TRAIN-026,D12,Tell me about the planets.,confusion,,fictional_authored_2026-10-04_v1,D12:train:confusion:authored_contrasts,train
+SYNTH-V1-D13-TRAIN-019,D13,I would dislike losing twenty percent but haven't identified any practical effect.,undecided,,fictional_authored_2026-10-04_v1,D13:train:undecided:authored_contrasts,train
+SYNTH-V1-D13-TRAIN-020,D13,"Essentials would remain covered, but I haven't said what happens to funding, budget or plans.",undecided,,fictional_authored_2026-10-04_v1,D13:train:undecided:authored_contrasts,train
+SYNTH-V1-D13-TRAIN-021,D13,"I could cope somehow, though I don't know which payments or plans would change.",undecided,,fictional_authored_2026-10-04_v1,D13:train:undecided:authored_contrasts,train
+SYNTH-V1-D13-TRAIN-022,D13,All essentials are unaffected after the 20% loss and my rent would become impossible to pay.,undecided,,fictional_authored_2026-10-04_v1,D13:train:undecided:authored_contrasts,train
+SYNTH-V1-D13-TRAIN-023,D13,What is a twenty-percent loss?,confusion,,fictional_authored_2026-10-04_v1,D13:train:confusion:authored_contrasts,train
+SYNTH-V1-D13-TRAIN-024,D13,I don't understand what practical effect means.,confusion,,fictional_authored_2026-10-04_v1,D13:train:confusion:authored_contrasts,train
+SYNTH-V1-D13-TRAIN-025,D13,Can you help explain this loss scenario?,confusion,,fictional_authored_2026-10-04_v1,D13:train:confusion:authored_contrasts,train
+SYNTH-V1-D13-TRAIN-026,D13,Teach me a guitar chord.,confusion,,fictional_authored_2026-10-04_v1,D13:train:confusion:authored_contrasts,train
+SYNTH-V1-D14-TRAIN-019,D14,I understand the trade-offs but cannot decide which I want.,undecided,,fictional_authored_2026-10-04_v1,D14:train:undecided:authored_contrasts,train
+SYNTH-V1-D14-TRAIN-020,D14,"I want high returns, but haven't accepted larger swings or possible permanent loss.",undecided,,fictional_authored_2026-10-04_v1,D14:train:undecided:authored_contrasts,train
+SYNTH-V1-D14-TRAIN-021,D14,"Some risk sounds okay, but I haven't chosen a growth-and-fluctuation trade-off.",undecided,,fictional_authored_2026-10-04_v1,D14:train:undecided:authored_contrasts,train
+SYNTH-V1-D14-TRAIN-022,D14,I prioritise greater growth and I do not accept any possibility of permanent loss.,undecided,,fictional_authored_2026-10-04_v1,D14:train:undecided:authored_contrasts,train
+SYNTH-V1-D14-TRAIN-023,D14,What does trade-off mean?,confusion,,fictional_authored_2026-10-04_v1,D14:train:confusion:authored_contrasts,train
+SYNTH-V1-D14-TRAIN-024,D14,I don't understand potential growth versus ups and downs.,confusion,,fictional_authored_2026-10-04_v1,D14:train:confusion:authored_contrasts,train
+SYNTH-V1-D14-TRAIN-025,D14,Can you help explain these preference choices?,confusion,,fictional_authored_2026-10-04_v1,D14:train:confusion:authored_contrasts,train
+SYNTH-V1-D14-TRAIN-026,D14,How do I bake bread?,confusion,,fictional_authored_2026-10-04_v1,D14:train:confusion:authored_contrasts,train
+SYNTH-V1-D15-TRAIN-019,D15,"I would be worried, but I don't know whether I could emotionally accept the situation.",undecided,,fictional_authored_2026-10-04_v1,D15:train:undecided:authored_contrasts,train
+SYNTH-V1-D15-TRAIN-020,D15,I understand your covered-cost example but cannot imagine how I would feel.,undecided,,fictional_authored_2026-10-04_v1,D15:train:undecided:authored_contrasts,train
+SYNTH-V1-D15-TRAIN-021,D15,"I would be comfortable only if recovery was guaranteed, which it isn't in your example.",undecided,,fictional_authored_2026-10-04_v1,D15:train:undecided:authored_contrasts,train
+SYNTH-V1-D15-TRAIN-022,D15,Under that same example I feel comfortable and find it too uncomfortable to accept.,undecided,,fictional_authored_2026-10-04_v1,D15:train:undecided:authored_contrasts,train
+SYNTH-V1-D15-TRAIN-023,D15,What does emotionally acceptable mean?,confusion,,fictional_authored_2026-10-04_v1,D15:train:confusion:authored_contrasts,train
+SYNTH-V1-D15-TRAIN-024,D15,I don't understand the covered-cost feelings premise.,confusion,,fictional_authored_2026-10-04_v1,D15:train:confusion:authored_contrasts,train
+SYNTH-V1-D15-TRAIN-025,D15,Can you help explain this feelings question?,confusion,,fictional_authored_2026-10-04_v1,D15:train:confusion:authored_contrasts,train
+SYNTH-V1-D15-TRAIN-026,D15,What is the tallest mountain?,confusion,,fictional_authored_2026-10-04_v1,D15:train:confusion:authored_contrasts,train

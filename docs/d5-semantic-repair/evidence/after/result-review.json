@@ -1,0 +1,25 @@
+{
+  "reviewer": "independent agent d5_handoff_review",
+  "mode": "Read-only review of the same eleven saved outputs and unchanged expectations; no new inference or test cases",
+  "findings": {
+    "inputs_and_expectations_byte_identical": true,
+    "clear_raw_correct_before": 7,
+    "clear_raw_correct_after": 7,
+    "clear_denominator": 7,
+    "correct_accepted_before": 5,
+    "correct_accepted_after": 7,
+    "all_five_prior_correct_candidates_preserved": true,
+    "case_09": "Receipt alone no longer establishes active funding; no financial option and a relevant current-funding question",
+    "case_10": "Genuine Undecided retained; wage-use question permits remaining unsure",
+    "case_11": "Authored Help distinguishes pension holdings from payments with zero model calls",
+    "unsupported_financial_assertions_found_after": 0,
+    "actual_model_calls": 10,
+    "records": 11,
+    "selection_confirmation_or_save": false
+  },
+  "limits": [
+    "Opened authored examples after targeted repair, not unseen accuracy or actual UI performance",
+    "Abstention with a useful question is not a completed financial answer",
+    "No claim of general source-instance or active/excluded handling"
+  ]
+}

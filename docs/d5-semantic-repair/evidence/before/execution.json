@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-10-12T01:49:02.080028+00:00",
+  "records": {
+    "D5-STD-01": "873f76d08bb839fc0c27aa407c2b7fa7335e9e73c70ee8c921ec7cd7f3bf5ff1",
+    "D5-STD-02": "b6da1d04d5610f8a0f945f2219d02fd7e2ec204843c3529c223df37e0d497806",
+    "D5-STD-03": "aed30176550c99b711bbd0f80114cc0afb0a165d14335a089ff36e5b4c2fcd97",
+    "D5-STD-04": "a90276a60f5ad26312a813816b8d28660cec5dbe151864693c1eea19dd448aa6",
+    "D5-STD-05": "25bbc5c19944ef7a05bc3b344218d278cece56de5f9adcfe54c91803d189b7ce",
+    "D5-STD-06": "669af58d27e4fe0463de96ffc3f1c6f2ed9250579ebed07e4146866db575701c",
+    "D5-STD-07": "d7b0336564d315fc5913a77db6345055822138ca7a91a10e5a95645fa5fbae4a",
+    "D5-STD-08": "571b6c4813b47d527b45aee86031dc3007052d4e7e7bda561f8912f46e9e49b3",
+    "D5-STD-09": "751bf669ba328fcc183e5e885a0bbc56b281163c6c42b93b8672ed80d9a3fc55",
+    "D5-STD-10": "98535234943a3c89abeed9bb1b031543ae7950b96cd450afe3f1596f08beaac2",
+    "D5-STD-11": "d055b8b8b3e828ce304afe1187f4036731946bca7fa2ed441b9bcd0d9a75b66f"
+  },
+  "actual_model_calls": 10,
+  "failure": null,
+  "complete": true,
+  "labels_loaded_for_inference": false,
+  "retry": false,
+  "changed_frozen_files": [],
+  "default_unchanged": true,
+  "actual_ui_test": false,
+  "choice_recovery_attempts": 0,
+  "old_experiment_resumed": false
+}

@@ -1,0 +1,100 @@
+{
+  "id": "D5-STD-08",
+  "input": "I have no regular source paying my living costs at the moment.",
+  "raw": {
+    "answer_scope": "complete",
+    "evidence": [
+      "I have no regular source paying my living costs at the moment."
+    ],
+    "facts": [
+      {
+        "evidence": "I have no regular source paying my living costs at the moment.",
+        "owner": "self",
+        "pays_living_costs": "no",
+        "source_category": "D5_NO_REGULAR",
+        "source_instance_id": "group_1",
+        "time": "current"
+      }
+    ],
+    "missing_information": [],
+    "model_abstain": false,
+    "option_id": "D5_NO_REGULAR",
+    "semantic_bucket": "clarity"
+  },
+  "raw_output": "{\"answer_scope\":\"complete\",\"evidence\":[\"I have no regular source paying my living costs at the moment.\"],\"facts\":[{\"evidence\":\"I have no regular source paying my living costs at the moment.\",\"owner\":\"self\",\"pays_living_costs\":\"no\",\"source_category\":\"D5_NO_REGULAR\",\"source_instance_id\":\"group_1\",\"time\":\"current\"}],\"missing_information\":[],\"model_abstain\":false,\"option_id\":\"D5_NO_REGULAR\",\"semantic_bucket\":\"clarity\"}",
+  "result": {
+    "action": "confirm",
+    "question_id": "D5",
+    "candidate_option_id": "D5_NO_REGULAR",
+    "candidate_option_label": "No regular source",
+    "confirmation_text": "You have no regular source paying your living costs at the moment. Have I understood correctly?",
+    "context_details": {},
+    "recorded": false,
+    "bucket": "Clarity",
+    "contract_outcome": "financial_candidate"
+  },
+  "decision": {
+    "outcome": "financial_candidate",
+    "reason": "candidate_requires_confirmation",
+    "semantic_bucket": "clarity",
+    "option_id": "D5_NO_REGULAR",
+    "answer_scope": "complete",
+    "input_sha256": "8e7efb239b3e8b96e1fc853a337585b84af395483204acf3b67cebd957bb56c8",
+    "proposal_sha256": "c4e7df331e327de3c18cf3ae37212bcada3b51f5026cc1f3fb695de9db556aa7",
+    "spec_sha256": "de251a7783332cdd75ae11ff3663e1bbea2cc15014883e82475ef0375cfd342c",
+    "contract_sha256": "1cc2fab5578928f04c7b91d2ce2617c1a30f07c69c8e20e5fad818aa26a58e01",
+    "contract_version": "d5-single-interpreter-v2"
+  },
+  "actual_model_calls": 1,
+  "backend_call": {
+    "backend": "single_interpreter_existing_chatgpt_plan_stream",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "model_requested": "gpt-6.1-sol",
+    "reasoning_effort_requested": "low",
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": true,
+    "timeout_seconds": 30,
+    "max_response_bytes": 1048576,
+    "provider_output_token_cap": null,
+    "actual_calls": 1,
+    "retry": false,
+    "output_repair": false,
+    "fresh_context": true,
+    "tool_dispatcher_present": false,
+    "blocked": false,
+    "terminal_completed": true,
+    "status": "completed",
+    "provider_model": "gpt-6.1-sol",
+    "provider_reasoning": {
+      "effort": "low"
+    },
+    "usage": {
+      "input_tokens": 1829,
+      "output_tokens": 116,
+      "total_tokens": 1945
+    },
+    "http": {
+      "http_status": 200,
+      "content_type": "other",
+      "single_explicit_content_type": false,
+      "mislabelled_sse_candidate": false,
+      "missing_content_type_candidate": true
+    },
+    "stream_assembly": {
+      "version": 1,
+      "attempted": true,
+      "applied": true,
+      "original_terminal_output_shape": "empty_list",
+      "completed_item_count": 1
+    },
+    "elapsed_seconds": 5.754110542009585
+  },
+  "pre_model_control": null,
+  "answer_source": "d5_single_interpreter_v2",
+  "candidate": "D5_NO_REGULAR",
+  "selected": null,
+  "confirmed_version": null,
+  "saved_version": null
+}

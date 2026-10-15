@@ -1,0 +1,66 @@
+{
+  "at_utc": "2026-10-12T09:50:26.808749+00:00",
+  "outcome": "complete_authorised_d5_conversation",
+  "entry_point": "demos/d5/demo.py chat",
+  "process_count": 1,
+  "process_exit_code": 0,
+  "case_ids": [
+    "D5-STD-09",
+    "D5-STD-01",
+    "D5-STD-02"
+  ],
+  "new_cases": 0,
+  "actual_model_calls": 3,
+  "completed_model_calls": 3,
+  "service_failures": 0,
+  "correct_missing_information_followups": 1,
+  "correct_financial_candidates": 2,
+  "confirmed_options_in_sequence": [
+    "D5_PENSION_PAYMENTS",
+    "D5_MULTIPLE"
+  ],
+  "correction_invalidated_prior_answer": true,
+  "confirmation_calls": 0,
+  "correction_navigation_calls": 0,
+  "retries": 0,
+  "output_repairs": 0,
+  "choice_recovery": 0,
+  "profile_saved": false,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "low",
+  "tools": [],
+  "tool_choice": "none",
+  "store": false,
+  "tracked_files_verified": 182,
+  "changed_files": [],
+  "all_fifteen_questions_unchanged": true,
+  "default_unchanged": true,
+  "git_head": "43241c340c4c23fb5d66d559b5d44a63c2907b13",
+  "independent_ai_evidence_review": {
+    "reviewer": "d5_conversation_review",
+    "result": "No concrete issue found; authorised sequence supported by saved receipts and terminal output"
+  },
+  "limits": [
+    "Three existing, already-opened examples; no unseen-text accuracy estimate",
+    "Complete follow-up and replacement wording; no short context-only reply tested",
+    "Standalone terminal entry; no default application integration",
+    "Final confirmation evidenced by actual terminal output and unchanged conditional wrapper; no separate final internal-state snapshot"
+  ],
+  "records": [
+    {
+      "case_id": "D5-STD-09",
+      "path": "session/reply-0001-b5b21f6c.json",
+      "sha256": "fbf631df2cbff3cd857bb9d4ccff583a62009555e243f26b394c107e026464b6"
+    },
+    {
+      "case_id": "D5-STD-01",
+      "path": "session/reply-0002-0fe4d44c.json",
+      "sha256": "e46d9f1bc64747baa711651787bec3d0c56116ff18c75cdedfdbe752c2a400a5"
+    },
+    {
+      "case_id": "D5-STD-02",
+      "path": "session/reply-0003-128495f2.json",
+      "sha256": "5eace676995df1c410a0b0fa8123c2d42bdfedd5f2701d47a8ee7b8aa731ac0f"
+    }
+  ]
+}

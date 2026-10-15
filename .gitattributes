@@ -1,0 +1,6 @@
+# Keep source/evidence files portable and preserve byte-hashed dataset CSVs.
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+data/nlp/all_questions/*.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

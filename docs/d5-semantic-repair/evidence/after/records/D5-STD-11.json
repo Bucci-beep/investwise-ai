@@ -1,0 +1,28 @@
+{
+  "id": "D5-STD-11",
+  "input": "Does pension mean my fund or payments?",
+  "raw": null,
+  "raw_output": null,
+  "result": {
+    "action": "explain",
+    "question_id": "D5",
+    "bucket": null,
+    "flag": "help_request",
+    "reason": "User requested help without a financial answer.",
+    "help_prompt": "This asks what pays your housing, food and bills now. Pension payments count when you receive and use them for these costs; simply holding money inside a pension fund does not count. Receiving money does not by itself mean you spend it on living costs. You can name one source or several. Benefits and regular support share one answer category.",
+    "definition_only": true,
+    "help_explanation_provided": true,
+    "factual_request_issued": false,
+    "clarification_turns": 0,
+    "recorded": false
+  },
+  "decision": null,
+  "actual_model_calls": 0,
+  "backend_call": {},
+  "pre_model_control": "explain",
+  "answer_source": null,
+  "candidate": null,
+  "selected": null,
+  "confirmed_version": null,
+  "saved_version": null
+}

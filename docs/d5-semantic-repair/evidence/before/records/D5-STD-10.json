@@ -1,0 +1,93 @@
+{
+  "id": "D5-STD-10",
+  "input": "My pension pays some bills; I cannot tell whether my wages also do.",
+  "raw": {
+    "answer_scope": "unknown",
+    "evidence": [
+      "My pension pays some bills; I cannot tell whether my wages also do."
+    ],
+    "facts": [],
+    "missing_information": [
+      "Whether wages also currently pay the customer's living costs is unresolved."
+    ],
+    "model_abstain": false,
+    "option_id": null,
+    "semantic_bucket": "undecided"
+  },
+  "raw_output": "{\"answer_scope\":\"unknown\",\"evidence\":[\"My pension pays some bills; I cannot tell whether my wages also do.\"],\"facts\":[],\"missing_information\":[\"Whether wages also currently pay the customer's living costs is unresolved.\"],\"model_abstain\":false,\"option_id\":null,\"semantic_bucket\":\"undecided\"}",
+  "result": {
+    "action": "clarify",
+    "question_id": "D5",
+    "reason": "authored_dialogue_only",
+    "clarification_turns": 1,
+    "profile_complete": false,
+    "recorded": false,
+    "followup": "I haven't understood enough to match an answer yet. You can describe what pays these costs now, use one of the choices, or pause.",
+    "bucket": "Undecided",
+    "model_uncertain": false,
+    "contract_outcome": "dialogue_only"
+  },
+  "decision": {
+    "outcome": "dialogue_only",
+    "reason": "authored_dialogue_only",
+    "semantic_bucket": "undecided",
+    "option_id": null,
+    "answer_scope": "unknown",
+    "input_sha256": "c823783b28d8c4bd56b16098fc86f01382c8cbf4b59a5e7465eb4fbd065959b5",
+    "proposal_sha256": "dec474f4e4879b6f67da2a9d9294c24ba1a9ebd94d5757a5225e0a13ee2ec9cb",
+    "spec_sha256": "de251a7783332cdd75ae11ff3663e1bbea2cc15014883e82475ef0375cfd342c",
+    "contract_sha256": "18ea1c3e5d2d5f03a1556d3a2bdba6c35a95d64180ba24d7fd890b7ba0d24bc5",
+    "contract_version": "d5-single-interpreter-v1"
+  },
+  "actual_model_calls": 1,
+  "backend_call": {
+    "backend": "single_interpreter_existing_chatgpt_plan_stream",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "model_requested": "gpt-6.1-sol",
+    "reasoning_effort_requested": "low",
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": true,
+    "timeout_seconds": 30,
+    "max_response_bytes": 1048576,
+    "provider_output_token_cap": null,
+    "actual_calls": 1,
+    "retry": false,
+    "output_repair": false,
+    "fresh_context": true,
+    "tool_dispatcher_present": false,
+    "blocked": false,
+    "terminal_completed": true,
+    "status": "completed",
+    "provider_model": "gpt-6.1-sol",
+    "provider_reasoning": {
+      "effort": "low"
+    },
+    "usage": {
+      "input_tokens": 1494,
+      "output_tokens": 147,
+      "total_tokens": 1641
+    },
+    "http": {
+      "http_status": 200,
+      "content_type": "other",
+      "single_explicit_content_type": false,
+      "mislabelled_sse_candidate": false,
+      "missing_content_type_candidate": true
+    },
+    "stream_assembly": {
+      "version": 1,
+      "attempted": true,
+      "applied": true,
+      "original_terminal_output_shape": "empty_list",
+      "completed_item_count": 2
+    },
+    "elapsed_seconds": 6.597740791039541
+  },
+  "pre_model_control": null,
+  "candidate": null,
+  "selected": null,
+  "confirmed_version": null,
+  "saved_version": null
+}

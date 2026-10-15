@@ -1,0 +1,95 @@
+{
+  "id": "D5-STD-09",
+  "input": "I receive wages and pension payments",
+  "raw": {
+    "answer_scope": "unknown",
+    "evidence": [
+      "I receive wages and pension payments"
+    ],
+    "facts": [],
+    "missing_information": [
+      "current_funding_unknown"
+    ],
+    "model_abstain": true,
+    "option_id": null,
+    "semantic_bucket": null
+  },
+  "raw_output": "{\"answer_scope\":\"unknown\",\"evidence\":[\"I receive wages and pension payments\"],\"facts\":[],\"missing_information\":[\"current_funding_unknown\"],\"model_abstain\":true,\"option_id\":null,\"semantic_bucket\":null}",
+  "result": {
+    "action": "clarify",
+    "question_id": "D5",
+    "reason": "independent_model_abstention",
+    "clarification_turns": 1,
+    "profile_complete": false,
+    "recorded": false,
+    "followup": "Which sources, if any, actually pay your housing, food and bills now? They may differ from money you receive or hold. You can name another source or leave this unresolved.",
+    "bucket": null,
+    "model_uncertain": true,
+    "contract_outcome": "abstention",
+    "clarification_topic": "current_funding_unknown"
+  },
+  "decision": {
+    "outcome": "abstention",
+    "reason": "independent_model_abstention",
+    "semantic_bucket": null,
+    "option_id": null,
+    "answer_scope": "unknown",
+    "input_sha256": "81a94d820dc54a71d7a9a5adaf73caa40c2bb3f07a1d38f95b6f621103fc2e53",
+    "proposal_sha256": "443422d81bd376943419df9ee5360f983cdaf5ada6d9a6b75b54701d8080de06",
+    "spec_sha256": "de251a7783332cdd75ae11ff3663e1bbea2cc15014883e82475ef0375cfd342c",
+    "contract_sha256": "1cc2fab5578928f04c7b91d2ce2617c1a30f07c69c8e20e5fad818aa26a58e01",
+    "contract_version": "d5-single-interpreter-v2"
+  },
+  "actual_model_calls": 1,
+  "backend_call": {
+    "backend": "single_interpreter_existing_chatgpt_plan_stream",
+    "endpoint": "https://api.openai.com/v1/responses",
+    "model_requested": "gpt-6.1-sol",
+    "reasoning_effort_requested": "low",
+    "tools": [],
+    "tool_choice": "none",
+    "store": false,
+    "stream": true,
+    "timeout_seconds": 30,
+    "max_response_bytes": 1048576,
+    "provider_output_token_cap": null,
+    "actual_calls": 1,
+    "retry": false,
+    "output_repair": false,
+    "fresh_context": true,
+    "tool_dispatcher_present": false,
+    "blocked": false,
+    "terminal_completed": true,
+    "status": "completed",
+    "provider_model": "gpt-6.1-sol",
+    "provider_reasoning": {
+      "effort": "low"
+    },
+    "usage": {
+      "input_tokens": 1822,
+      "output_tokens": 59,
+      "total_tokens": 1881
+    },
+    "http": {
+      "http_status": 200,
+      "content_type": "other",
+      "single_explicit_content_type": false,
+      "mislabelled_sse_candidate": false,
+      "missing_content_type_candidate": true
+    },
+    "stream_assembly": {
+      "version": 1,
+      "attempted": true,
+      "applied": true,
+      "original_terminal_output_shape": "empty_list",
+      "completed_item_count": 1
+    },
+    "elapsed_seconds": 6.273831208003685
+  },
+  "pre_model_control": null,
+  "answer_source": null,
+  "candidate": null,
+  "selected": null,
+  "confirmed_version": null,
+  "saved_version": null
+}
